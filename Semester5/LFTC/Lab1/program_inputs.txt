@@ -1,0 +1,105 @@
+1
+=============================
+#include<iostream>
+using namespace std;
+
+
+int main(){
+    float c[2];
+    float r;
+    float PI;
+    PI = 3.1415;
+
+    cin >> r;
+    cout << 2*PI*r;
+    cout << PI*r*r;
+    return 0;
+}
+=============================
+
+2
+=============================
+
+#include<iostream>
+using namespace std;
+
+
+int main(){
+    int x;
+    int y;
+    int r;
+    cin >> x;
+    cin >> y;
+    while(y > 0){
+        r = x % y;
+        x = y;
+        y = r;
+    };
+    
+    cout << x;
+    return 0;
+}
+=============================
+
+3
+=============================
+#include<iostream>
+using namespace std;
+
+
+int main(){
+    int s;
+    int n;
+    int x;
+    s = 0;
+    cin >> n;
+    int i = 0;
+    while(i < n){
+        cin >> x;
+        s = s + x;
+        i = i + 1;
+    };
+    cout << s;
+    return 0;
+}
+=============================
+
+Specificare:
+
+Identificatori:
+    ID::= caracter|caracter {caracter} {cifra}
+    int::="0"|(["+"])
+    cifraN::= "1" | ... | "9"
+    cifra ::= |"0"|"1" | ... | "9"
+    caracter::=("a"|... |"z"|"A"|...|"Z")
+    CONST ::= int | float
+
+Simboluri:
+    cuvinte_cheie: #include, namespace, std, int, main, float, return, cin, iostream
+    cout, if, while, using
+    operatori: +, -, %, >>, <<, =
+    delimitatori: ";", ",", "{", "}", "[", "]", "(", ")"
+    
+
+Limbaj:
+    program ::= "# include" "<iostream>" "using" "namespace" "std;" "int" "main()" "{" [lista_decl] lista_instr return "}"
+    lista_decl::= dec";" {dec ";"}
+    dec::= tip variabila
+    tip::="int"|"float"
+    int::= "0" | (["+" | "-"]cifraN{cifra})
+    float::=["+"|"-"]cifra"."cifra{cifra}
+    variabila::= ID
+    variabila::= IDVector
+    IDVector::= ID"["cifraN cifra"]"
+    lista_instr::=instr";"{instr";"}
+    instr::=attr|inout|while
+    attr::=ID"="exp
+    exp::=variabila
+    exp::=exp("+", "-", "*", "/", "%")(variabila)
+    inout::=("cin>>" | "cout<<")(variabila)
+    inout::="cout<<"exp
+    if::="if("conditie"){"lista_instr"}"["else{"lista_instr"}"]
+    while::="while("conditie"){"lista_instr"}"
+    conditie::=exp rel exp
+    rel::="<" | ">"
+    return ::= "return" int";"

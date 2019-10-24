@@ -1,0 +1,3 @@
+C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/cmake-build-debug/CMakeFiles/matrix_mul.dir
+C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/thread_mul.cpp
+iostream
+-
+ctime
+-
+chrono
+-
+vector
+-
+thread
+-
+

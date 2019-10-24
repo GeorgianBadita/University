@@ -1,0 +1,3 @@
+C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir
+C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

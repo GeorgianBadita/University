@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/georg/Desktop/An3_sem1/PPD/lab1_cpp/BigNum.h
+vector
+-
+string
+-
+algorithm
+-
+ostream
+-
+
+C:/Users/georg/Desktop/An3_sem1/PPD/lab1_cpp/BigNumParal.h
+vector
+-
+BigNum.h
+C:/Users/georg/Desktop/An3_sem1/PPD/lab1_cpp/BigNum.h
+
+C:/Users/georg/Desktop/An3_sem1/PPD/lab1_cpp/Helper.h
+vector
+-
+string
+-
+
+C:/Users/georg/Desktop/An3_sem1/PPD/lab1_cpp/main.cpp
+iostream
+-
+BigNum.h
+C:/Users/georg/Desktop/An3_sem1/PPD/lab1_cpp/BigNum.h
+BigNumParal.h
+C:/Users/georg/Desktop/An3_sem1/PPD/lab1_cpp/BigNumParal.h
+Helper.h
+C:/Users/georg/Desktop/An3_sem1/PPD/lab1_cpp/Helper.h
+fstream
+-
+ctime
+-
+chrono
+-
+

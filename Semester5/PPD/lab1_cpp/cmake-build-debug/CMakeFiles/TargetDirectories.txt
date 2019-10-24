@@ -1,0 +1,3 @@
+C:/Users/georg/Desktop/An3_sem1/PPD/lab1_cpp/cmake-build-debug/CMakeFiles/lab1_cpp.dir
+C:/Users/georg/Desktop/An3_sem1/PPD/lab1_cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/georg/Desktop/An3_sem1/PPD/lab1_cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

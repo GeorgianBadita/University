@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/georg/Desktop/An3_sem1/PPD/Lab0_cpp/main.cpp
+iostream
+-
+utils/Helper.h
+C:/Users/georg/Desktop/An3_sem1/PPD/Lab0_cpp/utils/Helper.h
+
+C:/Users/georg/Desktop/An3_sem1/PPD/Lab0_cpp/utils/Helper.h
+string
+-
+
