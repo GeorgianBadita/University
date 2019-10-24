@@ -1,0 +1,3 @@
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/simple_linked_lst_table_link/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/simple_linked_lst_table_link/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/simple_linked_lst_table_link/cmake-build-debug/CMakeFiles/simple_linked_lst_table_link.dir

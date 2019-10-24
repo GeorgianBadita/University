@@ -1,0 +1,3 @@
+0 Nu exista 2 numere prime!
+Exista numere divizibile cu 5!
+Sirul este sortat descrescator!

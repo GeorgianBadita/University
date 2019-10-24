@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+   
+    <script>
+        function checkData(){
+            var name = document.getElementById("name_txt")
+            var birth = document.getElementById("birth_txt")
+            var age = document.getElementById("age_txt")
+            var email = document.getElementById("email_txt")
+
+            var str_name = name.value
+            var birth_date = birth.value
+            var age_txt = age.value
+            var email_txt = email.value
+
+            if(str_name === "" || birth_date === "" || age_txt === "" || email_txt === ""){
+                alert("There are empty fields")
+            } else
+            if(isNaN(age_txt) === true){
+                alert("Age can't contain letters")
+            } else{
+                alert("Fields are correct!")
+            }
+
+
+        }
+    </script>
+
+
+    <form onsubmit="checkData()">
+      
+      <ls>
+          <ul>Name: <input name="name" type="text" id="name_txt"></ul>
+          <ul>Birth: <input name="birth" type="date" id="birth_txt"></ul>
+          <ul>Age: <input name="age" type="text" id="age_txt"></ul>
+          <ul>Email: <input name="email" type="text" id="email_txt"></ul>
+          <ul><input type="submit" name="submit_btn" id="sub_id"></ul>
+      </ls>
+      
+    </form>
+  </body>
+</html>

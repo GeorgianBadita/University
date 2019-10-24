@@ -1,0 +1,4 @@
+/home/geo/clion-2017.3.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/multi_map"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/multi_map/cmake-build-debug

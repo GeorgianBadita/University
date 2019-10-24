@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+        <title>
+            Formular feedback Gogle Hashcode
+        </title>
+    </head>
+
+    <body>
+        <h1>Experiența Google Hashcode!</h1>
+        <form id = "form-feedback" action = "file:///home/geolica/Desktop/An2_sem2/Web_Programming/Lab1/confirm.html">
+            <table id="table-feedback" border="2">
+                    <thead>
+                        <tr>
+                            <th colspan="2"><b>Formular Google HashCode</b></th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr> <!--First row (left side)-->
+                            <td>
+                                <table id="pers-info-table">
+                                   
+                                    <tbody>
+                                        <tr>
+                                            <td>Nume:</td>
+                                            <td><input type="text" name="firstname"></td>
+                                            <td>Prenume:</td>
+                                            <td><input type="text" name="lastname"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td rowspan="3">Date Hub:</td>
+                                            <td>
+                                                Hub:
+                                            </td>
+                                            <td>
+                                                <select name="hub">
+                                                    <option value="Timisoara">Politehnica Timisoara</option>
+                                                    <option value="Cluj">UBB- Fsega</option>
+                                                    <option value="Cluj">Yonder</option>
+                                                    <option value="Cambridge">Corpus Christ</option>
+                                                    <option value="Iasi">FMI Iasi</option>
+                                                    <option value="Bucuresti">FMI Unibuc</option>
+                                                </select>
+                                            </td>
+                                            <td> Număr participanți    
+                                                <select name="numarPart">
+                                                        <option >1</option>
+                                                        <option >2</option>
+                                                        <option >3</option>
+                                                        <option >4</option>
+                                                </select>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Profesor organizator:</td>
+                                            <td><input type="text" name=profname></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nume echipă</td>
+                                            <td><input type="text" name=teamname></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email:</td>
+                                            <td><input type="text" name=email></td>
+                                            <td>Sex:</td>
+                                            <td>
+                                                <input type="radio" value="male" name="gender" checked> B
+                                                <input type="radio" value="female" name="gender"> F 
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </td>
+
+                            <td>
+                                <table id="comp-form">
+                                    
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Tip concursuri:</td>
+                                            <td>
+                                                <select name="contest-type">
+                                                    <option value="programming-contest">Concursuri algoritmică</option>
+                                                    <option value="hackathon">Hackathoane</option>
+                                                    <option value="idea-presentation">Prezentări de startup</option>
+                                                </select>
+                                            </td>
+
+                                            <td>Preferință: </td>
+                                            <td>
+                                                <input type="radio" value="single" name="preference" checked> Singur
+                                                <input type="radio" value="team" name="preference"> Echipă 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Motivația de participare:</td>
+                                            <td>
+                                                <input type="checkbox" name="motivation">competiția <br>
+                                                <input type="checkbox" name="motivation">premiile <br>
+                                            </td>
+                                            
+                                            <td>
+                                                <input type="checkbox" name="motivation">munca <br>
+                                                <input type="checkbox" name="motivation">procesul de învățare <br> 
+                                            </td>
+                                            
+                                            <td>
+                                                <input type="checkbox" name="motivation">munca de echipă <br>
+                                                <input type="checkbox" name="motivation">cunostiințe acumulate <br>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <fieldset>
+                                    <legend><b>Întrebări legate de HashCode 2019:</b></legend>
+                                <table id="hashCode-quest" width="100%" bgcolor="#00cc00">
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <ol type="A">
+                                                    <li>Care a fost impresia lasată de HashCode 2019?<br>
+                                                        <input type="text" name="impression" size="100%">
+                                                    </li>
+                                                    <li>Doriti să participați anul viitor?<br>
+                                                        <ul>
+                                                            <li>
+                                                                <input type="radio" name="next-year-part" checked> Da
+                                                            </li>
+                                                            <li>
+                                                                    <input type="radio" name="next-year-part"> No
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Care considerați că este un număr bun de probleme pentru HashCode?<br>
+                                                        <ol>
+                                                            <li>
+                                                                <input type="radio" name="num-problems">
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" name="num-problems" checked>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" name="num-problems">
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <fieldset>
+                                    <legend><b>Observații</b></legend>
+                                        
+                                    <table id="obs" width="100%" bgcolor="#bf8040">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            Ce am putea schimba? <br>
+                                                            <textarea name="comment" rows="4" cols="40"></textarea>
+                                                        </li>
+                                                        <li>
+                                                            Uploadati va rog o confirmare pentru acordul procesării datelor dumneavoastra.<br>
+                                                            <input type="file" id="fileDoc">
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr align="center">
+                                                <td>
+                                                        <input type="submit">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </fieldset>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+        </form>
+        <a href="https://hashcodejudge.withgoogle.com/?fbclid=IwAR3lFPocfmYyqdMZsupLvhGDT9twUXjZWlkuAN7ceClbbrf4kpMWqNvTA5g#/my-team"><img   alt="HashCode" align="right" src="h_code.jpg"> </a>
+    </body>
+
+</html>

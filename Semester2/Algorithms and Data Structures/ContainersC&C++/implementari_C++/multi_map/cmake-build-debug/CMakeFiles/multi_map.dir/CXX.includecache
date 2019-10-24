@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/multi_map/MultiMap.cpp
+MultiMap.h
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/multi_map/MultiMap.h
+utility
+-
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/multi_map/MultiMap.h
+string
+-
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/multi_map/main.cpp
+iostream
+-
+MultiMap.h
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/multi_map/MultiMap.h
+

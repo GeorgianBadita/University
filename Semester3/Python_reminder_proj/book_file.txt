@@ -1,0 +1,4 @@
+0:Prislea:Petre Ispirescu:Basm:1910
+1:Ion:Liviu Rebreanu:Drama:1912
+2:Limite si Continuitate:Pana Catalin:Stiinta:2016
+3:Integrale:Pana Catalin:Stiinta:2017

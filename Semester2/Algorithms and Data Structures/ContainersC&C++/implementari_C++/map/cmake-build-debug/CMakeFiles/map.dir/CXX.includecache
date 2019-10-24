@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/map/Map.cpp
+iostream
+-
+Map.h
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/map/Map.h
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/map/Map.h
+string
+-
+utility
+-
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/map/main.cpp
+iostream
+-
+cassert
+-
+Map.h
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/map/Map.h
+

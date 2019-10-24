@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0905460e-e4d6-4eff-a38e-7a3cfdb7da8f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="2039878695">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.33" value="2" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.opened" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="122" />
+          <entry key="csproj" value="1" />
+          <entry key="sln" value="1" />
+          <entry key="txt" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="122" />
+          <entry key="Csproj" value="1" />
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Solution File" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="26914" />
+          <entry key="txt" value="195" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="26914" />
+          <entry key="PLAIN_TEXT" value="195" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StudentsManagementApp/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
+              <folding>
+                <marker date="1548226932837" expanded="true" signature="6:453" ph="..." />
+                <marker date="1548226932837" expanded="true" signature="486:2486" ph="{...}" />
+                <marker date="1548226932837" expanded="true" signature="505:618" ph="{...}" />
+                <marker date="1548226932837" expanded="true" signature="554:612" ph="{...}" />
+                <marker date="1548226932837" expanded="true" signature="647:757" ph="{...}" />
+                <marker date="1548226932837" expanded="true" signature="692:751" ph="{...}" />
+                <marker date="1548226932837" expanded="true" signature="796:2484" ph="{...}" />
+                <marker date="1548226932837" expanded="true" signature="811:2116" ph="/* public static void Main(string[] args) ... */" />
+                <marker date="1548226932837" expanded="true" signature="2163:2478" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentsManagementApp/service/GradeService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3648">
+              <caret line="198" selection-start-line="198" selection-end-line="198" />
+              <folding>
+                <marker date="1547546820730" expanded="false" signature="6:232" ph="..." />
+                <marker date="1547546820730" expanded="true" signature="302:7183" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="521:774" ph="/// Constructor for GradeService class ... " />
+                <marker date="1547546820730" expanded="true" signature="957:1028" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="1032:1565" ph="/// Function to add a new grade to the repository ... " />
+                <marker date="1547546820730" expanded="true" signature="1666:2159" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="1777:1885" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="1977:2020" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="2042:2075" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="2163:2424" ph="/// Function to delete a grade from the repository ... " />
+                <marker date="1547546820730" expanded="true" signature="2474:2570" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="2574:2824" ph="/// Function to find a grade in the repository ... " />
+                <marker date="1547546820730" expanded="true" signature="2872:2970" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="2974:3297" ph="/// Function to update  ... " />
+                <marker date="1547546820730" expanded="true" signature="3401:3491" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="3495:3661" ph="/// Function to get all the grades from the repository ... " />
+                <marker date="1547546820730" expanded="true" signature="3704:3741" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="3745:3782" ph="///  ... " />
+                <marker date="1547546820730" expanded="true" signature="3824:4577" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="4071:4500" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="4537:4573" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="4581:4618" ph="///  ... " />
+                <marker date="1547546820730" expanded="true" signature="4661:5053" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="4788:4969" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="5057:5094" ph="///  ... " />
+                <marker date="1547546820730" expanded="true" signature="5129:5989" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="5376:5805" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="5949:5985" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="5996:6097" ph="/// / ... " />
+                <marker date="1547546820730" expanded="true" signature="6154:6304" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="6308:6403" ph="///  ... " />
+                <marker date="1547546820730" expanded="true" signature="6457:6583" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="6587:6686" ph="///  ... " />
+                <marker date="1547546820730" expanded="true" signature="6743:6887" ph="{...}" />
+                <marker date="1547546820730" expanded="true" signature="6891:6987" ph="///  ... " />
+                <marker date="1547546820730" expanded="true" signature="7045:7179" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/AbstractRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+              <folding>
+                <marker date="1544823328794" expanded="false" signature="6:138" ph="..." />
+                <marker date="1544823328794" expanded="true" signature="182:1725" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="291:1723" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="390:523" ph="/// Constructor for AbstractRepository class ... " />
+                <marker date="1544823328794" expanded="true" signature="574:640" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="671:819" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="694:765" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="855:886" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="923:1209" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="950:1024" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="1092:1121" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="1245:1443" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="1268:1339" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="1390:1421" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="1482:1720" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="1509:1583" ph="{...}" />
+                <marker date="1544823328794" expanded="true" signature="1641:1670" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/CrudRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1544814855508" expanded="false" signature="6:52" ph="..." />
+                <marker date="1544814855508" expanded="true" signature="100:324" ph="/// CRUD operations repository interface ... " />
+                <marker date="1544814855508" expanded="true" signature="367:1563" ph="{...}" />
+                <marker date="1544814855508" expanded="true" signature="373:586" ph="/// Function to find an element into the repository ... " />
+                <marker date="1544814855508" expanded="true" signature="612:789" ph="/// Function to get all elements of the repository as Enumerable ... " />
+                <marker date="1544814855508" expanded="true" signature="822:1039" ph="/// Function to save an entity to the repository ... " />
+                <marker date="1544814855508" expanded="true" signature="1066:1296" ph="/// Function to delete an entity from the repository ... " />
+                <marker date="1544814855508" expanded="true" signature="1321:1536" ph="/// Function to update an entity from the repository ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/GradeFileRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+              <folding>
+                <marker date="1544825378669" expanded="false" signature="6:124" ph="..." />
+                <marker date="1544825378669" expanded="true" signature="258:1333" ph="{...}" />
+                <marker date="1544825378669" expanded="true" signature="264:489" ph="/// Constructor for GradeFileRepository class ... " />
+                <marker date="1544825378669" expanded="true" signature="613:619" ph="{...}" />
+                <marker date="1544825378669" expanded="true" signature="623:809" ph="/// Function to transform a grade into a string ... " />
+                <marker date="1544825378669" expanded="true" signature="856:949" ph="{...}" />
+                <marker date="1544825378669" expanded="true" signature="953:1149" ph="/// Function to transform a string into a grade ... " />
+                <marker date="1544825378669" expanded="true" signature="1196:1330" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/files/grade.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/files/students.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterGradesByStudIdCmd.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+              <folding>
+                <marker date="1547545559305" expanded="true" signature="6:50" ph="..." />
+                <marker date="1547545559305" expanded="true" signature="155:671" ph="{...}" />
+                <marker date="1547545559305" expanded="true" signature="260:295" ph="{...}" />
+                <marker date="1547545559305" expanded="true" signature="328:668" ph="{...}" />
+                <marker date="1547545559305" expanded="true" signature="340:591" ph="{...}" />
+                <marker date="1547545559305" expanded="true" signature="546:586" ph="{...}" />
+                <marker date="1547545559305" expanded="true" signature="620:664" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/files/homework.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/ConsoleUi.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1406">
+              <caret line="79" column="52" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
+              <folding>
+                <marker date="1547545703104" expanded="false" signature="6:210" ph="..." />
+                <marker date="1547545703104" expanded="true" signature="288:2012" ph="{...}" />
+                <marker date="1547545703104" expanded="true" signature="503:704" ph="/// Constructor for ConsoleUI class ... " />
+                <marker date="1547545703104" expanded="true" signature="828:926" ph="{...}" />
+                <marker date="1547545703104" expanded="true" signature="955:1425" ph="{...}" />
+                <marker date="1547545703104" expanded="true" signature="975:1421" ph="{...}" />
+                <marker date="1547545703104" expanded="true" signature="1039:1415" ph="{...}" />
+                <marker date="1547545703104" expanded="true" signature="1452:1822" ph="{...}" />
+                <marker date="1547545703104" expanded="true" signature="1847:2009" ph="{...}" />
+                <marker date="1547545703104" expanded="true" signature="1926:1952" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/StudnetOrHomeworkNotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/ICommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/IConsole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/StudentConsole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudPrintCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudAddCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudDelCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudUpdCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudFindCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/utils/Utility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/grade/GradeConsole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/grade/gradeCmds/GradePrintCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/grade/gradeCmds/GradeAddCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/ConsoleUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/filter/FilterConsole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/report/ReportConsole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/report/reportCmds/StudentsAvgCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/domain/entities/IHasId.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterByGroupCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterByHwCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp.Tests/HomeworkTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/report/reportCmds/HardestHwCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp.Tests/GradeTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp.Tests/RepoStudentsFileTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/report/reportCmds/StudentsTakingCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterGradesByStudIdCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterGradesByHwIdCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/service/StudentService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/service/HomeworkService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/service/GradeService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/homework/homeworkCmds/HomeworkExtendCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/domain/entities/Student.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/domain/entities/Homework.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/domain/entities/Grade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/homework/homeworkCmds/HomeworkPrintCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/homework/homeworkCmds/HomeworkAddCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/ui/homework/HomeworkConsole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/IValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/ValidatorException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/IllegalArgumentException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/StudentValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/HomeworkValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/GradeValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/repository/CrudRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/repository/AbstractRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/repository/StorageRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/repository/StudentFileRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/repository/HomeworkFileRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp/repository/GradeFileRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StudentsManagementApp.Tests/StudentTest.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/StudentsManagementApp.Tests/HomeworkTest.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp.Tests/GradeTest.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp.Tests/RepoStudentFileTest.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/repository/AbstractRepository.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp.Tests/files/studentsFile.txt" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp.Tests/RepoStudentsFileTest.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/repository/StudentFileRepository.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/repository/GradeFileRepository.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/repository/HomeworkFileRepository.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/service/StudentService.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/domain/validator/StudnetOrHomeworkNotFoundException.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/ICommand.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/IConsole.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/student/StudentConsole.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudPrintCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/domain/validator/StudentValidator.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/domain/validator/HomeworkValidator.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/domain/validator/GradeValidator.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudDelCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudAddCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudUpdCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudFindCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/homework/homeworkCmds/HomeworkPrintCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/homework/homeworkCmds/HomeworkAddCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/utils/utility.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/service/HomeworkService.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/homework/homeworkCmds/HomeworkExtendCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/homework/HomeworkConsole.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/grade/GradeConsole.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/grade/gradeCmds/GradePrintCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/ConsoleUI.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/domain/entities/Grade.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/grade/gradeCmds/GradeAddCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/utils/Utility.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/filter/FilterByHwCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/StudentsAvgCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/report/ReportConsole.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/report/reportCmds/HardestHwCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/report/reportCmds/StudentsAvgCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/report/reportCmds/StudentsTakingCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterGradesByIdCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/filter/FilterConsole.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterByGroupCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterByHwCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterGradesByHwIdCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterGradesByStudIdCmd.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/ui/ConsoleUi.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/repository/files/students.txt" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/repository/files/grade.txt" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/service/GradeService.cs" />
+        <option value="$PROJECT_DIR$/StudentsManagementApp/Program.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="683" />
+    <option name="y" value="25" />
+    <option name="width" value="683" />
+    <option name="height" value="743" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="repository" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="repository" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="files" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="service" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ui" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ui" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="filter" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ui" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="filter" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="filterCmds" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ui" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="grade" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ui" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="grade" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="gradeCmds" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ui" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="report" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ui" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="report" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="reportCmds" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ui" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="student" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ui" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="student" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="studentCmds" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="StudentsManagementApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="utils" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp/ui/student/StudentConsole.cs" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/StudentsManagementApp/bin/Debug/netcoreapp2.1/StudentsManagementApp.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/StudentsManagementApp" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/StudentsManagementApp/StudentsManagementApp.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <browser url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0905460e-e4d6-4eff-a38e-7a3cfdb7da8f" name="Default Changelist" comment="" />
+      <created>1544782254592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544782254592</updated>
+      <workItem from="1544782260746" duration="1610000" />
+      <workItem from="1544783952997" duration="698000" />
+      <workItem from="1544785428268" duration="2776000" />
+      <workItem from="1544812379968" duration="12573000" />
+      <workItem from="1544874255474" duration="5902000" />
+      <workItem from="1544960404170" duration="93000" />
+      <workItem from="1545086199158" duration="1017000" />
+      <workItem from="1545087501703" duration="1884000" />
+      <workItem from="1545126333922" duration="2694000" />
+      <workItem from="1547541784587" duration="6484000" />
+      <workItem from="1548223716881" duration="2382000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="38113000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="683" y="25" width="683" height="743" extended-state="4" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18681319" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6699187" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3284553" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.40162602" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.9089431" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.3284553" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32954547" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/StudentsManagementApp/ui/student/StudentConsole.cs</url>
+          <line>24</line>
+          <properties documentPath="$PROJECT_DIR$/StudentsManagementApp/ui/student/StudentConsole.cs" initialLine="24">
+            <startOffsets>
+              <option value="480" />
+            </startOffsets>
+            <endOffsets>
+              <option value="492" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp.Tests/HomeworkTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp.Tests/GradeTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp.Tests/StudentTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp.Tests/RepoStudentsFileTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/HomeworkFileRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp.Tests/files/studentsFile.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/StorageRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/StudentFileRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/ValidatorException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/ICommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudFindCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/StudentValidator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/HomeworkValidator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/GradeValidator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/domain/validator/StudnetOrHomeworkNotFoundException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudUpdCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudDelCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/homework/homeworkCmds/HomeworkPrintCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/homework/HomeworkConsole.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/grade/gradeCmds/GradePrintCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/homework/homeworkCmds/HomeworkAddCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/StudentConsole.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="52" column="13" selection-start-line="22" selection-start-column="12" selection-end-line="52" selection-end-column="13" />
+          <folding>
+            <marker date="1544878933744" expanded="false" signature="6:102" ph="..." />
+            <marker date="1544878933744" expanded="true" signature="188:1697" ph="{...}" />
+            <marker date="1544878933744" expanded="true" signature="235:356" ph="/// Constructor for StudentConsole class ... " />
+            <marker date="1544878933744" expanded="true" signature="400:423" ph="{...}" />
+            <marker date="1544878933744" expanded="true" signature="446:1083" ph="{...}" />
+            <marker date="1544878933744" expanded="true" signature="470:1079" ph="{...}" />
+            <marker date="1544878933744" expanded="true" signature="565:1047" ph="{...}" />
+            <marker date="1544878933744" expanded="true" signature="1110:1507" ph="{...}" />
+            <marker date="1544878933744" expanded="true" signature="1532:1694" ph="{...}" />
+            <marker date="1544878933744" expanded="true" signature="1611:1637" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudPrintCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/homework/homeworkCmds/HomeworkExtendCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/service/HomeworkService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="94" column="41" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/domain/entities/Grade.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/utils/Utility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/domain/entities/Homework.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/IConsole.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/grade/GradeConsole.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="66" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/service/StudentService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="69" column="66" selection-start-line="69" selection-start-column="66" selection-end-line="69" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/student/studentCmds/StudAddCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/report/reportCmds/HardestHwCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/report/reportCmds/StudentsAvgCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/report/reportCmds/StudentsTakingCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/report/ReportConsole.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/filter/FilterConsole.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/grade/gradeCmds/GradeAddCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterByGroupCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterByHwCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterGradesByHwIdCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/service/GradeService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3648">
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
+          <folding>
+            <marker date="1547546820730" expanded="false" signature="6:232" ph="..." />
+            <marker date="1547546820730" expanded="true" signature="302:7183" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="521:774" ph="/// Constructor for GradeService class ... " />
+            <marker date="1547546820730" expanded="true" signature="957:1028" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="1032:1565" ph="/// Function to add a new grade to the repository ... " />
+            <marker date="1547546820730" expanded="true" signature="1666:2159" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="1777:1885" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="1977:2020" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="2042:2075" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="2163:2424" ph="/// Function to delete a grade from the repository ... " />
+            <marker date="1547546820730" expanded="true" signature="2474:2570" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="2574:2824" ph="/// Function to find a grade in the repository ... " />
+            <marker date="1547546820730" expanded="true" signature="2872:2970" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="2974:3297" ph="/// Function to update  ... " />
+            <marker date="1547546820730" expanded="true" signature="3401:3491" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="3495:3661" ph="/// Function to get all the grades from the repository ... " />
+            <marker date="1547546820730" expanded="true" signature="3704:3741" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="3745:3782" ph="///  ... " />
+            <marker date="1547546820730" expanded="true" signature="3824:4577" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="4071:4500" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="4537:4573" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="4581:4618" ph="///  ... " />
+            <marker date="1547546820730" expanded="true" signature="4661:5053" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="4788:4969" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="5057:5094" ph="///  ... " />
+            <marker date="1547546820730" expanded="true" signature="5129:5989" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="5376:5805" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="5949:5985" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="5996:6097" ph="/// / ... " />
+            <marker date="1547546820730" expanded="true" signature="6154:6304" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="6308:6403" ph="///  ... " />
+            <marker date="1547546820730" expanded="true" signature="6457:6583" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="6587:6686" ph="///  ... " />
+            <marker date="1547546820730" expanded="true" signature="6743:6887" ph="{...}" />
+            <marker date="1547546820730" expanded="true" signature="6891:6987" ph="///  ... " />
+            <marker date="1547546820730" expanded="true" signature="7045:7179" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/CrudRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1544814855508" expanded="false" signature="6:52" ph="..." />
+            <marker date="1544814855508" expanded="true" signature="100:324" ph="/// CRUD operations repository interface ... " />
+            <marker date="1544814855508" expanded="true" signature="367:1563" ph="{...}" />
+            <marker date="1544814855508" expanded="true" signature="373:586" ph="/// Function to find an element into the repository ... " />
+            <marker date="1544814855508" expanded="true" signature="612:789" ph="/// Function to get all elements of the repository as Enumerable ... " />
+            <marker date="1544814855508" expanded="true" signature="822:1039" ph="/// Function to save an entity to the repository ... " />
+            <marker date="1544814855508" expanded="true" signature="1066:1296" ph="/// Function to delete an entity from the repository ... " />
+            <marker date="1544814855508" expanded="true" signature="1321:1536" ph="/// Function to update an entity from the repository ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/GradeFileRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <marker date="1544825378669" expanded="false" signature="6:124" ph="..." />
+            <marker date="1544825378669" expanded="true" signature="258:1333" ph="{...}" />
+            <marker date="1544825378669" expanded="true" signature="264:489" ph="/// Constructor for GradeFileRepository class ... " />
+            <marker date="1544825378669" expanded="true" signature="613:619" ph="{...}" />
+            <marker date="1544825378669" expanded="true" signature="623:809" ph="/// Function to transform a grade into a string ... " />
+            <marker date="1544825378669" expanded="true" signature="856:949" ph="{...}" />
+            <marker date="1544825378669" expanded="true" signature="953:1149" ph="/// Function to transform a string into a grade ... " />
+            <marker date="1544825378669" expanded="true" signature="1196:1330" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/files/grade.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/filter/filterCmds/FilterGradesByStudIdCmd.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <marker date="1547545559305" expanded="true" signature="6:50" ph="..." />
+            <marker date="1547545559305" expanded="true" signature="155:671" ph="{...}" />
+            <marker date="1547545559305" expanded="true" signature="260:295" ph="{...}" />
+            <marker date="1547545559305" expanded="true" signature="328:668" ph="{...}" />
+            <marker date="1547545559305" expanded="true" signature="340:591" ph="{...}" />
+            <marker date="1547545559305" expanded="true" signature="546:586" ph="{...}" />
+            <marker date="1547545559305" expanded="true" signature="620:664" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/files/homework.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/ui/ConsoleUi.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="79" column="52" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
+          <folding>
+            <marker date="1547545703104" expanded="false" signature="6:210" ph="..." />
+            <marker date="1547545703104" expanded="true" signature="288:2012" ph="{...}" />
+            <marker date="1547545703104" expanded="true" signature="503:704" ph="/// Constructor for ConsoleUI class ... " />
+            <marker date="1547545703104" expanded="true" signature="828:926" ph="{...}" />
+            <marker date="1547545703104" expanded="true" signature="955:1425" ph="{...}" />
+            <marker date="1547545703104" expanded="true" signature="975:1421" ph="{...}" />
+            <marker date="1547545703104" expanded="true" signature="1039:1415" ph="{...}" />
+            <marker date="1547545703104" expanded="true" signature="1452:1822" ph="{...}" />
+            <marker date="1547545703104" expanded="true" signature="1847:2009" ph="{...}" />
+            <marker date="1547545703104" expanded="true" signature="1926:1952" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/files/students.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/repository/AbstractRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+          <folding>
+            <marker date="1544823328794" expanded="false" signature="6:138" ph="..." />
+            <marker date="1544823328794" expanded="true" signature="182:1725" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="291:1723" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="390:523" ph="/// Constructor for AbstractRepository class ... " />
+            <marker date="1544823328794" expanded="true" signature="574:640" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="671:819" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="694:765" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="855:886" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="923:1209" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="950:1024" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="1092:1121" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="1245:1443" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="1268:1339" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="1390:1421" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="1482:1720" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="1509:1583" ph="{...}" />
+            <marker date="1544823328794" expanded="true" signature="1641:1670" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentsManagementApp/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="69" column="53" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
+          <folding>
+            <marker date="1548226932837" expanded="true" signature="6:453" ph="..." />
+            <marker date="1548226932837" expanded="true" signature="486:2486" ph="{...}" />
+            <marker date="1548226932837" expanded="true" signature="505:618" ph="{...}" />
+            <marker date="1548226932837" expanded="true" signature="554:612" ph="{...}" />
+            <marker date="1548226932837" expanded="true" signature="647:757" ph="{...}" />
+            <marker date="1548226932837" expanded="true" signature="692:751" ph="{...}" />
+            <marker date="1548226932837" expanded="true" signature="796:2484" ph="{...}" />
+            <marker date="1548226932837" expanded="true" signature="811:2116" ph="/* public static void Main(string[] args) ... */" />
+            <marker date="1548226932837" expanded="true" signature="2163:2478" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

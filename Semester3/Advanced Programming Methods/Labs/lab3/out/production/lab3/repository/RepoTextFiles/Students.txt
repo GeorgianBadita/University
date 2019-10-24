@@ -1,0 +1,4 @@
+1|Badita|221|bmir2236@scs.ubbcluj.ro
+2|Bacotiu|221|bmoi1234@scs.ubbcluj.ro
+3|Antin|221|amir3456@scs.ubbcluj.ro
+6|Cristian Nita|215|ncir2145@scs.ubbcluj.ro

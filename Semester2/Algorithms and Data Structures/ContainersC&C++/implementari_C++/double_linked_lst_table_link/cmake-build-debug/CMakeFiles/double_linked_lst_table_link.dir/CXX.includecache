@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/double_linked_lst_table_link/DLinkedList.cpp
+iostream
+-
+DLinkedList.h
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/double_linked_lst_table_link/DLinkedList.h
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/double_linked_lst_table_link/DLinkedList.h
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/double_linked_lst_table_link/main.cpp
+iostream
+-
+DLinkedList.h
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/double_linked_lst_table_link/DLinkedList.h
+

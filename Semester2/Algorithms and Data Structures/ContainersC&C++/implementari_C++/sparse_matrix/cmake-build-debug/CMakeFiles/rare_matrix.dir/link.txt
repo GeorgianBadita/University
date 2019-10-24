@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/rare_matrix.dir/main.cpp.o CMakeFiles/rare_matrix.dir/RareMatrix.cpp.o  -o rare_matrix 

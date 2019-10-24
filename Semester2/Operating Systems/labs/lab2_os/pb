@@ -1,0 +1,11 @@
+ Sa se scrie un program C care citeste o matrice dintr-un fisier text, o scrie intr-un fisier binar, o citeste inapoi din fisierul binar si afiseaza suma tuturor elementelor
+Formatul fisierului text lungime-linie intreg intreg intreg ...
+			Ex1: 4 1 1 1 1 2 2 2 2 3 3 3 3
+			Ex2: 4 1 1 1 1
+
+Formatul fisierului binar:
+-primul octet (unsigned char) este lungimea, 
+	      urmat de intregi (int)    
+
+
+Veti avea nevoie sa folositi functia realloc()

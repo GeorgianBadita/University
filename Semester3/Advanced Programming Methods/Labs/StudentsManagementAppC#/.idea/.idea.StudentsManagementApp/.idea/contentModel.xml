@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2018.2/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.2/system/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_StudentsManagementApp.-1396905047.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="StudentsManagementApp" t="IncludeRecursive">
+        <e p="Program.cs" t="Include" />
+        <e p="StudentsManagementApp.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="domain" t="Include">
+          <e p="entities" t="Include">
+            <e p="Grade.cs" t="Include" />
+            <e p="Homework.cs" t="Include" />
+            <e p="IHasId.cs" t="Include" />
+            <e p="Student.cs" t="Include" />
+          </e>
+          <e p="validator" t="Include">
+            <e p="GradeValidator.cs" t="Include" />
+            <e p="HomeworkValidator.cs" t="Include" />
+            <e p="IValidator.cs" t="Include" />
+            <e p="IllegalArgumentException.cs" t="Include" />
+            <e p="StudentValidator.cs" t="Include" />
+            <e p="StudnetOrHomeworkNotFoundException.cs" t="Include" />
+            <e p="ValidatorException.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="StudentsManagementApp.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="repository" t="Include">
+          <e p="AbstractRepository.cs" t="Include" />
+          <e p="CrudRepository.cs" t="Include" />
+          <e p="GradeFileRepository.cs" t="Include" />
+          <e p="HomeworkFileRepository.cs" t="Include" />
+          <e p="StorageRepository.cs" t="Include" />
+          <e p="StudentFileRepository.cs" t="Include" />
+          <e p="files" t="Include">
+            <e p="grade.txt" t="Include" />
+            <e p="homework.txt" t="Include" />
+            <e p="students.txt" t="Include" />
+          </e>
+        </e>
+        <e p="service" t="Include">
+          <e p="GradeService.cs" t="Include" />
+          <e p="HomeworkService.cs" t="Include" />
+          <e p="StudentService.cs" t="Include" />
+        </e>
+        <e p="ui" t="Include">
+          <e p="ConsoleUi.cs" t="Include" />
+          <e p="ICommand.cs" t="Include" />
+          <e p="IConsole.cs" t="Include" />
+          <e p="filter" t="Include">
+            <e p="FilterConsole.cs" t="Include" />
+            <e p="filterCmds" t="Include">
+              <e p="FilterByGroupCmd.cs" t="Include" />
+              <e p="FilterByHwCmd.cs" t="Include" />
+              <e p="FilterGradesByHwIdCmd.cs" t="Include" />
+              <e p="FilterGradesByStudIdCmd.cs" t="Include" />
+            </e>
+          </e>
+          <e p="grade" t="Include">
+            <e p="GradeConsole.cs" t="Include" />
+            <e p="gradeCmds" t="Include">
+              <e p="GradeAddCmd.cs" t="Include" />
+              <e p="GradePrintCmd.cs" t="Include" />
+            </e>
+          </e>
+          <e p="homework" t="Include">
+            <e p="HomeworkConsole.cs" t="Include" />
+            <e p="homeworkCmds" t="Include">
+              <e p="HomeworkAddCmd.cs" t="Include" />
+              <e p="HomeworkExtendCmd.cs" t="Include" />
+              <e p="HomeworkPrintCmd.cs" t="Include" />
+            </e>
+          </e>
+          <e p="report" t="Include">
+            <e p="ReportConsole.cs" t="Include" />
+            <e p="reportCmds" t="Include">
+              <e p="HardestHwCmd.cs" t="Include" />
+              <e p="StudentsAvgCmd.cs" t="Include" />
+              <e p="StudentsTakingCmd.cs" t="Include" />
+            </e>
+          </e>
+          <e p="student" t="Include">
+            <e p="StudentConsole.cs" t="Include" />
+            <e p="studentCmds" t="Include">
+              <e p="StudAddCmd.cs" t="Include" />
+              <e p="StudDelCmd.cs" t="Include" />
+              <e p="StudFindCmd.cs" t="Include" />
+              <e p="StudPrintCmd.cs" t="Include" />
+              <e p="StudUpdCmd.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="utils" t="Include">
+          <e p="Utility.cs" t="Include" />
+        </e>
+      </e>
+      <e p="StudentsManagementApp.Tests" t="IncludeRecursive">
+        <e p="GradeTest.cs" t="Include" />
+        <e p="HomeworkTest.cs" t="Include" />
+        <e p="RepoStudentsFileTest.cs" t="Include" />
+        <e p="StudentTest.cs" t="Include" />
+        <e p="StudentsManagementApp.Tests.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="files" t="Include">
+          <e p="studentsFile.txt" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="StudentsManagementApp.Tests.AssemblyInfo.cs" t="Include" />
+              <e p="StudentsManagementApp.Tests.Program.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="StudentsManagementApp.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
