@@ -1,4 +1,0 @@
-4|Anton Mihai|221|amir2152@scs.ubbcluj.ro
-1|Geo|221|geo.badita@gmail.com
-2|Gabi Bacotiu|222|gbac@gmail.com
-3|Cosmin|223|cos@gmail.com

@@ -1,1 +1,0 @@
-1. Implement a C program that takes as command line arguemnt a command and its arguments. The command should run forever, and if it stops the program should be reopened.

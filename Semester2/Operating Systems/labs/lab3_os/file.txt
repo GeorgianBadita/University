@@ -1,3 +1,0 @@
-  PID TTY      STAT   TIME COMMAND
- 7443 pts/1    R+     0:00 ps -rf
- 1410 tty2     Rl+    8:31 /usr/bin/gnome-shell

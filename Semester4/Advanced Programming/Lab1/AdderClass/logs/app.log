@@ -1,8 +1,0 @@
-28 Feb 2019 12:36:46,622 [Test worker] AdderClassTest 12 add - Enter params(Entry add!)
-28 Feb 2019 12:36:46,623 [Test worker] AdderClassTest 16 add - Exit
-28 Feb 2019 12:41:37,840 [Test worker] AdderClassTest 12 add - Enter params(Entry add!!)
-28 Feb 2019 12:41:37,842 [Test worker] AdderClassTest 16 add - Exit
-28 Feb 2019 12:43:35,682 [Test worker] AdderClassTest 12 add - Enter params(Entry add!!)
-28 Feb 2019 12:43:35,684 [Test worker] AdderClassTest 16 add - Exit
-28 Feb 2019 12:53:04,016 [Test worker] AdderClassTest 12 add - Enter params(Entry add!!)
-28 Feb 2019 12:53:04,018 [Test worker] AdderClassTest 16 add - Exit with(Exit add!!)
