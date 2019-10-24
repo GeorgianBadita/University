@@ -1,0 +1,10 @@
+C:\Users\georg\Desktop\An2_sem2\SGBD\Lab1_profa\Lab1_profa\bin\Debug\Lab1_profa.exe.config
+C:\Users\georg\Desktop\An2_sem2\SGBD\Lab1_profa\Lab1_profa\bin\Debug\Lab1_profa.exe
+C:\Users\georg\Desktop\An2_sem2\SGBD\Lab1_profa\Lab1_profa\bin\Debug\Lab1_profa.pdb
+C:\Users\georg\Desktop\An2_sem2\SGBD\Lab1_profa\Lab1_profa\obj\Debug\Lab1_profa.csprojAssemblyReference.cache
+C:\Users\georg\Desktop\An2_sem2\SGBD\Lab1_profa\Lab1_profa\obj\Debug\Lab1_profa.Form1.resources
+C:\Users\georg\Desktop\An2_sem2\SGBD\Lab1_profa\Lab1_profa\obj\Debug\Lab1_profa.Properties.Resources.resources
+C:\Users\georg\Desktop\An2_sem2\SGBD\Lab1_profa\Lab1_profa\obj\Debug\Lab1_profa.csproj.GenerateResource.cache
+C:\Users\georg\Desktop\An2_sem2\SGBD\Lab1_profa\Lab1_profa\obj\Debug\Lab1_profa.csproj.CoreCompileInputs.cache
+C:\Users\georg\Desktop\An2_sem2\SGBD\Lab1_profa\Lab1_profa\obj\Debug\Lab1_profa.exe
+C:\Users\georg\Desktop\An2_sem2\SGBD\Lab1_profa\Lab1_profa\obj\Debug\Lab1_profa.pdb

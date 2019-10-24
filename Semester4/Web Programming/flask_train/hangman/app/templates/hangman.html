@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+</head>
+<body>
+
+    <h3 id="word">
+    </h3>
+    
+    Letter: <input type="text" name="letter" id="letter">
+    <button onclick="check()">Send</button>
+    <h3 id="counter"></h3>
+    <script>
+      $(document).ready(get_word());
+
+      function get_word() {
+          $.post("/").done(function (data) {
+              data = JSON.parse(data);
+              $("#word").html("Your word: " + data["word"] + "<br> Number of attempts: 0");
+              window.counter = 0;
+              create_counter();
+          })
+      }
+
+      function check() {
+
+          $.post("/check", {letter: $("#letter").val()})
+              .done(function (data) {
+                  console.log(data);
+                  data = JSON.parse(data);
+                  $("#word").html("Your word: " + data["word"] + "<br> Number of attempts: " + data["attempts"]);
+                  if(data['done'] === 1){
+                      get_word();
+                  }
+
+              })
+      }
+      
+      function create_counter() {
+          $("#counter").html("Your time: " + window.counter.toString());
+          window.counter += 1;
+          setTimeout(create_counter, 1000);
+      }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>upload</title>
+</head>
+<body>
+
+    {% for message in get_flashed_messages() %}
+        <div class="flashed">{{ message }} </div>
+    {% endfor %}
+    <form method="POST" enctype="multipart/form-data">
+        <p>Description: <input type="text" name="description"></p>
+        <p>Photo: <input type="file" name="photo"></p>
+        <p><input type="submit" value="Upload"></p>
+    </form>
+</body>
+</html>

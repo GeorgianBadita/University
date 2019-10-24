@@ -1,0 +1,1003 @@
+30 Apr 2019 17:19:06,212 INFO  org.springframework.context.support.AbstractApplicationContext 589 prepareRefresh - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14fc5f04: startup date [Tue Apr 30 17:19:06 EEST 2019]; root of context hierarchy
+30 Apr 2019 17:19:06,243 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader 316 loadBeanDefinitions - Loading XML bean definitions from class path resource [FestivalSpringXML.xml]
+30 Apr 2019 17:19:06,414 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:19:06,420 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:19:06,422 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:19:06,424 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:19:06,426 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:19:36,405 INFO  org.springframework.context.support.AbstractApplicationContext 589 prepareRefresh - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14fc5f04: startup date [Tue Apr 30 17:19:36 EEST 2019]; root of context hierarchy
+30 Apr 2019 17:19:36,444 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader 316 loadBeanDefinitions - Loading XML bean definitions from class path resource [FestivalSpringXML.xml]
+30 Apr 2019 17:19:36,623 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:19:36,629 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:19:36,631 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:19:36,634 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:19:36,636 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:22:58,170 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:22:58,172 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:22:58,173 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:22:58,175 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:22:58,176 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:24:48,698 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:24:48,701 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:24:48,702 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:24:48,704 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:24:48,705 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:25:00,525 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:25:00,527 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:25:00,529 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:25:00,530 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 17:25:00,530 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 18:30:35,907 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 18:30:35,910 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 18:30:35,911 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 18:30:35,912 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 18:30:35,913 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 19:23:38,691 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 19:23:38,695 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 19:23:38,696 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 19:23:38,697 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 19:23:38,698 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 19:23:55,896 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+30 Apr 2019 19:23:55,900 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+30 Apr 2019 19:23:55,900 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+30 Apr 2019 19:23:55,905 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+30 Apr 2019 22:28:11,675 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 22:28:11,682 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 22:28:11,682 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 22:28:11,683 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 22:28:11,684 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 22:28:36,052 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+30 Apr 2019 22:28:36,063 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+30 Apr 2019 22:28:36,063 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+30 Apr 2019 22:28:36,074 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+30 Apr 2019 22:29:48,850 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 22:29:48,852 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 22:29:48,853 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 22:29:48,854 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 22:29:48,855 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 22:30:04,343 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+30 Apr 2019 22:30:04,354 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+30 Apr 2019 22:30:04,355 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+30 Apr 2019 22:30:04,365 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+30 Apr 2019 23:01:11,986 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 23:01:11,990 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 23:01:11,991 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 23:01:11,992 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 23:01:11,993 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 23:01:39,777 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+30 Apr 2019 23:01:39,789 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+30 Apr 2019 23:01:39,789 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+30 Apr 2019 23:01:39,799 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+30 Apr 2019 23:27:08,058 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 23:27:08,061 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 23:27:08,061 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 23:27:08,062 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 23:27:08,063 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+30 Apr 2019 23:27:21,266 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+30 Apr 2019 23:27:21,277 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+30 Apr 2019 23:27:21,278 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+30 Apr 2019 23:27:21,288 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:03:45,830 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:03:45,833 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:03:45,834 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:03:45,835 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:03:45,836 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:04:06,723 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:04:06,727 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:04:06,727 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:04:06,736 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:04:07,898 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:04:07,898 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:04:07,898 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:04:07,899 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:04:07,913 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:04:07,914 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:04:07,914 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:04:07,914 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:04:07,921 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:04:07,921 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:04:07,922 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:04:07,922 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:14:23,669 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:14:23,672 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:14:23,673 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:14:23,674 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:14:23,675 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:16:24,672 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:16:24,676 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:16:24,678 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:16:24,679 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:16:24,681 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:16:32,937 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:16:32,941 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:16:32,941 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:16:32,946 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:17:24,674 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:17:24,678 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:17:24,679 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:17:24,680 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:17:24,681 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:17:32,804 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:17:32,808 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:17:32,808 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:17:32,812 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:17:33,953 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:17:33,954 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:17:33,955 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:17:33,955 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:17:33,973 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:17:33,974 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:17:33,974 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:17:33,974 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:17:33,981 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:17:33,981 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:17:33,982 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:17:33,982 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:18:03,485 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:18:03,488 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:18:03,489 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:18:03,490 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:18:03,491 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:18:31,093 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:18:31,096 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:18:31,097 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:18:31,097 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:18:31,098 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:18:40,640 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:18:40,644 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:18:40,644 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:18:40,649 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:18:41,788 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:18:41,789 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:18:41,790 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:18:41,790 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:18:41,808 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:18:41,809 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:18:41,809 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:18:41,809 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:18:41,817 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 12:18:41,817 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 12:18:41,817 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 12:18:41,817 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 12:59:32,528 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:32,533 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:32,535 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:32,536 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:32,537 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:35,466 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:35,469 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:35,470 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:35,471 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:35,472 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:45,180 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:45,182 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:45,183 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:45,184 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 12:59:45,185 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:00:01,648 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:00:01,653 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:00:01,653 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:00:01,658 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:00:02,831 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:00:02,831 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:00:02,832 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:00:02,833 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:00:02,850 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:00:02,850 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:00:02,850 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:00:02,850 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:00:02,857 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:00:02,858 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:00:02,858 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:00:02,858 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:05:33,536 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:05:33,538 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:05:33,539 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:05:33,540 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:05:33,540 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:05:47,006 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:05:47,011 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:05:47,012 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:05:47,017 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:05:48,167 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:05:48,167 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:05:48,168 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:05:48,168 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:05:48,187 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:05:48,188 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:05:48,188 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:05:48,188 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:05:48,199 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:05:48,199 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:05:48,200 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:05:48,200 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:08:20,265 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:08:20,267 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:08:20,268 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:08:20,269 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:08:20,269 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:08:28,272 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:08:28,276 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:08:28,276 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:08:28,280 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:08:29,421 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:08:29,422 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:08:29,423 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:08:29,423 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:08:29,439 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:08:29,439 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:08:29,439 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:08:29,439 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:08:29,446 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:08:29,447 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:08:29,447 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:08:29,447 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:15:32,114 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:15:32,117 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:15:32,118 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:15:32,119 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:15:32,120 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:15:40,872 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:15:40,876 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:15:40,877 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:15:40,881 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:15:42,034 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:15:42,034 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:15:42,035 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:15:42,035 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:15:42,054 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:15:42,054 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:15:42,055 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:15:42,055 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:15:42,064 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:15:42,065 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:15:42,065 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:15:42,065 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:15:48,290 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:15:48,291 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:15:48,291 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:15:48,291 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:17:43,929 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:17:43,932 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:17:43,933 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:17:43,933 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:17:43,934 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:17:51,966 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:17:51,972 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:17:51,972 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:17:51,977 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:17:53,124 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:17:53,124 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:17:53,125 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:17:53,125 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:17:53,140 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:17:53,140 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:17:53,140 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:17:53,140 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:17:53,146 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:17:53,146 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:17:53,147 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:17:53,147 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:18:04,861 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:18:04,861 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:18:04,861 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:18:04,862 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:25:50,978 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:25:50,981 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:25:50,982 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:25:50,983 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:25:50,984 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:26:03,010 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:26:03,015 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:26:03,015 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:26:03,020 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:26:04,163 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:26:04,163 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:26:04,164 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:26:04,164 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:26:04,184 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:26:04,184 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:26:04,184 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:26:04,184 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:26:04,194 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:26:04,194 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:26:04,194 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:26:04,194 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:26:09,576 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:26:09,577 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:26:09,578 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:26:09,579 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:57:24,032 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:57:24,035 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:57:24,036 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:57:24,037 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:57:24,037 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 13:57:52,603 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:57:52,608 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:57:52,608 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:57:52,612 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:57:53,761 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:57:53,766 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:57:53,766 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:57:53,766 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:57:53,782 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:57:53,782 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:57:53,782 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:57:53,783 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 13:57:53,791 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 13:57:53,791 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 13:57:53,791 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 13:57:53,791 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:01:07,963 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:01:07,965 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:01:07,966 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:01:07,967 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:01:07,968 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:10,270 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:10,273 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:10,273 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:10,274 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:10,275 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:15,854 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:15,857 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:15,858 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:15,858 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:15,860 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:46,728 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:46,731 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:46,731 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:46,732 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:02:46,733 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:10:25,482 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:10:25,485 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:10:25,487 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:10:25,489 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:10:25,490 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:12:30,227 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:12:30,230 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:12:30,231 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:12:30,232 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:12:30,232 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:15:45,027 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:15:45,030 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:15:45,031 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:15:45,033 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:15:45,034 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:15:52,533 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:15:52,536 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:15:52,537 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:15:52,537 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:15:52,538 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:16:00,396 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:16:00,401 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:16:00,401 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:16:00,406 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:16:01,549 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:16:01,550 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:16:01,551 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:16:01,551 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:16:01,568 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:16:01,568 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:16:01,569 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:16:01,569 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:16:01,578 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:16:01,578 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:16:01,578 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:16:01,578 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:17:31,910 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:17:31,913 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:17:31,914 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:17:31,915 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:17:31,916 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:17:58,511 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:17:58,516 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:17:58,516 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:17:58,523 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:21:58,042 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:21:58,044 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:21:58,045 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:21:58,046 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:21:58,047 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:22:10,620 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:22:10,625 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:22:10,626 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:22:10,630 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:22:11,809 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:22:11,809 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:22:11,809 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:22:11,810 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:22:11,827 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:22:11,827 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:22:11,827 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:22:11,827 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:22:11,835 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:22:11,835 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:22:11,836 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:22:11,836 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:22:28,266 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:22:28,269 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:22:28,270 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:22:28,271 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:22:28,272 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:22:36,014 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:22:36,019 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:22:36,020 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:22:36,024 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:22:37,174 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:22:37,175 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:22:37,175 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:22:37,176 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:22:37,198 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:22:37,198 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:22:37,199 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:22:37,199 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:22:37,205 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:22:37,205 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:22:37,206 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:22:37,206 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:22:49,611 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:22:49,612 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:22:49,612 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:22:49,612 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:39:36,257 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:39:36,261 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:39:36,262 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:39:36,263 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:39:36,263 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:40:02,003 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:40:02,008 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:40:02,008 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:40:02,014 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:40:03,180 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:40:03,180 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:40:03,180 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:40:03,181 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:40:03,194 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:40:03,195 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:40:03,195 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:40:03,195 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:40:03,202 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:40:03,202 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:40:03,203 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:40:03,203 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:40:08,380 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:40:08,381 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:40:08,381 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:40:08,382 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:40:28,990 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:40:28,993 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:40:28,994 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:40:28,995 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:40:28,996 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:40:49,321 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:40:49,325 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:40:49,326 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:40:49,330 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:40:50,485 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:40:50,485 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:40:50,485 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:40:50,485 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:40:50,500 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:40:50,501 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:40:50,501 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:40:50,501 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:40:50,510 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:40:50,510 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:40:50,511 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:40:50,511 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:41:03,774 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:41:03,775 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:41:03,775 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:41:03,776 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:46:06,626 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:46:06,628 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:46:06,630 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:46:06,630 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:46:06,631 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:46:14,768 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:46:14,773 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:46:14,773 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:46:14,777 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:46:15,943 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:46:15,943 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:46:15,944 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:46:15,944 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:46:15,968 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:46:15,968 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:46:15,969 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:46:15,969 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:46:15,978 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:46:15,978 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:46:15,978 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:46:15,978 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:46:21,045 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:46:21,045 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:46:21,046 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:46:21,046 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:56:34,963 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:56:34,967 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:56:34,968 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:56:34,969 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:56:34,969 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:56:46,921 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:56:46,925 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:56:46,926 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:56:46,932 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:56:48,092 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:56:48,092 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:56:48,092 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:56:48,093 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:56:48,112 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:56:48,112 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:56:48,112 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:56:48,112 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:56:48,120 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:56:48,120 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:56:48,120 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:56:48,120 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:56:53,411 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:56:53,411 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:56:53,412 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:56:53,412 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:58:47,842 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:58:47,845 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:58:47,846 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:58:47,847 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:58:47,849 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 14:59:11,669 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:59:11,673 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:59:11,673 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:59:11,678 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:59:12,834 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:59:12,834 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:59:12,834 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:59:12,835 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:59:12,851 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:59:12,851 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:59:12,851 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:59:12,851 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:59:12,859 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:59:12,859 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:59:12,860 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:59:12,860 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 14:59:21,910 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 14:59:21,911 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 14:59:21,911 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 14:59:21,911 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:02:53,521 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:02:53,523 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:02:53,524 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:02:53,526 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:02:53,528 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:03:05,707 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:03:05,711 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:03:05,712 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:03:05,716 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:03:06,868 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:03:06,869 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:03:06,869 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:03:06,869 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:03:06,892 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:03:06,893 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:03:06,893 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:03:06,893 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:03:06,903 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:03:06,904 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:03:06,904 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:03:06,904 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:03:12,324 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:03:12,324 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:03:12,325 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:03:12,325 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:04:15,717 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:04:15,720 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:04:15,721 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:04:15,722 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:04:15,722 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:07:07,175 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:07:07,179 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:07:07,179 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:07:07,185 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:07:08,338 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:07:08,338 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:07:08,339 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:07:08,339 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:07:08,360 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:07:08,360 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:07:08,360 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:07:08,360 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:07:08,367 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:07:08,367 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:07:08,367 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:07:08,367 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:07:15,459 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:07:15,460 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:07:15,460 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:07:15,460 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:07:37,692 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:07:37,697 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:07:37,700 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:07:37,701 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:07:37,703 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:07:46,152 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:07:46,157 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:07:46,157 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:07:46,162 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:07:47,306 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:07:47,306 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:07:47,306 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:07:47,306 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:07:47,321 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:07:47,322 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:07:47,322 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:07:47,322 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:07:47,331 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:07:47,331 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:07:47,332 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:07:47,332 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:09:43,048 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:09:43,051 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:09:43,052 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:09:43,053 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:09:43,055 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:09:54,782 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:09:54,787 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:09:54,787 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:09:54,793 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:09:55,955 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:09:55,955 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:09:55,956 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:09:55,956 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:09:55,983 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:09:55,983 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:09:55,983 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:09:55,983 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:09:55,992 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:09:55,992 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:09:55,992 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:09:55,992 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:09:59,680 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:09:59,680 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:09:59,680 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:09:59,681 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:10:36,659 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:10:36,662 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:10:36,663 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:10:36,664 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:10:36,665 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:10:49,628 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:10:49,632 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:10:49,633 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:10:49,637 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:10:56,165 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:10:56,166 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:10:56,166 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:10:56,166 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:10:56,195 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:10:56,195 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:10:56,196 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:10:56,196 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:10:56,205 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:10:56,205 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:10:56,205 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:10:56,206 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:11:07,853 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:11:07,858 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:11:07,859 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:11:07,860 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:11:07,861 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 15:11:19,223 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:11:19,227 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:11:19,227 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:11:19,232 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:11:20,380 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:11:20,381 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:11:20,382 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:11:20,383 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:11:20,406 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:11:20,406 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:11:20,406 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:11:20,406 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:11:20,414 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:11:20,414 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:11:20,415 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:11:20,415 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 15:11:32,200 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 15:11:32,200 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 15:11:32,200 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 15:11:32,200 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 16:03:21,734 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:03:21,737 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:03:21,738 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:03:21,739 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:03:21,740 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:03:33,639 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 16:03:33,643 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 16:03:33,643 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 16:03:33,649 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 16:03:34,848 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 16:03:34,849 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 16:03:34,850 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 16:03:34,850 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 16:03:34,876 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 16:03:34,876 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 16:03:34,876 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 16:03:34,876 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 16:03:34,884 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 16:03:34,884 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 16:03:34,885 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 16:03:34,885 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 16:20:31,112 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:20:31,117 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:20:31,118 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:20:31,119 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:20:31,120 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:28:25,535 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:28:25,539 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:28:25,540 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:28:25,541 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:28:25,543 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:30:39,568 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:30:39,572 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:30:39,573 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:30:39,575 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:30:39,576 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:35:54,122 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:35:54,125 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:35:54,126 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:35:54,128 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:35:54,129 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:37:19,361 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:37:19,364 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:37:19,365 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:37:19,367 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:37:19,368 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:38:13,214 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:38:13,217 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:38:13,218 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:38:13,220 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:38:13,221 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:41:00,502 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:41:00,505 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:41:00,506 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:41:00,507 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:41:00,508 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:41:46,012 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:41:46,016 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:41:46,017 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:41:46,018 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:41:46,019 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:43:23,671 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:43:23,674 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:43:23,675 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:43:23,676 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:43:23,677 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:44:02,942 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:44:02,946 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:44:02,947 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:44:02,949 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:44:02,950 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:44:44,057 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:44:44,062 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:44:44,064 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:44:44,067 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:44:44,069 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:06,711 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:06,716 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:06,717 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:06,718 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:06,719 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:24,891 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:24,894 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:24,895 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:24,896 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:24,898 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:42,548 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:42,550 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:42,551 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:42,552 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:42,553 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:51,035 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:51,038 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:51,039 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:51,039 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:47:51,040 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:49:38,198 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:49:38,201 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:49:38,202 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:49:38,203 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:49:38,204 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:50:06,605 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:50:06,608 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:50:06,608 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:50:06,609 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:50:06,610 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:50:22,155 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:50:22,159 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:50:22,160 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:50:22,161 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:50:22,163 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:51:35,856 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:51:35,859 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:51:35,862 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:51:35,863 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:51:35,864 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:52:30,866 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:52:30,870 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:52:30,872 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:52:30,873 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:52:30,874 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:53:39,068 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:53:39,074 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:53:39,076 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:53:39,079 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:53:39,082 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:53:56,788 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:53:56,791 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:53:56,792 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:53:56,795 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:53:56,797 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:21,049 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:21,052 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:21,053 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:21,054 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:21,056 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:34,467 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:34,471 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:34,473 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:34,474 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:34,475 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:59,072 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:59,075 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:59,076 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:59,077 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:55:59,079 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:56:51,751 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:56:51,756 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:56:51,757 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:56:51,759 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:56:51,762 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:56:58,501 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:56:58,503 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:56:58,504 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:56:58,505 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:56:58,506 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:57:58,371 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:57:58,375 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:57:58,376 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:57:58,378 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:57:58,379 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:58:21,840 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:58:21,843 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:58:21,845 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:58:21,846 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:58:21,847 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:58:25,177 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:58:25,180 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:58:25,181 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:58:25,182 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 16:58:25,183 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 17:15:39,302 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 17:15:39,306 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 17:15:39,307 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 17:15:39,309 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 17:15:39,310 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+01 May 2019 17:16:08,734 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 17:16:08,738 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 17:16:08,738 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 17:16:08,744 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 17:16:09,996 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 17:16:09,996 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 17:16:09,996 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 17:16:09,997 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 17:16:10,026 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 17:16:10,026 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 17:16:10,026 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 17:16:10,026 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+01 May 2019 17:16:10,039 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+01 May 2019 17:16:10,039 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+01 May 2019 17:16:10,040 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+01 May 2019 17:16:10,040 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:16:14,520 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:16:14,524 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:16:14,525 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:16:14,526 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:16:14,527 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:16:28,710 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+04 May 2019 13:16:28,714 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+04 May 2019 13:16:28,714 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+04 May 2019 13:16:28,720 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:16:29,919 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+04 May 2019 13:16:29,919 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+04 May 2019 13:16:29,919 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+04 May 2019 13:16:29,920 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:16:29,942 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+04 May 2019 13:16:29,942 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+04 May 2019 13:16:29,942 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+04 May 2019 13:16:29,942 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:16:29,956 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+04 May 2019 13:16:29,956 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+04 May 2019 13:16:29,956 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+04 May 2019 13:16:29,957 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:16:53,305 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:16:53,307 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:16:53,308 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:16:53,309 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:16:53,310 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:17:05,866 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+04 May 2019 13:17:05,871 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+04 May 2019 13:17:05,871 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+04 May 2019 13:17:05,875 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:17:06,026 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+04 May 2019 13:17:06,026 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+04 May 2019 13:17:06,026 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+04 May 2019 13:17:06,027 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:17:06,041 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+04 May 2019 13:17:06,041 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+04 May 2019 13:17:06,041 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+04 May 2019 13:17:06,042 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:17:06,049 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+04 May 2019 13:17:06,049 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+04 May 2019 13:17:06,049 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+04 May 2019 13:17:06,050 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:17:12,023 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+04 May 2019 13:17:12,023 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+04 May 2019 13:17:12,023 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+04 May 2019 13:17:12,023 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:27:08,703 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:27:08,705 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:27:08,706 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:27:08,707 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:27:08,708 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:27:29,369 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+04 May 2019 13:27:29,373 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+04 May 2019 13:27:29,373 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+04 May 2019 13:27:29,378 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:27:31,472 ERROR repository.DataBaseUtils.DBUtils 39 getNewConnection - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+04 May 2019 13:37:55,943 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:37:55,946 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:37:55,947 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:37:55,948 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:37:55,948 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+04 May 2019 13:38:16,510 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+04 May 2019 13:38:16,514 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+04 May 2019 13:38:16,514 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+04 May 2019 13:38:16,518 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+04 May 2019 13:38:18,605 ERROR repository.DataBaseUtils.DBUtils 39 getNewConnection - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+07 May 2019 16:22:56,580 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+07 May 2019 16:22:56,583 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+07 May 2019 16:22:56,584 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+07 May 2019 16:22:56,585 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+07 May 2019 16:22:56,586 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+07 May 2019 16:23:15,158 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+07 May 2019 16:23:15,163 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+07 May 2019 16:23:15,163 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+07 May 2019 16:23:15,168 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+07 May 2019 16:23:17,275 ERROR repository.DataBaseUtils.DBUtils 39 getNewConnection - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+07 May 2019 16:29:45,442 INFO  repository.EntitiesRepos.ArtistDBRepo 30 <init> - Initializing ArtistDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+07 May 2019 16:29:45,446 INFO  repository.EntitiesRepos.ConcertDBRepository 29 <init> - Initializing concertDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+07 May 2019 16:29:45,448 INFO  repository.EntitiesRepos.LocationDBRepo 29 <init> - Intializaing Location Repository: {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+07 May 2019 16:29:45,449 INFO  repository.EntitiesRepos.TicketDBRepository 28 <init> - Initializing TicketDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+07 May 2019 16:29:45,450 INFO  repository.EntitiesRepos.UserDBRepository 30 <init> - Initializing UserDBRepo.... {repo.jdbc.driver=com.mysql.jdbc.Driver, repo.jdbc.user=root, server.port=55556, repo.jdbc.url=jdbc:mysql://localhost:3306/Festival, repo.jdbc.pass=root123}
+07 May 2019 16:29:58,604 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+07 May 2019 16:29:58,608 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+07 May 2019 16:29:58,608 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+07 May 2019 16:29:58,613 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+07 May 2019 16:29:58,775 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+07 May 2019 16:29:58,775 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+07 May 2019 16:29:58,775 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+07 May 2019 16:29:58,775 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+07 May 2019 16:29:58,797 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+07 May 2019 16:29:58,797 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+07 May 2019 16:29:58,797 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+07 May 2019 16:29:58,798 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver
+07 May 2019 16:29:58,813 INFO  repository.DataBaseUtils.DBUtils 27 getNewConnection - trying to connect to database... jdbc:mysql://localhost:3306/Festival
+07 May 2019 16:29:58,813 INFO  repository.DataBaseUtils.DBUtils 28 getNewConnection - user: root
+07 May 2019 16:29:58,814 INFO  repository.DataBaseUtils.DBUtils 29 getNewConnection - pass: root
+07 May 2019 16:29:58,814 INFO  repository.DataBaseUtils.DBUtils 33 getNewConnection - Loaded driver ...com.mysql.jdbc.Driver

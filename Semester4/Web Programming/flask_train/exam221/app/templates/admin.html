@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img{
+            width: 256px;
+            height: 256px;
+        }
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <script>
+        window.onload = get_photos()
+
+        function trim(text) {
+            return text.split('/')[1]
+        }
+
+        function get_photos() {
+            $.get("{{ url_for('get_photos') }}", {user:'{{ session['user'] }}'}, function (data) {
+                data = JSON.parse(data);
+                content = "";
+                for(var image in data.images){
+                    image = data.images[image]
+                    content += "<li>"
+                    content += "<img src="+ image.image +" onclick='delete_photo(\""+ trim(image.image) +"\")' +>"
+                    content += "<br>"
+                    content += image.description;
+
+                    content += "</li>"
+                }
+
+                $("#photo_list").html(content)
+            })
+        }
+
+        function delete_photo(photo) {
+            $.get("{{ url_for('delete_photo')}}", {photo:photo});
+            get_photos();
+        }
+
+    </script>
+</head>
+<body>
+    <a href="{{ url_for('logout') }}">LogOut</a>
+    <br>
+    <a href="{{ url_for('upload') }}">Upload</a>
+     <br>
+    <div id="photos">
+
+        <ul id="photo_list">
+
+        </ul>
+    </div>
+</body>
+</html>

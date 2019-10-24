@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <style>
+    body {font-family: Arial;}
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    .zui-table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+    }
+    .zui-table thead th {
+        background-color: #DDEFEF;
+        border: solid 1px #DDEEEE;
+        color: #336B6B;
+        padding: 10px;
+        text-align: left;
+        text-shadow: 1px 1px 1px #fff;
+    }
+    .zui-table tbody td {
+        border: solid 1px #DDEEEE;
+        color: #333;
+        padding: 10px;
+        text-shadow: 1px 1px 1px #fff;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <script>
+        window.cahce_ajax = {}
+        
+        function create_table(data){
+            data = JSON.parse(data)
+                data = data['events']
+                content = "<table class='zui-table'>"
+                content += "<tr>"
+                content += "<th>Id</th>"
+                content += "<th>Description</th>"
+                content += "<th>Hour</th>"
+                content += "<th>Minute</th>"
+                content += "</tr>"
+                for(var event in data){
+
+                    event = data[event]
+
+                    content += "<tr>"
+                    content += "<td>"+ event.id +"</td>"
+                    content += "<td>"+ event.description +"</td>"
+                    content += "<td>"+ event.hour +"</td>"
+                    content += "<td>"+ event.minute +"</td>"
+                    content += "</tr>"
+                }
+                content += "</table>"
+
+                $("#eventDates").html(content)
+
+                $('th').click(function(){
+                var table = $(this).parents('table').eq(0)
+                var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+                this.asc = !this.asc
+                if (!this.asc){rows = rows.reverse()}
+                for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+                })
+                function comparer(index) {
+                return function(a, b) {
+                var valA = getCellValue(a, index), valB = getCellValue(b, index)
+                return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+            }
+            function getCellValue(row, index){ return $(row).children('td').eq(index).text() }
+            }
+        }
+
+        $(document).ready(getEvents('{{ closest_date }}'));
+        function getEvents(id) {
+            if (window.cahce_ajax[id] === undefined) {
+                $.get('/get_events', {event: id}, function (data) {
+                    create_table(data)
+                    console.log('AJAX CALL')
+                    window.cahce_ajax[id] = data
+                })
+            }else{
+                create_table(window.cahce_ajax[id])
+            }
+
+
+        }
+
+    </script>
+</head>
+<body>
+    <div class="tab">
+       {% for tab in tabs %}
+        <button  class="tablinks" onclick="getEvents('{{ tab }}')">{{ tab }}</button>
+       {% endfor %}
+    </div>
+    <div id="eventDates"></div>
+</body>
+</html>

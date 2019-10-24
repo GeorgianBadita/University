@@ -1,0 +1,8 @@
+rootProject.name = 'Lab2_Homework'
+include 'Persistence'
+include 'Model'
+include 'Services'
+include 'Client'
+include 'Server'
+include 'Networking'
+

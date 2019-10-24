@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Article</title>
+</head>
+<body>
+    <h1>
+        Leave a comment below
+    </h1>
+        {% for message in get_flashed_messages() %}
+            <div class="flash">{{ message }}</div>
+        {% endfor %}
+    <form action="" method="POST">
+        Text <input type="text" name="text"> <br>
+        Author <input type="text" name="author"> <br>
+        <input type="Submit" value="Send">
+    </form>
+    <div>
+         {% for post in posts %}
+        <article>
+            <header>
+                {{ post.author }}
+            </header>
+            <div>
+                {{ post.text }} <br>
+            </div>
+        </article>
+    {% endfor %}
+    </div>
+
+</body>
+</html>

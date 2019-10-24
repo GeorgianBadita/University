@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img{
+            width: 256px;
+            height: 256px;
+        }
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <meta charset="UTF-8">
+    <title>User</title>
+    <script>
+        window.onload = get_photos()
+        function get_photos() {
+            $.get("{{ url_for('get_photos') }}", {user:'{{ session['user'] }}'}, function (data) {
+                data = JSON.parse(data);
+                content = "";
+                for(var image in data.images){
+                    image = data.images[image]
+                    content += "<li>"
+                    content += "<img src="+ image.image +">"
+                    content += "<br>"
+                    content += image.description
+                    content += "</li>"
+                }
+
+                $("#photo_list").html(content)
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <a href="{{ url_for('logout') }}">LogOut</a>
+    <br>
+    <a href="{{ url_for('upload') }}">Upload</a>
+    <br>
+    <div id="photos">
+        <ul id="photo_list">
+
+
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\Server.exe.config
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\Server.exe
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\Server.pdb
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\Common.exe
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\DBUtils.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\MySql.Data.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\Google.Protobuf.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\Common.pdb
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\Common.exe.config
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\DBUtils.pdb
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\MySql.Data.xml
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\bin\Debug\Google.Protobuf.xml
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\obj\Debug\Server.exe
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Server\obj\Debug\Server.pdb
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\Server.exe.config
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\Server.exe
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\Server.pdb
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\Common.exe
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\DBUtils.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\MySql.Data.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\Google.Protobuf.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\Common.pdb
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\Common.exe.config
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\DBUtils.pdb
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\MySql.Data.xml
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\Google.Protobuf.xml
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\obj\Debug\Server.exe
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\obj\Debug\Server.pdb
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.AppContext.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Console.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.IO.Compression.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.IO.FileSystem.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.IO.Pipes.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Net.Http.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Net.Security.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Net.Sockets.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Reflection.TypeExtensions.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Threading.Thread.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Threading.ThreadPool.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\Thrift45.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\Server.exe.config
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\Server.exe
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\Server.pdb
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\Common.exe
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\DBUtils.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.AppContext.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Console.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.IO.Compression.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.IO.FileSystem.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.IO.Pipes.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Net.Http.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Net.Security.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Net.Sockets.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Reflection.TypeExtensions.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Threading.Thread.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Threading.ThreadPool.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\Thrift45.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\MySql.Data.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\Google.Protobuf.dll
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\Common.pdb
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\Common.exe.config
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\DBUtils.pdb
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\MySql.Data.xml
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\bin\Debug\Google.Protobuf.xml
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\obj\Debug\Server.csproj.CopyComplete
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\obj\Debug\Server.exe
+C:\Users\georg\Desktop\An2_sem2\MPP\ThriftProj - Copy\C#Thrift\Lab2_Festival\Server\obj\Debug\Server.pdb

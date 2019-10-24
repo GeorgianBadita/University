@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Questions</h1>
+    <div>
+        <ul id="questionsList">
+
+        </ul>
+    </div>
+    <button onclick="update_questions()">Next</button>
+    <form id="form">
+        Username: <input type="text" value="username">
+        Email: <input type="text" value="email">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<script>
+    window.index = 1;
+    $( document ).ready(update_questions());
+
+    function update_questions() {
+        var ul = $("#questionsList");
+        ul.empty();
+        $.post("/get_questions",{index: window.index})
+					.done(function(question_lst){
+					    question_lst = eval('(' + question_lst + ')');
+
+					    for(var i = 0; i < question_lst.questions.length; i++){
+					        console.log(question_lst.questions[i]);
+					        question = question_lst.questions[i];
+                            var new_li = document.createElement('li');
+                            var new_ol = document.createElement('ol');
+                            var text = question.text;
+                            var a1 = question.a1;
+                            var a2 = question.a2;
+                            var a3 = question.a3;
+                            var new_ol_li = document.createElement('li');
+                            var new_ol_li1 = document.createElement('li');
+                            var new_ol_li2 = document.createElement('li');
+                            var new_ol_li3 = document.createElement('li');
+                            new_ol_li.appendChild(document.createTextNode(text));
+                            new_ol_li1.appendChild(document.createTextNode(a1));
+                            new_ol_li2.appendChild(document.createTextNode(a2));
+                            new_ol_li3.appendChild(document.createTextNode(a3));
+                            new_ol.appendChild(new_ol_li);
+                            new_ol.appendChild(new_ol_li1);
+                            new_ol.appendChild(new_ol_li2);
+                            new_ol.appendChild(new_ol_li3);
+                            new_li.appendChild(new_ol);
+                            ul.append(new_li)
+                        }
+					    setTimeout(function () {
+					        update_questions();
+                            $('#form').attr("hidden", true);
+
+                        }, 4000);
+
+					    window.index += 3;
+					})
+					.fail(function () {
+						console.log("error");
+	                });
+    }
+</script>
+</html>

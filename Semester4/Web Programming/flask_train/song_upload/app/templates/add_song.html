@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AddSong</title>
+</head>
+<body>
+    <h1>Hi</h1>
+    {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+    {% endfor %}
+    <form method="POST" enctype="multipart/form-data">
+        <p>Artist: <input type="text" name="artist"></p>
+        <p>Title: <input type="text" name="title"></p>
+        <p>Song: <input type="file" name="song"></p>
+        <p>Lyrics: <input type="file" name="lyrics"></p>
+        <p><input type="submit" value="Add Song"></p>
+    </form>
+
+    <a href="{{ url_for('index') }}">Go to Songs</a>
+</body>
+</html>

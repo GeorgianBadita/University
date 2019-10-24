@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%  for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+{% endfor %}
+
+<a href="{{ url_for('logout') }}">Logout</a>
+<form action="{{ url_for('injection') }}" method="POST">
+    <input type="text" name="id">
+    <input type="Submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Songs</title>
+    <script>
+        function getLyrics(song_id) {
+            $.get("{{ url_for('get_lyrics')}}", {song:song_id}, function (data) {
+                data = JSON.parse(data)
+                start_display(0, data)
+            })
+        }
+
+        function collapse(id) {
+                console.log(id);
+                var elem = '#' + id.toString()
+                console.log($(elem).children().toggle())
+            }
+
+        function start_display(lyrics_index, data) {
+            setInterval(function () {
+                 var start = data.lyrics[lyrics_index].start
+                var stop  = data.lyrics[lyrics_index].stop
+                var words = data.lyrics[lyrics_index].words
+                $("#startTime").html(start)
+                $("#stopTime").html(stop)
+                $("#words").html(words)
+            }, (stop)*1000)
+            lyrics_index += 1
+        }
+
+    </script>
+</head>
+<body>
+    <h2>Song List</h2>
+
+    <ul>
+        {% for artist in songs %}
+        <li id="{{ "".join(artist.split(' ')) }}" onclick="collapse('{{ "".join(artist.split(' ')) }}')">
+            {{ artist }}
+
+            <ol>
+                {% for song in songs[artist] %}
+                    <li>{{ song.title }} <br>
+                    <audio id="{{ song['song'].split('/')[1] }}" onplaying="getLyrics('{{ song['song'].split('/')[1]}}', tab)" controls>
+                         <source  src="{{ url_for('static', filename=song['song']) }}" type="audio/mpeg">
+                        Your browser does not support audio
+                    </audio>
+                    </li>
+                {% endfor %}
+            </ol>
+        </li>
+        {% endfor %}
+    </ul>
+    <table>
+        <tr>
+            <td>Start</td>
+            <td>Stop</td>
+            <td>Words</td>
+        </tr>
+
+        <tr>
+            <td id="startTime">
+
+            </td>
+            <td id="endTime">
+
+            </td>
+            <td id="words">
+
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

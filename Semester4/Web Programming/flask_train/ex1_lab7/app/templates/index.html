@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<body>
+    {%  for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+    {% endfor %}
+    <h1>Hello, {{ g.user['username'] }}</h1>
+
+    {% for post in posts %}
+        <article>
+            <header>
+                {{ post.author }}
+            </header>
+            <div>
+                {{ post.text }} <br>
+                <a href="{{ url_for('approve', post_id=post.id) }}" >Approve</a>
+            </div>
+        </article>
+    {% endfor %}
+    <div>
+        <a href="{{ url_for('logout') }}">Log Out</a>
+    </div>
+</body>
+</html>

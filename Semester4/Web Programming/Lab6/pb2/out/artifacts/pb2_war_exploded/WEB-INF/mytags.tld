@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>myshortname</short-name>
+    <uri>http://mycompany.com</uri>
+
+    <!-- Invoke 'Generate' action to add tags or functions -->
+
+    <tag>
+        <name>calendar</name>
+        <tag-class>com.pb4.CalendarTag</tag-class>
+        <body-content>empty</body-content>
+        
+        <attribute>
+            <name>an</name>
+        </attribute>
+
+        <attribute>
+            <name>luna</name>
+        </attribute>
+
+        <attribute>
+            <name>zi</name>
+        </attribute>
+
+        <attribute>
+            <name>culoare</name>
+        </attribute>
+
+        <attribute>
+            <name>clasa</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>chart</name>
+        <tag-class>com.pb5.ChartTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>maxX</name>
+        </attribute>
+
+        <attribute>
+            <name>maxY</name>
+        </attribute>
+
+        <attribute>
+            <name>xPoints</name>
+        </attribute>
+
+        <attribute>
+            <name>yPoints</name>
+        </attribute>
+
+        <attribute>
+            <name>xLabel</name>
+        </attribute>
+
+        <attribute>
+            <name>yLabel</name>
+        </attribute>
+
+        <attribute>
+            <name>color</name>
+        </attribute>
+    </tag>
+</taglib>

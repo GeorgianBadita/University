@@ -1,0 +1,6 @@
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Client\obj\Debug\Lab2_Festival.Forms.Concerts.resources
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Client\obj\Debug\Lab2_Festival.Forms.LogIn.resources
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Client\obj\Debug\Lab2_Festival.Forms.MainForm.resources
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\georg\Desktop\An2_sem2\MPP\Lab2_Festival\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
