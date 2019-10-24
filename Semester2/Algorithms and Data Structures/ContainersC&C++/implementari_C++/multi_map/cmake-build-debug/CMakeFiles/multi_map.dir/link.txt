@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/multi_map.dir/main.cpp.o CMakeFiles/multi_map.dir/MultiMap.cpp.o  -o multi_map 

@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    width: 400px;
+    background-color: cyan;
+    border: 1px solid;
+}
+
+.content{
+    width: 200px;
+    align-self: center;
+    text-align: center;
+}

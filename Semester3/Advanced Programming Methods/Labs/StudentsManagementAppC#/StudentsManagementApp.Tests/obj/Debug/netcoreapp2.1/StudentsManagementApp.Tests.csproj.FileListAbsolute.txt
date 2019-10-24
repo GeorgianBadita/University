@@ -1,0 +1,17 @@
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/bin/Debug/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/bin/Debug/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/bin/Debug/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/bin/Debug/netcoreapp2.1/StudentsManagementApp.Tests.deps.json
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/bin/Debug/netcoreapp2.1/StudentsManagementApp.Tests.runtimeconfig.json
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/bin/Debug/netcoreapp2.1/StudentsManagementApp.Tests.runtimeconfig.dev.json
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/bin/Debug/netcoreapp2.1/StudentsManagementApp.Tests.dll
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/bin/Debug/netcoreapp2.1/StudentsManagementApp.Tests.pdb
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/bin/Debug/netcoreapp2.1/StudentsManagementApp.dll
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/bin/Debug/netcoreapp2.1/StudentsManagementApp.pdb
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/obj/Debug/netcoreapp2.1/StudentsManagementApp.Tests.csprojAssemblyReference.cache
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/obj/Debug/netcoreapp2.1/StudentsManagementApp.Tests.csproj.CoreCompileInputs.cache
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/obj/Debug/netcoreapp2.1/StudentsManagementApp.Tests.AssemblyInfoInputs.cache
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/obj/Debug/netcoreapp2.1/StudentsManagementApp.Tests.AssemblyInfo.cs
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/obj/Debug/netcoreapp2.1/StudentsManagementApp.Tests.csproj.CopyComplete
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/obj/Debug/netcoreapp2.1/StudentsManagementApp.Tests.dll
+/home/geo/Desktop/MapJavaToC#/StudentsManagementApp/StudentsManagementApp.Tests/obj/Debug/netcoreapp2.1/StudentsManagementApp.Tests.pdb

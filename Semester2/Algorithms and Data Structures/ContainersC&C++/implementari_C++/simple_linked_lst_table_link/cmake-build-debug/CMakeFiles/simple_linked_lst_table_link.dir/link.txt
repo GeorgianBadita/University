@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/simple_linked_lst_table_link.dir/main.cpp.o CMakeFiles/simple_linked_lst_table_link.dir/LinkedList.cpp.o  -o simple_linked_lst_table_link 

@@ -1,0 +1,4 @@
+1|T1|9.12|Gabi Mircea|Bravo!
+1|T2|6.5|sdajk|klafjs
+2|T2|10|akfas|Excelent
+3|T1|6.7|yay|Bun

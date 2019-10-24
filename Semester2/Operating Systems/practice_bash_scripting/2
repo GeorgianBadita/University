@@ -1,0 +1,6 @@
+#!/bin/bash
+
+FILE=$1
+for F in $(find $FILE  -type f); do
+	echo "$F" | grep -o '/.*$'
+done

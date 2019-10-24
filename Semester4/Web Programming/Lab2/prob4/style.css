@@ -1,0 +1,118 @@
+ul{
+    list-style: none;
+    overflow: auto;
+}
+
+li{
+    float: left;
+    width: 84px;
+    height: 84px;
+    padding: 0 0 3px 0;
+}
+
+a{
+    width: 84px;
+    height: 84px;
+    display: block;
+    background: url(sprite.png) no-repeat;
+}
+
+.facebook{
+    background-position: 0 -84px;
+    
+}
+
+.facebook:hover{
+    background-position: 0 0;
+    transition: 0.5s;
+}
+
+.second{
+    background-position: -84px -84px;
+    
+}
+.second:hover{
+    background-position: -84px 0;
+    transition: 0.5s;
+}
+
+.third{
+    background-position: -168px -84px;
+}
+
+.third:hover{
+    background-position: -168px 0;
+    transition: 0.5s;
+}
+
+.g_plus{
+    background-position: -252px -84px; 
+}
+
+.g_plus:hover{
+    background-position: -252px 0;
+    transition: 0.5s;
+}
+
+.linkedin{
+    background-position: -336px -84px;
+}
+
+.linkedin:hover{
+    background-position: -336px 0;
+    transition: 0.5s;
+}
+
+.pinterest{
+    background-position: -420px -84px;
+}
+
+.pinterest:hover{
+    background-position: -420px 0;
+    transition: 0.5s;
+}
+
+.rss{
+    background-position: -504px -84px;
+}
+
+.rss:hover{
+    background-position: -504px 0;
+    transition: 0.5s;
+}
+
+.skype{
+    background-position: -588px -84px;
+}
+
+.skype:hover{
+    background-position: -588px 0;
+    transition: 0.5s;
+}
+
+.twitter{
+    background-position: -672px -84px;
+}
+
+.twitter:hover{
+    background-position: -672px 0;
+    transition: 0.5s;
+}
+
+.vimeo{
+    background-position: -756px -84px;
+}
+
+.vimeo:hover{
+    background-position: -756px 0;
+    transition: 0.5s;
+}
+
+.youtube{
+    background-position: -840px -84px;
+}
+
+.youtube:hover{
+    background-position: -840px 0;
+    transition: 0.5s;
+}

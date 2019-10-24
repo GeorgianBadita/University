@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DateFilterController">
+
+
+    <TableView fx:id="filterTable" layoutX="79.0" layoutY="142.0" prefHeight="558.0" prefWidth="643.0">
+        <columns>
+            <TableColumn fx:id="artistCol" prefWidth="75.0" text="Artist Name" />
+            <TableColumn fx:id="dateCol" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="locCol" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="freeSeatsCol" prefWidth="75.0" text="NumOfSeats" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+   <Label layoutX="337.0" layoutY="60.0" text="Cioncerts" textFill="#2b7ca6">
+      <font>
+         <Font size="27.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

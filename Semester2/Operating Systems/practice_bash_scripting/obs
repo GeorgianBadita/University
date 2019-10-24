@@ -1,0 +1,3 @@
+Use single quotes ('), when you want the actual text, bash not interferingin variables
+ex: $myvar=sometext '$myvar' (prints $myvar)
+	$myvar=sometext "$myvar" (prints sometext)

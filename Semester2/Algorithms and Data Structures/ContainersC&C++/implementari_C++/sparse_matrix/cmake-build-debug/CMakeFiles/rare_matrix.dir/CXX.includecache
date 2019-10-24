@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/rare_matrix/RareMatrix.cpp
+omp.h
+-
+RareMatrix.h
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/rare_matrix/RareMatrix.h
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/rare_matrix/RareMatrix.h
+
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/rare_matrix/main.cpp
+iostream
+-
+RareMatrix.h
+/home/geo/Desktop/Structuri de date si Algoritmi/implementari_C++/rare_matrix/RareMatrix.h
+

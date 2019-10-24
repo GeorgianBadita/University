@@ -1,0 +1,15 @@
+Scrieti o perechie de programe client, server TCP, din care cel putin unul in C,
+serverul va deservi concurent mai multi clienti, dupa conectarea unui client, serverul
+returneaza clientului adresa ip a acelui client cu cele mai multe conectari, precum si
+numarul de conectari de pe ip-ul respectiv, perechea de programe va fi rulata cu clienti
+provenind de pe cel putin 3 adrese ip diferite.
+La client adresa ip si portul serverului vor fi date ca param in linia de comanda
+Barem: 1p - of
+       1p - compileaza
+       1p - conectarea
+       1p - linia de comanda
+       1p - afisare conectare + ip 1p
+       1p - determinare nr maxim de conectari ip clinet
+       1.5p - server concurent
+       1.5p - trimitere ip si chestii
+       1p - rulare de pe 3 adrese ip

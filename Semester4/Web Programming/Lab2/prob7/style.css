@@ -1,0 +1,52 @@
+
+li{
+    width: 200px;
+}
+
+ul{
+    margin-left: 80px;
+    
+}
+
+ul .alice{
+    list-style-image: url(emoji.png);
+    
+}
+
+ul .bob{
+    list-style-image: url(sad.png);
+
+}
+
+ul li{
+    font-family: Arial, Helvetica, sans-serif;   
+    text-align: center; 
+}
+
+
+
+.bob
+.alice{
+    float: left;
+    clear: left;
+    
+}
+
+.alice{
+    border-radius: 10px;
+    margin-bottom: 100px;
+    background-color:  #0084ff;
+}
+
+.bob{
+    border-radius: 10px;
+    margin-bottom: 100px;
+    background-color: #eee;
+    
+}
+
+.bob:hover{
+    transition: all 1s ease;
+    list-style-image: url("dorian.jpg");
+}
+

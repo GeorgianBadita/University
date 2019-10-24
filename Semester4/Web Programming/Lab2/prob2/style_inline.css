@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+header,
+footer,
+#content{
+    
+    height: 200px;
+    font-size: 50px;
+}
+
+header{
+    background-color:red;
+}
+
+
+#content{
+    min-height: 400px;
+    background-color: green;
+}
+
+footer{
+    background-color:pink;
+}
+
+#menu{
+    background-color: yellow;
+    height: 35px;
+}
+
+li{
+    display: inline;
+    text-align: center;
+    padding: 0px 20px;
+    font-size: 30px;
+    border-right: 1px solid black;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li:hover{
+    background-color: blue;
+    transition: 0.5s;
+}

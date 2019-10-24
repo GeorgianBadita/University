@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+        function moveFunction(l1_id, l2_id){
+            var l1 = document.getElementById(l1_id)
+            var toMove = l1.options[l1.selectedIndex]
+            l1.remove(l1.selectedIndex)
+            var l2 = document.getElementById(l2_id)
+            var opt = document.createElement('option')
+            opt.appendChild(toMove)
+            l2.appendChild(opt)
+        }
+    </script>
+    <form>
+      <select size = "10" ondblclick="moveFunction('list1', 'list2')" id="list1">
+        <option value="books">Books</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="php">PHP</option>
+        <option value="js">JavaScript</option>
+      </select>
+      <select size = "10" ondblclick="moveFunction('list2', 'list1')" id="list2">
+        <option value="math_fields">MathFields</option>
+        <option value="calculus">Calculus</option>
+        <option value="linear_alg">Linear Algebra</option>
+        <option value="algebra">Algebra</option>
+        <option value="geometry">Geometry</option>
+      </select>
+    </form>
+  </body>
+</html>

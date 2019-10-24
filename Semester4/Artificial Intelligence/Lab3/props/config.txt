@@ -1,0 +1,6 @@
+5
+method:LEAST_SQUARE
+plt_size:25
+gd_epochs:1000000
+learning_rate:0.00000051
+diff_cost:1e-10

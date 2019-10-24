@@ -1,0 +1,107 @@
+        -:    0:Source:main.c
+        -:    0:Graph:main.gcno
+        -:    0:Data:-
+        -:    0:Runs:0
+        -:    0:Programs:0
+        -:    1:#include <stdio.h>
+        -:    2:#include <assert.h>
+        -:    3:#define eps 1e-5
+        -:    4:#define True 1
+        -:    5:#define False 0
+        -:    6:
+        -:    7:
+        -:    8:
+    #####:    9:float solve(float x, int n) {
+        -:   10:    /*
+        -:   11:     * Function that computes x^n using only multiplication and rising to the power of 2
+        -:   12:     * :param x: real number
+        -:   13:     * :param n: natural number
+        -:   14:     * :post: the function will return the result x^n
+        -:   15:     */
+        -:   16:
+    #####:   17:    if(n == 0) {
+    #####:   18:        return  1;
+        -:   19:    }
+    #####:   20:    else if(n % 2 == 0) {
+    #####:   21:        return solve(x, n/2) * solve(x, n/2);
+        -:   22:    }
+    #####:   23:    else return x * solve(x, n - 1);
+        -:   24:
+        -:   25:}
+        -:   26:
+    #####:   27:void test_solve() {
+        -:   28:    /*
+        -:   29:     * Function that tests the solve function
+        -:   30:     */
+        -:   31:
+    #####:   32:    assert((float)solve(3.14, 2) - (float)9.8596 <= eps);
+    #####:   33:    assert((float)solve(3, 3) - (float)27 <= eps);
+    #####:   34:    assert((float)solve(5.11, 5) - (float)3484.2116 <= eps);
+    #####:   35:    assert((float)solve(2, 6) - (float)64 <= eps);
+    #####:   36:}
+        -:   37:
+    #####:   38:float read_float() {
+        -:   39:    /*
+        -:   40:     * Function that reads a float number from keyboard
+        -:   41:     * :return: The function will return the number
+        -:   42:     */
+        -:   43:    float num;
+    #####:   44:    printf("Dati baza numarului: ");
+    #####:   45:    scanf("%f", &num);
+    #####:   46:    return num;
+        -:   47:}
+        -:   48:
+    #####:   49:int read_integer() {
+        -:   50:    /*
+        -:   51:     * Function that reads an integer number from keyboard
+        -:   52:     * :return: The function will return the number
+        -:   53:     */
+        -:   54:    int num;
+    #####:   55:    printf("Dati exponentul: ");
+    #####:   56:    scanf("%d", &num);
+    #####:   57:    return num;
+        -:   58:}
+        -:   59:
+        -:   60:
+    #####:   61:void print_result(float x, int n) {
+        -:   62:    /*
+        -:   63:     * Function that prints the result
+        -:   64:     * :param x: float number - base
+        -:   65:     * :param n: integer - exponent
+        -:   66:     * :post: will print the result x^n
+        -:   67:     */
+    #####:   68:    printf("\n%f\n", solve(x, n));
+    #####:   69:}
+        -:   70:
+    #####:   71:void ui() {
+        -:   72:    /*
+        -:   73:     * Function that prints the user menu
+        -:   74:     */
+    #####:   75:    printf("Apasati tasta 1, pentru a efectua o ridicare la putere!\n"
+        -:   76:           "Apasati tasta 2 pentru a iesi din aplicatie!\n\n");
+        -:   77:
+        -:   78:    float x;
+        -:   79:    int n;
+    #####:   80:    while(True) {
+    #####:   81:        int cmd = 0;
+    #####:   82:        printf("Comanda: ");
+    #####:   83:        scanf("%d", &cmd);
+    #####:   84:        if(cmd == 1){
+    #####:   85:            x = read_float();
+    #####:   86:            n = read_integer();
+    #####:   87:            print_result(x, n);
+        -:   88:        }
+        -:   89:        else {
+    #####:   90:            return;
+        -:   91:        }
+        -:   92:
+        -:   93:    }
+        -:   94:
+        -:   95:}
+        -:   96:
+    #####:   97:int main() {
+    #####:   98:    test_solve();
+    #####:   99:    ui();
+        -:  100:
+    #####:  101:    return 0;
+        -:  102:}
