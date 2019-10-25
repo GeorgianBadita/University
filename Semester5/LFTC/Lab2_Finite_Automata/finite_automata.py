@@ -103,13 +103,18 @@ class FiniteAutomata:
         """
         curr_state = self.__start_state
         num_passed = 0
+
         for char in sequence:
-            if char not in self.__alphabet:
-                raise LiteralNotInAlphabetException("Literal " + char + " not in alphabet")
-            for transition in self.__transitions[curr_state]:
-                if char == transition.get_symbol():
-                    num_passed += 1
-                    curr_state = transition.get_state()
+            try:
+                if char not in self.__alphabet:
+                    raise LiteralNotInAlphabetException("Literal " + char + " not in alphabet")
+                for transition in self.__transitions[curr_state]:
+                    if char == transition.get_symbol():
+                        num_passed += 1
+                        curr_state = transition.get_state()
+            except KeyError:
+                break
+
         return curr_state in self.__final_states and num_passed == len(sequence)
 
     def longest_prefix_accepted(self, sequence):
@@ -125,14 +130,17 @@ class FiniteAutomata:
             if char not in self.__alphabet:
                 raise LiteralNotInAlphabetException("Literal " + char + " not in alphabet")
             found_trans = False
-            for transition in self.__transitions[curr_state]:
-                if char == transition.get_symbol():
-                    num_chars += 1
-                    if transition.get_state() in self.__final_states:
-                        if num_chars > longest:
-                            longest = num_chars
-                    curr_state = transition.get_state()
-                    found_trans = True
+            try:
+                for transition in self.__transitions[curr_state]:
+                    if char == transition.get_symbol():
+                        num_chars += 1
+                        if transition.get_state() in self.__final_states:
+                            if num_chars > longest:
+                                longest = num_chars
+                        curr_state = transition.get_state()
+                        found_trans = True
+            except KeyError:
+                break
             if not found_trans:
                 break
         return sequence[:longest]
