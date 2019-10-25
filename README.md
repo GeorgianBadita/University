@@ -1,50 +1,89 @@
-# University-Courses
-Algorithms implementation, labs and school work.
+# University Courses
 
-<h1> Year 1 </h1>
+<h1> First Year </h1>
 
-<h3> First semester </h3>
+<h3> Sem1 </h3>
 
-<p>✔ Computer System Architecture</p>
-<p>✔ Fundamentals of Programming</p>
-<p>✔ Computational Logic</p>
-<p>✔ Algebra</p>
-<p>✔ Mathematical Analysis</p>
+Computer System Architecture
+<br>
+<br>
+Fundamentals of Programming
+<br>
+<br>
+Computational Logic
+<br>
+<br>
+Algebra
+<br>
+<br>
+Mathematical Analysis
 
-<h3> Second semester  </h3>
+<h3> Sem2  </h3>
 
-<p>✔ Operating Systems</p>
-<p>✔ Object-Oriented Programming</p>
-<p>✔ Graph Algorithms</p>
-<p>✔ Data Structures and Algorithms</p>
-<p>✔ Dynamical systems </p>
-<p>✔ Geometry</p>
+Operating Systems
+<br>
+<br>
+Object-Oriented Programming
+<br>
+<br>
+Graph Algorithms
+<br>
+<br>
+Data Structures and Algorithms
+<br>
+<br>
+Dynamical systems
+<br>
+<br>
+Geometry</p>
 
-<h1> Year 2 </h1>
+<h1> Second year </h1>
 
-<h3> Third semester  </h3>
+<h3> Sem3  </h3>
 
-<p>✔ Advanced Programming Methods</p>
-<p>✔ Logical and Functional Programming</p>
-<p>✔ Databases</p>
-<p>✔ Computer Network</p>
-<p>✔ Probabilities and Statistics</p>
+Advanced Programming Methods
+<br>
+<br>
+Logical and Functional Programming
+<br>
+<br>
+Databases
+<br>
+<br>
+Computer Networks
+<br>
+<br>
+Probabilities and Statistics
 
-<h3> Fourth semester </h3>
+<h3> Sem4 </h3>
 
-<p>✔ Programing and projecting methods</p>
-<p>✔ Artificial Intelligence</p>
-<p>✔ Database Management System</p>
-<p>✔ Software Engineering</p>
-<p>✔ Web programming</p>
+Programing and projecting methods
+<br>
+<br>
+Artificial Intelligence
+<br>
+<br>
+Database Management System
+<br>
+<br>
+Software Engineering
+<br>
+<br>
+Web programming
 
-<h1> Year 3 </h1>
+<h1> Third year </h1>
 
-<h3> Fifth semester  </h3>
+<h3> Sem5  </h3>
 
-<p>✔ Virtual Reality</p>
-<p>✔ Mobile</p>
-<p>✔ Formal Languages and Compilers Design</p>
-<p>✔ Parallel and Distributed Programming</p>
+Virtual Reality
+<br>
+<br>
+Mobile
+<br>
+<br>
+Formal Languages and Compilers Design
+<br>
+<br>
+Parallel and Distributed Programming
 
 
