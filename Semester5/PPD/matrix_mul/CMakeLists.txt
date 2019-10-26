@@ -3,4 +3,4 @@ project(matrix_mul)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(matrix_mul thread_mul.cpp Tasks.cpp Tasks.h mul_thread_pool.cpp Utils.cpp Utils.h)
+add_executable(matrix_mul thread_mul.cpp Tasks.cpp Tasks.h mul_thread_pool.cpp Utils.cpp Utils.h async_future_mat_mul.cpp)

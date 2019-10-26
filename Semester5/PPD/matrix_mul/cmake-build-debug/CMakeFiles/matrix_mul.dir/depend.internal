@@ -6,11 +6,14 @@ CMakeFiles/matrix_mul.dir/Tasks.cpp.obj
 CMakeFiles/matrix_mul.dir/Utils.cpp.obj
  C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.cpp
  C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.h
+CMakeFiles/matrix_mul.dir/async_future_mat_mul.cpp.obj
+ C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Tasks.h
+ C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.h
+ C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/async_future_mat_mul.cpp
 CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj
  C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Tasks.h
  C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.h
  C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/mul_thread_pool.cpp
 CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj
- C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Tasks.h
  C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.h
  C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/thread_mul.cpp

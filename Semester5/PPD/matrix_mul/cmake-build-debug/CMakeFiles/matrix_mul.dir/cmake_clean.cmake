@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/matrix_mul.dir/Tasks.cpp.obj"
   "CMakeFiles/matrix_mul.dir/Utils.cpp.obj"
+  "CMakeFiles/matrix_mul.dir/async_future_mat_mul.cpp.obj"
   "CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj"
   "CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj"
   "libmatrix_mul.dll.a"

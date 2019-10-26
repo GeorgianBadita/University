@@ -11,7 +11,7 @@
 
 #define MAX_NUM 10
 
-int main2(){
+int main(){
     srand(time(nullptr));
     int n, numThreads;
 
@@ -23,8 +23,6 @@ int main2(){
     std::cin >> numThreads;
 
     std::vector< std::future<int> > results;
-    ThreadPool pool(numThreads);
-
 
     auto A = Utils::createMatrix(n, false, MAX_NUM);
     auto B = Utils::createMatrix(n, false, MAX_NUM);
@@ -33,8 +31,8 @@ int main2(){
     auto start = std::chrono::steady_clock::now();
     for(int i = 0; i<numThreads; i++){
         int step = numThreads;
-        results.emplace_back(
-                pool.enqueue([i, n, &A, &B, &C, step](){
+        results.emplace_back(std::async(
+                [i, n, &A, &B, &C, step](){
                     int tNum = i;
 
                     int line = tNum / n;
@@ -75,8 +73,8 @@ int main2(){
     auto start2 = std::chrono::steady_clock::now();
     for(int i = 0; i<numThreads; i++){
         int step = numThreads;
-        results.emplace_back(
-                pool.enqueue([i, n, &A, &B, &C, step](){
+        results.emplace_back(std::async(
+                [i, n, &A, &B, &C, step](){
                     int tNum = i;
 
                     int line = tNum / n;

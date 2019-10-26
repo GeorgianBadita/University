@@ -26,10 +26,6 @@ functional
 stdexcept
 -
 
-C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.cpp
-Utils.h
-C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.h
-
 C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.h
 vector
 -
@@ -41,6 +37,18 @@ random
 -
 iostream
 -
+
+C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/async_future_mat_mul.cpp
+future
+-
+vector
+-
+iostream
+-
+Tasks.h
+C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Tasks.h
+Utils.h
+C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.h
 
 C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/mul_thread_pool.cpp
 future
@@ -65,8 +73,6 @@ vector
 -
 thread
 -
-Tasks.h
-C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Tasks.h
 Utils.h
 C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.h
 

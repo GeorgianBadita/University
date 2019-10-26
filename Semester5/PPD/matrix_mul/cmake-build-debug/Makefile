@@ -176,6 +176,33 @@ Utils.cpp.s:
 	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/Utils.cpp.s
 .PHONY : Utils.cpp.s
 
+async_future_mat_mul.obj: async_future_mat_mul.cpp.obj
+
+.PHONY : async_future_mat_mul.obj
+
+# target to build an object file
+async_future_mat_mul.cpp.obj:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/async_future_mat_mul.cpp.obj
+.PHONY : async_future_mat_mul.cpp.obj
+
+async_future_mat_mul.i: async_future_mat_mul.cpp.i
+
+.PHONY : async_future_mat_mul.i
+
+# target to preprocess a source file
+async_future_mat_mul.cpp.i:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/async_future_mat_mul.cpp.i
+.PHONY : async_future_mat_mul.cpp.i
+
+async_future_mat_mul.s: async_future_mat_mul.cpp.s
+
+.PHONY : async_future_mat_mul.s
+
+# target to generate assembly for a file
+async_future_mat_mul.cpp.s:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/async_future_mat_mul.cpp.s
+.PHONY : async_future_mat_mul.cpp.s
+
 mul_thread_pool.obj: mul_thread_pool.cpp.obj
 
 .PHONY : mul_thread_pool.obj
@@ -245,6 +272,9 @@ help:
 	@echo ... Utils.obj
 	@echo ... Utils.i
 	@echo ... Utils.s
+	@echo ... async_future_mat_mul.obj
+	@echo ... async_future_mat_mul.i
+	@echo ... async_future_mat_mul.s
 	@echo ... mul_thread_pool.obj
 	@echo ... mul_thread_pool.i
 	@echo ... mul_thread_pool.s

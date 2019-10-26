@@ -6,11 +6,14 @@ CMakeFiles/matrix_mul.dir/Tasks.cpp.obj: ../Tasks.cpp
 CMakeFiles/matrix_mul.dir/Utils.cpp.obj: ../Utils.cpp
 CMakeFiles/matrix_mul.dir/Utils.cpp.obj: ../Utils.h
 
+CMakeFiles/matrix_mul.dir/async_future_mat_mul.cpp.obj: ../Tasks.h
+CMakeFiles/matrix_mul.dir/async_future_mat_mul.cpp.obj: ../Utils.h
+CMakeFiles/matrix_mul.dir/async_future_mat_mul.cpp.obj: ../async_future_mat_mul.cpp
+
 CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj: ../Tasks.h
 CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj: ../Utils.h
 CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj: ../mul_thread_pool.cpp
 
-CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj: ../Tasks.h
 CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj: ../Utils.h
 CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj: ../thread_mul.cpp
 

@@ -92,6 +92,9 @@
 		<Unit filename="C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.h">
 			<Option target="matrix_mul"/>
 		</Unit>
+		<Unit filename="C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/async_future_mat_mul.cpp">
+			<Option target="matrix_mul"/>
+		</Unit>
 		<Unit filename="C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/mul_thread_pool.cpp">
 			<Option target="matrix_mul"/>
 		</Unit>
