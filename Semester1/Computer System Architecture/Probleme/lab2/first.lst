@@ -1,0 +1,40 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; ...
+    14 00000000 0A                          a  db 10
+    15 00000001 28000000                	b  dd 40
+    16 00000005 03                          c  db 3
+    17                                  ; our code starts here
+    18                                  segment code use32 class=code
+    19                                      start:
+    20                                          ;Connect to APM API
+    21 00000000 66B8B514                MOV     AX,5301
+    22 00000004 6631DB                  XOR     BX,BX
+    23 00000007 CD15                    INT     15h
+    24                                  
+    25                                  ;Try to set APM version (to 1.2)
+    26 00000009 66B80E53                MOV     AX, 530Eh
+    27 0000000D 6631DB                  XOR     BX,BX
+    28 00000010 66B96600                MOV     CX,0102
+    29 00000014 CD15                    INT     15h
+    30                                  
+    31                                  ;Turn off the system
+    32 00000016 66B8BB14                MOV     AX,5307
+    33 0000001A 66BB0100                MOV     BX,0001
+    34 0000001E 66B90300                MOV     CX,0003
+    35 00000022 CD15                    INT     15h
+    36                                  
+    37                                  ;Exit (for good measure and in case of failure)
+    38 00000024 C3                      RET
+    39 00000025 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    40 00000027 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

@@ -1,0 +1,19 @@
+     1                                  bits 32
+     2                                  
+     3                                  
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  extern exit              
+     8                                  import exit msvcrt.dll
+     9                                  segment data use32 class=data
+    10                                      ; ...
+    11                                  
+    12                                  ; our code starts here
+    13                                  segment code use32 class=code
+    14                                      start:
+    15 00000000 B0CF                            mov AL, 2255
+    15          ******************       warning: byte data exceeds bounds [-w+number-overflow]
+    16 00000002 04FF                            add AL, -1
+    17 00000004 6A00                            push    dword 0      
+    18 00000006 FF15[00000000]                  call    [exit]      

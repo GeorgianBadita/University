@@ -1,0 +1,31 @@
+     1                                  bits 32
+     2                                  
+     3                                  
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  
+     8                                  extern exit, printf
+     9                                  import exit msvcrt.dll
+    10                                  import printf msvcrt.dll
+    11                                  segment data use32 class=data
+    12                                      ; ...
+    13 00000000 4D340A003000000044-         a dd 0a344dh, 30h, 11223344h, 46ab89ch 
+    13 00000009 3322119CB86A04     
+    14 00000010 256400                      format db '%d', 0
+    15                                  ; our code starts here
+    16                                  segment code use32 class=code
+    17                                      start:
+    18                                      
+    19                                      
+    20 00000000 A0[09000000]                mov AL, BYTE [a + 9]
+    21 00000005 6698                        cbw
+    22 00000007 98                          cwde
+    23 00000008 50                          push DWORD EAX
+    24 00000009 68[10000000]                push DWORD format
+    25 0000000E FF15[00000000]              call [printf]
+    26 00000014 83C408                      add ESP, 4*2
+    27                                      
+    28                                      
+    29 00000017 6A00                        push    dword 0      
+    30 00000019 FF15[00000000]              call    [exit]      

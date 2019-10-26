@@ -1,0 +1,7 @@
+Gradina,Face,190,Fundas
+Nikos,Tiganu,192,Fundas
+Istanbul,Turcia,220,Pivot
+Paul,Graham,200,Extrema
+Tudor,Dumistrescu,186,Extrema
+Sunt,Mare,190,Extrema
+Sunt,Mare,190,Extrema

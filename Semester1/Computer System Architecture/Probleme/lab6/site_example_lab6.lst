@@ -1,0 +1,36 @@
+     1                                  ;Se da un sir de caractere format din litere mici.
+     2                                  ;Sa se transforme acest sir in sirul literelor mari corespunzator.
+     3                                  bits 32 
+     4                                  global start        
+     5                                  extern exit,printf ; tell nasm that exit exists even if we won't be defining it
+     6                                  import exit msvcrt.dll ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     7                                  import printf msvcrt.dll
+     8                                  ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+     9                                  ; our data is declared here (the variables needed by our program)
+    10                                  segment data use32 class=data
+    11 00000000 6162636D6E              	s db 'a', 'b', 'c', 'm','n' ; declararea sirului initial s
+    12                                  	l equ $-s ; stabilirea lungimea sirului initial l
+    13 00000005 00<rept>                	d times l db 0 ; rezervarea unui spatiu de dimensiune l pentru sirul destinatie d si initializarea acestuia
+    14 0000000A 257300                   format  db "%s", 0 ;definire format pentru afisare, daca vrem sa afisam sirul rezultat
+    15                                  segment code use32 class=code
+    16                                  start:
+    17 00000000 B905000000              	mov ecx, l ;punem lungimea in ECX pentru a putea realiza bucla loop de ecx ori
+    18 00000005 BE00000000              	mov esi, 0     
+    19 0000000A E313                    	jecxz Sfarsit      
+    20                                  	Repeta:
+    21 0000000C 8A86[00000000]          		mov al, [s+esi]
+    22 00000012 B320                    		mov bl, 'a'-'A' ; pentru a obtine litera mare corespunzatoare literei mici, vom scadea din codul ASCII 
+    23                                  		; al literei mici diferenta dintre 'a'-'A'
+    24 00000014 28D8                    		sub al, bl             
+    25 00000016 8886[05000000]          		mov [d+esi], al    
+    26 0000001C 46                      		inc esi
+    27 0000001D E2ED                    	loop Repeta
+    28                                  	Sfarsit:;terminarea programului
+    29                                  	;Daca dorim si afisarea sirului d, avem urmatoarele:
+    30 0000001F 68[05000000]            	push dword d ; punem parametrii pe stiva de la dreapta la stanga
+    31 00000024 68[0A000000]            	push dword format
+    32 00000029 FF15[00000000]          	call [printf] ;apelam functia printf
+    33 0000002F 83C408                  	add esp, 4 * 2 ; eliberam parametrii de pe stiva
+    34                                  	; exit(0)
+    35 00000032 6A00                    	push dword 0 ; push the parameter for exit onto the stack
+    36 00000034 FF15[00000000]          	call [exit] ; call exit to terminate the program

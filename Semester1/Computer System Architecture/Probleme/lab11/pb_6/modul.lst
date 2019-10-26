@@ -1,0 +1,26 @@
+     1                                  bits 32
+     2                                  
+     3                                  
+     4                                  
+     5                                  segment use32 public code
+     6                                  global concat
+     7                                      concat:
+     8 00000000 8B742404                        mov ESI, [ESP + 4]
+     9 00000004 8B7C2408                        mov EDI, [ESP + 8]
+    10 00000008 B000                            mov AL, 0
+    11                                          
+    12                                          
+    13                                          get_final:
+    14 0000000A A6                                  cmpsb
+    15 0000000B 7402                                je stop
+    16 0000000D EBFB                                jmp get_final
+    17                                          stop:
+    18                                              .concat:
+    19 0000000F AC                                      lodsb
+    20 00000010 3C00                                    cmp AL, 0
+    21 00000012 7403                                    je go_ret
+    22 00000014 AA                                      stosb
+    23 00000015 EBF8                                    jmp .concat
+    24                                              go_ret:
+    25 00000017 C3                                      ret
+    26                                          

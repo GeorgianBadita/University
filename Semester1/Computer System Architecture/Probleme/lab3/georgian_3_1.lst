@@ -1,0 +1,36 @@
+     1                                  ;Badita Marin-Georgian, grupa 211, 10/17/2017, problema 6 adunari-scaderi set1
+     2                                  ;(a+b)-(a+d)+(c-a)
+     3                                  ;a,b,c,d - dword
+     4                                  
+     5                                  
+     6                                  bits 32
+     7                                  
+     8                                  
+     9                                  global start        
+    10                                  
+    11                                  
+    12                                  extern exit              
+    13                                  import exit msvcrt.dll
+    14                                  segment data use32 class=data
+    15                                      ; ...
+    16 00000000 0A000000                    a dd 10
+    17 00000004 05000000                    b dd 5
+    18 00000008 0B000000                    c dd 11
+    19 0000000C 02000000                    d dd 2
+    20                                  ; our code starts here
+    21                                  segment code use32 class=code
+    22                                      start:
+    23 00000000 A1[00000000]                mov EAX, [a] ;EAX = a
+    24 00000005 1305[04000000]              adc EAX, [b] ;EAX = a + b + CF
+    25                                      
+    26 0000000B 8B15[00000000]              mov EDX, [a] ;EAX = a
+    27 00000011 1315[0C000000]              adc EDX, [d] ;EDX = a + d + CF
+    28                                      
+    29 00000017 19D0                        sbb EAX, EDX; EAX = EAX - EDX = (a + b) - (a + d) - CF
+    30                                      
+    31 00000019 8B15[08000000]              mov EDX, [c] ;EDX = c
+    32 0000001F 1B15[00000000]              sbb EDX, [a] ;EDX = c - a - CF
+    33                                      
+    34 00000025 11D0                        adc EAX, EDX ;EAX = (a + b) - (a + d) + (c - a) + CF
+    35 00000027 6A00                            push    dword 0      
+    36 00000029 FF15[00000000]                  call    [exit]      

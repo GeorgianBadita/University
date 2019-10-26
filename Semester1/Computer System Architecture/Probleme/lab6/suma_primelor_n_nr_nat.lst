@@ -1,0 +1,43 @@
+     1                                  bits 32
+     2                                  
+     3                                  
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  extern exit, scanf, printf              
+     8                                  import exit msvcrt.dll
+     9                                  import scanf msvcrt.dll
+    10                                  import printf msvcrt.dll
+    11                                  segment data use32 class=data
+    12 00000000 00000000                    n dd 0
+    13 00000004 00000000                    rez dd 0
+    14 00000008 257500                      format_nr db "%u", 0
+    15                                  
+    16                                  ; our code starts here
+    17                                  segment code use32 class=code
+    18                                      start:
+    19                                         
+    20                                          ;citire
+    21 00000000 68[00000000]                    push DWORD n
+    22 00000005 68[08000000]                    push DWORD format_nr
+    23 0000000A FF15[00000000]                  call [scanf]
+    24 00000010 83C408                          add ESP, 4*2
+    25                                          
+    26                                          ;calc sum
+    27 00000013 8B0D[00000000]                  mov ECX, [n]
+    28 00000019 E308                            jecxz final_prg
+    29                                          repeta:
+    30 0000001B 010D[04000000]                      add [rez], ECX
+    31 00000021 E2F8                            loop repeta
+    32                                          
+    33                                          final_prg
+    33          ******************       warning: label alone on a line without a colon might be in error [-w+orphan-labels]
+    34                                          
+    35                                          ;print sum
+    36 00000023 FF35[04000000]                  push DWORD [rez]
+    37 00000029 68[08000000]                    push DWORD format_nr
+    38 0000002E FF15[00000000]                  call [printf]
+    39                                          
+    40 00000034 83C408                          add ESP, 4*2
+    41 00000037 6A00                            push    dword 0      
+    42 00000039 FF15[00000000]                  call    [exit]      

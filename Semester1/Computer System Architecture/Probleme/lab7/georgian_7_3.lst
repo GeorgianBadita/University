@@ -1,0 +1,77 @@
+     1                                  ;Se da un sir de dublucuvinte. Sa se ordoneze crescator sirul cuvintelor superioare ale acestor dublucuvinte. Cuvintele inferioare raman neschimbate.
+     2                                  ;sir DD 12AB5678h, 1256ABCDh, 12344344h 
+     3                                  ;rez DD 12345678h, 1256ABCDh, 12AB4344h.
+     4                                  bits 32
+     5                                  
+     6                                  
+     7                                  global start        
+     8                                  
+     9                                  
+    10                                  extern exit              
+    11                                  import exit msvcrt.dll
+    12                                  segment data use32 class=data
+    13                                      ; ...
+    14 00000000 78563412CDAB561244-         sir dd 12345678h, 1256ABCDh, 12AB4344h
+    14 00000009 43AB12             
+    15                                      len equ ($-sir)/4
+    16 0000000C 0000<rept>                  rez times len dw 0
+    17 00000012 00                          poz db 0
+    18 00000013 00                          new_ecx db 0
+    19                                  ; our code starts here
+    20                                  segment code use32 class=code
+    21                                      start:
+    22                                          
+    23 00000000 FC                              cld ;setam DF la 0 ca sa parcurgem de la stanga la dreapta 
+    24 00000001 B903000000                      mov ECX, len ;punem in ECX lungimea sirului pentru a tiera
+    25 00000006 BE[00000000]                    mov ESI, sir ;punem in sursa sirul sir
+    26 0000000B BF[0C000000]                    mov EDI, rez ;punem in destinatie sirul rezultat
+    27 00000010 E308                            jecxz sf_prg ;daca ECX  = 0, sarim la sf_prg
+    28                                          repeta:
+    29 00000012 66AD                                lodsw ;punem in AX valoarea cuvantului inferior
+    30 00000014 66AB                                stosw ;punem in sirul rez valoarea cuvantului superior
+    31 00000016 66AD                                lodsw ;mai apleam inca odata lodsw, pentru a trece la cuvantul superior
+    32 00000018 E2F8                            loop repeta
+    33                                          
+    34                                          sf_prg:
+    35                                          ;_______________
+    36                                           ;for(int i = 0; i<n - 1; i++) {
+    37                                              ;for(j = i; j<n; j++) {
+    38                                               ;   if(v[i] < v[j) {
+    39                                                ;      aux = v[i];
+    40                                                 ;     v[i] = v[j]
+    41                                                  ;    v[j] = aux
+    42                                                  ;}
+    43                                              ;}
+    44                                           ;}
+    45 0000001A B903000000                      mov ECX, len
+    46 0000001F 49                              dec ECX
+    47                                          nextScan:
+    48 00000020 89CB                                mov EBX, ECX ;punem ECX in EBX
+    49 00000022 BE00000000                          mov ESI, 0 ;contorizaom de la pozitia 0
+    50                                          nextComp: 
+    51 00000027 668B86[0C000000]                    mov AX, [rez + ESI] ;AX reprezinta rez[ESI] ;cuvantul de la rez[ESI]
+    52 0000002E 668B96[0E000000]                    mov DX, [rez + ESI + 2] ;AX reprezinta rez[ESI + 2] ;cuvantul de la rez[ESI + 2]
+    53 00000035 6639D0                              cmp AX, DX ;comparam rez[ESI], rez[ESI + 2]
+    54 00000038 730E                                jnc noSwap ; ;in cazul in care AX > DX
+    55 0000003A 668996[0C000000]                    mov [rez + ESI], DX ;facem interschimbarea
+    56 00000041 668986[0E000000]                    mov [rez + ESI + 2], AX ;facem interschimbarea
+    57                                          noSwap:
+    58 00000048 46                                  inc ESI ;incrementam ESI cu 2 pozitii pentru a ajunge la urmatorul cuvant
+    59 00000049 46                                  inc ESI
+    60 0000004A 4B                                  dec EBX
+    61 0000004B 75DA                                jnz nextComp ;daca EBX nu e 0 atunci facem urmatoarea comparatie 
+    62 0000004D E2D1                            loop nextScan ;facem urmatoarea scanare a sirului
+    63                                          
+    64 0000004F FC                              cld ;setam DF la 0 ca sa parcurgem de la stanga la dreapta 
+    65 00000050 B903000000                      mov ECX, len ;punem in ECX lungimea sirului pentru a itera
+    66 00000055 BE[0C000000]                    mov ESI, rez ;punem in sursa sirul rezultat
+    67 0000005A BF[00000000]                    mov EDI, sir ;punem in destinatie sirul de la care am plecat
+    68                                          repeta_1:
+    69 0000005F 66AD                                lodsw  ;punem in AX valoarea curenta din rezultat
+    70 00000061 66AB                                stosw ;punem in sirul sir valoarea corespunzatoare din sirul sortat la nivel de cuvant!
+    71 00000063 47                                  inc EDI ;incrementam EDI cu 2 pozitii, adica sirul sir pentru a ajunge la cuvantul superior
+    72 00000064 47                                  inc EDI ;incrementam EDI cu 2 pozitii, adica sirul sir pentru a ajunge la cuvantul superior
+    73 00000065 E2F8                            loop repeta_1 ;repetam din nou procedeul
+    74                                          
+    75 00000067 6A00                            push dword 0
+    76 00000069 FF15[00000000]                  call [exit]

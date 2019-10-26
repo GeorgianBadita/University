@@ -1,0 +1,115 @@
+     1                                  bits 32 
+     2                                  
+     3                                  global start        
+     4                                  
+     5                                  ; declare external functions needed by our program
+     6                                  extern exit, fopen, fread, fclose, printf, scanf
+     7                                  import exit msvcrt.dll  
+     8                                  import fopen msvcrt.dll  
+     9                                  import fread msvcrt.dll
+    10                                  import fclose msvcrt.dll
+    11                                  import printf msvcrt.dll
+    12                                  import scanf msvcrt.dll
+    13                                  
+    14                                  segment data use32 class=data
+    15 00000000 00<rept>                    nume_fisier times 20 db 0 
+    16 00000014 7200                        mod_acces db "r", 0         
+    17                                                                   
+    18                                      len equ 100                              
+    19 00000016 20<rept>                    text times (len+1) db 20h    
+    20 0000007B FFFFFFFF                    descriptor_fis dd -1         
+    21                                      
+    22 0000007F 257300                      mod_citire db "%s", 0  
+    23 00000082 00<rept>                    cuvant times 20 db 0
+    24 00000096 00                          par db 0
+    25 00000097 25730A0D00                  fmt db "%s", 10, 13, 0
+    26                                  
+    27                                  ; our code starts here
+    28                                  segment code use32 class=code
+    29                                      start:
+    30                                         
+    31                                          
+    32 00000000 68[00000000]                    push dword nume_fisier
+    33 00000005 68[7F000000]                    push dword mod_citire
+    34 0000000A FF15[00000000]                  call [scanf]
+    35 00000010 83C408                          add ESP, 4*2
+    36                                          
+    37                                          
+    38 00000013 68[14000000]                    push dword mod_acces     
+    39 00000018 68[00000000]                    push dword nume_fisier
+    40 0000001D FF15[00000000]                  call [fopen]
+    41 00000023 83C408                          add esp, 4*2                ; eliberam parametrii de pe stiva
+    42                                  
+    43 00000026 A3[7B000000]                    mov [descriptor_fis], eax   ; salvam valoarea returnata de fopen in variabila descriptor_fis
+    44                                          
+    45                                          ; verificam daca functia fopen a creat cu succes fisierul (daca EAX != 0)
+    46 0000002B 83F800                          cmp eax, 0
+    47 0000002E 0F8498000000                    je final
+    48                                          
+    49                                          ; citim textul in fisierul deschis folosind functia fread
+    50                                          ; eax = fread(text, 1, len, descriptor_fis)
+    51 00000034 FF35[7B000000]                  push dword [descriptor_fis]
+    52 0000003A 6A64                            push dword len
+    53 0000003C 6A01                            push dword 1
+    54 0000003E 68[16000000]                    push dword text        
+    55 00000043 FF15[00000000]                  call [fread]
+    56 00000049 83C410                          add esp, 4*4                 ; dupa apelul functiei fread EAX contine numarul de caractere citite din fisier
+    57                                          
+    58                                          
+    59 0000004C BE[16000000]                    mov ESI, text
+    60 00000051 BF[82000000]                    mov EDI, cuvant
+    61 00000056 89C1                            mov ECX, EAX
+    62 00000058 41                              inc ECX
+    63 00000059 C605[96000000]00                mov [par], BYTE 0
+    64                                          repeta:
+    65 00000060 AC                                  lodsb
+    66 00000061 AA                                  stosb
+    67 00000062 3C20                                cmp AL, 20h
+    68 00000064 7402                                je end_cuv
+    69 00000066 EB53                                jmp again
+    70                                              end_cuv:
+    71 00000068 8A15[96000000]                          mov DL, [par]
+    72 0000006E 80FA00                                  cmp DL, 0
+    73 00000071 7402                                    je do_this
+    74 00000073 EB1F                                    jmp do_that
+    75                                                  do_this:
+    76 00000075 B201                                    mov DL, 1
+    77 00000077 8815[96000000]                          mov [par], DL
+    78 0000007D 60                                      pushad
+    79 0000007E 68[82000000]                            push DWORD cuvant
+    80 00000083 68[97000000]                            push DWORD fmt
+    81 00000088 FF15[00000000]                          call [printf]
+    82 0000008E 83C408                                  add ESP, 4*2
+    83 00000091 61                                      popad
+    84 00000092 EB08                                    jmp to_clear
+    85                                                  do_that:
+    86 00000094 B200                                        mov DL, 0
+    87 00000096 8815[96000000]                              mov [par], DL
+    88                                                  to_clear:
+    89 0000009C BB00000000                              mov EBX, 0
+    90                                                  clear:
+    91 000000A1 C683[82000000]00                            mov [cuvant + EBX], BYTE 0
+    92 000000A8 43                                          inc EBX
+    93 000000A9 83FB14                                      cmp EBX, 20
+    94 000000AC 7402                                        je next
+    95 000000AE EBF1                                        jmp clear
+    96                                                  next:
+    97                                                  cut_spaces:
+    98 000000B0 AC                                          lodsb 
+    99 000000B1 3C20                                        cmp AL, 20h
+   100 000000B3 74FB                                        je cut_spaces
+   101 000000B5 4E                                          dec ESI
+   102 000000B6 BF[82000000]                            mov EDI, cuvant
+   103                                              again:
+   104 000000BB E2A3                            loop repeta
+   105                                          
+   106                                   
+   107 000000BD FF35[7B000000]                  push dword [descriptor_fis]
+   108 000000C3 FF15[00000000]                  call [fclose]
+   109 000000C9 83C404                          add esp, 4
+   110                                          
+   111                                        final:
+   112                                          
+   113                                          ; exit(0)
+   114 000000CC 6A00                            push    dword 0      
+   115 000000CE FF15[00000000]                  call    [exit]       

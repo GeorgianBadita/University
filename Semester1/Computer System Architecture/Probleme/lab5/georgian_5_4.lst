@@ -1,0 +1,40 @@
+     1                                  
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  
+     6                                  global start        
+     7                                  
+     8                                  
+     9                                  extern exit, printf        
+    10                                  import exit msvcrt.dll
+    11                                  import printf msvcrt.dll
+    12                                  segment data use32 class=data
+    13 00000000 F8FF                        a dw -8
+    14 00000002 FEFF                        b dw -2
+    15 00000004 2564202A202564203D-         format_print db "%d * %d = %d", 0 ;formatul de afisare
+    15 0000000D 20256400           
+    16                                  
+    17                                  ; our code starts here
+    18                                  segment code use32 class=code
+    19                                      start:
+    20 00000000 66A1[00000000]                  mov AX, [a] ;punem in AX a
+    21 00000006 66F72D[02000000]                imul WORD [b] ;inmultim cu word-ul b si avem in DX:AX a*b
+    22 0000000D 6652                            push DX; punem DX pe stiva
+    23 0000000F 6650                            push AX; punem AX pe stiva
+    24 00000011 59                              pop ECX ;ECX = DX:AX extragem de pe stiva
+    25                                          
+    26 00000012 66A1[00000000]                  mov AX, [a]
+    27 00000018 98                              cwde ;convertim cu semn AX la EAX
+    28 00000019 89C3                            mov EBX, EAX; punem a cu semn in EBX
+    29 0000001B 66A1[02000000]                  mov AX, [b] 
+    30 00000021 98                              cwde ;convertim cu semn b si il lasam in EAX
+    31                                          
+    32 00000022 51                              push DWORD ECX ;punem rezultatul pe stiva
+    33 00000023 50                              push DWORD EAX ;punem b pe stiva
+    34 00000024 53                              push DWORD EBX ;punem a pe stiva
+    35 00000025 68[04000000]                    push DWORD format_print
+    36 0000002A FF15[00000000]                  call [printf] ;apelam functia printf
+    37 00000030 83C410                          add ESP, 4*4 ;eliberam stiva de parameterii
+    38 00000033 6A00                            push    dword 0      
+    39 00000035 FF15[00000000]                  call    [exit]      

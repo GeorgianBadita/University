@@ -1,0 +1,23 @@
+     1                                  bits 32
+     2                                  
+     3                                  
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  extern exit              
+     8                                  import exit msvcrt.dll
+     9                                  segment data use32 class=data
+    10                                      ; ...
+    11 00000000 FDFF                        x dw 0fffdh
+    12                                  ; our code starts here
+    13                                  segment code use32 class=code
+    14                                      start:
+    15 00000000 66B84A05                    mov AX, 054ah
+    16                                      add [x],  2 ;
+    16          ******************       error: operation size not specified
+    17 00000004 7400                        jz a2
+    18                                      
+    19                                      
+    20                                      a2:
+    21 00000006 6A00                            push    dword 0      
+    22 00000008 FF15[00000000]                  call    [exit]      

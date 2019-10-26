@@ -1,0 +1,65 @@
+     1                                  ;Se dau doua numere natural a si b (a: dword, b: word, definite in segmentul de date). Sa se calculeze a/b si sa se afiseze restul impartirii in urmatorul format:
+     2                                  ;"<a>/<b> = <cat>"
+     3                                  ;Exemplu: pentru a = 23 si b = 5 se va afisa: "23 mod 5 = 3"
+     4                                  ;Valorile vor fi afisate in format decimal (baza 10) cu semn.
+     5                                  
+     6                                  bits 32
+     7                                  
+     8                                  
+     9                                  global start        
+    10                                  
+    11                                  
+    12                                  extern exit, scanf, printf
+    13                                  import exit msvcrt.dll
+    14                                  import scanf msvcrt.dll
+    15                                  import printf msvcrt.dll
+    16                                  
+    17                                  segment data use32 class=data
+    18                                      ; ...
+    19 00000000 00000000                    a dd 0
+    20 00000004 0000                        b dw 0
+    21 00000006 0300                        rez dw 3
+    22 00000008 256400                      format_scan db "%d", 0
+    23 0000000B 2564206D6F64202564-         format_printf db "%d mod %d = %d", 0
+    23 00000014 203D20256400       
+    24                                      
+    25                                  ; our code starts here
+    26                                  segment code use32 class=code
+    27                                      start: 
+    28                                          
+    29 00000000 68[00000000]                    push DWORD a
+    30 00000005 68[08000000]                    push DWORD format_scan
+    31 0000000A FF15[00000000]                  call [scanf]
+    32 00000010 83C408                          add ESP, 4*2
+    33                                          
+    34 00000013 68[04000000]                    push DWORD b
+    35 00000018 68[08000000]                    push DWORD format_scan
+    36 0000001D FF15[00000000]                  call [scanf]
+    37 00000023 83C408                          add ESP, 4*2
+    38                                          
+    39                                          
+    40 00000026 A1[00000000]                    mov EAX, [a]
+    41 0000002B 99                              cdq ;EAX:EDX = a
+    42                                          
+    43 0000002C 89D1                            mov ECX, EDX ;ECX = EDX
+    44 0000002E 89C3                            mov EBX, EAX ;EBX = EAX
+    45                                          
+    46 00000030 66A1[04000000]                  mov AX, [b] ;pun b in AX
+    47 00000036 98                              cwde; AX->EAX
+    48                                          
+    49 00000037 89C6                            mov ESI, EAX ;ESI = EAX
+    50                                          
+    51 00000039 89CA                            mov EDX, ECX ;restauram numarul
+    52 0000003B 89D8                            mov EAX, EBX ;restauram numarul
+    53                                          
+    54 0000003D F7FE                            idiv ESI ;impartim EAX:EDX la ESI
+    55                                          
+    56                                          
+    57 0000003F 52                              push DWORD EDX
+    58 00000040 FF35[04000000]                  push DWORD [b]
+    59 00000046 FF35[00000000]                  push DWORD [a]
+    60 0000004C 68[0B000000]                    push DWORD format_printf
+    61 00000051 FF15[00000000]                  call [printf]
+    62 00000057 83C410                          add ESP, 4*4
+    63 0000005A 6A00                            push    dword 0      
+    64 0000005C FF15[00000000]                  call    [exit]      

@@ -1,0 +1,10 @@
+Clase
+Atribute/camp => metode
+Incapsulare, ascunderea reprezentarii
+
+
+class NumeClasa:
+
+	def __init__(self,..):
+		
+	def func(self, ...):

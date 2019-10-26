@@ -1,4 +1,0 @@
-#Mon Oct 21 01:03:02 EEST 2019
-base.0=C\:\\Users\\georg\\Desktop\\An3_sem1\\Mobile\\HelloWorldNative\\HelloWorld\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

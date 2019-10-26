@@ -1,0 +1,10 @@
+111,Cluj Arena,20,11
+1,FSEGA,30,20
+12,Hasdeu,19,120
+2,Piata,29,114
+3,Iulius,29,150
+4,Gradina Botanica,45,144
+5,Teatru,55,230
+6,Teren CFR Cluj,28,120
+7,Cluj Arena,28,115
+8,Cluj Arena,98,140

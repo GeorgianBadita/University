@@ -1,0 +1,82 @@
+     1                                  bits 32 
+     2                                  
+     3                                  
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  extern exit, printf, circ_perm
+     8                                  import exit msvcrt.dll    
+     9                                  import printf msvcrt.dll
+    10                                  
+    11                                  segment data use32 class=data
+    12                                      ; ...
+    13 00000000 B168DE3A                    a dd 987654321              ;=3ADE68B1h
+    14 00000004 4E756D6172756C2069-         format_print db "Numarul in baza 16 este: %x",13, 10, 0            ;formatul de afisare al numarului in baza 16
+    14 0000000D 6E2062617A61203136-
+    14 00000016 20657374653A202578-
+    14 0000001F 0D0A00             
+    15 00000022 4E756D6172756C2065-         format_print1 db "Numarul este %d", 13, 10,0                       ;formatul de afisare al numarului in baza 10
+    15 0000002B 7374652025640D0A00 
+    16 00000034 0A000000                    zece dd 10
+    17 00000038 00000000                    nr_cifre dd 0
+    18 0000003C 00000000                    power dd 0
+    19                                  segment code use32 class=code
+    20                                      nr_cif:                                 ;eticheta de apelare a functiei nr_cif, care returneaza in CL, nr de cifre al unui numar transmis ca si parametru
+    21 00000000 B900000000                          mov ECX, 0                      ;punem 0 in ECX
+    22 00000005 B101                                mov CL, 1                       ;punem in CL valoarea 1, acesta va fi contorul pentru numarul de cifre
+    23 00000007 B801000000                          mov EAX, 1                      ;punem valoarea 1 in EAX, aici se vor calcula puterile lui 10
+    24                                              .repeta:                    
+    25 0000000C F725[34000000]                          mul  DWORD [zece]           ;inmultim cu DWORDUL 10, asa incat in EDX:EAX, vom avea 10*EAX
+    26                                                  
+    27 00000012 8B542404                                mov EDX, [ESP + 4]          ;punem in EDX valoarea parametrului transmis
+    28 00000016 39D0                                    cmp EAX, EDX                ;comparam cele doua valori, in cazul in care 10^(CL + 1) > EDX, inseamna ca nr de cifre al parametruului este CL
+    29 00000018 7F04                                    jg .stop                    ;eticheta de oprire
+    30 0000001A FEC1                                    inc CL                      ;in cazul in care nu ne oprim, incrementam puterea lui 10
+    31 0000001C EBEE                                    jmp .repeta                 ;sarim la eticheta de repetare
+    32                                              .stop:
+    33 0000001E C3                                      ret                         ;ret care ne va reintoarce in program
+    34                                                  
+    35                                      start:
+    36 0000001F FF35[00000000]                 push DWORD [a]                       ;punem valoarea variabilei pe stiva
+    37 00000025 68[04000000]                   push DWORD format_print              ;punem formatul de printare (baza 16 %x)
+    38 0000002A FF15[00000000]                 call [printf]                        ;apelam functia printf
+    39 00000030 83C408                         add ESP, 4*2                         ;eliberam parametrii de pe stiva
+    40                                         ;1234                                |
+    41                                         ;2341                                | => permutari circulare
+    42                                         ;3412                                |
+    43                                         ;4123                                |
+    44                                        
+    45 00000033 FF35[00000000]                 push DWORD [a]                       ;punem valoarea variabilei pe stiva
+    46 00000039 E8C2FFFFFF                     call nr_cif                          ;apelam functia creata de noi nr_cif, iar in CL, vom avea numarul de cifre
+    47 0000003E 83C404                         add ESP, 4*1                         ;eliberam parametrii de pe stiva
+    48                                         
+    49 00000041 890D[38000000]                 mov [nr_cifre], ECX       ;salvam numarul de cifre intr-o variabila
+    50                                  
+    51 00000047 BA00000000                     mov EDX, 0                ;punem 0 in partea HIGH din EDX:EAX, pentru a nu avea IntegerOverFlow
+    52 0000004C F73D[34000000]                 idiv DWORD [zece]         ;impartim la 10, pentru a obtine puterea imediat mai mica decat numarul nostru
+    53                                         
+    54 00000052 A3[3C000000]                   mov [power], EAX
+    55                                         repeta:
+    56 00000057 50                                 push DWORD EAX            ;punem puterea imediat mai mica decat numarul nostru, pe stiva           
+    57 00000058 FF35[00000000]                     push DWORD [a]            ;punem numarul pe stiva ca si parametru
+    58 0000005E E8(00000000)                       call circ_perm            ;apelam permutarea circulara
+    59 00000063 83C408                             add ESP, 4*2              ;curatam stiva de paraemntrii
+    60                                             
+    61 00000066 A3[00000000]                       mov [a], EAX              ;urmatorul numar [a] va fi EAX
+    62 0000006B 50                                 push DWORD EAX            ;punem numarul permutat pe stiva
+    63 0000006C 68[22000000]                       push DWORD format_print1  ;punem formatul de printare pentru numere in b10 pe stiva
+    64 00000071 FF15[00000000]                     call [printf]             ;apelam functia print
+    65 00000077 83C408                             add ESP, 4*2              ;curatam parametrii de pe stiva
+    66                                             
+    67 0000007A 8A0D[38000000]                     mov CL, [nr_cifre]        ;punem in CL, numarul curent de fire (cate permutari circulare mai avem)
+    68 00000080 FEC9                               dec CL                    ;decrementam acest numar
+    69 00000082 80F900                             cmp CL, 0                 ;daca numarul de cifre a ajuns la 0 (daca nu mai avem permutari circulare)
+    70 00000085 7E0D                               jng final                 ;sarim la finalul programului
+    71 00000087 880D[38000000]                     mov [nr_cifre], CL        ;actualizam numarul de cifre din variabila nr_cifre
+    72 0000008D A1[3C000000]                       mov EAX, [power]          ;repunem puterea lui 10 imediat mai mica decat numarul nostru initial
+    73 00000092 EBC3                               jmp repeta                ;revenim la eticheta repeta
+    74                                             
+    75                                          
+    76                                          final:                       ;eticheta de final de program
+    77 00000094 6A00                            push    dword 0      
+    78 00000096 FF15[00000000]                  call    [exit]       

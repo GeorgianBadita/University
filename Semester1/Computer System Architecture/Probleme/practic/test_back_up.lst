@@ -1,0 +1,157 @@
+     1                                  ;se citeste de la tatatura un nume de fisier, un car special s si un nr n, fisierul are cuv separate prin spatii
+     2                                  ;sa se scrie in output.txt primele n caractere din fiecare cuvant, daca nr car < n cuvantul se va completa cu car special s
+     3                                  ;input.txt mere +, n = 6 (mere++)
+     4                                  bits 32 
+     5                                  
+     6                                  
+     7                                  global start        
+     8                                  
+     9                                  
+    10                                  extern exit, fopen, fclose, scanf, fprintf, fread, printf           
+    11                                  import exit msvcrt.dll    
+    12                                  import fopen msvcrt.dll
+    13                                  import fclose msvcrt.dll
+    14                                  import fprintf msvcrt.dll
+    15                                  import scanf msvcrt.dll
+    16                                  import fread msvcrt.dll
+    17                                  import printf msvcrt.dll
+    18                                  
+    19                                  segment data use32 class=data
+    20                                      ; ...
+    21 00000000 1732336119                  sir db 23, '23a', 25
+    22                                      len equ 100
+    23                                      len_fis equ 30
+    24 00000005 FFFFFFFF                    descriptor_fis1 dd -1
+    25 00000009 00<rept>                    nume_fisier times len_fis db 0
+    26 00000027 7200                        mod_access db "r", 0
+    27 00000029 7700                        mod_access1 db "w", 0
+    28 0000002B 257300                      fmt_read_str db "%s", 0
+    29 0000002E 257300                      fmt_read_char db "%s", 0
+    30 00000031 256400                      fmt_read_int db "%d", 0
+    31 00000034 45726F617265206C61-         msg_err db "Eroare la deschiderea fisierului", 0
+    31 0000003D 206465736368696465-
+    31 00000046 726561206669736965-
+    31 0000004F 72756C756900       
+    32 00000055 00                          chr db 0
+    33 00000056 00                          n db 0
+    34 00000057 00                          buffer db 0
+    35 00000058 00<rept>                    cuv times len_fis db 0
+    36 00000076 FFFFFFFF                    descriptor_fis2 dd -1
+    37 0000007A 6F75747075742E7478-         nume_fisier2 db "output.txt", 0
+    37 00000083 7400               
+    38                                  
+    39                                  
+    40                                  segment code use32 class=code
+    41                                      start:
+    42                                           
+    43 00000000 68[09000000]                     push DWORD nume_fisier
+    44 00000005 68[2B000000]                     push DWORD fmt_read_str
+    45 0000000A FF15[00000000]                   call [scanf]
+    46 00000010 83C408                           add ESP, 4*2
+    47                                          
+    48                                           
+    49 00000013 68[55000000]                     push DWORD chr
+    50 00000018 68[2E000000]                     push DWORD fmt_read_char
+    51 0000001D FF15[00000000]                   call [scanf]
+    52 00000023 83C408                           add ESP, 4*2
+    53                                           
+    54                                           
+    55 00000026 68[56000000]                     push DWORD n
+    56 0000002B 68[31000000]                     push DWORD fmt_read_int
+    57 00000030 FF15[00000000]                   call [scanf]
+    58 00000036 83C408                           add ESP, 4*2
+    59                                           
+    60                                          
+    61 00000039 68[27000000]                     push DWORD mod_access
+    62 0000003E 68[09000000]                     push DWORD nume_fisier
+    63 00000043 FF15[00000000]                   call [fopen]
+    64 00000049 83C408                           add ESP, 4*2
+    65                                           
+    66 0000004C 83F800                           cmp EAX, 0
+    67 0000004F 0F8401010000                     je err_
+    68                                           
+    69 00000055 A3[05000000]                     mov [descriptor_fis1], EAX
+    70 0000005A BF[58000000]                     mov EDI, cuv
+    71                                           
+    72 0000005F 68[29000000]                     push DWORD mod_access1
+    73 00000064 68[7A000000]                     push DWORD nume_fisier2
+    74 00000069 FF15[00000000]                   call [fopen]
+    75 0000006F 83C408                           add ESP, 4*2
+    76 00000072 A3[76000000]                     mov [descriptor_fis2], EAX
+    77                                           
+    78                                           bucla:
+    79 00000077 FF35[05000000]                      push DWORD [descriptor_fis1]
+    80 0000007D 6A01                                push DWORD 1
+    81 0000007F 6A01                                push DWORD 1
+    82 00000081 68[57000000]                        push DWORD buffer
+    83 00000086 FF15[00000000]                      call [fread]
+    84 0000008C 83C410                              add ESP, 4*4
+    85 0000008F 83F800                              cmp EAX, 0
+    86 00000092 0F849E000000                        je clean_up
+    87                                              
+    88 00000098 A0[57000000]                        mov AL, [buffer]
+    89 0000009D 3C20                                cmp AL, ' '
+    90 0000009F 7406                                je prt_cuv
+    91 000000A1 AA                                  stosb
+    92 000000A2 E98A000000                          jmp again
+    93                                              prt_cuv:
+    94                                                  
+    95 000000A7 B800000000                              mov EAX, 0
+    96 000000AC A0[56000000]                            mov AL, [n]
+    97 000000B1 C680[58000000]00                        mov [cuv + EAX], BYTE 0
+    98 000000B8 BE[58000000]                            mov ESI, cuv
+    99 000000BD B800000000                              mov EAX, 0
+   100 000000C2 A0[56000000]                            mov AL, [n]
+   101 000000C7 89C1                                    mov ECX, EAX
+   102 000000C9 B800000000                              mov EAX, 0
+   103                                                  repet:
+   104 000000CE 8A1C06                                      mov BL, [ESI + EAX]
+   105 000000D1 80FB00                                      cmp BL, 0
+   106 000000D4 7402                                        je put_special
+   107 000000D6 EB09                                        jmp to_loop
+   108                                                      put_special:
+   109 000000D8 8A3D[55000000]                                  mov BH, [chr]
+   110 000000DE 883C06                                          mov [ESI + EAX], BH
+   111                                                      to_loop:
+   112 000000E1 40                                          inc EAX
+   113 000000E2 E2EA                                    loop repet
+   114 000000E4 B800000000                              mov EAX, 0
+   115 000000E9 A0[56000000]                            mov AL, [n]
+   116 000000EE C680[58000000]20                        mov [cuv + EAX], BYTE 20h
+   117 000000F5 83C001                                  add EAX, 1
+   118 000000F8 C680[58000000]00                        mov [cuv + EAX], BYTE 0
+   119 000000FF 68[58000000]                            push DWORD cuv
+   120 00000104 FF35[76000000]                          push DWORD  [descriptor_fis2]
+   121 0000010A FF15[00000000]                          call [fprintf]
+   122 00000110 83C408                                  add ESP, 4*2
+   123 00000113 BB00000000                              mov EBX, 0
+   124 00000118 BF[58000000]                            mov EDI, cuv
+   125                                                  clear:
+   126 0000011D 8A83[58000000]                              mov AL, [cuv + EBX]
+   127 00000123 C683[58000000]00                            mov [cuv + EBX], BYTE 0
+   128 0000012A 43                                          inc EBX
+   129 0000012B 3C00                                        cmp AL, 0
+   130 0000012D 7402                                        je again
+   131 0000012F EBEC                                        jmp clear
+   132                                              
+   133                                           again:   
+   134 00000131 E941FFFFFF                       jmp bucla
+   135                                           
+   136                                           clean_up:
+   137 00000136 FF35[76000000]                      push DWORD [descriptor_fis2]
+   138 0000013C FF15[00000000]                      call [fclose]
+   139 00000142 83C404                              add ESP, 4*1
+   140                                           
+   141 00000145 FF35[05000000]                      push DWORD [descriptor_fis1]
+   142 0000014B FF15[00000000]                      call [fclose]
+   143 00000151 83C404                              add ESP, 4*1
+   144                                           
+   145 00000154 EB0E                             jmp final
+   146                                           err_:
+   147 00000156 68[34000000]                     push DWORD msg_err
+   148 0000015B FF15[00000000]                   call [printf]
+   149 00000161 83C404                           add ESP, 4*1
+   150                                           final:
+   151                                          
+   152 00000164 6A00                            push    dword 0      
+   153 00000166 FF15[00000000]                  call    [exit]       

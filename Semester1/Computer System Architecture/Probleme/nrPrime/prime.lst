@@ -1,0 +1,35 @@
+     1                                  bits 32
+     2                                  
+     3                                  
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  extern exit, scanf, printf              
+     8                                  import exit msvcrt.dll
+     9                                  import scanf msvcrt.dll
+    10                                  import printf msvcrt.dll
+    11                                  segment data use32 class=data
+    12 00000000 0000                        n dw 0
+    13 00000002 0000                        divzori dw 0
+    14 00000004 2564                        format_scan db "%d"
+    15                                  
+    16                                  ; our code starts here
+    17                                  segment code use32 class=code
+    18                                      start:
+    19 00000000 68[00000000]                    push DWORD n ;punem parametrul n pe stiva
+    20 00000005 68[04000000]                    push DWORD format_scan ;punem formatul de citire pe stiva
+    21 0000000A FF15[00000000]                  call [scanf] ;apelam functia scanf
+    22 00000010 83C408                          add ESP, 4*2 ;eliberam stiva
+    23 00000013 66A1[00000000]                  mov AX, [n] ;punem n in AX
+    24 00000019 98                              cwde ;convertim la EAX
+    25 0000001A 89C1                            mov ECX, EAX ;punem EAX in ECX
+    26 0000001C B800000000                      mov EAX, 0 ;punem 0 in EAX
+    27 00000021 66A1[00000000]                  mov AX, [n]; punem n in AX
+    28                                     
+    29                                          
+    30 00000027 E302                            jecxz finalPrg
+    31                                          repeta:
+    32 00000029 E2FE                                loop repeta
+    33                                          finalPrg:
+    34 0000002B 6A00                            push    dword 0      
+    35 0000002D FF15[00000000]                  call    [exit]      

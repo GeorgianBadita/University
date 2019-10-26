@@ -1,0 +1,54 @@
+     1                                  bits 32 
+     2                                  
+     3                                  global start        
+     4                                  
+     5                                  
+     6                                  extern exit, scanf, printf             
+     7                                  import exit msvcrt.dll  
+     8                                  import scanf msvcrt.dll
+     9                                  import printf msvcrt.dll  
+    10                                  
+    11                                  segment data use32 class=data
+    12 00000000 00<rept>                  my_str times 101 db 0
+    13 00000065 257300                    format_scan db "%s", 0
+    14 00000068 4E756D6172756C2064-       format_print db "Numarul de cifre in baza 16 este :%x", 0
+    14 00000071 652063696672652069-
+    14 0000007A 6E2062617A61203136-
+    14 00000083 2065737465203A2578-
+    14 0000008C 00                 
+    15 0000008D 00                        digits db 0
+    16                                  
+    17                                  segment code use32 class=code
+    18                                      start:
+    19                                          
+    20                                        
+    21                                          
+    22 00000000 68[00000000]                    push DWORD my_str
+    23 00000005 68[65000000]                    push DWORD format_scan
+    24 0000000A FF15[00000000]                  call [scanf]
+    25 00000010 83C408                          add ESP, 4*2
+    26                                          
+    27 00000013 BE[00000000]                    mov ESI, my_str
+    28                                          repeta:
+    29 00000018 AC                                  lodsb
+    30 00000019 3C00                                cmp AL, 0
+    31 0000001B 741A                                je stop
+    32 0000001D 3C30                                cmp AL, '0'
+    33 0000001F 7D00                                jge comp_9
+    34                                                  comp_9:
+    35 00000021 3C39                                        cmp AL, '9'
+    36 00000023 7C02                                        jnge increment
+    37 00000025 EBF1                                        jmp repeta
+    38                                                      increment:
+    39 00000027 8A1D[8D000000]                                  mov BL, [digits]
+    40 0000002D FEC3                                            inc BL
+    41 0000002F 881D[8D000000]                                  mov [digits], BL
+    42 00000035 EBE1                                            jmp repeta
+    43                                          stop:
+    44                                              
+    45 00000037 FF35[8D000000]                  push DWORD [digits]
+    46 0000003D 68[68000000]                    push DWORD format_print
+    47 00000042 FF15[00000000]                  call [printf]
+    48 00000048 83C408                          add ESP, 4*2
+    49 0000004B 6A00                            push    dword 0     
+    50 0000004D FF15[00000000]                  call    [exit]      

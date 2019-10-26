@@ -1,0 +1,23 @@
+     1                                  bits 32 
+     2                                  
+     3                                  
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  extern exit, printf        
+     8                                  import exit msvcrt.dll    
+     9                                  import printf msvcrt.dll
+    10                                  
+    11                                  segment data use32 class=data
+    12                                      ; ...
+    13 00000000 00000000                    a dd $-a
+    14 00000004 256400                      fmt db "%d", 0
+    15                                  segment code use32 class=code
+    16                                      start:
+    17                                          
+    18 00000000 B482                          mov AH, -126
+    19 00000002 B003                          mov AL, 3
+    20 00000004 38C4                          cmp AH, AL
+    21                                          
+    22 00000006 6A00                            push    dword 0      
+    23 00000008 FF15[00000000]                  call    [exit]       

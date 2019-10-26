@@ -1,0 +1,24 @@
+def gnome_sort(list):
+	'''
+	implementeaza gnome_sort
+	:param l: lista de elemente
+	:return: lista cu elementele sortate			Fav case, daca lista e deja sortata T(n) in Theta(n)
+								Worst acse, daca lista e in ordine descrescatoare => T(n) in Theta(n^2)
+	'''							Avg case, T(n) in O(n^2)
+    pos = 0							
+    while pos < len(list):
+        if pos == 0 or list[pos] >= list[pos - 1]:
+            pos = pos + 1
+        else:
+            list[pos],list[pos - 1] = list[pos - 1], list[pos]
+            pos = pos - 1
+    
+        return list
+
+
+ [5, 4, 3, 2, 1]
+ pos = 0 => pos = 1, 5 < 4 => [4, 5, 3, 2, 1] (pos = 0)
+ pos = 0 => pos = 1, 5 >= 4 => pos = 2, 3 < 5 => [4, 3, 5, 2, 1] (pos = 1)...
+ 
+ 
+ (n + 2n + 3n + .... + n^2)/n = n(1 + 2 + 3 + ... + n)/n = 1 + 2 + ... + n = n(n + 1)/2 => T(n) in O(n^2)

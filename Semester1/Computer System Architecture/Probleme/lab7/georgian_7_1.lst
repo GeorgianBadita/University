@@ -1,0 +1,102 @@
+     1                                  ;Se dau doua siruri de caractere ordonate alfabetic s1 si s2. Sa se construiasca prin interclasare sirul ordonat s3 care sa contina toate elementele din s1 si s2.
+     2                                  bits 32
+     3                                  
+     4                                  
+     5                                  global start        
+     6                                  
+     7                                  
+     8                                  extern exit         
+     9                                  import exit msvcrt.dll
+    10                                  segment data use32 class=data
+    11                                      ; ...
+    12 00000000 61636567                    s1 db 'aceg' ;primul sir in ordine alfabetica
+    13                                      len_s1 equ ($ - s1) ;lungimea primului sir
+    14 00000004 62646668696A                s2 db 'bdfhij' ;al 2-lea sir in ordine alfabetica
+    15                                      len_s2 equ ($ - s2) ;lungimea celui de-al 2-lea sir
+    16 0000000A 00<rept>                    rez times len_s1 + len_s2 db 0
+    17 00000014 00000000                    str_reminder dd 0
+    18                                  ; our code starts here
+    19                                  segment code use32 class=code
+    20                                      start:
+    21 00000000 FC                              cld ;setam direction flag la 0 pentru parcurgere stanga-dreapta
+    22 00000001 BE[00000000]                    mov ESI, s1 ;punem s1 in sursa
+    23 00000006 BF[04000000]                    mov EDI, s2 ;punem s2 in destinatie
+    24                                         
+    25 0000000B B90A000000                      mov ECX, len_s1 + len_s2 ;punem maximul de parcurgeri in ECX, adica suma lungimilor sirului
+    26 00000010 BB00000000                      mov EBX, 0 ;contor care ne va arata cate elemente din sirul 2 am parcurs
+    27 00000015 B800000000                      mov EAX, 0 ;contor care ne va arata cate elemente din sirul 1 am parcurs
+    28 0000001A BA00000000                      mov EDX, 0 ;contorul pentru pozitia curenta din sirul rezultat
+    29                                          repeta:
+    30 0000001F A6                                  cmpsb ;comparam elementele din cele 2 siruri 
+    31 00000020 7E04                                jng smaller_s1 ;daca s1[poz] < s2[poz]
+    32 00000022 7F20                                jg larger_s1 ;daca s1[poz] > s2[poz]
+    33 00000024 743E                                je equals; daca s1[poz] = s2[poz]
+    34                                              smaller_s1:
+    35 00000026 4E                                      dec ESI ;pentru cazul 1 decrementam ESI
+    36 00000027 4F                                      dec EDI ;decrementam EDI
+    37 00000028 A3[14000000]                            mov [str_reminder], EAX ;salvam valoarea lui EAX
+    38 0000002D AC                                      lodsb ;punem in AL valoarea curenta din ESI
+    39 0000002E 8882[0A000000]                          mov [rez + EDX], AL ;punem in rezultat pe pozitia EDX valoarea din AL
+    40 00000034 A1[14000000]                            mov EAX, [str_reminder] ;restauaram valoarea din EAX
+    41 00000039 42                                      inc EDX ;incrementam EDX
+    42 0000003A 40                                      inc EAX ;incrementam EAX
+    43 0000003B 83F804                                  cmp EAX, len_s1 ;daca am terminat teremenii din s1
+    44 0000003E 7D47                                    jge sf_prg ;sarim la eticheta sf_prg
+    45 00000040 E2DD                                    loop repeta ;repetam loop-ul
+    46 00000042 E343                                    jecxz sf_prg ;daca ecx e 0, din nou sarim la eticheta de final de loop
+    47                                              larger_s1:
+    48 00000044 4F                                      dec EDI
+    49 00000045 4E                                      dec ESI
+    50 00000046 A3[14000000]                            mov [str_reminder], EAX
+    51 0000004B 8A07                                    mov AL, [EDI]
+    52 0000004D 8882[0A000000]                          mov [rez + EDX], AL
+    53 00000053 A1[14000000]                            mov EAX, [str_reminder]
+    54 00000058 47                                      inc EDI         ;rationament asemanator pentru cazul s1[i] > s2[i] si s1[i] = s2[i]
+    55 00000059 42                                      inc EDX         ;practic aplic interclasarea cum am invatat-o la liceu
+    56 0000005A 43                                      inc EBX
+    57 0000005B 83FB06                                  cmp EBX, len_s2
+    58 0000005E 7D27                                    jge sf_prg
+    59 00000060 E2BD                                    loop repeta
+    60 00000062 E323                                    jecxz sf_prg
+    61                                              equals:
+    62 00000064 4E                                      dec ESI
+    63 00000065 A3[14000000]                            mov [str_reminder], EAX
+    64 0000006A AC                                      lodsb
+    65 0000006B 8882[0A000000]                          mov [rez + EDX], AL
+    66 00000071 A1[14000000]                            mov EAX, [str_reminder]
+    67 00000076 42                                      inc EDX
+    68 00000077 43                                      inc EBX
+    69 00000078 83FB06                                  cmp EBX, len_s2
+    70 0000007B 7D0A                                    jge sf_prg
+    71 0000007D 40                                      inc EAX
+    72 0000007E 83F804                                  cmp EAX, len_s1
+    73 00000081 7D04                                    jge sf_prg
+    74 00000083 E29A                                    loop repeta
+    75 00000085 E300                                    jecxz sf_prg
+    76                                          sf_prg:
+    77 00000087 83F804                          cmp EAX, len_s1 ;comparam EAX cu lungimea sirului 1, daca EAX = len_s1 atunci am terminat termenii lui s1 
+    78 0000008A 7402                            je ebx_bigger; si mai avem de completat cu termenii lui s2
+    79 0000008C 7515                            jne ebx_smaller ;daca EAX nu e egal cu len_s1 atunci am terminat teremenii sirulu s2 si mai avem de pus 
+    80                                          ebx_bigger: ;termenii din s1 ramasi
+    81 0000008E B906000000                          mov ECX, len_s2
+    82 00000093 19D9                                sbb ECX, EBX
+    83                                              repeat_:
+    84 00000095 8A07                                    mov AL, [EDI]
+    85 00000097 8882[0A000000]                          mov [rez + EDX], AL
+    86 0000009D 42                                      inc EDX
+    87 0000009E 47                                      inc EDI
+    88 0000009F E2F4                                loop repeat_
+    89 000000A1 EB11                                jmp end_prg
+    90                                          ebx_smaller:
+    91 000000A3 B904000000                          mov ECX, len_s1
+    92 000000A8 19C1                                sbb ECX, EAX
+    93                                              repeat__:
+    94 000000AA AC                                      lodsb
+    95 000000AB 8882[0A000000]                          mov [rez + EDX], AL
+    96 000000B1 42                                      inc EDX
+    97 000000B2 E2F6                                loop repeat__
+    98                                          
+    99                                          
+   100                                          end_prg:
+   101 000000B4 6A00                            push    dword 0      
+   102 000000B6 FF15[00000000]                  call    [exit]      

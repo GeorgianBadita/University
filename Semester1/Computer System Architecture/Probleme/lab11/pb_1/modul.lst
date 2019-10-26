@@ -1,0 +1,20 @@
+     1                                  bits 32
+     2                                  segment use32 public code
+     3 00000000 00000000                    rez dd 0
+     4 00000004 0A000000                    ten dd 10
+     5                                  global circ_perm
+     6                                      circ_perm:
+     7 00000008 8B5C2404                        mov EBX, [ESP + 4]          ;parametrul de pe stiva ce reprezinta numarul nostru
+     8 0000000C 8B4C2408                        mov ECX, [ESP + 8]          ;luam primul parametru de pe stiva, care este puterea lui 10 mai mica decat numarul nostru
+     9 00000010 891D[00000000]                  mov [rez], EBX              ;punem in variabila rez, numarul nostru
+    10 00000016 BA00000000                      mov EDX, 0                  ;ne asiguram ca in partea HIGH din EDX:EAX, avem 0
+    11 0000001B A1[00000000]                    mov EAX, [rez]              ;punem in EAX, variabila rezultat
+    12 00000020 F7F1                            div ECX                     ;imprtim prin ECX, asa incat in EDX avem ultimele n-1 cifre din numar, iar in EAX avem cifra de pe pozitia 1
+    13 00000022 89D3                            mov EBX, EDX                ;punem in EBX, cele n-1 cifre
+    14 00000024 89C1                            mov ECX, EAX                ;punem in ECX, prima cifra
+    15 00000026 89D8                            mov EAX, EBX                ;punem in EAX cele n - 1 cifre
+    16 00000028 BA00000000                      mov EDX, 0                  ;punem 0 in EDX
+    17 0000002D F725[04000000]                  mul DWORD [ten]
+    18 00000033 01C8                            add EAX, ECX                ;in EAX ar trebui sa fii obtinut rezultatul
+    19 00000035 C3                              ret
+    20                                          

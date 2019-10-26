@@ -1,0 +1,58 @@
+     1                                  ;Consider a string of double words. Obtain the ascending ordered sequence of bytes of rank multiple of 3 of the given string. 
+     2                                  ;Example: let the double word string be
+     3                                  ;s dd 12345678h,5bcfh,45327h,1798dfeh,0f112233h
+     4                                  ;This string will be represented in memory as:
+     5                                  ;| 78h| 56h| 34h| 12h| 0cfh| 5bh| 00h| 00h| 27h| 53h| 04h| 00h| 0feh| 8dh| 79h| 01h| 33h| 22h| 11h| 0fh|
+     6                                  ;The sequence of bytes of rank multiple of 3 of the string s is obtained by concatenating the bytes from positions 0,3,6,9,..:
+     7                                  ;| 78h| 12h| 00h| 53h| 0feh| 01h| 11h|
+     8                                  ;This sequence must be in ascending order.
+     9                                  bits 32
+    10                                  
+    11                                  
+    12                                  global start        
+    13                                  
+    14                                  
+    15                                  extern exit              
+    16                                  import exit msvcrt.dll
+    17                                  segment data use32 class=data
+    18 00000000 78563412CF5B000027-         s dd 12345678h,5bcfh,45327h,1798dfeh,0f112233h
+    18 00000009 530400FE8D79013322-
+    18 00000012 110F               
+    19                                      len equ ($ - s)/3 + 1 ;initializam lungimea sirului
+    20 00000014 00<rept>                    rez times len db 0 ;initializam rezultatul
+    21                                  ; our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24                                          
+    25 00000000 FC                              cld
+    26 00000001 B907000000                      mov ECX, len ;initializam ECX cu lungimea sirului pentru a itera
+    27 00000006 BE[00000000]                    mov ESI, s ;punem s in ESI
+    28 0000000B BF[14000000]                    mov EDI, rez ;punem rez in EDI
+    29                                          repeta:
+    30 00000010 AC                                  lodsb; punem byte-ul de pe pozitie multiplu de 3 in AL
+    31 00000011 AA                                  stosb; facem store in sirul rez la AL
+    32 00000012 AC                                  lodsb; trecem la byte-ul 3k + 1
+    33 00000013 AC                                  lodsb; trecem la byte-ul 3k + 2
+    34 00000014 E2FA                            loop repeta
+    35                                          
+    36 00000016 B907000000                      mov ECX, len ;initializam ECX cu lungimea sirului
+    37 0000001B 49                              dec ECX ;decrementam ECX
+    38                                          next_Scan: 
+    39 0000001C 89CB                                mov EBX, ECX ;salvam valoarea lui ECX in EBX
+    40 0000001E BE00000000                          mov ESI, 0 ;punem 0 in ESI
+    41                                          next_com:
+    42 00000023 8A86[14000000]                      mov AL, [rez + ESI] ;punem elementul curent in AL
+    43 00000029 8A96[15000000]                      mov DL, [rez + ESI + 1] ;punem elementul urmator in DL
+    44 0000002F 38D0                                cmp AL, DL ;comparam AL, DL
+    45 00000031 720C                                jb no_Swap ;AL < DL nu avem nevoie de modificari
+    46 00000033 8896[14000000]                          mov [rez + ESI], DL ;facem swap
+    47 00000039 8886[15000000]                          mov [rez + ESI + 1], AL; facem swap
+    48                                              no_Swap:
+    49 0000003F 46                                      inc ESI ;trecem la elementul urmator
+    50 00000040 4B                                      dec EBX ;decrementam EBX
+    51 00000041 75E0                                    jnz next_com ;daca EBX nu e 0, trecem la urmatoarea comparatie
+    52 00000043 E2D7                            loop next_Scan ;trecem la urmatoarea scanare
+    53                                              
+    54                                          
+    55 00000045 6A00                            push    dword 0      
+    56 00000047 FF15[00000000]                  call    [exit]      

@@ -1,0 +1,48 @@
+def e_multime(l):
+	'''
+	Verifica daca o lista este multime
+	:param l: lista de elemente
+	:return: True daca l e multime, False altfel		Caz favorabil, daca l[0] = [i] => T(n) in Teta(1)
+	:arunca: ValueError daca lista e vida			Caz defavorabil, daa l e multime => T(n) in Teta(n^2)
+	'''							Caz mediu, T(n) in O(n^2)
+	if l == []: raise ValueError()
+	new_l = []
+	for item in l:
+	   it not item in new_l:
+		new_l.append(item)
+	return new_l == l
+
+def test_e_multime()
+	try:
+	   e_multime([])
+           assert False
+	except ValueError:
+	   assert True
+	assert e_multime([1]) == True
+	assert e_multime([1, 1, 2, 3]) == False
+	assert e_multime([1, 2, 3 ,4]) == True
+
+def f(l):
+	suma = 0
+	for el in l:
+         j = len(l)				T(n) = Sum(1 -> n)[log(3)n] = nlog(3)n in Teta(nlog(3)n)
+	  while j > 1:
+	     suma += el * j
+	     j //= 3
+	return suma
+
+def suma_rec(l):
+	if l == []: return 0
+	if len(l) == 1: return l[0]			T(n) = |1 + 2T(n/2), n > 1 |	not n = 2^k => k = log(2)n
+	mij = len(l)/2					       |0, n <= 1	   |
+	return suma_rec(l[:mij]) + suma_rec(l[mij:)])	T(2^k) = 1 + 2*T(2^(k-1))	
+							T(2^(k-1)) = 1 + 2*T(2^(k-2))	|*2	
+							T(2^(k-2)) = 1 + 2*T(2^(k-3))   |*2^2
+							.......
+ 							T(2^1) = 1 + 2*T(2^0)		|*2^k
+
+Se reduc => T(2^k) = 1 + 2 + 2^2 + .. + 2^k + 2*T(2^0) =>
+=> T(2^k) = (2^k - 1)/(2 - 1) = 2 ^k - 1 => T(n) = n - 1 in Teta(n)
+
+T(n) pt memorie = | 0		, n <= 1
+		  | n + 2*T(n/2), n > 1		

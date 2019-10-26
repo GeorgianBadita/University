@@ -1,0 +1,106 @@
+     1                                  bits 32 
+     2                                  
+     3                                  
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  extern exit, fopen, fclose, fprintf, fread, scanf, printf               
+     8                                  import exit msvcrt.dll    
+     9                                  import fopen msvcrt.dll
+    10                                  import fclose msvcrt.dll
+    11                                  import fprintf msvcrt.dll
+    12                                  import scanf msvcrt.dll
+    13                                  import printf msvcrt.dll
+    14                                  import fread msvcrt.dll
+    15                                  
+    16                                  
+    17                                  segment data use32 class=data
+    18                                      ; ...
+    19 00000000 6669736965722E7478-         nume_fisier db "fisier.txt", 0
+    19 00000009 7400               
+    20 0000000B 722B00                      mod_access db "r+", 0
+    21 0000000E FFFFFFFF                    descriptor_fis dd -1
+    22 00000012 256400                      mod_read db "%d", 0
+    23 00000015 45726F617265206C61-         mesaj db "Eroare la deschiderea fisierului", 0
+    23 0000001E 206465736368696465-
+    23 00000027 726561206669736965-
+    23 00000030 72756C756900       
+    24                                      len equ 100
+    25 00000036 00<rept>                    buffer times len+1 db 0
+    26 0000009B 00<rept>                    rez times len+1 db 0
+    27 00000100 257300                      fmt db "%s", 0
+    28 00000103 00                          n db 0
+    29                                  
+    30                                  
+    31                                  segment code use32 class=code
+    32                                      start:
+    33 00000000 68[03010000]                    push DWORD n
+    34 00000005 68[12000000]                    push DWORD mod_read
+    35 0000000A FF15[00000000]                  call [scanf]
+    36 00000010 83C408                          add ESP, 4*2
+    37                                          
+    38                                          
+    39 00000013 68[0B000000]                    push DWORD mod_access
+    40 00000018 68[00000000]                    push DWORD nume_fisier
+    41 0000001D FF15[00000000]                  call [fopen]
+    42 00000023 83C408                          add ESP, 4*2
+    43                                          
+    44 00000026 83F800                          cmp EAX, 0
+    45 00000029 0F8480000000                    je err_
+    46                                          
+    47 0000002F A3[0E000000]                    mov [descriptor_fis], EAX
+    48                                          
+    49 00000034 66B80000                        mov AX, 0
+    50 00000038 A0[03010000]                    mov AL, [n]
+    51 0000003D B11A                            mov CL, 26
+    52 0000003F F6F1                            div CL
+    53 00000041 8825[03010000]                  mov [n], AH
+    54 00000047 BF[9B000000]                    mov EDI, rez
+    55                                          bucla:
+    56 0000004C FF35[0E000000]                      push DWORD [descriptor_fis]
+    57 00000052 6A64                                push DWORD len
+    58 00000054 6A01                                push DWORD 1
+    59 00000056 68[36000000]                        push DWORD buffer
+    60 0000005B FF15[00000000]                      call [fread]
+    61 00000061 83C410                              add ESP, 4*4
+    62 00000064 83F800                              cmp EAX, 0
+    63 00000067 7435                                je clean_up
+    64 00000069 BE[36000000]                        mov ESI, buffer
+    65 0000006E B964000000                          mov ECX, len
+    66                                              change:
+    67 00000073 AC                                      lodsb
+    68 00000074 3C20                                    cmp AL, ' '
+    69 00000076 7411                                    je prt
+    70 00000078 0205[03010000]                          add AL, [n]
+    71 0000007E 3C7A                                    cmp AL, 'z'
+    72 00000080 7702                                    ja substract
+    73 00000082 EB02                                    jmp next
+    74                                                  substract:
+    75 00000084 2C1A                                        sub AL, 26
+    76                                                  next:
+    77 00000086 AA                                      stosb
+    78 00000087 E2EA                                loop change
+    79                                              prt:
+    80 00000089 68[9B000000]                        push DWORD rez
+    81 0000008E 68[00010000]                        push DWORD fmt
+    82 00000093 FF15[00000000]                      call [printf]
+    83 00000099 83C408                              add ESP, 4*2
+    84                                              
+    85 0000009C EBAE                            jmp bucla
+    86                                          
+    87                                          
+    88                                          clean_up:
+    89 0000009E FF35[0E000000]                      push DWORD [descriptor_fis]
+    90 000000A4 FF15[00000000]                      call [fclose]
+    91 000000AA 83C404                              add ESP, 4*1
+    92                                          
+    93 000000AD EB0E                            jmp final
+    94                                          err_:
+    95 000000AF 68[15000000]                    push DWORD mesaj
+    96 000000B4 FF15[00000000]                  call [printf]
+    97 000000BA 83C404                          add ESP, 4*1
+    98                                          final:
+    99                                          
+   100                                          
+   101 000000BD 6A00                            push    dword 0      
+   102 000000BF FF15[00000000]                  call    [exit]       

@@ -1,0 +1,59 @@
+     1                                  ;Se dau cuvintele A si B. Sa se obtina dublucuvantul C:
+     2                                  ;bitii 0-4 ai lui C coincid cu bitii 11-15 ai lui A
+     3                                  ;bitii 5-11 ai lui C au valoarea 1
+     4                                  ;bitii 12-15 ai lui C coincid cu bitii 8-11 ai lui B
+     5                                  ;bitii 16-31 ai lui C coincid cu bitii lui A
+     6                                  
+     7                                  bits 32
+     8                                  
+     9                                  
+    10                                  global start        
+    11                                  
+    12                                  
+    13                                  extern exit              
+    14                                  import exit msvcrt.dll
+    15                                  segment data use32 class=data
+    16                                      
+    17 00000000 5777                        A dw 0111011101010111b
+    18 00000002 BE9B                        B dw 1001101110111110b
+    19 00000004 00000000                    C dd 0
+    20                                  ; our code starts here
+    21                                  segment code use32 class=code
+    22                                      start:
+    23                                          ;Bitii 0 - 4 ai lui C sunt bitii 11-15 ai lui A
+    24                                          
+    25 00000000 BB00000000                      mov EBX, 0
+    26 00000005 66A1[00000000]                  mov AX, [A] ;AX = A
+    27                                          
+    28 0000000B 662500F8                        and AX, 1111100000000000b ;Izolam bitii 11-15 ai lui A
+    29                                          
+    30 0000000F B10B                            mov CL, 11 ;CL = 10
+    31                                          
+    32 00000011 66D3C8                          ror AX, CL ;rotim 11 pozitii spre dreapta
+    33                                          
+    34 00000014 98                              cwde
+    35 00000015 09C3                            or EBX, EAX ;punem bitii in rezultat
+    36                                          
+    37 00000017 81CBE00F0000                    or EBX, 00000000000000000000111111100000b ;setam bitii 5-11 ai lui C
+    38                                          
+    39                                          
+    40 0000001D 66A1[02000000]                  mov AX, [B]
+    41 00000023 6625000F                        and AX, 0000111100000000b ;Izolez bitii 8 - 11 ai lui B
+    42                                          
+    43 00000027 B104                            mov CL, 4 ;CL = 4
+    44 00000029 66D3C0                          rol AX, CL ;rotim 4 pozitii spre dreapta
+    45                                          
+    46 0000002C 09C3                            or EBX, EAX ;punem bitii in rezultat
+    47                                          
+    48                                          ;bitii 16 - 31 coincid cu bitii lui A
+    49 0000002E 66A1[00000000]                  mov AX, [A]
+    50 00000034 98                              cwde
+    51                                          
+    52 00000035 C1C010                          rol EAX, 16
+    53                                          
+    54 00000038 09C3                            or EBX, EAX
+    55                                          
+    56 0000003A 891D[04000000]                  mov [C], EBX
+    57                                          
+    58 00000040 6A00                            push    dword 0      
+    59 00000042 FF15[00000000]                  call    [exit]      

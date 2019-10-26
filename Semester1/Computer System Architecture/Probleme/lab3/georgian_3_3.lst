@@ -1,0 +1,80 @@
+     1                                  ;Badita Marin-Georgian, grupa 211, 10/17/2017, problema 6 inmultiri-impartiri
+     2                                  ;x+a/b+c*d-b/c+e
+     3                                  ;a,b,d-byte; c-word; e-doubleword; x-qword
+     4                                  
+     5                                  bits 32
+     6                                  
+     7                                  
+     8                                  global start        
+     9                                  
+    10                                  
+    11                                  extern exit      
+    12                                  import exit msvcrt.dll        
+    13                                  segment data use32 class=data
+    14                                      ; ...
+    15 00000000 04                          a db 4
+    16 00000001 03                          b db 3
+    17 00000002 01                          d db 1
+    18 00000003 FEFF                        c dw -2
+    19 00000005 04000000                    e dd 4
+    20 00000009 0200000000000000            x dq 2
+    21 00000011 0000000000000000            rez dq 0
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                      
+    26                                      ;x+a/b+c*d-b/c+e = 6
+    27 00000000 A0[00000000]                mov AL, [a] ;AL = a
+    28 00000005 6698                        cbw ;Convertesc AL la AX
+    29 00000007 8A1D[01000000]              mov BL, [b] ;BL = b
+    30                                      
+    31 0000000D F6FB                        idiv BL ;AL = AX / BL = a/b
+    32                                      
+    33 0000000F 88C3                        mov BL, AL ;BL = a/b
+    34                                      
+    35 00000011 A0[02000000]                mov AL, [d] ;AL = d
+    36 00000016 6698                        cbw ;Convertesc AL la AX
+    37 00000018 66F72D[03000000]            imul WORD [c] ;DX:AX = c*d
+    38                                      
+    39 0000001F 6652                        push DX ;DX pe stiva
+    40 00000021 6650                        push AX ;AX pe stiva
+    41 00000023 59                          pop ECX ;ECX = c*d
+    42                                      
+    43 00000024 88D8                        mov AL, BL ;AL = a/b
+    44 00000026 6698                        cbw ;Convertesc AL la AX
+    45 00000028 6699                        cwd ;Convertesc AX la DX:AX
+    46                                      
+    47 0000002A 6652                        push DX ;DX pe stiva
+    48 0000002C 6650                        push AX ;AX pe stiva
+    49 0000002E 58                          pop EAX ;EAX = a/b
+    50                                      
+    51 0000002F 01C8                        add EAX, ECX ;EAX = a/b + c*d
+    52 00000031 0305[05000000]              add EAX, [e] ;EAX = a/b + c*d + e
+    53                                      
+    54 00000037 89C1                        mov ECX, EAX ;EDX = a/b + c*d + e
+    55 00000039 A0[01000000]                mov AL, [b] ;AL = b
+    56 0000003E 6698                        cbw ;Convertesc AL la AX
+    57 00000040 6699                        cwd ;Convertesc AX la DX:AX
+    58                                      
+    59 00000042 668B1D[03000000]            mov BX, [c] ;BX = c
+    60 00000049 66F7FB                      idiv BX ;AX = b/c
+    61                                      
+    62 0000004C 6699                        cwd ;Convertesc AX la DX:AX
+    63 0000004E 6652                        push DX ;DX pe stiva
+    64 00000050 6650                        push AX ;AX pe stiva
+    65 00000052 58                          pop EAX; EAX = DX:AX = b/c
+    66                                      
+    67 00000053 29C1                        sub ECX, EAX; EDX = a/b + c*d + e - b/c = a/b + c*d - b/c + e
+    68                                      
+    69 00000055 89C8                        mov EAX, ECX ;EAX = a/b + c*d - b/c + e
+    70                                      
+    71 00000057 99                          cdq ;convertesc EAX la EDX:EAX
+    72                                      
+    73 00000058 0305[09000000]              add EAX, DWORD [x] ;Adun la EAX wordul care incepe la x
+    74 0000005E 1315[0D000000]              adc EDX, DWORD [x + 4]; Adun la EDX wordul de la x  +4 + CF
+    75                                      
+    76 00000064 A3[11000000]                mov [rez], EAX
+    77 00000069 8915[15000000]              mov [rez +4], EDX ;rez = EDX:EAX
+    78                                      
+    79 0000006F 6A00                            push    dword 0      
+    80 00000071 FF15[00000000]                  call    [exit]      

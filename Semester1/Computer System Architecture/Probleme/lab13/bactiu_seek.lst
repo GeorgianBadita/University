@@ -1,0 +1,143 @@
+     1                                  ;lab13
+     2                                  ;se citeste de la tastatura un nume de fisier si un nume(<100)
+     3                                  ;sa se afiseze de cate ori apare numele in fisier
+     4                                  bits 32
+     5                                   
+     6                                  global start        
+     7                                   
+     8                                  extern exit,fseek,scanf,fopen,fclose,printf,fread        
+     9                                  import exit msvcrt.dll  
+    10                                  import fseek msvcrt.dll
+    11                                  import scanf msvcrt.dll
+    12                                  import fopen msvcrt.dll
+    13                                  import fclose msvcrt.dll
+    14                                  import printf msvcrt.dll
+    15                                  import fread msvcrt.dll
+    16                                  segment data use32 class=data
+    17 00000000 00<rept>                    nume_f          times 20 db 0
+    18 00000014 FFFFFFFF                    desc_f          dd          -1
+    19                                      l               equ         100
+    20 00000018 00<rept>                    nume            times l db  0
+    21 0000007C 00<rept>                    buffer          times l db  0
+    22 000000E0 00                          x               db          0
+    23 000000E1 257320257300                format_citire   db          "%s %s",0
+    24 000000E7 45726F617265206669-         eroare          db          "Eroare fisier!",0
+    24 000000F0 736965722100       
+    25 000000F6 7200                        mod_acces       db          "r",0
+    26 000000F8 00000000                    diferenta       dd          0
+    27 000000FC 00000000                    lungime_nume    dd          0
+    28 00000100 00000000                    cat_am_citit    dd          0
+    29 00000104 00000000                    contor          dd          0
+    30 00000108 4E722E206170617269-         format_afisare  db          "Nr. aparitii: %u",0
+    30 00000111 7469693A20257500   
+    31                                     
+    32                                  segment code use32 class=code
+    33                                      start:
+    34                                         
+    35 00000000 68[18000000]                    push    dword nume
+    36 00000005 68[00000000]                    push    dword nume_f
+    37 0000000A 68[E1000000]                    push    dword format_citire
+    38 0000000F FF15[00000000]                  call    [scanf]
+    39 00000015 83C40C                          add     esp,     4*3
+    40                                         
+    41 00000018 68[F6000000]                    push    dword mod_acces
+    42 0000001D 68[00000000]                    push    dword nume_f
+    43 00000022 FF15[00000000]                  call    [fopen]
+    44                                         
+    45 00000028 83F800                          cmp     eax,    0
+    46 0000002B 0F84B7000000                    je      .eroare_f
+    47                                         
+    48 00000031 A3[14000000]                    mov     [desc_f],   eax
+    49                                         
+    50 00000036 B900000000                      mov     ecx,    0
+    51                                         
+    52                                          .lungime:
+    53 0000003B 80B9[18000000]00                    cmp     byte [nume+ecx],    0
+    54 00000042 7403                                je      .gata_lungime
+    55 00000044 41                                  inc     ecx
+    56 00000045 EBF4                            jmp .lungime
+    57                                          .gata_lungime:
+    58                                         
+    59 00000047 890D[FC000000]                  mov     [lungime_nume], ecx
+    60                                         
+    61                                         
+    62                                          .citeste:
+    63 0000004D FF35[14000000]                      push    dword [desc_f]
+    64 00000053 6A64                                push    dword l
+    65 00000055 6A01                                push    dword 1
+    66 00000057 68[7C000000]                        push    dword buffer
+    67 0000005C FF15[00000000]                      call    [fread]
+    68 00000062 83C410                              add     esp,    4*4
+    69 00000065 A3[00010000]                        mov     [cat_am_citit], eax
+    70                                             
+    71                                              ;daca citim mai putine caract decat lungimea cuv, am terminat
+    72 0000006A 3B05[FC000000]                      cmp     eax,    [lungime_nume]
+    73 00000070 725A                                jb      .gata_citeste
+    74                                             
+    75 00000072 89C1                                mov     ecx,    eax
+    76 00000074 2B0D[FC000000]                      sub     ecx,    [lungime_nume]
+    77 0000007A 41                                  inc     ecx ;de cate ori verificam
+    78                                             
+    79 0000007B BB00000000                          mov     ebx,    0; de pe ce pozitie incepem verificarea in buffer
+    80                                             
+    81                                              .repeta:
+    82 00000080 BE[7C000000]                            mov     esi,    buffer
+    83 00000085 01DE                                    add     esi,    ebx;esi: de unde incepem in buffer
+    84 00000087 BF[18000000]                            mov     edi,    nume;edi: nume
+    85                                                 
+    86 0000008C 51                                      push    ecx
+    87 0000008D 8B0D[FC000000]                          mov     ecx,    [lungime_nume]
+    88                                                 
+    89                                                  ;verificam daca octetii coincid
+    90                                                  .compara:
+    91 00000093 A6                                          cmpsb
+    92 00000094 7502                                        jne     .gata_compara
+    93 00000096 E2FB                                    loop .compara
+    94                                                  .gata_compara:
+    95                                                 
+    96 00000098 83F900                                  cmp     ecx,    0
+    97 0000009B 7506                                    jne     .nuebun
+    98 0000009D FF05[04010000]                          inc     dword [contor]
+    99                                                 
+   100                                                  .nuebun:
+   101 000000A3 59                                      pop     ecx
+   102 000000A4 43                                      inc ebx
+   103                                             
+   104 000000A5 E2D9                                loop .repeta
+   105                                             
+   106                                              ;daca nu mai putem citi, am terminat
+   107 000000A7 833D[00010000]64                    cmp     dword [cat_am_citit],   l
+   108 000000AE 751C                                jne     .gata_citeste
+   109                                             
+   110                                              ;daca mai putem citi, ducem inapoi pointerul in fisier cu -(lungime_nume-1)
+   111 000000B0 A1[FC000000]                        mov     eax,    [lungime_nume]
+   112 000000B5 48                                  dec     eax
+   113 000000B6 F7D8                                neg     eax
+   114                                             
+   115 000000B8 6A01                                push    dword 1; 1 = SEEK_CUR
+   116 000000BA 50                                  push    eax
+   117 000000BB FF35[14000000]                      push    dword [desc_f]
+   118 000000C1 FF15[00000000]                      call    [fseek]
+   119 000000C7 83C40C                              add     esp,    4*3
+   120                                             
+   121 000000CA EB81                            jmp  .citeste
+   122                                          .gata_citeste:
+   123                                         
+   124                                          ;afisare
+   125 000000CC FF35[04010000]                  push    dword [contor]
+   126 000000D2 68[08010000]                    push    dword format_afisare
+   127 000000D7 FF15[00000000]                  call    [printf]
+   128 000000DD 83C408                          add     esp,    4*2
+   129                                         
+   130 000000E0 6A00                            push    dword 0      
+   131 000000E2 FF15[00000000]                  call    [exit]      
+   132                                     
+   133                                     
+   134                                      .eroare_f:
+   135                                         
+   136 000000E8 68[E7000000]                    push    dword eroare
+   137 000000ED FF15[00000000]                  call    [printf]
+   138 000000F3 83C404                          add     esp,    4
+   139                                         
+   140 000000F6 6A00                            push    dword 0      
+   141 000000F8 FF15[00000000]                  call    [exit]

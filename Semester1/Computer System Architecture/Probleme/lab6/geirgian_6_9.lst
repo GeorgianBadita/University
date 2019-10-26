@@ -1,0 +1,48 @@
+     1                                  ;Se da un sir de octeti S. Sa se construiasca un sir D1 care sa contina toate numerele pozitive si un sir D2 care sa contina toate numerele negative din S. 
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  
+     6                                  global start  
+     7                                  
+     8                                  
+     9                                  extern exit       
+    10                                  import exit msvcrt.dll
+    11                                  segment data use32 class=data
+    12 00000000 FFFDFEFBFDF8FB07            s db -1, -3, -2, -5, -3, -8, -5, 7 ;declaram sirul s
+    13                                      l equ $ - s; stabilirea lungimii sirului destinatie
+    14 00000008 00<rept>                    d1 times l db 0
+    15 00000010 00<rept>                    d2 times l db 0
+    16                                  ; our code starts here
+    17                                  segment code use32 class=code
+    18                                      start:
+    19                                         
+    20 00000000 B908000000                      mov ECX, l ;punem lungimea sirului in ECX pentru a putea realiza bucla loop de ECX ori
+    21 00000005 BE00000000                      mov ESI, 0 ;punem 0 in contor cu care iteram prin sir
+    22 0000000A BB00000000                      mov EBX, 0 ;punem 0 in contorul cu care iteram prin d1
+    23 0000000F BA00000000                      mov EDX, 0 ;punem in 0 contorul cu care iteram prin d2
+    24 00000014 E322                            jecxz Sf_prog
+    25                                          Repeta:
+    26 00000016 8A86[00000000]                      mov AL, [s + ESI] ;punem in AL, elementul de pe pozitia ESI din sir
+    27 0000001C 3C00                                cmp AL, 0 ;comparam valoarea din AL cu 0
+    28 0000001E 7C02                                jl negative ;in caz ca AL < 0 mergem la eticheta negative
+    29 00000020 7D0C                                jge positive ;in caz in care AL >= 0 mergem la eticheta positive
+    30                                              
+    31                                              negative:
+    32                                              
+    33 00000022 8882[10000000]                          mov [d2 + EDX], AL ;punem in pozitia curenta din d2 pe AL
+    34 00000028 42                                      inc EDX ;incrementam EDX
+    35 00000029 46                                      inc ESI ;incrementam contorul general
+    36 0000002A E2EA                                    loop Repeta ;mergem inapoi la loop pentru a nu intra si pe cazul pozitiv
+    37 0000002C E30A                                    jecxz Sf_prog; ne asiguram ca in cazul in care ultimul element din sir este negativ, nu va fi pus si in d1
+    38                                             
+    39                                              positive:
+    40                                               
+    41 0000002E 8883[08000000]                          mov [d1 + EBX], AL ;punem in pozitia curenta din d1 pe EBX
+    42 00000034 43                                      inc EBX ;incrementam pe EBX
+    43 00000035 46                                      inc ESI ;incrementam contorul general si revenim la eticheta Repeta
+    44 00000036 E2DE                            loop Repeta
+    45                                          Sf_prog:
+    46                                          
+    47 00000038 6A00                            push    dword 0      
+    48 0000003A FF15[00000000]                  call    [exit]      

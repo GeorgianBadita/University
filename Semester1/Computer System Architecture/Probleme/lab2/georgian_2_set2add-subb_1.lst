@@ -1,0 +1,35 @@
+     1                                  ;Badita Marin-Georgian, gr. 211, 10.10.2017, problema 1 set2 adunari-scaderi 
+     2                                  ;calculul expresiei (c+b+a)-(d+d)
+     3                                  
+     4                                  bits 32 ; assembling for the 32 bits architecture
+     5                                  
+     6                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     7                                  global start        
+     8                                  
+     9                                  ; declare external functions needed by our program
+    10                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+    11                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    12                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    13                                  
+    14                                  ; our data is declared here (the variables needed by our program)
+    15                                  segment data use32 class=data
+    16                                      ; ...
+    17 00000000 0A00                        a dw 10
+    18 00000002 1500                        b dw 21
+    19 00000004 0F00                        c dw 15
+    20 00000006 0C00                        d dw 12
+    21                                  ; our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24 00000000 66A1[04000000]                  mov AX, [c] ; AX = c
+    25 00000006 660305[02000000]                add AX, [b] ; AX = AX + b = c + b        
+    26 0000000D 660305[00000000]                add AX, [a] ; AX = AX + a = c + b + a
+    27                                          
+    28 00000014 668B15[06000000]                mov DX, [d] ; DX = d
+    29 0000001B 660315[06000000]                add DX, [d] ; DX = DX + d = d + d
+    30                                          
+    31 00000022 6629D0                          sub AX, DX ; AX = AX - DX = (c + b + a) - (d + d)
+    32                                          
+    33                                          
+    34 00000025 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    35 00000027 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

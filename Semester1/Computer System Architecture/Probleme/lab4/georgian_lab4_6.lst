@@ -1,0 +1,51 @@
+     1                                  ;Se da cuvantul A. Sa se obtina numarul intreg n reprezentat de bitii 0-2 ai lui A. Sa se obtina apoi in B cuvântul rezultat prin rotirea spre ;dreapta (fara carry) a lui A cu n pozitii. Sa se obtina dublucuvantul 
+     2                                  ;bitii 8-15 ai lui C sunt 0
+     3                                  ;bitii 16-23 ai lui C coincid cu bitii lui 2-9 ai lui B
+     4                                  ;bitii 24-31 ai lui C coincid cu bitii lui 7-14 ai lui A
+     5                                  ;bitii 0-7 ai lui C sunt 1
+     6                                  bits 32
+     7                                  
+     8                                  
+     9                                  global start        
+    10                                  
+    11                                  
+    12                                  extern exit              
+    13                                  import exit msvcrt.dll
+    14                                  segment data use32 class=data
+    15                                  
+    16 00000000 5777                        A dw 0111011101010111b
+    17                                           ;1010111011101110
+    18 00000002 0000                        B dw 0
+    19 00000004 00000000                    C dd 0
+    20 00000008 00                          n db 0
+    21                                  ; our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24 00000000 66A1[00000000]              mov AX, [A] ;AX = A 
+    25                                     
+    26 00000006 6683E007                    and AX, 0000000000000111b
+    27 0000000A 66A3[08000000]              mov [n], AX
+    28                                         
+    29 00000010 8A0D[08000000]              mov CL, [n] ;CL = n
+    30 00000016 66A1[00000000]              mov AX, [A] ;AX = A
+    31 0000001C 66D3C8                      ror AX, CL ;rotim cu n pozitii la stanga fara carry
+    32 0000001F 66A3[02000000]              mov [B], AX ;B = A rotit la stanga cu n pozitii
+    33                                      
+    34 00000025 BB00000000                  mov EBX, 0
+    35 0000002A B800000000                  mov EAX, 0
+    36 0000002F 66A1[02000000]              mov AX, [B]; AX = B
+    37 00000035 6625FC03                    and AX, 0000001111111100b ;izolam bitii 2-9 ai lui B
+    38 00000039 98                          cwde ;AX -> EAX
+    39 0000003A C1C00E                      rol EAX, 14
+    40 0000003D 09C3                        or EBX, EAX ;bitii 16-23 ai lui EBX coincid cu bitii 2 - 9 ai lui A
+    41                                      
+    42 0000003F 66A1[00000000]              mov AX, [A]
+    43 00000045 6625807F                    and AX, 0111111110000000b
+    44 00000049 98                          cwde
+    45 0000004A C1C011                      rol EAX, 17
+    46 0000004D 09C3                        or EBX, EAX
+    47                                      
+    48 0000004F 81CBFF000000                or EBX, 00000000000000000000000011111111b
+    49                                               
+    50 00000055 6A00                            push    dword 0      
+    51 00000057 FF15[00000000]                  call    [exit]      

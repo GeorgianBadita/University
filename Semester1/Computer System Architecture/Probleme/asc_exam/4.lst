@@ -1,0 +1,65 @@
+     1                                  bits 32 
+     2                                  
+     3                                  
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  extern exit, printf               
+     8                                  import exit msvcrt.dll    
+     9                                  import printf msvcrt.dll
+    10                                  
+    11                                  segment data use32 class=data
+    12                                      ; ...
+    13 00000000 1054FAFF7879B2F57F-         sir dw 21520, -6, "xy", 0f5b2h, -129
+    13 00000009 FF                 
+    14                                      len_sir equ ($-sir)/2
+    15 0000000A 00                          max_ db 0
+    16 0000000B 00                          min_ db 0
+    17 0000000C 25780A0D00                  fmt_print db "%x", 10,13, 0
+    18                                  segment code use32 class=code
+    19                                      start:
+    20                                          
+    21 00000000 BE[00000000]                    mov ESI, sir
+    22 00000005 B904000000                      mov ECX, len_sir - 1
+    23 0000000A AC                              lodsb
+    24 0000000B A2[0A000000]                    mov BYTE [max_], AL
+    25 00000010 AC                              lodsb
+    26 00000011 A2[0B000000]                    mov BYTE [min_], AL
+    27                                          get_max_min:
+    28 00000016 AC                                  lodsb
+    29 00000017 8A25[0A000000]                      mov AH, [max_]
+    30 0000001D 38E0                                cmp AL, AH
+    31 0000001F 7605                                jna next_byte
+    32 00000021 A2[0A000000]                            mov [max_], AL
+    33                                              next_byte:
+    34 00000026 AC                                      lodsb
+    35 00000027 8A25[0B000000]                          mov AH, [min_]
+    36 0000002D 38E0                                    cmp AL, AH
+    37 0000002F 7705                                    ja again
+    38 00000031 A2[0B000000]                            mov [min_], AL
+    39                                              again:
+    40 00000036 E2DE                            loop get_max_min
+    41                                          
+    42 00000038 BA00000000                      mov EDX, 0
+    43 0000003D B800000000                      mov EAX, 0
+    44 00000042 A0[0A000000]                    mov AL, [max_]
+    45 00000047 66BB0000                        mov BX, 0
+    46 0000004B 8A1D[0B000000]                  mov BL, [min_]
+    47 00000051 66F7F3                          div BX
+    48                                          
+    49 00000054 60                              pushad
+    50 00000055 50                              push EAX
+    51 00000056 68[0C000000]                    push fmt_print
+    52 0000005B FF15[00000000]                  call [printf]
+    53 00000061 83C408                          add ESP, 4*2
+    54 00000064 61                              popad
+    55                                          
+    56 00000065 B800000000                      mov EAX, 0
+    57 0000006A 6689D0                          mov AX, DX
+    58                                          
+    59 0000006D 50                              push EAX
+    60 0000006E 68[0C000000]                    push fmt_print
+    61 00000073 FF15[00000000]                  call [printf]
+    62 00000079 83C408                          add ESP, 4*2
+    63 0000007C 6A00                            push    dword 0      
+    64 0000007E FF15[00000000]                  call    [exit]       

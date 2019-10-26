@@ -1,0 +1,45 @@
+     1                                  ;Se dau cuvintele A si B. Se cere dublucuvantul C:
+     2                                  ;bitii 0-2 ai lui C au valoarea 0
+     3                                  ;bitii 3-5 ai lui C au valoarea 1
+     4                                  ;bitii 6-9 ai lui C coincid cu bitii 11-14 ai lui A
+     5                                  ;bitii 10-15 ai lui C coincid cu bitii 1-6 ai lui B
+     6                                  ;bitii 16-31 ai lui C au valoarea 1
+     7                                  bits 32
+     8                                  
+     9                                  
+    10                                  global start        
+    11                                  
+    12                                  
+    13                                  extern exit              
+    14                                  import exit msvcrt.dll
+    15                                  segment data use32 class=data
+    16 00000000 5777                        A dw 0111011101010111b
+    17 00000002 BE9B                        B dw 1001101110111110b
+    18 00000004 0000                        C dw 0
+    19                                  
+    20                                  ; our code starts here
+    21                                  segment code use32 class=code
+    22                                      start:
+    23                                          ;bitii 0-2 ai lui C au valoarea 0
+    24 00000000 BB00000000                      mov EBX, 0
+    25                                          ;bitii 3-5 ai lui C au valoarea 1
+    26 00000005 83CB38                          or EBX, 00000000000000000000000000111000b
+    27                                          ;bitii 6-9 ai lui C coincid cu bitii 11-14 ai lui A
+    28 00000008 66A1[00000000]                  mov AX, [A]; 
+    29 0000000E 66250078                        and AX, 0111100000000000b
+    30 00000012 98                              cwde
+    31 00000013 C1C805                          ror EAX, 5
+    32                                          
+    33 00000016 09C3                            or  EBX, EAX
+    34                                          ;bitii 10-15 ai lui C coincid cu bitii 1-6 ai lui B
+    35                                          
+    36 00000018 66A1[02000000]                  mov AX, [B]; AX = B
+    37 0000001E 6683E07E                        and AX, 0000000001111110b
+    38 00000022 98                              cwde
+    39 00000023 C1C009                          rol EAX, 9
+    40 00000026 09C3                            or EBX, EAX
+    41 00000028 81CB0000FFFF                    or EBX, 11111111111111110000000000000000b
+    42                                          
+    43                                         
+    44 0000002E 6A00                            push    dword 0      
+    45 00000030 FF15[00000000]                  call    [exit]      

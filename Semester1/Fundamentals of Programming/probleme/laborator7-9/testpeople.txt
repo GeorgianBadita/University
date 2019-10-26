@@ -1,0 +1,4 @@
+1,Badita,Valcea
+2,Cristina,Sibiu
+3,Adina,Cluj-Napoca
+4,Mirabela,Timisoara

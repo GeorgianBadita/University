@@ -1,0 +1,8 @@
+1,Computer Systems Architecture
+2,Computational Logic
+3,Mathematical Analysis
+4,Algebra
+5,Fundamentals of programming
+6,Data Structures and Algorithms
+7,Graph Algorithms
+8,Operating Systems

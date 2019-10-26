@@ -1,0 +1,53 @@
+     1                                  bits 32 
+     2                                  
+     3                                  
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  extern exit, scanf, printf, fopen, fclose, fprintf      
+     8                                  import exit msvcrt.dll    
+     9                                  import scanf msvcrt.dll
+    10                                  import fprintf msvcrt.dll
+    11                                  import fclose msvcrt.dll
+    12                                  import printf msvcrt.dll
+    13                                  import fopen msvcrt.dll
+    14                                  
+    15                                  segment data use32 class=data
+    16                                      ; ...
+    17 00000000 7700                        mod_acces db "w", 0
+    18 00000002 00<rept>                    nume_fisier times 31 db 0
+    19 00000021 00<rept>                    text  times 121 db 0
+    20 0000009A FFFFFFFF                    descriptor_fis dd -1
+    21 0000009E 257300                      read_format db "%s", 0
+    22                                  segment code use32 class=code
+    23                                      start:
+    24                                          
+    25 00000000 68[02000000]                    push DWORD nume_fisier
+    26 00000005 68[9E000000]                    push DWORD read_format
+    27 0000000A FF15[00000000]                  call [scanf]
+    28 00000010 83C408                          add ESP, 4*2
+    29                                          
+    30 00000013 68[21000000]                    push DWORD text
+    31 00000018 68[9E000000]                    push DWORD read_format
+    32 0000001D FF15[00000000]                  call [scanf]
+    33 00000023 83C408                          add ESP, 4*2
+    34                                          
+    35                                          
+    36 00000026 68[00000000]                    push DWORD mod_acces
+    37 0000002B 68[02000000]                    push DWORD nume_fisier
+    38 00000030 FF15[00000000]                  call [fopen]
+    39 00000036 83C408                          add ESP, 4*2
+    40                                          
+    41 00000039 83F800                          cmp EAX, 0
+    42 0000003C 7419                            je final
+    43 0000003E A3[9A000000]                        mov [descriptor_fis], EAX
+    44                                              
+    45 00000043 68[21000000]                        push DWORD text
+    46 00000048 FF35[9A000000]                      push DWORD [descriptor_fis]
+    47 0000004E FF15[00000000]                      call [fprintf]
+    48 00000054 83C408                              add ESP, 4*2
+    49                                          final:
+    50                                          
+    51                                          
+    52 00000057 6A00                            push    dword 0      
+    53 00000059 FF15[00000000]                  call    [exit]       

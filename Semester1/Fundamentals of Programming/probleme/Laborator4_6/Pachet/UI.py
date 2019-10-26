@@ -1,0 +1,1 @@
+from Pachet.adaugare import adaugareSfarsit,inserareScor

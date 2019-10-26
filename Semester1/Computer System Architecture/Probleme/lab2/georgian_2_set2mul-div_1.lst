@@ -1,0 +1,36 @@
+     1                                  ;Badita Marin-Georgian, gr. 211, 10.10.2017, problema 1 set2 inmultiri-impartiri
+     2                                  ;calculul expresiei (a+b)-(c+d)
+     3                                  
+     4                                  
+     5                                  bits 32 ; assembling for the 32 bits architecture
+     6                                  
+     7                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     8                                  global start        
+     9                                  
+    10                                  ; declare external functions needed by our program
+    11                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+    12                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    13                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    14                                  
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17                                      ; ...
+    18 00000000 0A                          a db 10
+    19 00000001 0D                          b db 13
+    20 00000002 81                          c db 129
+    21 00000003 04                          d db 4
+    22                                  
+    23                                  ; our code starts here
+    24                                  segment code use32 class=code
+    25                                      start:
+    26                                          ; ...
+    27 00000000 8A25[00000000]                  mov AH, [a] ;AH = a
+    28 00000006 0225[01000000]                  add AH, [b] ;AH = AH + b = a + b
+    29                                          
+    30 0000000C A0[02000000]                    mov AL, [c] ;AL = c
+    31 00000011 0205[03000000]                  add AL, [d] ;AL = AL + d = c + d
+    32                                          
+    33 00000017 28C4                            sub AH, AL ; AH = AH - AL = (a + b) - (c + d)
+    34                                          ; exit(0)
+    35 00000019 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    36 0000001B FF15[00000000]                  call    [exit]       ; call exit to terminate the program

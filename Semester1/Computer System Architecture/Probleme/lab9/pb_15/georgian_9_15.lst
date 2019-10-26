@@ -1,0 +1,153 @@
+     1                                  
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  
+     6                                  global start        
+     7                                  
+     8                                  
+     9                                  extern exit, fopen, fread, fclose, printf, fprintf    
+    10                                  import exit msvcrt.dll
+    11                                  import fopen msvcrt.dll
+    12                                  import fread msvcrt.dll
+    13                                  import fclose msvcrt.dll
+    14                                  import printf msvcrt.dll
+    15                                  import fprintf msvcrt.dll
+    16                                  
+    17                                  segment data use32 class=data
+    18                                      ; ...
+    19 00000000 696E7075742E747874-         nume_fisier db "input.txt", 0 ;numele fisierului care ca fi creat
+    19 00000009 00                 
+    20 0000000A 7200                        mod_acces db "r", 0           ;modul de deschidere a fisierului
+    21                                      len equ 100                   ;numarul maxim de elemente cititie din fisier
+    22 0000000C 00<rept>                    buffer times (len + 1) db 0     ;sirul in care se va citit textul din fisier de dimensiune (len + 1)
+    23 00000071 FFFFFFFF                    descrptor_fis dd -1           ;variabila in care vom salva descriptorul fisierului - necesar pentru a putea face referire la fisier
+    24 00000075 257300                      format db "%s", 0 ;formatul - utilizat pentru afisarea numarului de consoane din textul cititi
+    25                                  ; our code starts here
+    26 00000078 00000000                    nr_car_citite dd 0 ;variabila in care vom salva numarul de caractere
+    27 0000007C 00000000                    numar_voc dd 0   ;variabila care numara cate consoane avem
+    28 00000080 00<rept>                    text times 200 db 0
+    29 00000148 77                          mod_acces1 db "w"
+    30                                  segment code use32 class=code
+    31                                      start:
+    32                                          ;apelam fopen pentru a deschide fisierului
+    33                                          ;functia va returna in EAX descriptorul fisierului sau 0 in caz de eroare
+    34                                          ;EAX = fopen(nume_fisier, mod_acces)
+    35                                          
+    36 00000000 68[0A000000]                    push DWORD mod_acces
+    37 00000005 68[00000000]                    push DWORD nume_fisier
+    38 0000000A FF15[00000000]                  call [fopen]
+    39 00000010 83C408                          add ESP, 4*2    ;eliberam parametrii de pe stiva
+    40                                         
+    41 00000013 A3[71000000]                    mov [descrptor_fis], EAX ;salvam valoarea returnata de fopen in variabila descrptor_fis
+    42                                          
+    43                                          ;verificam daca functia fopen a accesat cu succes fisierul (daca EAX != 0)
+    44 00000018 BA00000000                      mov EDX, 0
+    45 0000001D 83F800                          cmp EAX, 0
+    46 00000020 747D                            je final
+    47                                          ;citim textul din fisierul deschis folosind functia fread
+    48                                          ;EAX = fread(text, 1, len, descrptor_fis)
+    49                                          
+    50                                          bucla:
+    51                                              ;citim o parte(100 de caractere) din textul in fisierul deschis folosind fread
+    52                                              ;EAX = fread(buffer, 1, len, descrptor_fis)
+    53 00000022 FF35[71000000]                      push DWORD [descrptor_fis]
+    54 00000028 6A64                                push DWORD len
+    55 0000002A 6A01                                push DWORD 1
+    56 0000002C 68[0C000000]                        push DWORD buffer
+    57 00000031 FF15[00000000]                      call [fread]
+    58 00000037 83C410                              add ESP, 4*4
+    59                                              
+    60                                              ;EAX = numar de caractere /bytes citite
+    61 0000003A 83F800                              cmp EAX, 0  ;daca numarul de caractere citite este  0, am terminat de parcurs fisierul
+    62 0000003D 7460                                je clean_up
+    63                                              
+    64 0000003F A3[78000000]                        mov [nr_car_citite], EAX ;salvam numarul de caractere citite
+    65 00000044 BA00000000                          mov EDX, 0      ;punem 0 in EDX, deoarece il vom folosi ca si contor
+    66 00000049 8B0D[78000000]                      mov ECX, [nr_car_citite] ;punem in ECX nr_car_citite ca sa iteram 
+    67 0000004F FC                                  cld ;setam directia de parcurgere de la stanga la dreapta
+    68 00000050 83F900                              cmp ECX, 0
+    69 00000053 744A                                je final
+    70 00000055 BB00000000                          mov EBX, 0
+    71                                              constr:
+    72 0000005A 8A83[0C000000]                          mov AL, [buffer + EBX]
+    73 00000060 3C30                                    cmp AL, '0'
+    74 00000062 7436                                    je base_case
+    75 00000064 7C02                                    jnge change
+    76 00000066 EB0A                                    jmp cmp_lower_z
+    77                                                  change:
+    78 00000068 B058                                        mov AL, 'X'
+    79 0000006A 8883[0C000000]                              mov [buffer + EBX], AL
+    80 00000070 EB28                                        jmp base_case
+    81                                                  
+    82                                                  cmp_lower_z:
+    83 00000072 3C7A                                        cmp AL, 'z'
+    84 00000074 7424                                        je base_case
+    85 00000076 7DF0                                        jge change
+    86 00000078 EB00                                        jmp cmp_9
+    87                                                      
+    88                                                      cmp_9:
+    89 0000007A 3C39                                            cmp AL, '9'
+    90 0000007C 741C                                            je base_case
+    91 0000007E 7E1A                                            jng base_case
+    92 00000080 EB00                                            jmp cmp_A
+    93                                                          
+    94                                                          cmp_A:
+    95 00000082 3C41                                                cmp AL, 'A'
+    96 00000084 7414                                                je base_case
+    97 00000086 7CE0                                                jnge change
+    98 00000088 EB00                                                jmp cmp_Z
+    99                                                              
+   100                                                              cmp_Z:
+   101 0000008A 3C5A                                                    cmp AL, 'Z'
+   102 0000008C 740C                                                    je base_case
+   103 0000008E 7C0A                                                    jnge base_case
+   104 00000090 EB00                                                    jmp cmp_a
+   105                                                                  
+   106                                                                  cmp_a:
+   107 00000092 3C61                                                        cmp AL, 'a'
+   108 00000094 7404                                                        je base_case
+   109 00000096 7CD0                                                        jnge change
+   110 00000098 EB00                                                        jmp base_case
+   111                                                  
+   112                                                  base_case:
+   113 0000009A 43                                          inc EBX
+   114 0000009B E2BD                                        loop constr
+   115 0000009D EB83                                jmp bucla ;refacem citirea
+   116                                    
+   117                                    
+   118                                          clean_up:
+   119                                             
+   120                                             
+   121                                              
+   122                                              
+   123                                          final:
+   124                                          ; apelam fopen pentru a crea fisierul
+   125                                          ; functia va returna in EAX descriptorul fisierului sau 0 in caz de eroare
+   126                                          ; eax = fopen(nume_fisier, mod_acces)
+   127 0000009F 68[48010000]                    push dword mod_acces1     
+   128 000000A4 68[00000000]                    push dword nume_fisier
+   129 000000A9 FF15[00000000]                  call [fopen]
+   130 000000AF 83C408                          add esp, 4*2                ; eliberam parametrii de pe stiva
+   131                                  
+   132 000000B2 A3[71000000]                    mov [descrptor_fis], eax   ; salvam valoarea returnata de fopen in variabila descriptor_fis
+   133                                          
+   134                                          ; verificam daca functia fopen a creat cu succes fisierul (daca EAX != 0)
+   135 000000B7 83F800                          cmp eax, 0
+   136 000000BA 7423                            je final1
+   137                                          
+   138                                          ; scriem textul in fisierul deschis folosind functia fprintf
+   139                                          ; fprintf(descriptor_fis, text)
+   140 000000BC 68[0C000000]                    push dword buffer
+   141 000000C1 FF35[71000000]                  push dword [descrptor_fis]
+   142 000000C7 FF15[00000000]                  call [fprintf]
+   143 000000CD 83C408                          add esp, 4*2
+   144                                          
+   145                                          ; apelam functia fclose pentru a inchide fisierul
+   146                                          ; fclose(descriptor_fis)
+   147 000000D0 FF35[71000000]                  push dword [descrptor_fis]
+   148 000000D6 FF15[00000000]                  call [fclose]
+   149 000000DC 83C404                          add esp, 4
+   150                                          final1:
+   151 000000DF 6A00                            push    dword 0      
+   152 000000E1 FF15[00000000]                  call    [exit]      

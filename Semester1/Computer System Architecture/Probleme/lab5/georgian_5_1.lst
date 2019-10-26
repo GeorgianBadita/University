@@ -1,0 +1,52 @@
+     1                                  ;Se citesc doua numere in baza 10 a si b de la tastatura, sa se afiseze produsul lor
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  
+     6                                  global start        
+     7                                  
+     8                                  
+     9                                  extern exit, scanf, printf              
+    10                                  import exit msvcrt.dll
+    11                                  import scanf msvcrt.dll
+    12                                  import printf msvcrt.dll
+    13                                  
+    14                                  segment data use32 class=data
+    15 00000000 0000                        a dw 0
+    16 00000002 0000                        b dw 0
+    17 00000004 00000000                    rez dd 0
+    18 00000008 256400                      format_scan db "%d", 0
+    19 0000000B 52657A756C74617475-         format_print db "Rezultatul este: %d", 10, 0
+    19 00000014 6C20657374653A2025-
+    19 0000001D 640A00             
+    20                                  
+    21                                  ; our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24                                         
+    25 00000000 68[00000000]                    push DWORD a
+    26 00000005 68[08000000]                    push DWORD format_scan
+    27 0000000A FF15[00000000]                  call [scanf]
+    28 00000010 83C408                          add ESP, 4*2
+    29                                          
+    30 00000013 68[02000000]                    push DWORD b
+    31 00000018 68[08000000]                    push DWORD format_scan
+    32 0000001D FF15[00000000]                  call [scanf]
+    33 00000023 83C408                          add ESP, 4*2
+    34                                          
+    35 00000026 66A1[00000000]                  mov AX, [a] ;AX = a
+    36 0000002C 66F72D[02000000]                imul WORD [b] ;DX:AX = a * b
+    37                                          
+    38 00000033 6652                            push DX ;punem DX pe stiva
+    39 00000035 6650                            push AX ;punem AX pe stiva
+    40 00000037 58                              pop EAX ;Extragem DX:AX in EAX
+    41                                          
+    42 00000038 A3[04000000]                    mov [rez], EAX ;punem rezultatul in variabila rez
+    43                                          
+    44 0000003D FF35[04000000]                  push DWORD [rez] ;punem rez pe stiva
+    45 00000043 68[0B000000]                    push DWORD format_print ;punem formatul pe stiva
+    46 00000048 FF15[00000000]                  call [printf] ;apelam functia printf
+    47 0000004E 83C408                          add ESP, 4*2 ;golim stiva 
+    48 00000051 6A00                            push    dword 0      
+    49 00000053 FF15[00000000]                  call    [exit]      
+    50                                   

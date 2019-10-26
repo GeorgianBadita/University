@@ -1,0 +1,82 @@
+     1                                  ;Se dau doua siruri de octeti. Sa se parcurga cel mai scurt sir dintre cele doua siruri si sa se construiasca un al treilea sir care va contine cel mai mare element de acelasi rang din cele doua siruri, iar pana la 
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  
+     6                                  global start        
+     7                                      
+     8                                  extern exit              
+     9                                  import exit msvcrt.dll
+    10                                  segment data use32 class=data
+    11 00000000 00030509                    s1 db 0, 3, 5, 9 
+    12                                      l1 equ $ - s1
+    13 00000004 01020304050607              s2 db  1, 2, 3, 4, 5, 6, 7
+    14                                      l2 equ $ - s2
+    15                                  
+    16                                  ; our code starts here
+    17                                  segment code use32 class=code
+    18                                      start:
+    19 00000000 66B80700                    mov AX, l2
+    20 00000004 66BB0400                    mov BX, l1
+    21 00000008 6639D8                      cmp AX, BX
+    22 0000000B BA00000000                  mov EDX, 0
+    23 00000010 7D1A                        jge put_l2
+    24 00000012 7E00                        jng put_l1
+    25                                      put_l1:
+    26 00000014 B907000000                      mov ECX, l2
+    27 00000019 BE[04000000]                    mov ESI, s2
+    28 0000001E BF[00000000]                    mov EDI, s1
+    29 00000023 89CB                            mov EBX, ECX
+    30 00000025 B804000000                      mov EAX, l1
+    31 0000002A EB16                            jmp repeta
+    32                                      put_l2:
+    33 0000002C B904000000                      mov ECX, l1
+    34 00000031 BE[00000000]                    mov ESI, s1
+    35 00000036 BF[04000000]                    mov EDI, s2
+    36 0000003B 89CB                            mov EBX, ECX
+    37 0000003D B807000000                      mov EAX, l2
+    38                                      repeta:
+    39 00000042 A6                              cmpsb 
+    40 00000043 7E09                            jng just_loop
+    41 00000045 7D00                            jge change
+    42                                          change:
+    43 00000047 4E                                  dec ESI
+    44 00000048 4F                                  dec EDI
+    45 00000049 A4                                  movsb
+    46 0000004A E2F6                                loop repeta
+    47 0000004C E304                                jecxz sf_prg
+    48                                          just_loop:
+    49 0000004E E302                                jecxz sf_prg
+    50 00000050 E2F0                                loop repeta
+    51                                          sf_prg:
+    52 00000052 19D8                            sbb EAX, EBX
+    53 00000054 89C1                            mov ECX, EAX
+    54 00000056 49                              dec ECX
+    55 00000057 BA00000000                      mov EDX, 0
+    56 0000005C B001                            mov AL, 1
+    57 0000005E AA                              stosb
+    58                                          repeta1:
+    59 0000005F 4F                                dec EDI
+    60 00000060 8A07                              mov AL, [EDI]
+    61 00000062 47                                inc EDI
+    62 00000063 3C01                              cmp AL, 1
+    63 00000065 7402                              je este_1
+    64 00000067 7507                              jne este_0
+    65                                            este_1:
+    66 00000069 B000                                mov AL, 0
+    67 0000006B AA                                  stosb
+    68 0000006C E309                                jecxz final
+    69 0000006E E2EF                                loop repeta1
+    70                                            este_0:
+    71 00000070 B001                                mov AL, 1
+    72 00000072 AA                                  stosb
+    73 00000073 E302                                jecxz final
+    74 00000075 E2E8                                loop repeta1
+    75                                           
+    76                                              
+    77                                              
+    78                                          final:
+    79                                      
+    80                                      
+    81 00000077 6A00                            push    dword 0      
+    82 00000079 FF15[00000000]                  call    [exit]      

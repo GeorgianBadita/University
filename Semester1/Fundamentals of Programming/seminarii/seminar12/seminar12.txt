@@ -1,0 +1,18 @@
+Functie care verifica daca exista macar un numar par pe o pozitie para din lista:
+
+def even(l, poz = 0):			Caz favorabil: daca pe poz 0 avem nr par: T(n) in Teta(1)
+    if poz >= len(l):			Caz defavorabil: nu avem numar par T(n) = 1 + T(n)
+        return False			Caz mediu: variaza in functie de pozitia unde gasim numar par
+    elif l[poz] % 2 == 0:
+        return True
+    return even(l, poz + 2)
+
+
+for i in range(1, len(l)):
+   ind = i - 1
+   a = l[i]
+   while ind >= 0 and a < l[ind]:
+ 	l[ind + 1] = l[ind]
+        ind -= 1
+   
+   l[ind + 1] = a

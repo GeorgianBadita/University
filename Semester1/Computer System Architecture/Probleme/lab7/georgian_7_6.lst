@@ -1,0 +1,45 @@
+     1                                  ;Dandu-se un sir de cuvinte sa se obtina sirul (de octeti) cifrelor in baza zece ale fiecarui cuvant din acest sir.
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  
+     6                                  global start        
+     7                                  
+     8                                  
+     9                                  extern exit              
+    10                                  import exit msvcrt.dll
+    11                                  segment data use32 class=data
+    12                                      ; ...
+    13 00000000 39302A51F411                sir dw 12345, 20778, 4596 
+    14                                      len equ ($ - sir)/2
+    15                                      len_1 equ ($ - sir)*3
+    16 00000006 00<rept>                    rez times len_1 db 0
+    17 00000018 0A                          n db 10
+    18                                  ; our code starts here
+    19                                  segment code use32 class=code
+    20                                      start:
+    21 00000000 B903000000                     mov ECX, len
+    22 00000005 BE[00000000]                   mov ESI, sir
+    23 0000000A BA00000000                     mov EDX, 0
+    24                                         
+    25                                         repeta:
+    26 0000000F 66AD                            lodsw
+    27                                          ;mov AX, [sir + EDX]
+    28 00000011 51                              push ECX
+    29 00000012 B905000000                      mov ECX, 5
+    30                                          put_digits:
+    31 00000017 F635[18000000]                      div BYTE [n]
+    32 0000001D 88A2[06000000]                      mov [rez + EDX], AH
+    33 00000023 42                                  inc EDX
+    34 00000024 6698                                cbw
+    35 00000026 6683F800                            cmp AX, 0
+    36 0000002A 7402                                je stop_loop
+    37 0000002C E2E9                                loop put_digits
+    38                                          
+    39                                          stop_loop:
+    40 0000002E 59                                  pop ECX
+    41 0000002F E2DE                                loop repeta
+    42                                          
+    43                                          
+    44 00000031 6A00                            push    dword 0      
+    45 00000033 FF15[00000000]                  call    [exit]      

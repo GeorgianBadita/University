@@ -1,0 +1,39 @@
+     1                                  bits 32
+     2                                  global start        
+     3                                  
+     4                                  
+     5                                  extern exit, scanf, printf 
+     6                                  import exit msvcrt.dll    
+     7                                  import scanf msvcrt.dll
+     8                                  import printf msvcrt.dll
+     9                                  
+    10                                  segment data use32 class=data
+    11                                      ; ...
+    12 00000000 256400                      format_scan db "%d", 0
+    13 00000003 0000                        number dw 0
+    14 00000005 0000                        a dw 0
+    15 00000007 0000                        b dw 0
+    16                                  segment code use32 class=code
+    17                                      readInteger:
+    18                                          
+    19 00000000 68[03000000]                    push DWORD number
+    20 00000005 68[00000000]                    push DWORD format_scan
+    21 0000000A FF15[00000000]                  call [scanf]
+    22 00000010 83C408                          add ESP, 4*2
+    23 00000013 A1[03000000]                    mov WORD EAX, [number]
+    23          ******************       warning: register size specification ignored
+    24 00000018 C3                              ret
+    25                                      start:
+    26 00000019 E8E2FFFFFF                      call readInteger
+    27 0000001E A3[05000000]                    mov [a], EAX
+    28 00000023 E8D8FFFFFF                      call readInteger
+    29 00000028 A3[07000000]                    mov [b], EAX
+    30                                          
+    31 0000002D 0305[05000000]                  add EAX, [a]
+    32                                          
+    33                                          
+    34                                          
+    35                                          
+    36                                          
+    37 00000033 6A00                            push    dword 0      
+    38 00000035 FF15[00000000]                  call    [exit]       

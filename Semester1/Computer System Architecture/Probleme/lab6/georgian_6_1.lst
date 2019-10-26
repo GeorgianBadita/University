@@ -1,0 +1,42 @@
+     1                                  ;Se dau doua siruri de octeti S1 si S2. Sa se construiasca sirul D prin concatenarea elementelor din sirul S1 1uate de la stanga spre dreapta si a elementelor din sirul S2 luate de la dreapta spre stanga.
+     2                                  bits 32
+     3                                  
+     4                                  
+     5                                  global start        
+     6                                  
+     7                                  
+     8                                  extern exit              
+     9                                  
+    10                                  import exit msvcrt.dll
+    11                                  segment data use32 class=data
+    12 00000000 01020304050607              S1 db 1, 2, 3, 4, 5, 6, 7
+    13                                      l_S1 equ $ - S1
+    14 00000007 0809                        S2 db 8, 9
+    15                                      l_S2 equ $ - S2
+    16 00000009 <res 00000009>              d resb l_S1 + l_S2
+    17                                      
+    18                                  ; our code starts here
+    19                                  segment code use32 class=code
+    20                                      start:
+    21 00000000 B907000000                      mov ECX, l_S1
+    22 00000005 BE00000000                      mov ESI, 0
+    23 0000000A E32D                            jecxz Sf_Prog
+    24                                          Repeta:
+    25 0000000C 8A86[00000000]                      mov AL, [S1 + ESI]
+    26 00000012 8886[09000000]                      mov [d + ESI], AL
+    27 00000018 46                                  inc ESI
+    28 00000019 E2F1                            loop Repeta
+    29                                          
+    30 0000001B B902000000                      mov ECX, l_S2
+    31 00000020 E317                            jecxz Sf_Prog
+    32 00000022 89F2                            mov EDX, ESI
+    33 00000024 BE01000000                      mov ESI, l_S2 - 1
+    34                                          Repeta1:
+    35 00000029 8A86[07000000]                     mov AL, [S2 + ESI]
+    36 0000002F 8882[09000000]                     mov [d + EDX], AL
+    37 00000035 4E                                 dec ESI
+    38 00000036 42                                 inc EDX
+    39 00000037 E2F0                            loop Repeta1
+    40                                          Sf_Prog:
+    41 00000039 6A00                            push    dword 0      
+    42 0000003B FF15[00000000]                  call    [exit]      

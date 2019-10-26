@@ -1,0 +1,3 @@
+1,Ion,20
+2,Alexandru,18
+3,Andrei,26

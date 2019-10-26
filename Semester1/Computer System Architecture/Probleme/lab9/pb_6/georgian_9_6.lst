@@ -1,0 +1,124 @@
+     1                                  bits 32
+     2                                  global start        
+     3                                  
+     4                                  
+     5                                  extern exit, fopen, fread, fclose, printf
+     6                                  import exit msvcrt.dll    
+     7                                  import fopen msvcrt.dll
+     8                                  import fread msvcrt.dll
+     9                                  import fclose msvcrt.dll
+    10                                  import printf msvcrt.dll
+    11                                  
+    12                                  segment data use32 class=data
+    13                                      ; ...
+    14 00000000 696E7075742E747874-         nume_fisier db "input.txt", 0          ;numele fisierului folosit
+    14 00000009 00                 
+    15 0000000A 722B00                      mod_acces   db "r+", 0                 ;modul de acces
+    16                                      len equ 1
+    17 0000000D 00                          buffer times len db 0               ;rezervam spatiu pentru citire
+    18 0000000E FFFFFFFF                    descriptor_fis dd -1                ;descriptorul de fisier
+    19 00000012 00<rept>                    freq times 10 db 0
+    20 0000001C 25640A0D00                  print_f db "%d", 10, 13,  0
+    21 00000021 00                          max_pos db 0
+    22 00000022 00                          max db 0
+    23 00000023 FF                          test_ db -1
+    24                                     
+    25                                  segment code use32 class=code
+    26                                      start:
+    27                                          
+    28 00000000 68[0A000000]                    push DWORD mod_acces
+    29 00000005 68[00000000]                    push DWORD nume_fisier
+    30 0000000A FF15[00000000]                  call [fopen]
+    31 00000010 83C408                          add ESP, 4*2
+    32                                          
+    33 00000013 83F800                          cmp EAX, 0
+    34 00000016 0F84D6000000                    je final
+    35                                          
+    36 0000001C A3[0E000000]                    mov [descriptor_fis], EAX
+    37                                          
+    38                                          bucla:
+    39 00000021 FF35[0E000000]                     push DWORD [descriptor_fis]
+    40 00000027 6A01                               push DWORD len
+    41 00000029 6A01                               push DWORD 1
+    42 0000002B 68[0D000000]                       push DWORD buffer
+    43 00000030 FF15[00000000]                     call [fread]
+    44 00000036 83C410                             add ESP, 4*4
+    45                                             
+    46 00000039 83F800                             cmp EAX, 0
+    47 0000003C 7429                               je cleanup
+    48                                             
+    49 0000003E A0[0D000000]                       mov AL, [buffer]
+    50                                             
+    51 00000043 2C30                               sub AL, '0'
+    52 00000045 B400                               mov AH, 0
+    53                                             
+    54 00000047 38E0                               cmp AL, AH
+    55 00000049 7D02                               jge check_9
+    56 0000004B EBD4                               jmp bucla
+    57                                             
+    58                                             check_9:
+    59 0000004D B409                                   mov AH, 9
+    60 0000004F 38E0                                   cmp AL, AH
+    61 00000051 7C02                                   jnge is_dig 
+    62 00000053 EBCC                                   jmp bucla
+    63                                                 is_dig:
+    64 00000055 6698                                       cbw
+    65 00000057 98                                         cwde
+    66 00000058 8B88[12000000]                             mov ECX, [freq + EAX]
+    67 0000005E 41                                         inc ECX
+    68 0000005F 8988[12000000]                             mov [freq + EAX], ECX
+    69                                          
+    70 00000065 EBBA                            jmp bucla
+    71                                                  
+    72                                          
+    73                                          cleanup:
+    74 00000067 FF35[0E000000]                      push DWORD [descriptor_fis]
+    75 0000006D FF15[00000000]                      call [fclose]
+    76 00000073 83C404                              add ESP, 4*1
+    77                                              
+    78                                          
+    79 00000076 BB01000000                      mov EBX, 1
+    80 0000007B C705[21000000]0000-             mov [max_pos], DWORD 0
+    80 00000083 0000               
+    81 00000085 8A0D[12000000]                  mov CL, [freq]
+    82 0000008B 880D[22000000]                  mov [max], CL
+    83                                          
+    84                                          get_max:
+    85 00000091 8A83[12000000]                      mov AL, [freq + EBX]
+    86 00000097 8A0D[22000000]                      mov CL, [max]
+    87 0000009D 38C8                                cmp AL, CL
+    88 0000009F 7F0C                                jg bigger
+    89 000000A1 43                                  inc EBX
+    90 000000A2 BA0A000000                          mov EDX, 10
+    91 000000A7 39D3                                cmp EBX, EDX
+    92 000000A9 7410                                je afisare
+    93 000000AB 7EE4                                jng get_max
+    94                                              bigger:
+    95 000000AD 891D[21000000]                          mov [max_pos], EBX
+    96 000000B3 A2[22000000]                            mov [max], AL
+    97 000000B8 43                                      inc EBX
+    98 000000B9 EBD6                                    jmp get_max
+    99                                                  
+   100                                          afisare:
+   101 000000BB B800000000                          mov EAX, 0
+   102 000000C0 A1[22000000]                        mov EAX, [max]
+   103 000000C5 50                                  push DWORD EAX
+   104 000000C6 68[1C000000]                        push DWORD print_f
+   105 000000CB FF15[00000000]                      call [printf]
+   106 000000D1 83C408                              add ESP, 4*2
+   107                                              
+   108 000000D4 B800000000                          mov EAX, 0
+   109 000000D9 A1[21000000]                        mov EAX, [max_pos]
+   110                                              
+   111 000000DE FF35[21000000]                      push DWORD [max_pos]
+   112 000000E4 68[1C000000]                        push DWORD print_f
+   113 000000E9 FF15[00000000]                      call [printf]
+   114 000000EF 83C408                              add ESP, 4*2
+   115                                              
+   116                                              
+   117                                          
+   118                                          final:
+   119                                          
+   120                                          
+   121 000000F2 6A00                            push    dword 0      
+   122 000000F4 FF15[00000000]                  call    [exit]       

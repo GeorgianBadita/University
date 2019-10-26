@@ -1,0 +1,42 @@
+     1                                  ;Badita Marin-Georgian, 211, 7/11/2017, tema lab 6, 4
+     2                                  
+     3                                  ;Se da un sir de octeti S de lungime l. Sa se construiasca sirul D de lungime l-1 astfel incat elementele din D sa reprezinte diferenta dintre fiecare 2 elemente consecutive din S. 
+     4                                  bits 32
+     5                                  
+     6                                  
+     7                                  global start        
+     8                                  
+     9                                  
+    10                                  extern exit, printf              
+    11                                  import exit msvcrt.dll
+    12                                  import printf msvcrt.dll
+    13                                  segment data use32 class=data
+    14 00000000 010204060A1419              s db 1, 2, 4, 6, 10, 20, 25 ;declararea sirului s
+    15                                      l equ $ - s - 1 ;stabilirea lungimii sirului initial l - 1
+    16 00000007 0000<rept>                  d times l db 0, 0 ;rezervarea unui spatiu de memorie de dimensiune l pentru sirul destinatie d si initializarea acestuia
+    17 00000013 257300                      format_sir db "%s", 0
+    18                                  ; our code starts here
+    19                                  segment code use32 class=code
+    20                                      start:
+    21                                      
+    22 00000000 B906000000                  mov ECX, l; punem lungimea in ECX pentru a putea realiza bucla loop de ecx ori
+    23 00000005 BE00000000                  mov ESI, 0; punem 0 in contor cu care iteram prin sir
+    24 0000000A E31A                        jecxz Sf_prog
+    25                                      Repeta:
+    26 0000000C 8A86[00000000]                  mov AL, [s + ESI] ;punem in AL, elementul de pe pozitia ESI din sir
+    27 00000012 8A9E[01000000]                  mov BL, [s + ESI + 1] ;punem in AL, urmatorul element dupa elementul de pe pozitia ESI
+    28 00000018 28C3                            sub BL, AL ;facem scaderea elementelor consecutive
+    29 0000001A 80C330                          add BL, '0' ;convertim
+    30 0000001D 889E[07000000]                  mov [d + ESI], BL; punem in d rezultatul dorit
+    31 00000023 46                              inc ESI ;incrementam ESI pentru a trece la urmatoarea valoare
+    32 00000024 E2E6                        loop Repeta  
+    33                                      
+    34                                      Sf_prog: ;terminarea programului
+    35                                      ;afisarea sirului
+    36                                      
+    37 00000026 68[07000000]                push DWORD d ;punem parametrul d pe stiva
+    38 0000002B 68[13000000]                push DWORD format_sir; punem formatul de afisare a sirului
+    39 00000030 FF15[00000000]              call [printf] ;apelam functia printf
+    40 00000036 83C408                      add ESP, 4*2 ;eliberam stiva
+    41 00000039 6A00                            push    dword 0      
+    42 0000003B FF15[00000000]                  call    [exit]      

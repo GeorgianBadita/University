@@ -1,0 +1,21 @@
+     1                                  ;Se da un sir de octeti S. Sa se obtina in sirul D multimea elementelor din S. 
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  
+     6                                  global start        
+     7                                  
+     8                                  
+     9                                  extern exit              
+    10                                  import exit msvcrt.dll
+    11                                  segment data use32 class=data
+    12 00000000 0104020408020101            s db 1, 4, 2, 4, 8, 2, 1, 1
+    13                                      l equ $ - s
+    14 00000008 <res 00000008>              d resb l
+    15                                  
+    16                                  ; our code starts here
+    17                                  segment code use32 class=code
+    18                                      start:
+    19                                         
+    20 00000000 6A00                            push    dword 0      
+    21 00000002 FF15[00000000]                  call    [exit]      

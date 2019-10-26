@@ -1,0 +1,126 @@
+     1                                  ;Badita Marin-Georgian, gr. 211, 18/12/2018, tema lab 11, problema 13
+     2                                  ;Se dau trei siruri de caractere. Sa se afiseze cel mai lung sufix comun pentru fiecare din cele trei perechi de cate doua siruri ce se pot forma.
+     3                                  bits 32
+     4                                  global start        
+     5                                  
+     6                                  
+     7                                  extern exit, printf
+     8                                  extern sufix                           ;spunem asamblorului ca vom avea nevoie de functia sufix, care exista undeva in exterior
+     9                                  import exit msvcrt.dll    
+    10                                  import printf msvcrt.dll
+    11                                  global result                          ;marcam variabila restult ca si global pentru ca avem nevoie de ea in modulul modul.asm
+    12                                  segment data use32 class=data
+    13                                      ; ...
+    14 00000000 616263646566676831-         sir1 db "abcdefgh11023", 0                   ;primul sir
+    14 00000009 3130323300         
+    15                                      lens_1 equ $-sir1 - 1
+    16 0000000E 737A63617361656667-         sir2 db "szcasaefgh03", 0                 ;sirul 2
+    16 00000017 68303300           
+    17                                      lens_2 equ $ - sir2 - 1
+    18 0000001B 71776572747A626364-         sir3 db "qwertzbcdefgh03", 0              ;sirul 3
+    18 00000024 65666768303300     
+    19                                       lens_3 equ $ - sir3 - 1                      ;dimensiunea sirului 3
+    20                                      len equ 9                          ;dimensiunea maxima a unui sufix = min(lens_1, lens_2, lens_3)
+    21                                                             ;dimensiunea primului sir
+    22                                                             ;dimensiunea sirului 2
+    23                                     
+    24 0000002B 5375666978756C2063-         format db "Sufixul comun dintre sirul %d si %d este: %s", 10, 0 ;formatul de afisare
+    24 00000034 6F6D756E2064696E74-
+    24 0000003D 726520736972756C20-
+    24 00000046 256420736920256420-
+    24 0000004F 657374653A2025730A-
+    24 00000058 00                 
+    25 00000059 00<rept>                    result times len db 0              ;sirul rezultat
+    26 00000062 00<rept>                    new_result times len db 0          ;sirul rezultat dupa oglindire
+    27                                      
+    28                                  segment code use32 class=code
+    29                                      reverse:
+    30 00000000 CD21                            int 21h
+    31 00000002 B908000000                      mov ECX, len - 1 ;punem in ECX lungimea maxima a unui sufix
+    32 00000007 C605[62000000]00                mov [new_result], BYTE 0
+    33                                          .put0:
+    34 0000000E C681[62000000]00                    mov [new_result + ECX], BYTE 0  ;punem 0 in new_result pentru a ne asigura ca nu avem 'reziduri' ramase de la celalalte apelari
+    35 00000015 E2F7                            loop .put0
+    36 00000017 BE[59000000]                    mov ESI, result                 ;punem in ESI adresa sirului restult
+    37 0000001C BB00000000                      mov EBX, 0                      ;iar in EBX, 0
+    38                                          .repeta:
+    39 00000021 AC                                  lodsb
+    40 00000022 3C00                                cmp AL, 0
+    41 00000024 7403                                je .new
+    42 00000026 43                                  inc EBX                     ;facem un loop pentru a afla lungimea sirului restult
+    43 00000027 EBF8                                jmp .repeta
+    44                                          .new:
+    45 00000029 BE[59000000]                        mov ESI, result             ;punem din nou in ESI adresa de inceput a sirului restult
+    46 0000002E 01DE                                add ESI, EBX                ;la care adaugam lungimea sirului 
+    47 00000030 83EE01                              sub ESI, 1                  ;si scadem 1 pentru a fi la ultimul elemnt
+    48 00000033 FD                                  std                         ;setam DF pentru a parcurge descrescator
+    49 00000034 BA00000000                          mov EDX, 0
+    50 00000039 89D9                                mov ECX, EBX
+    51                                              .put_char:
+    52 0000003B AC                                      lodsb
+    53 0000003C 8882[62000000]                          mov [new_result + EDX], AL  ;punem in new_result caracterele din restult, dar in ordine inversa
+    54 00000042 42                                      inc EDX     
+    55 00000043 49                                      dec ECX
+    56 00000044 7402                                    jz .stop
+    57 00000046 EBF3                                    jmp .put_char
+    58                                          .stop:
+    59 00000048 FC                                  cld                 ;setam DF la 0, deoarece se pare ca functia exit nu functioneaza cand DF = 1
+    60 00000049 C3                                  ret                 ;apelam ret
+    61                                      start:
+    62                                          
+    63 0000004A B90D000000                      mov ECX, lens_1
+    64                                          
+    65 0000004F B8[0C000000]                    mov EAX, sir1 + lens_1 - 1     ;punem in EAX, adresa ultimului element din sirul 1
+    66 00000054 BB[19000000]                    mov EBX, sir2 + lens_2 - 1     ;punem in EBX adresa ultimului element din sirul 2
+    67 00000059 E8(00000000)                    call sufix                     ;apelam functia sufix din modulul modul.asm care returneaza cel mai lung sufix comun a 2 siruri, dar oglindit
+    68 0000005E E89DFFFFFF                      call reverse                ;apelam functia reverse din modulul main pentru a intoarce sirul
+    69                                          
+    70 00000063 68[62000000]                    push DWORD new_result       ;puem sirul new_result pe stiva
+    71 00000068 6A02                            push DWORD 2                ;punem 2 pentru a indica ca ne referim la sirul 2
+    72 0000006A 6A01                            push DWORD 1                ;punem 1 pentru a indica ca ne referim la sirul 1
+    73 0000006C 68[2B000000]                    push DWORD format           ;punem formatul de afisare
+    74 00000071 FF15[00000000]                  call [printf]               ;apelam functia printf
+    75 00000077 83C410                          add ESP, 4*4                ;eliberam parametrii de pe stiva
+    76                                  
+    77                                  
+    78                                          ;-----------------------------------
+    79                                          ;|Aplicam exact acelasi rationament|
+    80                                          ;|pentru sirurile 1,3 respectiv 2,3|
+    81                                          ;-----------------------------------
+    82                                  
+    83                                  
+    84                                          
+    85 0000007A B8[29000000]                    mov EAX, sir3 + lens_3 - 1
+    86 0000007F BB[0C000000]                    mov EBX, sir1 + lens_1 - 1
+    87 00000084 E8(00000000)                    call sufix
+    88 00000089 A1[59000000]                    mov EAX, [result]
+    89 0000008E 83F800                          cmp EAX,  0
+    90 00000091 741C                            je next
+    91                                          
+    92 00000093 E868FFFFFF                      call reverse
+    93 00000098 68[62000000]                    push DWORD new_result
+    94 0000009D 6A03                            push DWORD 3
+    95 0000009F 6A01                            push DWORD 1
+    96 000000A1 68[2B000000]                    push DWORD format
+    97 000000A6 FF15[00000000]                  call [printf]
+    98 000000AC 83C410                          add ESP, 4*4
+    99                                          next:
+   100 000000AF B8[19000000]                    mov EAX, sir2 + lens_2 - 1
+   101 000000B4 BB[29000000]                    mov EBX, sir3 + lens_3 - 1
+   102                                          
+   103 000000B9 E8(00000000)                    call sufix
+   104 000000BE A1[59000000]                    mov EAX, [result]
+   105 000000C3 83F800                          cmp EAX,  0
+   106 000000C6 741C                            je final
+   107                                          
+   108 000000C8 E833FFFFFF                      call reverse
+   109                                          
+   110 000000CD 68[62000000]                    push DWORD new_result
+   111 000000D2 6A02                            push DWORD 2
+   112 000000D4 6A03                            push DWORD 3
+   113 000000D6 68[2B000000]                    push DWORD format
+   114 000000DB FF15[00000000]                  call [printf]
+   115 000000E1 83C410                          add ESP, 4*4
+   116                                          final:
+   117 000000E4 6A00                            push    dword 0      
+   118 000000E6 FF15[00000000]                  call    [exit]       

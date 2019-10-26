@@ -1,0 +1,40 @@
+     1                                  ;Badita Marin-Georgian, grupa 211, 10/17/2017, problema 6 adunari-scaderi set2
+     2                                  ;c-(d+a)+(b+c)
+     3                                  ;a, b, c, d quadWords
+     4                                  
+     5                                  bits 32
+     6                                  
+     7                                  
+     8                                  global start        
+     9                                  
+    10                                  
+    11                                  extern exit              
+    12                                  import exit msvcrt.dll
+    13                                  segment data use32 class=data
+    14                                      ; ...
+    15 00000000 0A00000000000000            a dq 10
+    16 00000008 FBFFFFFFFFFFFFFF            b dq -5
+    17 00000010 0300000000000000            c dq 3
+    18 00000018 0700000000000000            d dq 7
+    19                                  ; our code starts here
+    20                                  segment code use32 class=code
+    21                                      start:
+    22                                      ;c-(d+a)+(b+c) = 3 - 16 - 2 = -16
+    23 00000000 A1[10000000]                mov EAX, DWORD [c] ;pun in EAX dwordul de la adresa c
+    24 00000005 8B15[14000000]              mov EDX, DWORD [c + 4];pun in EDX, dwordul de la adresa c +4
+    25                                      
+    26 0000000B 2B05[18000000]              sub EAX, DWORD [d]
+    27 00000011 1B15[1C000000]              sbb EDX, DWORD [d + 4]; EDX:EAX = c - d
+    28                                      
+    29 00000017 2B05[00000000]              sub EAX, DWORD [a] 
+    30 0000001D 1B15[04000000]              sbb EDX, DWORD [a + 4] ;EDX:EAX = c - (d + a)
+    31                                      
+    32 00000023 0305[08000000]              add EAX, DWORD [b]
+    33 00000029 1315[0C000000]              adc EDX, DWORD [b + 4] ;EDX:EAX = c - (d + a) + b
+    34                                      
+    35 0000002F 0305[10000000]              add EAX, DWORD [c]
+    36 00000035 1315[14000000]              adc EDX, DWORD [c + 4] ;EDX:EAX = c - (d + a) + (b + c)
+    37                                      
+    38                                      
+    39 0000003B 6A00                            push    dword 0      
+    40 0000003D FF15[00000000]                  call    [exit]      

@@ -1,0 +1,14 @@
+     1                                  bits 32
+     2                                  global ultimul
+     3 00000000 00                      var db 0
+     4                                  segment code use32 public code class = 'code'
+     5                                      ultimul:
+     6 00000001 8B4C2404                        mov ECX, [ESP + 4]
+     7 00000005 8B742408                        mov ESI, [ESP + 8]
+     8                                          repet:
+     9 00000009 88C4                                mov AH, AL
+    10 0000000B AC                                  lodsb
+    11 0000000C E2FB                            loop repet
+    12 0000000E C3                              ret
+    13                                          
+    14                                          

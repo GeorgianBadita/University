@@ -1,0 +1,53 @@
+     1                                  ;Badita Marin-Georgian, 211, 31-10-2017, tema lab 5, problema 8
+     2                                  
+     3                                    ;Se da un numar natural a (a: dword, definit in segmentul de date). Sa se citeasca un numar natural b si sa se calculeze: a + a\b. Sa se afiseze rezultatul operatiei. Valorile vor fi afisate in format decimal (baz
+     4                                  
+     5                                  bits 32
+     6                                  
+     7                                  global start
+     8                                  
+     9                                  extern exit, printf, scanf
+    10                                  import exit msvcrt.dll
+    11                                  import printf msvcrt.dll
+    12                                  import scanf msvcrt.dll
+    13                                  
+    14                                  segment data use32 class=data
+    15                                      
+    16 00000000 0D000000                    a dd 13
+    17 00000004 00000000                    b dd 0
+    18 00000008 00000000                    rez dd 0
+    19 0000000C 257500                      format_scan db "%u", 0
+    20 0000000F 623D00                      format_print1 db "b=", 0
+    21 00000012 25640A00                    format_print db "%d", 10, 0
+    22                                      
+    23                                   segment code use32 class=code
+    24                                       start:
+    25                                         ;citim numarul natural b
+    26 00000000 68[0F000000]                   push DWORD format_print1
+    27 00000005 FF15[00000000]                 call [printf]
+    28 0000000B 83C404                         add ESP, 4*1
+    29                                         
+    30 0000000E 68[04000000]                   push DWORD b
+    31 00000013 68[0C000000]                   push DWORD format_scan
+    32 00000018 FF15[00000000]                 call [scanf]
+    33 0000001E 83C408                         add ESP, 4*2
+    34                                         
+    35                                         ;EAX = a
+    36 00000021 A1[00000000]                   mov EAX, DWORD[a]
+    37 00000026 99                             cdq ;convertim WORD-ul a la QWORD, EDX:EAX = a
+    38                                         
+    39                                         ;impartim la DWORD-ul b, avem EAX = EDX:EAX / b
+    40 00000027 F73D[04000000]                 idiv DWORD[b]
+    41                                   
+    42                                         ;adunam a la a/b, EAX = a + a/b
+    43 0000002D 0305[00000000]                 add EAX, DWORD[a]
+    44                                         
+    45                                         
+    46                                         ;afisam rezultatul
+    47 00000033 50                             push DWORD EAX
+    48 00000034 68[12000000]                   push DWORD format_print
+    49 00000039 FF15[00000000]                 call [printf]
+    50 0000003F 83C408                         add ESP, 4*2
+    51                                         
+    52 00000042 6A00                           push dword 0
+    53 00000044 FF15[00000000]                 call [exit]

@@ -1,0 +1,58 @@
+     1                                  ;(a*2+b/2+e)/(c-d)+x/a
+     2                                  ;a-word; b,c,d-byte; e-doubleword; x-qword
+     3                                  
+     4                                  bits 32
+     5                                  
+     6                                  
+     7                                  global start        
+     8                                  
+     9                                  
+    10                                  extern exit              
+    11                                  import exit msvcrt.dll
+    12                                  segment data use32 class=data
+    13                                      ; ...
+    14 00000000 0A00                        a dw 10
+    15 00000002 05                          b db 5
+    16 00000003 01                          c db 1
+    17 00000004 03                          d db 3
+    18 00000005 0C000000                    e dd 12
+    19 00000009 0500000000000000            x dq 5
+    20                                  ; our code starts here
+    21                                  segment code use32 class=code
+    22                                      start:
+    23 00000000 66A1[00000000]              mov AX, [a] ;AX = a
+    24 00000006 66BB0200                    mov BX, 2 ;BX = 2
+    25                                      
+    26 0000000A 66F7EB                      imul BX ;DX:AX = BX*AX = 2*a
+    27                                      
+    28 0000000D 6652                        push DX ;DX pe stiva
+    29 0000000F 6650                        push AX ;AX pe stiva
+    30 00000011 5B                          pop EBX ;EBX = DX:AX
+    31                                      
+    32 00000012 A0[02000000]                mov AL, [b] ;AL = b
+    33 00000017 6698                        cbw ;AL = AX
+    34 00000019 66B90200                    mov CX, 2; CX = 2
+    35 0000001D 66F7F9                      idiv CX; AL = AX / C = b/2
+    36 00000020 6698                        cbw ;AL = AX 
+    37 00000022 6699                        cwd ;AX = DX:AX
+    38                                      
+    39 00000024 6652                        push DX ;DX pe stiva 
+    40 00000026 6650                        push AX ;AX pe stiva
+    41 00000028 58                          pop EAX ;EAX = DX:AX
+    42                                      
+    43 00000029 01D8                        add EAX, EBX ;EAX = EAX + EBX
+    44 0000002B 1305[05000000]              adc EAX, [e] ;EAX = a*2 + b/2 + e
+    45                                      
+    46 00000031 89C2                        mov EDX, EAX ;EDX = EAX
+    47                                      
+    48 00000033 A0[03000000]                mov AL, [c] ;AL = c
+    49 00000038 2A05[04000000]              sub AL, [d] ;AL = c - d
+    50 0000003E 6698                        cbw ;convert AL la AX
+    51 00000040 6699                        cwd ;convert AX to DX:AX
+    52                                      
+    53 00000042 6652                        push DX ;
+    54 00000044 6650                        push AX ;
+    55 00000046 59                          pop ECX ; ECX = c - d
+    56                                      
+    57 00000047 6A00                            push    dword 0      
+    58 00000049 FF15[00000000]                  call    [exit]      

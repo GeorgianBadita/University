@@ -1,0 +1,75 @@
+     1                                  ;Dandu-se un sir de octeti sa se obtina un sir de cuvinte care sa contina in octetii inferiori multimea caracterelor din sirul de octeti, iar octetul superior al unui cuvant sa contina numarul de aparitii al octetul
+     2                                  
+     3                                  bits 32
+     4                                  
+     5                                  
+     6                                  global start        
+     7                                      
+     8                                  extern exit       
+     9                                  import exit msvcrt.dll
+    10                                  segment data use32 class=data
+    11                                      ; ...
+    12 00000000 020402050202040406-         sir db 2, 4, 2, 5, 2, 2, 4, 4, 6, 6, 6       ;sirul dat
+    12 00000009 0606               
+    13                                      len equ $ - sir                     ;lungimea sirului
+    14 0000000B 00<rept>                    nr_ap times 10 db 0                 ;consideram vectorul de frecventa nr_ap am setat dimensiunea la 10, pentru acest exemplu
+    15 00000015 00<rept>                    numere times 10 db 0                ;dar dimensiunea lui, in mod normal este = cu maximul sirului sir
+    16 0000001F 0000<rept>                  rez times 10 dw 0                   ;variabila unde va fi stocat rezultatul
+    17 00000033 00                          copie db 0                          ;variabila auxiliara ce ne va ajuta in rezolvarea problemei
+    18                                      
+    19                                  ; our code starts here
+    20                                  segment code use32 class=code
+    21                                      start:
+    22 00000000 FC                              cld                             ;setam DF la 0 pentru parcurgere de la st -> dr
+    23 00000001 BE[00000000]                    mov ESI, sir                    ;punem in ESI baza sirului sir
+    24 00000006 B90B000000                      mov ECX, len                    ;punem in ECX lungimea sirului pentru a itera
+    25 0000000B BB00000000                      mov EBX, 0                      ;punem in EBX 0 pentru a-l folosi pe post de oncotr mai tarziu
+    26 00000010 E369                            jecxz sf_prg
+    27                                          repeta:
+    28 00000012 AC                                  lodsb                       ;AL = elementul curent din sirul sir
+    29 00000013 6698                                cbw                         ;convertim din AL in AX
+    30 00000015 98                                  cwde                        ;convertim din AX in EAX
+    31 00000016 A3[33000000]                        mov [copie], EAX            ;salvam valoarea curenta in variabila [copie]
+    32 0000001B 8A80[0B000000]                      mov AL, [nr_ap + EAX]       ;am convertit din AL in EAX pentru a putea aplica formula de la 2 noaptea 
+    33 00000021 3C00                                cmp AL, 0                   ;comparam Valoarea lui AL cu 0, unde AL acum retine numarul de aparitii al elementuli
+    34                                                                          ;curent si comparam cu 0 pentru a vedea daca am mai vizitat elementul sau nu
+    35 00000023 7402                                je nevizitat                ;in caz ca nu l-am vizitat sarim la eticheta nevizitat
+    36 00000025 751D                                jne vizitat                 ;in caz ca l-am vizitat sarim la eticheta vizitat
+    37                                              nevizitat:
+    38 00000027 A1[33000000]                            mov EAX, [copie]        ;restauram valoarea lui EAX la valoarea curenta din sir
+    39 0000002C 8B90[0B000000]                          mov EDX, [nr_ap + EAX]  ;punem in EDX numarul de apartitii al numarului stocat in EAX
+    40 00000032 42                                      inc EDX                 ;incrementam cu 1, deoarece l-am vizitat
+    41 00000033 8990[0B000000]                          mov [nr_ap + EAX], EDX  ;punem in vectorul de frecventa aparitia
+    42 00000039 8983[15000000]                          mov [numere + EBX], EAX ;pentru ca trebuie sa afisam elementele distincte, elementele deja vizitate le stocam
+    43                                                                          ;in alt sir
+    44 0000003F 43                                      inc EBX                 ;folosim EBX ca si contor pentru cel de-al 2-lea sir
+    45 00000040 E339                                    jecxz sf_prg            ;daca ECX a ajuns la 0, sarim la finalul programului
+    46 00000042 E2CE                                    loop repeta             ;daca nu refacem loop-ul
+    47                                              vizitat:    
+    48 00000044 A1[33000000]                            mov EAX, [copie]
+    49 00000049 8B90[0B000000]                          mov EDX, [nr_ap + EAX]  ;in cazul elementelor deja vizitate, doar contorizam aparitie, nu mai punem valoarea
+    50 0000004F 42                                      inc EDX                 ;in cel de-al 2-lea vector
+    51 00000050 8990[0B000000]                          mov [nr_ap + EAX], EDX  
+    52 00000056 E323                                    jecxz sf_prg
+    53 00000058 E2B8                                    loop repeta
+    54                                          
+    55 0000005A 89D9                            mov ECX, EBX                    
+    56 0000005C BE[15000000]                    mov ESI, numere                ;pregatim sirurile, contoarele si ECX pentru unirea celor 2 siruri
+    57 00000061 BF[1F000000]                    mov EDI, rez                   ;in octetul superior o sa punem numarul de aparitii al unui element
+    58 00000066 E313                            jecxz sf_prg
+    59 00000068 BA00000000                      mov EDX, 0                     ;iar in octetul inferior, valoarea sa
+    60                                          pune:
+    61 0000006D AC                                 lodsb                       ;AL = numarul curent
+    62 0000006E AA                                 stosb                       ;stocam valoarea in byte-ul low
+    63 0000006F 6698                               cbw
+    64 00000071 98                                 cwde
+    65 00000072 8A80[0B000000]                     mov AL, [nr_ap + EAX]       ;facem conversia pentru formula de la 2 noaptea si luam numarul de aparitii al numarului
+    66 00000078 AA                                 stosb                       ;stocam numarul de aparitii
+    67                                             
+    68 00000079 E2F2                            loop pune                       ;repetam procesul
+    69                                          
+    70                                          sf_prg:
+    71 0000007B 6A00                            push    dword 0      
+    72 0000007D FF15[00000000]                  call    [exit]      
+    73                                  
+    74                                          
