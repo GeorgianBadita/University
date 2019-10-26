@@ -1,0 +1,3 @@
+C:/Users/georg/Desktop/University/Semester5/PPD/big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/lab1_cpp.dir
+C:/Users/georg/Desktop/University/Semester5/PPD/big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/georg/Desktop/University/Semester5/PPD/big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

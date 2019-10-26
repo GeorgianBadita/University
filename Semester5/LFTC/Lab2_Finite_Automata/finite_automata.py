@@ -128,7 +128,7 @@ class FiniteAutomata:
         longest = 0
         for char in sequence:
             if char not in self.__alphabet:
-                raise LiteralNotInAlphabetException("Literal " + char + " not in alphabet")
+                break
             found_trans = False
             try:
                 for transition in self.__transitions[curr_state]:
@@ -140,7 +140,7 @@ class FiniteAutomata:
                         curr_state = transition.get_state()
                         found_trans = True
             except KeyError:
-                break
+                return sequence[:longest]
             if not found_trans:
                 break
         return sequence[:longest]
