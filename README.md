@@ -4,19 +4,19 @@
 
 <h3> Sem1 </h3>
 
-Computer System Architecture
+[Computer System Architecture](/Semester1/Computer%20System%20Architecture)
 <br>
 <br>
-Fundamentals of Programming
+[Fundamentals of Programming](/Semester1/Fundamentals%20of%20Programming)
 <br>
 <br>
-Computational Logic
+[Computational Logic](/Semester1/Computational%20Logic)
 <br>
 <br>
-Algebra
+[Algebra]()
 <br>
 <br>
-Mathematical Analysis
+[Mathematical Analysis]()
 
 <h3> Sem2  </h3>
 
