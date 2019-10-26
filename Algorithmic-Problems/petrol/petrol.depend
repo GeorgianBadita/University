@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1387204843 source:e:\campion\petrol\petrol.cpp
+	<cstdio>
+	<algorithm>
+
+1388215776 source:d:\campion\petrol\onmyway.cpp
+	<fstream>
+	<algorithm>
+

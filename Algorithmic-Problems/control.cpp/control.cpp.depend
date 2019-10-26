@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1189872156 source:e:\campion\control.cpp\main.cpp
+	<iostream>
+
+1386758536 source:e:\campion\control.cpp\control.cpp
+	<fstream>
+

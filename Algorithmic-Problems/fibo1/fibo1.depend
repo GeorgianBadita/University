@@ -1,0 +1,4 @@
+# depslib dependency file v1.0
+1391951156 source:d:\campion\fibo1\fibo.cpp
+	<fstream>
+

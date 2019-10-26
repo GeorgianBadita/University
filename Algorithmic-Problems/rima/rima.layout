@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="rima.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="154" topLine="3" />
+	</File>
+	<File name="rima.in" open="1" top="0" tabpos="2">
+		<Cursor position="98" topLine="0" />
+	</File>
+	<File name="rima.out" open="1" top="1" tabpos="3">
+		<Cursor position="13" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

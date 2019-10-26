@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1189908156 source:d:\campion\alfabetar\main.cpp
+	<iostream>
+
+1393229954 source:d:\campion\alfabetar\alfabetar.cpp
+	<fstream>
+	<cstring>
+

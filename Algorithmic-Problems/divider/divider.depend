@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1390953720 source:d:\campion\divider\divider.cpp
+	<fstream>
+	<cmath>
+

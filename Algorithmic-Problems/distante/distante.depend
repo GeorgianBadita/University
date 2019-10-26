@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1446673365 source:e:\infoarena\distante\distante.cpp
+	<cstdio>
+	<vector>
+	<deque>
+

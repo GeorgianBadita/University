@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1392193796 source:d:\campion\granita\ranita.cpp
+	<fstream>
+	<algorithm>
+

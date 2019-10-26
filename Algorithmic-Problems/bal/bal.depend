@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1392808523 source:d:\campion\bal\bal.cpp
+	<cstdio>
+	<algorithm>
+

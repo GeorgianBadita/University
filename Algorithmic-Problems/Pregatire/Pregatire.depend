@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1394006415 source:d:\lucrare\pregatire\frecventa.cpp
+	<fstream>
+
+1394006765 source:d:\lucrare\pregatire\secv.cpp
+	<fstream>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1393512666 source:d:\campion\carti\carti.cpp
+	<cstdio>
+	<vector>
+	<iostream>
+

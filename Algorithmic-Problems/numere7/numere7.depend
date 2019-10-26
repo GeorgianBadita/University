@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1391437139 source:d:\campion\numere7\numere7.cpp
+	<fstream>
+	<algorithm>
+

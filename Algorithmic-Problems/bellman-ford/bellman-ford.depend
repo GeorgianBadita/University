@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1446722223 source:e:\infoarena\bellman-ford\bellmanford.cpp
+	<cstdio>
+	<vector>
+	<deque>
+

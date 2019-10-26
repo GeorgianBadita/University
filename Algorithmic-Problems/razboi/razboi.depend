@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1443815816 source:e:\campion\razboi\main.cpp
+	<cstdio>
+	<vector>
+	<deque>
+	<cstring>
+

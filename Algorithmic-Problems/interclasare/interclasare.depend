@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1392771149 source:d:\campion\interclasare\interclasare.cpp
+	<string.h>
+	<cstdio>
+

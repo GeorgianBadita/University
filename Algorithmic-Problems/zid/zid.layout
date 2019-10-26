@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="zid.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="647" topLine="26" />
+	</File>
+	<File name="zid.in" open="1" top="0" tabpos="2">
+		<Cursor position="2401" topLine="0" />
+	</File>
+	<File name="zid.out" open="1" top="1" tabpos="3">
+		<Cursor position="7" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

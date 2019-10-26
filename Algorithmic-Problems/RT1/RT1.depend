@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1394046829 source:d:\lucrare\rt1\4a.cpp
+	<iostream>
+
+1394047049 source:d:\lucrare\rt1\4b.cpp
+	<iostream>
+	<cmath>
+
+1394047420 source:d:\lucrare\rt1\7.cpp
+	<iostream>
+

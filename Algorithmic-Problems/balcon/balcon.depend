@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1393508375 source:d:\campion\balcon\balcon.cpp
+	<fstream>
+	<algorithm>
+

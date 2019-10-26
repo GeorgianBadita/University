@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1388949165 source:d:\campion\compar\acoloptsefu.cpp
+	<fstream>
+	<cstring>
+

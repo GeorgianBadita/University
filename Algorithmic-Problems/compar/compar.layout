@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="acoloptsefu.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="371" topLine="9" />
+	</File>
+	<File name="compar.in" open="1" top="0" tabpos="2">
+		<Cursor position="5" topLine="0" />
+	</File>
+	<File name="compar.out" open="1" top="1" tabpos="3">
+		<Cursor position="14" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

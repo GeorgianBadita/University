@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1448103563 source:e:\infoarena\trenul\main.cpp
+	<cstdio>
+	<vector>
+
+1448103597 source:e:\infoarena\trenul\trenul.cpp
+	<cstdio>
+	<vector>
+

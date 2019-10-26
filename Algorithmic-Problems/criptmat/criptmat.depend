@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1392848823 source:d:\campion\criptmat\criptmat.cpp
+	<fstream>
+	<cstring>
+

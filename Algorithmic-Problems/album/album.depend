@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1447096796 source:e:\infoarena\album\main.cpp
+	<cstdio>
+	<vector>
+	<algorithm>
+

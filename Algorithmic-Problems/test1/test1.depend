@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1387559032 source:e:\campion\test1\est1.cpp
+	<fstream>
+	<cmath>
+

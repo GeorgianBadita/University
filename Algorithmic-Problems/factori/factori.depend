@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1393433619 source:d:\campion\factori\factori.cpp
+	<cstdio>
+	<vector>
+

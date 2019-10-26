@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1432021382 source:e:\infoo\nrmari\main.cpp
+	<cstdio>
+	<cstring>
+
+1432022456 source:e:\infoo\nrmari\inmultire.cpp
+	<cstdio>
+	<cstring>
+

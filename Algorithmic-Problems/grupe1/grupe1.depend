@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1391370004 source:d:\pbinfo\grupe1\grupe1.cpp
+	<fstream>
+	<algorithm>
+
+1391434499 source:d:\campion\grupe1\grupe1.cpp
+	<fstream>
+	<algorithm>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1457010713 source:c:\users\g\desktop\programing over 90000\infoarena\apmkruskal\main.cpp
+	<cstdio>
+	<vector>
+	<algorithm>
+

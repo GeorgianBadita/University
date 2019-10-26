@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1390529036 source:d:\campion\vintage\vintage.cpp
+	<fstream>
+	<algorithm>
+

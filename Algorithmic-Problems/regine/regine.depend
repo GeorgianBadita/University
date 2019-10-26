@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1394187649 source:d:\infoo\de invatat\regine\regine.cpp
+	<fstream>
+	<cmath>
+

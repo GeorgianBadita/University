@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1391772625 source:d:\campion\pepsi\pepsi.cpp
+	<fstream>
+	<algorithm>
+

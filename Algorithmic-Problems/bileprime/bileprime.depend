@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1390958619 source:d:\campion\bileprime\bileprime.cpp
+	<fstream>
+	<cmath>
+	<algorithm>
+

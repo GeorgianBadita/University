@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1393753305 source:d:\campion\siruri2\main.cpp
+	<cstdio>
+	<cstring>
+

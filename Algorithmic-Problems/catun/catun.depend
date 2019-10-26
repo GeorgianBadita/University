@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1456176216 source:c:\users\g\desktop\programing over 90000\infoarena\catun\catun.cpp
+	<cstdio>
+	<deque>
+	<vector>
+

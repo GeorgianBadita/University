@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1387970878 source:d:\campion\cifre2\cifre2.cpp
+	<fstream>
+	<cmath>
+

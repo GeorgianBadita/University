@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1391451580 source:d:\campion\degrade\degrade.cpp
+	<fstream>
+	<cstring>
+	<algorithm>
+
+1391453713 source:d:\campion\degrade\degrade2.cpp
+	<fstream>
+	<cstring>
+	<algorithm>
+

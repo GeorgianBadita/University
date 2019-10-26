@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1432733275 source:e:\infoo\componente conexe\main.cpp
+	<fstream>
+	<vector>
+	<deque>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1387980259 source:d:\campion\triunghi3\triunghi3.cpp
+	<fstream>
+	<cmath>
+

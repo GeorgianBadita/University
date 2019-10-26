@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1443699444 source:e:\infoo\graphs\dfs iterati\main.cpp
+	<cstdio>
+	<stack>
+	<vector>
+

@@ -1,0 +1,39 @@
+#include<fstream>
+#include<cstring>
+using namespace std;
+ifstream f("traseu2.in");
+ofstream g("traseu2.out");
+int a[501][501],ok=1;
+int n,x,y,i,j,m;
+char s[251];
+void citire()
+{   f>>n;
+    f>>x>>y;
+    for(i=0;i<=n+1;i++) {a[i][0]=a[i][n+1]=-1;}
+    for(j=0;j<=n+1;j++) {a[0][j]=a[n+1][j]=-1;}
+    for(i=1;i<=n;i++)
+    for(j=1;j<=n;j++)
+    f>>a[i][j];
+    f>>s;
+    m=strlen(s);
+}
+void rezolvare()
+{
+    for(i=0;i<m;i++)
+    {
+        if(s[i]=='E'&&a[x][y+1]!=1) {y++;} else if(a[x][y+1]==-1) break; else
+        if(s[i]=='S'&&a[x+1][y]!=1) {x++;} else if(a[x+1][y]==-1) break; else
+        if(s[i]=='N'&&a[x-1][y]!=1) {x--;} else if(a[x-1][y]==-1) break; else
+        if(s[i]=='V'&&a[x][y-1]!=1) {y--;} else if(a[x][y-1]==-1) break;
+    }
+}
+void afisare()
+{  g<<x<<' '<<y;
+}
+int main()
+{
+    citire();
+    rezolvare();
+    afisare();
+}
+

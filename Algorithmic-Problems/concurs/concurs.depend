@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1393334736 source:d:\campion\concurs\concurs.cpp
+	<cstdio>
+	<algorithm>
+	<iostream>
+

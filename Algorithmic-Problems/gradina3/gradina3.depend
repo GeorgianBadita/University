@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1189908156 source:d:\campion\gradina3\main.cpp
+	<iostream>
+
+1393501835 source:d:\campion\gradina3\gradina3.cpp
+	<cstdio>
+
