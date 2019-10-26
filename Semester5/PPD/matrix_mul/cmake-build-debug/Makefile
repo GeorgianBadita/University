@@ -122,32 +122,86 @@ matrix_mul/fast:
 	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/build
 .PHONY : matrix_mul/fast
 
-main.obj: main.c.obj
+Tasks.obj: Tasks.cpp.obj
 
-.PHONY : main.obj
+.PHONY : Tasks.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/main.c.obj
-.PHONY : main.c.obj
+Tasks.cpp.obj:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/Tasks.cpp.obj
+.PHONY : Tasks.cpp.obj
 
-main.i: main.c.i
+Tasks.i: Tasks.cpp.i
 
-.PHONY : main.i
+.PHONY : Tasks.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/main.c.i
-.PHONY : main.c.i
+Tasks.cpp.i:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/Tasks.cpp.i
+.PHONY : Tasks.cpp.i
 
-main.s: main.c.s
+Tasks.s: Tasks.cpp.s
 
-.PHONY : main.s
+.PHONY : Tasks.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/main.c.s
-.PHONY : main.c.s
+Tasks.cpp.s:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/Tasks.cpp.s
+.PHONY : Tasks.cpp.s
+
+Utils.obj: Utils.cpp.obj
+
+.PHONY : Utils.obj
+
+# target to build an object file
+Utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/Utils.cpp.obj
+.PHONY : Utils.cpp.obj
+
+Utils.i: Utils.cpp.i
+
+.PHONY : Utils.i
+
+# target to preprocess a source file
+Utils.cpp.i:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/Utils.cpp.i
+.PHONY : Utils.cpp.i
+
+Utils.s: Utils.cpp.s
+
+.PHONY : Utils.s
+
+# target to generate assembly for a file
+Utils.cpp.s:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/Utils.cpp.s
+.PHONY : Utils.cpp.s
+
+mul_thread_pool.obj: mul_thread_pool.cpp.obj
+
+.PHONY : mul_thread_pool.obj
+
+# target to build an object file
+mul_thread_pool.cpp.obj:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj
+.PHONY : mul_thread_pool.cpp.obj
+
+mul_thread_pool.i: mul_thread_pool.cpp.i
+
+.PHONY : mul_thread_pool.i
+
+# target to preprocess a source file
+mul_thread_pool.cpp.i:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.i
+.PHONY : mul_thread_pool.cpp.i
+
+mul_thread_pool.s: mul_thread_pool.cpp.s
+
+.PHONY : mul_thread_pool.s
+
+# target to generate assembly for a file
+mul_thread_pool.cpp.s:
+	$(MAKE) -f CMakeFiles\matrix_mul.dir\build.make CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.s
+.PHONY : mul_thread_pool.cpp.s
 
 thread_mul.obj: thread_mul.cpp.obj
 
@@ -185,9 +239,15 @@ help:
 	@echo ... rebuild_cache
 	@echo ... matrix_mul
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Tasks.obj
+	@echo ... Tasks.i
+	@echo ... Tasks.s
+	@echo ... Utils.obj
+	@echo ... Utils.i
+	@echo ... Utils.s
+	@echo ... mul_thread_pool.obj
+	@echo ... mul_thread_pool.i
+	@echo ... mul_thread_pool.s
 	@echo ... thread_mul.obj
 	@echo ... thread_mul.i
 	@echo ... thread_mul.s

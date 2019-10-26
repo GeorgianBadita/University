@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/matrix_mul.dir/main.c.obj"
+  "CMakeFiles/matrix_mul.dir/Tasks.cpp.obj"
+  "CMakeFiles/matrix_mul.dir/Utils.cpp.obj"
+  "CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj"
   "CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj"
   "libmatrix_mul.dll.a"
   "matrix_mul.exe"
@@ -8,6 +10,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C CXX)
+foreach(lang CXX)
   include(CMakeFiles/matrix_mul.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

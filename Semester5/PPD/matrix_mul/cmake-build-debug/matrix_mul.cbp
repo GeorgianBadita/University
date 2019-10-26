@@ -80,7 +80,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/main.c">
+		<Unit filename="C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Tasks.cpp">
+			<Option target="matrix_mul"/>
+		</Unit>
+		<Unit filename="C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Tasks.h">
+			<Option target="matrix_mul"/>
+		</Unit>
+		<Unit filename="C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.cpp">
+			<Option target="matrix_mul"/>
+		</Unit>
+		<Unit filename="C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/Utils.h">
+			<Option target="matrix_mul"/>
+		</Unit>
+		<Unit filename="C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/mul_thread_pool.cpp">
 			<Option target="matrix_mul"/>
 		</Unit>
 		<Unit filename="C:/Users/georg/Desktop/An3_sem1/PPD/matrix_mul/thread_mul.cpp">

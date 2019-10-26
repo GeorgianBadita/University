@@ -27,6 +27,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -60,6 +61,7 @@
       <workItem from="1571168655135" duration="3922000" />
       <workItem from="1571571184339" duration="1968000" />
       <workItem from="1571658516217" duration="163000" />
+      <workItem from="1572094752658" duration="4905000" />
     </task>
     <servers />
   </component>

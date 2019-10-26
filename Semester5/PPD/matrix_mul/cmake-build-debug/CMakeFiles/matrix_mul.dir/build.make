@@ -56,22 +56,9 @@ include CMakeFiles/matrix_mul.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/matrix_mul.dir/flags.make
 
-CMakeFiles/matrix_mul.dir/main.c.obj: CMakeFiles/matrix_mul.dir/flags.make
-CMakeFiles/matrix_mul.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/matrix_mul.dir/main.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\matrix_mul.dir\main.c.obj   -c C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\main.c
-
-CMakeFiles/matrix_mul.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/matrix_mul.dir/main.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\main.c > CMakeFiles\matrix_mul.dir\main.c.i
-
-CMakeFiles/matrix_mul.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/matrix_mul.dir/main.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\main.c -o CMakeFiles\matrix_mul.dir\main.c.s
-
 CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj: CMakeFiles/matrix_mul.dir/flags.make
 CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj: ../thread_mul.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj"
 	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\matrix_mul.dir\thread_mul.cpp.obj -c C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\thread_mul.cpp
 
 CMakeFiles/matrix_mul.dir/thread_mul.cpp.i: cmake_force
@@ -82,21 +69,64 @@ CMakeFiles/matrix_mul.dir/thread_mul.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix_mul.dir/thread_mul.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\thread_mul.cpp -o CMakeFiles\matrix_mul.dir\thread_mul.cpp.s
 
+CMakeFiles/matrix_mul.dir/Tasks.cpp.obj: CMakeFiles/matrix_mul.dir/flags.make
+CMakeFiles/matrix_mul.dir/Tasks.cpp.obj: ../Tasks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/matrix_mul.dir/Tasks.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\matrix_mul.dir\Tasks.cpp.obj -c C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\Tasks.cpp
+
+CMakeFiles/matrix_mul.dir/Tasks.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix_mul.dir/Tasks.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\Tasks.cpp > CMakeFiles\matrix_mul.dir\Tasks.cpp.i
+
+CMakeFiles/matrix_mul.dir/Tasks.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix_mul.dir/Tasks.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\Tasks.cpp -o CMakeFiles\matrix_mul.dir\Tasks.cpp.s
+
+CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj: CMakeFiles/matrix_mul.dir/flags.make
+CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj: ../mul_thread_pool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\matrix_mul.dir\mul_thread_pool.cpp.obj -c C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\mul_thread_pool.cpp
+
+CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\mul_thread_pool.cpp > CMakeFiles\matrix_mul.dir\mul_thread_pool.cpp.i
+
+CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\mul_thread_pool.cpp -o CMakeFiles\matrix_mul.dir\mul_thread_pool.cpp.s
+
+CMakeFiles/matrix_mul.dir/Utils.cpp.obj: CMakeFiles/matrix_mul.dir/flags.make
+CMakeFiles/matrix_mul.dir/Utils.cpp.obj: ../Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/matrix_mul.dir/Utils.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\matrix_mul.dir\Utils.cpp.obj -c C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\Utils.cpp
+
+CMakeFiles/matrix_mul.dir/Utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix_mul.dir/Utils.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\Utils.cpp > CMakeFiles\matrix_mul.dir\Utils.cpp.i
+
+CMakeFiles/matrix_mul.dir/Utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix_mul.dir/Utils.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\Utils.cpp -o CMakeFiles\matrix_mul.dir\Utils.cpp.s
+
 # Object files for target matrix_mul
 matrix_mul_OBJECTS = \
-"CMakeFiles/matrix_mul.dir/main.c.obj" \
-"CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj"
+"CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj" \
+"CMakeFiles/matrix_mul.dir/Tasks.cpp.obj" \
+"CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj" \
+"CMakeFiles/matrix_mul.dir/Utils.cpp.obj"
 
 # External object files for target matrix_mul
 matrix_mul_EXTERNAL_OBJECTS =
 
-matrix_mul.exe: CMakeFiles/matrix_mul.dir/main.c.obj
 matrix_mul.exe: CMakeFiles/matrix_mul.dir/thread_mul.cpp.obj
+matrix_mul.exe: CMakeFiles/matrix_mul.dir/Tasks.cpp.obj
+matrix_mul.exe: CMakeFiles/matrix_mul.dir/mul_thread_pool.cpp.obj
+matrix_mul.exe: CMakeFiles/matrix_mul.dir/Utils.cpp.obj
 matrix_mul.exe: CMakeFiles/matrix_mul.dir/build.make
 matrix_mul.exe: CMakeFiles/matrix_mul.dir/linklibs.rsp
 matrix_mul.exe: CMakeFiles/matrix_mul.dir/objects1.rsp
 matrix_mul.exe: CMakeFiles/matrix_mul.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable matrix_mul.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\georg\Desktop\An3_sem1\PPD\matrix_mul\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable matrix_mul.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\matrix_mul.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
