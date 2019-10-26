@@ -2,9 +2,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.FutureTask;
 
+public class main_task_futures {
 
-public class main {
     public static void main(String[] args) {
         Integer MAX_DIM = 10;
 
@@ -16,7 +17,7 @@ public class main {
 
         ExecutorService pool = Executors.newFixedThreadPool(numThreads);
         ExecutorService pool1 = Executors.newFixedThreadPool(numThreads);
-        ArrayList<Runnable> tasks = new ArrayList<>();
+        ArrayList<FutureTask<String>> tasks = new ArrayList<>();
 
         Integer[][] A = Utils.createMatrix(n, false, MAX_DIM);
         Integer[][] B = Utils.createMatrix(n, false, MAX_DIM);
@@ -25,9 +26,9 @@ public class main {
         long start1 = System.currentTimeMillis();
         for(int i = 0; i<numThreads; i++){
             Runnable task = new TaskMul(A, B, C, i, n, numThreads);
-            tasks.add(task);
+            tasks.add(new FutureTask<>(task, i + ""));
         }
-        tasks.forEach(pool::execute);
+        tasks.forEach(pool::submit);
         pool.shutdown();
         long end1 = System.currentTimeMillis();
 
@@ -44,15 +45,15 @@ public class main {
 
         double time2 = (double)((end2 - start2)/(1000F));
         System.out.println("Sequential multiplication time: " + time2 + " s");
-        ArrayList<Runnable> tasks1 = new ArrayList<>();
+        ArrayList<FutureTask<String>> tasks1 = new ArrayList<>();
 
         long start3 = System.currentTimeMillis();
 
         for(int i = 0; i<numThreads; i++){
             Runnable task = new TaskSum(A, B, C, i, n, numThreads);
-            tasks1.add(task);
+            tasks1.add(new FutureTask<>(task, i + ""));
         }
-        tasks1.forEach(pool1::execute);
+        tasks1.forEach(pool1::submit);
         pool1.shutdown();
         long end3 = System.currentTimeMillis();
         double time3 = (double)((end3 - start3)/(1000F));
@@ -63,7 +64,6 @@ public class main {
         long end4 = System.currentTimeMillis();
         double time4 = (double)((end4 - start4)/(1000F));
         System.out.println("Sequential sum time: " + time4 + " s");
-
 
     }
 }
