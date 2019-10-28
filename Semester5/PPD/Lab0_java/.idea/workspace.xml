@@ -6,7 +6,22 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9ddcc3c-0fff-4515-a7a7-7c5325eb1d2a" name="Default Changelist" comment="" />
+    <list default="true" id="d9ddcc3c-0fff-4515-a7a7-7c5325eb1d2a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/lab1_cpp.dir/main_multiply.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/lab1_cpp.dir/main_multiply.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/lab1_cpp.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/CMakeFiles/lab1_cpp.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/lab1_cpp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/cmake-build-debug/lab1_cpp.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/main_multiply.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_mul_cpp/main_multiply.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/num_file_a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../big_num_add_mul_cpp/num_file_b.txt" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,10 +66,10 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/excel/excel.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -75,6 +90,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -91,56 +109,37 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Lab1_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab1_java" type="462c0819:PsiDirectoryNode" />
+              <item name="Lab0_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab0_java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lab1_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab1_java" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab1_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab1_java" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab1_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab1_java" type="462c0819:PsiDirectoryNode" />
+              <item name="Lab0_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab0_java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab1_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab1_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab1_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../PDP/Lab1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../big_num_add_mul_java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -199,16 +198,17 @@
       <workItem from="1570521834875" duration="2381000" />
       <workItem from="1570641724711" duration="21000" />
       <workItem from="1570646182323" duration="12000" />
+      <workItem from="1572271407449" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4606000" />
+    <option name="totallyTimeSpent" value="4625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15618336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -290,6 +290,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/excel/excel.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor">
         <state>
           <caret column="15" selection-start-column="15" selection-end-column="15" />
@@ -298,7 +299,6 @@
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/files/test1.txt">
       <provider selected="true" editor-type-id="text-editor">

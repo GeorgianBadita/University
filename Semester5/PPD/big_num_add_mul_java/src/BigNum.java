@@ -101,4 +101,31 @@ public class BigNum {
     }
 
 
+    public BigNum mul(BigNum other, List<Double> execTime){
+        int resDim = this.getNum().size() + other.getNum().size() - 1;
+        ArrayList<Integer> result = new ArrayList<>();
+        for(int i = 0; i<resDim; i++){
+            result.add(0);
+        }
+
+        ArrayList<Integer> A = this.getNum();
+        ArrayList<Integer> B = other.getNum();
+        double start = System.currentTimeMillis();
+        for(int i = 0; i<A.size(); i++){
+            for(int j = 0; j<B.size(); j++){
+                result.set(i + j, result.get(i + j) + A.get(i) * B.get(j));
+            }
+        }
+        int T = 0;
+        for(int i = 0; i<result.size(); i++){
+            result.set(i, result.get(i) + T);
+            T = result.get(i) / 10;
+            result.set(i, result.get(i) % 10);
+        }
+
+        if(T != 0) {result.add(T);}
+        double end = System.currentTimeMillis();
+        execTime.add((double)(end - start)/(1000F));
+        return new BigNum(result);
+    }
 }

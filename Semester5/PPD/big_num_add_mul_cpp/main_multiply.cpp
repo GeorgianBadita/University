@@ -19,15 +19,15 @@ int main(){
     auto num1 = BigNum(B);
     double execTime = 0.0;
     auto start = std::chrono::steady_clock::now();
-    auto rez = num * num1;
+    /*auto rez = num * num1;
     auto end = std::chrono::steady_clock::now();
     auto diff = end - start;
     auto time = std::chrono::duration <double, std::milli> (diff).count();
     time = time*0.001;
 
     std::cout << "Sequential multiplication " << time << '\n';
-
-    mulNumsParallel(num, num1, 100, execTime);
+    */
+    mulNumsParallel(num, num1, 20, execTime);
     std::cout << "Parallel multiplication: " << execTime << '\n';
 
     return 0;
