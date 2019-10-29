@@ -8,4 +8,5 @@ fa_path = os.path.join(os.getcwd(), "fa.in")
 finite_automata = read_fa_from_file(fa_path)
 
 
-print(finite_automata.longest_prefix_accepted('23231212121212iou'))
+print(finite_automata.is_seq_accepted('01'))
+print(finite_automata)

@@ -2,9 +2,9 @@
 #include "BigNum.h"
 #include "BigNumParal.h"
 #include "Helper.h"
-#include <fstream>
 #include <ctime>
 #include <chrono>
+
 
 int maian() {
     auto help = Helper();
