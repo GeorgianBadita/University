@@ -326,7 +326,7 @@ void multiplyBigNumParallel(std::vector<int> *a, std::vector<int> *b, std::vecto
 BigNum mulNumsParallel(BigNum a, BigNum b, int numThreads, double &execTime) {
     auto A = a.getNum();
     auto B = b.getNum();
-    std::vector<int> rez(2*A.size() - 1, 0);
+    std::vector<int> rez(2*A.size(), 0);
     auto start = std::chrono::steady_clock::now();
     multiplyBigNumParallel(&A, &B, &rez, numThreads);
     auto end = std::chrono::steady_clock::now();

@@ -102,7 +102,7 @@ public class ParallelProd {
         ArrayList<Integer> A = a.getNum();
         ArrayList<Integer> B = b.getNum();
         ArrayList<Integer> rez = new ArrayList<>();
-        for(int i = 0; i<2*A.size() - 1; i++){
+        for(int i = 0; i<2*A.size(); i++){
             rez.add(0);
         }
         double tstart = System.currentTimeMillis();

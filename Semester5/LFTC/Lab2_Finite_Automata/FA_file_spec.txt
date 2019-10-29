@@ -1,8 +1,8 @@
 fisier ::= alfabet lista_stari_finale lista_tranzitii stare_initiala
 lista_stari_finale ::= stare " " {stare " "}
 alfabet::= simbol " " {simbol " "}
-simbol ::= .*
-lista_tranzitii ::= tranzitie "\n" {tranzitie "\n"}
-tranzitie ::= stare " " stare " " simbol " " "0|1"
-stare ::= .*
+simbol ::= |"0"|"1" | ... | "9"
+lista_tranzitii ::= tranzitie " " {tranzitie " "}
+tranzitie ::= stare " " stare " " simbol
+stare ::= "q"simbol
 stare_initiala ::= stare
