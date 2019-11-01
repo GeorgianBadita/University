@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/georg/Desktop/University/Semester5/PPD/matrix_mul_prod_cons/Utils.h
+vector
+-
+ctime
+-
+time.h
+-
+random
+-
+iostream
+-
+
+C:/Users/georg/Desktop/University/Semester5/PPD/matrix_mul_prod_cons/main.cpp
+iostream
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+vector
+-
+queue
+-
+Utils.h
+C:/Users/georg/Desktop/University/Semester5/PPD/matrix_mul_prod_cons/Utils.h
+

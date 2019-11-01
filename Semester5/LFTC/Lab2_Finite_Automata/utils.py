@@ -60,3 +60,4 @@ def read_fa_from_user():
     start_state = input("Give the starting state of the FA: ")
 
     return FiniteAutomata(alphabet, transitions, states, final_states, start_state)
+

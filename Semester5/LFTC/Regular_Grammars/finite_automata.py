@@ -92,56 +92,6 @@ class FiniteAutomata:
     def set_final_states(self, fin_states):
         self.__final_states = fin_states
 
-    def is_seq_accepted(self, sequence):
-        """
-        Function to check if a sequence is accepted by the FA
-        :param sequence: sequence to be verified
-        :return: True if the sequence is accepted by the FA, False otherwise
-        """
-        curr_state = self.__start_state
-        num_passed = 0
-
-        for char in sequence:
-            try:
-                if char not in self.__alphabet:
-                    raise LiteralNotInAlphabetException("Literal " + char + " not in alphabet")
-                for transition in self.__transitions[curr_state]:
-                    if char == transition.get_symbol():
-                        num_passed += 1
-                        curr_state = transition.get_state()
-            except KeyError:
-                break
-
-        return curr_state in self.__final_states and num_passed == len(sequence)
-
-    def longest_prefix_accepted(self, sequence):
-        """
-        Function to get the longest prefix accepted by a FA
-        :param sequence: sequence to be verified
-        :return: The longest prefix accepted by the FA
-        """
-        curr_state = self.__start_state
-        num_chars = 0
-        longest = 0
-        for char in sequence:
-            if char not in self.__alphabet:
-                break
-            found_trans = False
-            try:
-                for transition in self.__transitions[curr_state]:
-                    if char == transition.get_symbol():
-                        num_chars += 1
-                        if transition.get_state() in self.__final_states:
-                            if num_chars > longest:
-                                longest = num_chars
-                        curr_state = transition.get_state()
-                        found_trans = True
-            except KeyError:
-                return sequence[:longest]
-            if not found_trans:
-                break
-        return sequence[:longest]
-
     def __repr__(self):
         trans_str = ""
         for trans in self.__transitions:
@@ -151,4 +101,3 @@ class FiniteAutomata:
                "Transitions:\n" + trans_str + "States: " + str(self.__states) + \
                "\nFinal_states: " + str(self.__final_states) + \
                "\nStart state: " + str(self.__start_state)
-
