@@ -6,16 +6,19 @@
 #include <queue>
 #include "Utils.h"
 
+std::mutex lineMutexProd;
 std::mutex mtx;
 std::condition_variable cv;
 std::vector<std::vector<int>> A;
 std::vector<std::vector<int>> B;
 std::vector<std::vector<int>> C;
 std::vector<std::vector<int>> E;
+std::vector<std::vector<int>> F;
 std::vector<std::vector<int>> D;
 std::queue<std::vector<int>> queue;
 std::vector<bool> fullLinesProd;
 std::vector<bool> fullLinesCons;
+std::vector<int> lines;
 int numLines;
 int numConsumers;
 int numProducers;
@@ -48,7 +51,6 @@ void consume(){
     if(toEnd){
         return;
     }
-
     queue.pop();
 }
 
@@ -66,21 +68,17 @@ void produce(int i, int n, std::vector<std::vector<int>>* A, std::vector<std::ve
             sum += (*A)[line][j] * (*B)[j][col];
         }
         E[line][col] = sum;
-        for(int i = 0; i<E.size(); i++){
-            bool lineIsFull = true;
-            for(int j = 0; j<E[0].size(); j++){
-                if(E[i][j] == 0){
-                    lineIsFull = false;
-                    break;
-                }
-            }
-            if(lineIsFull && fullLinesProd[i] == false){
-                fullLinesProd[i] = true;
-                std::unique_lock<std::mutex> lck(mtx);
-                queue.push({i});
-                cv.notify_one();
-            }
+
+        lineMutexProd.lock();
+        lines[line] ++;
+
+        if(lines[line] == 3) {
+
+            std::unique_lock<std::mutex> lck(mtx);
+            queue.push({line});
+            cv.notify_one();
         }
+        lineMutexProd.unlock();
         tNum += step;
         line = tNum / n;
         col = tNum % n;
@@ -92,32 +90,34 @@ int main(){
 
     std::cout << "Give the number of lines:\n";
     std::cin >> numLines;
-    std::cout << "Give the number of producers:\n";
-    std::cin >> numProducers;
-    std::cout << "Give the number of consumers:\n";
-    std::cin >> numConsumers;
+    numConsumers  = numProducers = numLines;
 
     std::thread producers[numProducers];
     std::thread consumers[numConsumers];
+    
     A = Utils::createMatrix(numLines, false, MAX_NUM);
     B = Utils::createMatrix(numLines, false, MAX_NUM);
     C = Utils::createMatrix(numLines, false, MAX_NUM);
 
     E = Utils::createMatrix(numLines, true, MAX_NUM);
     D = Utils::createMatrix(numLines, true, MAX_NUM);
+    F = Utils::createMatrix(numLines, true, MAX_NUM);
 
+    /*
     Utils::printMatrix(A);
     std::cout << "\n";
     Utils::printMatrix(B);
     std::cout << "\n";
     Utils::printMatrix(C);
     std::cout << "\n";
-
+    */
 
     for(int i = 0; i<numLines; i++){
         fullLinesProd.push_back(false);
         fullLinesCons.push_back(false);
+        lines.push_back(0);
     }
+    auto start = std::chrono::steady_clock::now();
     for (int order = 0; order < numProducers; order++) {
         producers[order] = std::thread(produce, order, numLines, &A, &B, numProducers);
     }
@@ -134,8 +134,24 @@ int main(){
         consumers[order].join();
     }
 
-    Utils::printMatrix(D);
-    std::cout << '\n';
+    //Utils::printMatrix(D);
+    //std::cout << '\n';
+    auto end = std::chrono::steady_clock::now();
+    auto diff = end - start;
+    auto parallelTime = std::chrono::duration <double, std::milli> (diff).count();
+    parallelTime = parallelTime*0.001;
+    std::cout << "Parallel time: " << parallelTime << '\n';
+
+    start = std::chrono::steady_clock::now();
+    Utils::matrixMulSequential(A, B, E, numLines);
+    Utils::matrixMulSequential(E, C, D, numLines);
+    //Utils::printMatrix(D);
+    //std::cout << '\n';
+    end = std::chrono::steady_clock::now();
+    diff = end - start;
+    auto seqTime = std::chrono::duration<double, std::milli>(diff).count();
+    seqTime = seqTime*0.001;
+    std::cout << "Sequential time: " << seqTime << '\n';
 
     return 0;
 }

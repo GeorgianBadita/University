@@ -1,0 +1,6 @@
+C:\Users\georg\Desktop\University\Semester5\PPD\Multiple_download\asynk_Tasks\asynk_Tasks\bin\Debug\asynk_Tasks.dll
+C:\Users\georg\Desktop\University\Semester5\PPD\Multiple_download\asynk_Tasks\asynk_Tasks\bin\Debug\asynk_Tasks.pdb
+C:\Users\georg\Desktop\University\Semester5\PPD\Multiple_download\asynk_Tasks\asynk_Tasks\obj\Debug\asynk_Tasks.csprojAssemblyReference.cache
+C:\Users\georg\Desktop\University\Semester5\PPD\Multiple_download\asynk_Tasks\asynk_Tasks\obj\Debug\asynk_Tasks.csproj.CoreCompileInputs.cache
+C:\Users\georg\Desktop\University\Semester5\PPD\Multiple_download\asynk_Tasks\asynk_Tasks\obj\Debug\asynk_Tasks.dll
+C:\Users\georg\Desktop\University\Semester5\PPD\Multiple_download\asynk_Tasks\asynk_Tasks\obj\Debug\asynk_Tasks.pdb

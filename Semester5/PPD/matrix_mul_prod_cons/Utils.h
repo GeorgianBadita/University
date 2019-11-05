@@ -61,6 +61,17 @@ public:
             }
         }
     }
+
+    static bool compareMatrices(std::vector<std::vector<int>>& A, std::vector<std::vector<int>>& B){
+        for(int i = 0; i<A.size(); i++){
+            for(int j = 0; j<A[0].size(); j++){
+                if(A[i][j] != B[i][j]){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 };
 
 
