@@ -16,8 +16,6 @@ std::vector<std::vector<int>> E;
 std::vector<std::vector<int>> F;
 std::vector<std::vector<int>> D;
 std::queue<std::vector<int>> queue;
-std::vector<bool> fullLinesProd;
-std::vector<bool> fullLinesCons;
 std::vector<int> lines;
 int numLines;
 int numConsumers;
@@ -40,17 +38,7 @@ void consume(){
         //Utils::printMatrix(D);
         //std::cout << "\n";
     }
-    bool toEnd = true;
-    fullLinesCons[lineInd] = true;
-    for(const auto& x : fullLinesCons){
-        if(x == false){
-            toEnd = false;
-            break;
-        }
-    }
-    if(toEnd){
-        return;
-    }
+
     queue.pop();
 }
 
@@ -72,7 +60,7 @@ void produce(int i, int n, std::vector<std::vector<int>>* A, std::vector<std::ve
         lineMutexProd.lock();
         lines[line] ++;
 
-        if(lines[line] == 3) {
+        if(lines[line] == n) {
 
             std::unique_lock<std::mutex> lck(mtx);
             queue.push({line});
@@ -113,8 +101,6 @@ int main(){
     */
 
     for(int i = 0; i<numLines; i++){
-        fullLinesProd.push_back(false);
-        fullLinesCons.push_back(false);
         lines.push_back(0);
     }
     auto start = std::chrono::steady_clock::now();
