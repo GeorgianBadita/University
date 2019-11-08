@@ -1,0 +1,7 @@
+fisier ::= alfabet lista_stari_finale lista_tranzitii stare_initiala
+lista_stari_finale ::= stare " " {stare " "}
+alfabet::= SIMBOL" " {SIMBOL " "}
+lista_tranzitii ::= tranzitie " " {tranzitie " "}
+tranzitie ::= stare " " stare " " SIMBOL
+stare ::= "q"SIMBOL
+stare_initiala ::= stare

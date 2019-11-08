@@ -1,4 +1,4 @@
-from exceptions import LiteralNotInAlphabetException
+from finite_automata.exceptions import LiteralNotInAlphabetException
 
 
 class Transition:

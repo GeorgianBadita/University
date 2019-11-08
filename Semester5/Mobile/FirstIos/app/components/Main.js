@@ -7,6 +7,7 @@ import {
     ScrollView,
     TouchableOpacity,
     KeyboardAvoidingView,
+    Alert,
  } from 'react-native';
 
 
@@ -21,6 +22,33 @@ export default class Main extends React.Component {
         }
     }
 
+    componentDidMount(){
+        return fetch('https://facebook.github.io/react-native/movies.json')
+          .then((response) => response.json())
+          .then((responseJson) => {
+    
+            Alert.alert(
+                JSON.stringify(responseJson.movies),
+                'My Alert Msg',
+                [
+                  {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
+                  {
+                    text: 'Cancel',
+                    onPress: () => console.log('Cancel Pressed'),
+                    style: 'cancel',
+                  },
+                  {text: 'OK', onPress: () => console.log('OK Pressed')},
+                ],
+                {cancelable: false},
+              );
+ 
+    
+          })
+          .catch((error) =>{
+            console.error(error);
+          });
+      }
+
     render() {
         
         let notes = this.state.noteArray.map((val, key) => {
@@ -29,6 +57,7 @@ export default class Main extends React.Component {
 
             </Note>
         });
+        
         
         return (
             <View style={styles.container}>
