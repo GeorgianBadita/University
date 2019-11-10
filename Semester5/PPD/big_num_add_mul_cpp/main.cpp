@@ -6,10 +6,10 @@
 #include <chrono>
 
 
-int maian() {
+int main() {
     auto help = Helper();
-    std::string pathToA = R"(C:\Users\georg\Desktop\An3_sem1\PPD\lab1_cpp\num_file_a.txt)";
-    std::string pathToB = R"(C:\Users\georg\Desktop\An3_sem1\PPD\lab1_cpp\num_file_b.txt)";
+    std::string pathToA = R"(C:\Users\georg\Desktop\University\Semester5\PPD\big_num_add_mul_cpp\num_file_a.txt)";
+    std::string pathToB = R"(C:\Users\georg\Desktop\University\Semester5\PPD\big_num_add_mul_cpp\num_file_b.txt)";
     std::string toParall = R"(C:\Users\georg\Desktop\An3_sem1\PPD\lab1_cpp\parallel_res.txt)";
     std::string toSecv = R"(C:\Users\georg\Desktop\An3_sem1\PPD\lab1_cpp\secv_res.txt)";
     std::string toNum = R"(C:\Users\georg\Desktop\An3_sem1\PPD\lab1_cpp\num.txt)";

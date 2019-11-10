@@ -19,12 +19,4 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="num_file_a.in">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="num_file_b.in">
-      <Filter>Resource Files</Filter>
-    </None>
-  </ItemGroup>
 </Project>

@@ -8,7 +8,7 @@
 #include "BigNumParal.h"
 #include "Helper.h"
 
-int main(){
+int msain(){
     auto help = Helper();
     std::string pathToA = R"(C:\Users\georg\Desktop\University\Semester5\PPD\big_num_add_mul_cpp\num_file_a.txt)";
     std::string pathToB = R"(C:\Users\georg\Desktop\University\Semester5\PPD\big_num_add_mul_cpp\num_file_b.txt)";

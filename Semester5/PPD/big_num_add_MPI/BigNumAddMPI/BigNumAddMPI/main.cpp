@@ -5,6 +5,7 @@
 #include <string>
 #include <fstream>
 #include <algorithm>
+#include <chrono>
 #define MASTER 0 //id of the master process
 
 //read number from file
@@ -81,7 +82,7 @@ int main(int argc, char** argv) {
 		for_process_b = (int*)malloc(sizeof(int)*(per_process + 1)); //allocate memory for for_process_b
 
 		local_res = (int*)malloc(sizeof(int)*(per_process + 1)); //allocate memory for local_Res
-
+		auto start_time = std::chrono::steady_clock::now();
 		for (int i = 1; i <= num_proc; i++) {
 			stop = start + per_process;
 			if (rem > 0) {
@@ -109,6 +110,12 @@ int main(int argc, char** argv) {
 		free(for_process_a);
 		free(for_process_b);
 		free(local_res); //free vectors
+		auto end_time = std::chrono::steady_clock::now();
+		auto diff = end_time - start_time;
+		auto time = std::chrono::duration<float, std::milli>(diff).count();
+		time = time * 0.001;
+		printf("Total time: %f\n", time);
+
 	}
 	else{
 		int count, local_extra = 0; //number of digits and local_extra_carry
@@ -172,9 +179,10 @@ int main(int argc, char** argv) {
 		if (isExtra == 1) {
 			result.push_back(1); //if isExtra is 1 at the final add the extra carry to the result
 		}
+		/*
 		for (int i = result.size() - 1; i >= 0; i--) {
 			printf("%d", result[i]);	//print the result
-		}
+		}*/
 	}
 
 	MPI_Finalize();

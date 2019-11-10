@@ -1,3 +1,8 @@
 ﻿  main.cpp
-c:\users\georg\desktop\university\semester5\ppd\big_num_add_mpi\bignumaddmpi\bignumaddmpi\main.cpp(72): warning C4018: '<': signed/unsigned mismatch
+c:\users\georg\desktop\university\semester5\ppd\big_num_add_mpi\bignumaddmpi\bignumaddmpi\main.cpp(73): warning C4018: '<': signed/unsigned mismatch
+c:\users\georg\desktop\university\semester5\ppd\big_num_add_mpi\bignumaddmpi\bignumaddmpi\main.cpp(116): warning C4244: '=': conversion from 'double' to '_Rep', possible loss of data
+          with
+          [
+              _Rep=float
+          ]
   BigNumAddMPI.vcxproj -> C:\Users\georg\Desktop\University\Semester5\PPD\big_num_add_MPI\BigNumAddMPI\Debug\BigNumAddMPI.exe
