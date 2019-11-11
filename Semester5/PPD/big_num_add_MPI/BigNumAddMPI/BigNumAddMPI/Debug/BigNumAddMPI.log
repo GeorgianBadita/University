@@ -5,4 +5,12 @@ c:\users\georg\desktop\university\semester5\ppd\big_num_add_mpi\bignumaddmpi\big
           [
               _Rep=float
           ]
+  mpi_seel_sum.cpp
+c:\users\georg\desktop\university\semester5\ppd\big_num_add_mpi\bignumaddmpi\bignumaddmpi\mpi_seel_sum.cpp(41): warning C4018: '<': signed/unsigned mismatch
+c:\users\georg\desktop\university\semester5\ppd\big_num_add_mpi\bignumaddmpi\bignumaddmpi\mpi_seel_sum.cpp(90): warning C4244: '=': conversion from 'double' to '_Rep', possible loss of data
+          with
+          [
+              _Rep=float
+          ]
+  Generating Code...
   BigNumAddMPI.vcxproj -> C:\Users\georg\Desktop\University\Semester5\PPD\big_num_add_MPI\BigNumAddMPI\Debug\BigNumAddMPI.exe

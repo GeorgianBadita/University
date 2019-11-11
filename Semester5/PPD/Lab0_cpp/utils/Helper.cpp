@@ -19,7 +19,7 @@ void Helper::createRandomFile(std::string &path, int size, int min, int max) {
         return min + rand() % (max - min + 1);
     });
     std::for_each(numbers.begin(), numbers.end(), [&](int n){
-        outfile << n << '\n';
+        outfile << n << ' ';
     });
 
     outfile.close();
