@@ -3,25 +3,23 @@ import {
     StyleSheet, 
     Text, 
     View,
-    TextInput,
     ScrollView,
-    TouchableOpacity,
-    KeyboardAvoidingView,
+    AsyncStorage,
     Alert,
  } from 'react-native';
 
 
-import Note from './Note';
+import Meal from './Meal';
 
 export default class Main extends React.Component {
     constructor(props){
         super(props),
         this.state ={
-            noteArray: [],
-            noteText: '',
+            mealArray: [],
         }
     }
 
+    /*
     componentDidMount(){
         return fetch('https://facebook.github.io/react-native/movies.json')
           .then((response) => response.json())
@@ -48,70 +46,70 @@ export default class Main extends React.Component {
             console.error(error);
           });
       }
-
+    */
     render() {
-        
-        let notes = this.state.noteArray.map((val, key) => {
-            return <Note key={key} keyval={key} val={val}
+        this._retrieveData();
+        let notes = this.state.mealArray.map((val, key) => {
+            return <Meal key={key} keyval={key} val={val}
             deleteMethod={() => this.deleteNote(key)}>
 
-            </Note>
+            </Meal>
         });
-        
-        
         return (
+            
             <View style={styles.container}>
                 <View style={styles.header}>
                     <Text style={styles.headerText}>
-                        - NOTER -
-                    </Text>
+                        - SHARE A MEAL -
+                    </Text> 
+                    
                 </View>
                 <ScrollView style={styles.scrollContainer}>
                     {notes}
                 </ScrollView>
-
-                <KeyboardAvoidingView style={styles.footer} behavior="padding" enabled>
-                    <TextInput style={styles.textInput}
-                    onChangeText ={(noteText) => this.setState({noteText})}
-                    value={this.state.noteText}
-                    placeholder='>note'
-                    placeholderTextColor='white'
-                    underlineColorAndroid='transparent'>
-                    </TextInput>
-                </KeyboardAvoidingView>
-
-                <TouchableOpacity onPress={this.addNote.bind(this)} style={styles.addButton}>
-                    <Text style={styles.addButtonText}>
-                        + 
-                    </Text>
-                </TouchableOpacity>
-
+                
             </View>
       );
     }
 
-deleteNote(key){
-    this.state.noteArray.splice(key, 1);
-    this.setState({
-        noteArray: this.state.noteArray,
-        noteText: ''
-    })
-}
-
-addNote(){
-    if(this.state.noteText){
-        var d = new Date();
-        this.state.noteArray.push({
-            'date': d.getFullYear() + '/' + (d.getMonth() + 1) + '/' + d.getDay(),
-            'note': this.state.noteText,
-        });
-        this.setState({
-           noteArray : this.state.noteArray,
-           noteText: '',
-        })
+    componentWillMount(){
+        this._retrieveData();
     }
-}
 
+    deleteNote(key){
+        this.state.mealArray.splice(key, 1);
+        this.setState({
+            mealArray: this.state.mealArray,
+        })
+        this._storeData();
+    }
+
+
+    _storeData = async () => {
+        try {
+          await AsyncStorage.setItem('list',  JSON.stringify(this.state.mealArray));
+        } catch (error) {
+          Alert.alert('Error saving data!')
+        }
+      };
+
+    _retrieveData = async () => {
+        try {
+            const value = await AsyncStorage.getItem('list');
+            if (value !== null) {
+            // We have data!!
+            value = JSON.parse(value);
+            value.push({
+                'quantity':this.props.navigation.getParam('mealQuantity', ''),
+                'meal': this.props.navigation.getParam('mealName', ''),
+            });
+            this.setState.mealArray = value;
+            this._storeData();
+            }
+        } catch (error) {
+            Alert.alert('Error retrieving data')
+        }
+    };
 }
 
 const styles = StyleSheet.create({
@@ -120,7 +118,7 @@ const styles = StyleSheet.create({
     },
 
     header: {
-        backgroundColor: '#e91e63',
+        backgroundColor: '#DBD5F1',
         alignItems: 'center',
         justifyContent: 'center',
         borderBottomWidth: 10,
@@ -161,7 +159,7 @@ const styles = StyleSheet.create({
         zIndex: 11,
         right: 20,
         bottom: 90,
-        backgroundColor: '#e91e63',
+        backgroundColor: '#DBD5F1',
         width: 90,
         height: 90,
         borderRadius: 50,

@@ -33,11 +33,9 @@ while True:
         conn, addr = s.accept()
         with conn:
             print('Connected by ', addr)
-
             data1 = conn.recv(1024)
-            data2 = conn.recv(1024)
-
             data1 = pickle.loads(data1)
+            data2 = conn.recv(1024)
             data2 = pickle.loads(data2)
             res = merge(data1, data2)
             conn.sendall(res.encode())

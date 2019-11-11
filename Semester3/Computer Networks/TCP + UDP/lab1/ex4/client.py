@@ -9,9 +9,8 @@ string2 = "def"
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
     data1 = pickle.dumps(string1)
-    data2 = pickle.dumps(string2)
-    
     s.sendall(data1)
+    data2 = pickle.dumps(string2)
     s.sendall(data2)
     data = s.recv(1024)
 
