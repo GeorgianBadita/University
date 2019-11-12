@@ -10,10 +10,12 @@ export default class Meal extends React.Component {
   render() {
       return (
           <View key={this.props.keyval} style={styles.note}>
-            <Text style={styles.noteText}>{"Meal: " + this.props.val.meal}</Text>
+            <Text style={styles.noteText}>{"Meal: " + this.props.val.meal} </Text>
             <Text style={styles.noteText}>{"Quantity:"  + this.props.val.quantity}</Text>
-            
-
+        
+            <TouchableOpacity onPress={this.props.editMethod} style={styles.noteEdit}>
+                <Text style={styles.noteDeleteText}>Edit</Text>
+            </TouchableOpacity>
             <TouchableOpacity onPress={this.props.deleteMethod} style={styles.noteDelete}>
                 <Text style={styles.noteDeleteText}>Del</Text>
             </TouchableOpacity>
@@ -45,6 +47,16 @@ const styles = StyleSheet.create({
         top: 10,
         bottom: 10,
         right: 10
+    },
+    noteEdit:{
+        position: 'absolute',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#000000',
+        padding: 10,
+        top: 10,
+        bottom: 10,
+        right: 70
     },
     noteDeleteText: {
         color: 'white',
