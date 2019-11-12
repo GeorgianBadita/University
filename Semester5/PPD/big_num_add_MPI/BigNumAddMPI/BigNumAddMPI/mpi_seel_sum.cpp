@@ -78,10 +78,16 @@ int maisn(int argc, char** argv) {
 			int count = stop - start;
 
 			MPI_Recv(local_result, count, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE); //receiving result from process i
-
+			int carry = 0;
 			for (int j = start; j < stop; j++) {
 				result[j] = local_result[j - start];	//setting the result
 			}
+			/*
+			for (int j = start; j < stop; j++) {
+				result[j] += carry;
+				carry = result[j] / 10;
+				result[j] %= 10;
+			}*/
 			start = stop;
 		}
 		auto stop_time = std::chrono::steady_clock::now();
@@ -90,7 +96,7 @@ int maisn(int argc, char** argv) {
 		time = time * 0.001;
 		printf("Total time: %f\n", time);
 		free(local_result);
-		/*
+		
 		std::ofstream out(path_to_res);
 		int carry = 0;
 		for (int i = 0; i < result.size(); i++) {
@@ -101,7 +107,7 @@ int maisn(int argc, char** argv) {
 		}
 		if (carry)
 			printf("%d", carry);
-		*/
+		
 	}
 	else
 	{

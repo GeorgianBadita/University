@@ -48,7 +48,6 @@ export default class Main extends React.Component {
       }
     */
     render() {
-        this._retrieveData();
         let notes = this.state.mealArray.map((val, key) => {
             return <Meal key={key} keyval={key} val={val}
             deleteMethod={() => this.deleteNote(key)}>
@@ -72,8 +71,16 @@ export default class Main extends React.Component {
       );
     }
 
-    componentWillMount(){
-        this._retrieveData();
+
+    componentDidMount(){
+        var mealArr = this.state.mealArray;
+        mealArr.push({
+            'quantity':this.props.navigation.getParam('mealQuantity', ''),
+            'meal': this.props.navigation.getParam('mealName', ''),
+        });
+        this.setState({
+            mealArray: mealArr,
+        })
     }
 
     deleteNote(key){
@@ -83,33 +90,6 @@ export default class Main extends React.Component {
         })
         this._storeData();
     }
-
-
-    _storeData = async () => {
-        try {
-          await AsyncStorage.setItem('list',  JSON.stringify(this.state.mealArray));
-        } catch (error) {
-          Alert.alert('Error saving data!')
-        }
-      };
-
-    _retrieveData = async () => {
-        try {
-            const value = await AsyncStorage.getItem('list');
-            if (value !== null) {
-            // We have data!!
-            value = JSON.parse(value);
-            value.push({
-                'quantity':this.props.navigation.getParam('mealQuantity', ''),
-                'meal': this.props.navigation.getParam('mealName', ''),
-            });
-            this.setState.mealArray = value;
-            this._storeData();
-            }
-        } catch (error) {
-            Alert.alert('Error retrieving data')
-        }
-    };
 }
 
 const styles = StyleSheet.create({
