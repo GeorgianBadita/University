@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/georg/Desktop/University/Semester3/Computer Networks/TCP + UDP/C_examples/main.c
+sys/types.h
+-
+stdio.h
+-
+string.h
+-
+rpc.h
+-
+stdint.h
+-
+winsock2.h
+-
+io.h
+-
+

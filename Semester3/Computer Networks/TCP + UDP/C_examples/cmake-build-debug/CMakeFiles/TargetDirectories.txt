@@ -1,0 +1,3 @@
+C:/Users/georg/Desktop/University/Semester3/Computer Networks/TCP + UDP/C_examples/cmake-build-debug/CMakeFiles/C_examples.dir
+C:/Users/georg/Desktop/University/Semester3/Computer Networks/TCP + UDP/C_examples/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/georg/Desktop/University/Semester3/Computer Networks/TCP + UDP/C_examples/cmake-build-debug/CMakeFiles/rebuild_cache.dir

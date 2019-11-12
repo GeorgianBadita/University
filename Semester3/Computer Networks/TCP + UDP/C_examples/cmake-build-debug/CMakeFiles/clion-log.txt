@@ -1,0 +1,11 @@
+"C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\georg\Desktop\University\Semester3\Computer Networks\TCP + UDP\C_examples"
+-- The C compiler identification is GNU 8.1.0
+-- Check for working C compiler: C:/mingw64/bin/gcc.exe
+-- Check for working C compiler: C:/mingw64/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/georg/Desktop/University/Semester3/Computer Networks/TCP + UDP/C_examples/cmake-build-debug

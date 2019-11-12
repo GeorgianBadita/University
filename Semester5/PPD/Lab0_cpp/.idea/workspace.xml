@@ -12,43 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eedf775f-17e2-4efc-ac9e-0628e2acdd6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Semester3/Computer Networks/TCP + UDP/lab1/server_for_others/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Semester3/Computer Networks/TCP + UDP/lab1/server_for_others/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Mobile/Prof_example_android/MyAndroid" beforeDir="false" afterPath="$PROJECT_DIR$/../../Mobile/Prof_example_android/MyAndroid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/utils/Helper.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lab1.dir/utils/Helper.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lab1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lab1.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Lab1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Lab1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Helper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Helper.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/.vs/BigNumAddMPI/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/.vs/BigNumAddMPI/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/.vs/BigNumAddMPI/v15/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/.vs/BigNumAddMPI/v15/Browse.VC.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/BigNumAddMPI.log" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/BigNumAddMPI.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/BigNumAddMPI.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/BigNumAddMPI.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/BigNumAddMPI.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/BigNumAddMPI.tlog/link.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/main.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/vc141.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/vc141.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/vc141.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/BigNumAddMPI/Debug/vc141.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/Debug/BigNumAddMPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/Debug/BigNumAddMPI.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/Debug/BigNumAddMPI.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/Debug/BigNumAddMPI.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/Debug/BigNumAddMPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../big_num_add_MPI/BigNumAddMPI/Debug/BigNumAddMPI.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +83,7 @@
       <workItem from="1571745836082" duration="1292000" />
       <workItem from="1571900481539" duration="12000" />
       <workItem from="1573501765629" duration="2846000" />
+      <workItem from="1573589119973" duration="38000" />
     </task>
     <servers />
   </component>
@@ -128,7 +95,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
