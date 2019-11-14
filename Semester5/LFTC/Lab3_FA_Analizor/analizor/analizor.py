@@ -16,10 +16,11 @@ class Analizor:
         self.__ct_fa = ct_fa
         self.__id_fa = id_fa
 
-    def __process_line(self, line):
+    def __process_line(self, line, line_cnt):
         """
         Function to process line
-        :param line:
+        :param line: - line to be processed
+        :param line_cnt: line number
         :return: None
         """
         line = line.replace(" ", "")
@@ -60,6 +61,9 @@ class Analizor:
             elif atom_type == 2:
                 self.__id_table.set(sum(map(ord, best_match)), best_match)
                 self.__fip.append([self.__predef_table['ID'], sum(map(ord, best_match))])
+
+            if best_match == "":
+                raise NotFoundException("Atom is not a valid id or const on line " + str(line_cnt))
             curr_resolved += best_len
 
     def parse_program(self):
@@ -73,7 +77,7 @@ class Analizor:
             line_cnt = 0
             while line:
                 line_cnt += 1
-                self.__process_line(line)
+                self.__process_line(line, line_cnt)
                 line = f.readline()
                 """
                 elems = line.split(" ")
@@ -127,7 +131,6 @@ class Analizor:
     """
     Getters
     """
-
     def get_predef_table(self):
         return self.__predef_table
 
