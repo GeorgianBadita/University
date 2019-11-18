@@ -71,6 +71,15 @@ typedef struct HashTable HashTable;
 int put(HashTable* table, int key, char* value);
 
 /**
+ * Function to insert a new element into the fip table
+ * @param table - table to insert into
+ * @param key - key of the element
+ * @param value - value of the element
+ * @return:
+ */
+void addFip(HashTable* table, int key, char* value);
+
+/**
  * Function to delete an element from the HashTable
  * @param key - key to be deleted
  * @return - 0 if the element is deleted, -1 it there is no element with that key
@@ -158,6 +167,7 @@ TableEntry* copyEntry(TableEntry* entry){
     newEntry->value = tmp;
     return newEntry;
 }
+
 
 /**
  * Function to print a TableEntry
@@ -366,8 +376,58 @@ int asciiSum(char* str){
     return sum;
 }
 
-enum{INTEGER, FLOAT, IDENTIFIER, CONSTANT};
+/**
+ * Function to resize the fip table
+ * @param: table - HashTable to be resized
+ **/ 
+void resizeFip(HashTable* table){
+    TableEntry** oldContainer = copyContainer(table);
+    int oldContainerSize = table->containerSize;
+    for(int i = 0; i<table->containerSize; ++i){
+        destroyEntry(table->container[i]);
+    }
+    free(table->container);
+    int oldSize = table->size;
+    table->containerSize = oldSize/table->MIN_FACTOR;
+    TableEntry** tmp = (TableEntry**)malloc(table->containerSize*sizeof(TableEntry*));
+    for(int i = 0; i<table->containerSize; i++){
+        tmp[i] = createEmptyEntry();
+    }
+    table->container = tmp;
+    for(int i = 0; i<oldContainerSize; i++){
+        if(0 == equalsEntry(oldContainer[i], table->DELETED_VALUE) && 0 == equalsEntry(oldContainer[i], table->EMPTY_VALUE)) {
+            addFip(table, oldContainer[i]->key, oldContainer[i]->value);
+        }
+        destroyEntry(oldContainer[i]);
+    }
+    free(oldContainer);
+}
 
+
+/**
+* Function to add a table entry to the fip table
+* @param- table: table to add into
+* @param- key: key of the entry
+* @param- value: value of the entry
+**/
+void addFip(HashTable* table, int key, char* value){
+    for(int i = 0; i<table->containerSize; i++){
+        if(equalsEntry(table->container[i], table->EMPTY_VALUE)){
+            table->size ++;
+            table->container[i] = createEntry(key, value);
+            break;
+        }
+    }
+    double factor = (double)(table->deletedSize + table->size) / table->containerSize;
+    if(factor > table->LOAD_FACTOR){
+        resizeFip(table);
+    }
+}
+
+HashTable* idTable;
+HashTable* ctTable;
+HashTable* fip;
+char buffPredef[1] = "-";
 %}
 
 digit [0-9]*
@@ -376,22 +436,70 @@ character [a-zA-Z]
 
 
 %%
-{integer}|{integer}\.{digit}+ {return CONSTANT;}
-{character}|{character}({character}{digit})* {return IDENTIFIER;}
+^\}$ {addFip(fip, 19, buffPredef); return -1;}
+#include {addFip(fip, 2, buffPredef);}
+"<iostream>" {addFip(fip, 3, buffPredef);}
+using {addFip(fip, 4, buffPredef);}
+namespace {addFip(fip, 5, buffPredef);}
+std {addFip(fip, 6, buffPredef);}
+int {addFip(fip, 7, buffPredef);}
+main {addFip(fip, 8, buffPredef);}
+float {addFip(fip, 9, buffPredef);}
+return {addFip(fip, 10, buffPredef);}
+cin {addFip(fip, 11, buffPredef);}
+cout {addFip(fip, 12, buffPredef);}
+while {addFip(fip, 13, buffPredef);}
+if {addFip(fip, 14, buffPredef);}
+"+" {addFip(fip, 15, buffPredef);}
+";" {addFip(fip, 16, buffPredef);}
+"," {addFip(fip, 17, buffPredef);}
+"{" {addFip(fip, 18, buffPredef);}
+"}" {addFip(fip, 19, buffPredef);}
+"[" {addFip(fip, 20, buffPredef);}
+"]" {addFip(fip, 21, buffPredef);}
+"(" {addFip(fip, 22, buffPredef);}
+")" {addFip(fip, 23, buffPredef);}
+"-" {addFip(fip, 24, buffPredef);}
+"%" {addFip(fip, 25, buffPredef);}
+"/" {addFip(fip, 26, buffPredef);}
+">>" {addFip(fip, 27, buffPredef);}
+"<<" {addFip(fip, 28, buffPredef);}
+"=" {addFip(fip, 29, buffPredef);}
+"<" {addFip(fip, 30, buffPredef);}
+">" {addFip(fip, 31, buffPredef);}
+"*" {addFip(fip, 32, buffPredef);}
+"\n" {}
+" " {}
+{integer}|{integer}\.{digit}+ {char buffer[20]; itoa(asciiSum(yytext), buffer, 10); put(ctTable, asciiSum(yytext), yytext); addFip(fip, 1, buffer);}
+{character}|{character}({character}{digit}){0,249} {char buffer[20]; itoa(asciiSum(yytext), buffer, 10); put(idTable, asciiSum(yytext), yytext); addFip(fip, 0, buffer);}
 %%
 
 int yywrap(){
     return 1;
 }
 
-main(){
-    int result;
-    int running = 1;
-    while(running){
-        result = yylex();   
-        switch(result){
-            case CONSTANT: printf("constant"); break;
-            case IDENTIFIER: printf("identifier"); break;
-        }
-    }
+main(int argc, char** argv){
+    
+    ++argv, --argc;  /* skip over program name */
+    if (argc > 0)
+        yyin = fopen( argv[0], "r" );
+    else
+        yyin = stdin;
+
+    idTable = createHashtable();
+    ctTable = createHashtable();
+    fip = createHashtable();
+    yylex();
+
+    printf("ID Table: \n");
+    printTable(idTable);
+    printf("\nCT Tale:\n");
+    printTable(ctTable);
+    printf("\nFIP:\n");
+    printTable(fip);
+    destroyHashtable(fip);
+    destroyHashtable(ctTable);
+    destroyHashtable(idTable);
+   
+
 }

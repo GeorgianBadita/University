@@ -48,6 +48,16 @@ typedef struct HashTable HashTable;
 int put(HashTable* table, int key, char* value);
 
 /**
+ * Function to insert a new element into the fip table
+ * @param table - table to insert into
+ * @param key - key of the element
+ * @param value - value of the element
+ * @return:
+ */
+void addFip(HashTable* table, int key, char* value);
+
+
+/**
  * Function to delete an element from the HashTable
  * @param key - key to be deleted
  * @return - 0 if the element is deleted, -1 it there is no element with that key
@@ -344,6 +354,52 @@ int asciiSum(char* str){
 }
 
 
+/**
+ * Function to resize the fip table
+ * @param: table - HashTable to be resized
+ **/ 
+void resizeFip(HashTable* table){
+    TableEntry** oldContainer = copyContainer(table);
+    int oldContainerSize = table->containerSize;
+    for(int i = 0; i<table->containerSize; ++i){
+        destroyEntry(table->container[i]);
+    }
+    free(table->container);
+    int oldSize = table->size;
+    table->containerSize = oldSize/table->MIN_FACTOR;
+    TableEntry** tmp = (TableEntry**)malloc(table->containerSize*sizeof(TableEntry*));
+    for(int i = 0; i<table->containerSize; i++){
+        tmp[i] = createEmptyEntry();
+    }
+    table->container = tmp;
+    for(int i = 0; i<oldContainerSize; i++){
+        if(0 == equalsEntry(oldContainer[i], table->DELETED_VALUE) && 0 == equalsEntry(oldContainer[i], table->EMPTY_VALUE)) {
+            addFip(table, oldContainer[i]->key, oldContainer[i]->value);
+        }
+        destroyEntry(oldContainer[i]);
+    }
+    free(oldContainer);
+}
+
+/**
+* Function to add a table entry to the fip table
+* @param- table: table to add into
+* @param- key: key of the entry
+* @param- value: value of the entry
+**/
+void addFip(HashTable* table, int key, char* value){
+    for(int i = 0; i<table->containerSize; i++){
+        if(equalsEntry(table->container[i], table->EMPTY_VALUE)){
+            table->size ++;
+            table->container[i] = createEntry(key, value);
+        }
+    }
+    double factor = (double)(table->deletedSize + table->size) / table->containerSize;
+    if(factor > table->LOAD_FACTOR){
+        resizeFip(table);
+    }
+}
+
 int main(){
     char* e1;
     char* e2;
@@ -380,19 +436,14 @@ int main(){
     TableEntry* entry7 = createEntry(asciiSum(e7), e7);
     TableEntry* entry8 = createEntry(asciiSum(e8), e8);
 
-
     HashTable* table = createHashtable();
-    put(table, entry1->key, entry1->value);
-    put(table, entry2->key, entry2->value);
-    put(table, entry3->key, entry3->value);
-    put(table, entry4->key, entry4->value);
-    put(table, entry5->key, entry5->value);
-    put(table, entry6->key, entry6->value);
-    put(table, entry6->key, entry6->value);
-    put(table, entry7->key, entry7->value);
-    put(table, entry1->key, entry1->value);
+    addFip(table, entry1->key, entry1->value);
+    addFip(table, entry1->key, entry1->value);
+    addFip(table, entry1->key, entry1->value);
+    addFip(table, entry1->key, entry1->value);
     printf("\n");
     printTable(table);
+    
     destroyHashtable(table);
     return 0;
 }
