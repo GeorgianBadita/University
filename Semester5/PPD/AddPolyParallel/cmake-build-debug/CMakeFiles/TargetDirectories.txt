@@ -1,0 +1,3 @@
+C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallel/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallel/cmake-build-debug/CMakeFiles/AddPolyParallel.dir
+C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallel/cmake-build-debug/CMakeFiles/edit_cache.dir

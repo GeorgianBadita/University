@@ -8,9 +8,15 @@
 #include <mutex>
 #include "Monomial.h"
 
+
 class Polynomial {
 private:
     Monomial* head;
+
+    /**
+     * Function to destroy the polynomial
+     */
+    void destroyPoly();
 public:
     /**
      * Constructor for polynomial class
@@ -37,6 +43,11 @@ public:
      * Getters
      */
      Monomial* getHead() {return this->head;}
+
+     /**
+      * Destructor for Polynomial class
+      */
+     ~Polynomial();
 };
 
 
