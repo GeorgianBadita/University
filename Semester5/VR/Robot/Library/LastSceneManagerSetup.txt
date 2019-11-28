@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/SampleScene.unity
+- path: C:/Users/georg/Desktop/University/Semester5/VR/Lab2/ArticulatedRobot/Assets/robot1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

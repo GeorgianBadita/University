@@ -41,10 +41,12 @@ std::ostream &operator<<(std::ostream &os, const Polynomial &dt) {
 
 
 
-void Polynomial::addMonomial(const int &coeff, const int &degree) {
+void Polynomial::addMonomialListLock(const int &coeff, const int &degree) {
+    this->listLock->lock();
     auto* newMonomial = new Monomial(coeff, degree);
     if(head == nullptr){
         head = newMonomial;
+        this->listLock->unlock();
     }else{
         auto* tmp = head;
         auto* prev = head;
@@ -56,34 +58,80 @@ void Polynomial::addMonomial(const int &coeff, const int &degree) {
         if(tmp == nullptr){
             prev->next = newMonomial;
             newMonomial->next = nullptr;
+            this->listLock->unlock();
             return;
         }
         if(degree == tmp->getDegree()){
             tmp->setCoefficient(tmp->getCoefficient() + coeff);
+            this->listLock->unlock();
             return;
         }
         if(tmp != prev){
             prev->next = newMonomial;
             newMonomial->next = tmp;
+            this->listLock->unlock();
         }else{
             newMonomial->next = prev;
             head = newMonomial;
+            this->listLock->unlock();
         }
 
     }
+    this->listLock->unlock();
 }
 
 
 
 Polynomial::~Polynomial() {
-    destroyPoly();
+
 }
 
-void Polynomial::destroyPoly() {
-    if(this->head != nullptr){
-        auto tmp = this->head;
-        this->head = this->head->next;
-        destroyPoly();
-        delete tmp;
+
+void Polynomial::addMonomialNodeLock(const int &coeff, const int& degree) {
+    //this->listLock->lock(); //needed in case of head null
+    auto* newMonomial = new Monomial(coeff, degree);
+    if(head == nullptr){
+        head = newMonomial;
+      //  this->listLock->unlock();
+        return;
+    }else{
+       // listLock->unlock();
+        auto* tmp = head;
+        auto* prev = head;
+        while(tmp != nullptr && degree < tmp->getDegree()){
+            prev = tmp;
+            tmp = tmp->next;
+        }
+        prev->nodeLock->lock();
+        if(tmp == nullptr){
+            prev->next = newMonomial;
+            newMonomial->next = nullptr;
+            prev->nodeLock->unlock();
+            return;
+        }else{
+            prev->nodeLock->unlock();
+        }
+        tmp->nodeLock->lock();
+        if(degree == tmp->getDegree()){
+            tmp->setCoefficient(tmp->getCoefficient() + coeff);
+            tmp->nodeLock->unlock();
+            return;
+        }else{
+            tmp->nodeLock->unlock();
+        }
+        tmp->nodeLock->lock();
+        prev->nodeLock->lock();
+        if(tmp != prev){
+            prev->next = newMonomial;
+            newMonomial->next = tmp;
+            prev->nodeLock->unlock();
+            tmp->nodeLock->unlock();
+        }else{
+            newMonomial->next = prev;
+            head = newMonomial;
+            prev->nodeLock->unlock();
+            tmp->nodeLock->unlock();
+        }
+
     }
 }

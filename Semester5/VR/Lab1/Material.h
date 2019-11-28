@@ -34,7 +34,7 @@ namespace rt {
             _ambient = Color(r1, r2, r3);
             _diffuse = Color(r4, r5, r6);
             _specular = Color(r7, r8, r9);
-            _shininess = 8;
+            _shininess = 1;
         }
 
         Material(const Color& ambient, const Color& diffuse, const Color& specular, int shininess) {

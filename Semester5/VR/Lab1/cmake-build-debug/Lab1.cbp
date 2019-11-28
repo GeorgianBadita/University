@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug"/>
+				<Option working_dir="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Lab1">
-				<Option output="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Lab1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug"/>
+				<Option output="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Lab1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -32,15 +32,15 @@
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab1"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab1"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Lab1/fast">
-				<Option output="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Lab1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug"/>
+				<Option output="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Lab1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,76 +53,76 @@
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab1/fast"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab1/fast"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug"/>
+				<Option working_dir="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug"/>
+				<Option working_dir="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Color.h">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Color.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Geometry.h">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Geometry.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Image.h">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Image.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Intersection.h">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Intersection.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Light.h">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Light.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Line.h">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Line.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Material.h">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Material.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Scene.h">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Scene.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Sphere.cpp">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Sphere.cpp">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Sphere.h">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Sphere.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Vector.h">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Vector.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/lodepng.cpp">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/lodepng.cpp">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/lodepng.h">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/lodepng.h">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/main.cpp">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/main.cpp">
 			<Option target="Lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/An3_sem1/VR/Lab1/CMakeLists.txt">
+		<Unit filename="C:/Users/georg/Desktop/University/Semester5/VR/Lab1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -12,25 +12,31 @@
 class Polynomial {
 private:
     Monomial* head;
+    std::mutex* listLock;
 
-    /**
-     * Function to destroy the polynomial
-     */
-    void destroyPoly();
 public:
     /**
      * Constructor for polynomial class
      */
-    Polynomial(): head{nullptr} {}
+    Polynomial(): head{nullptr}, listLock{new std::mutex} {}
 
     /**
-     * Function to add a monmomial to a polynomial
+     * Function to add a monomial to a polynomial locking the whole list
      * @param coeff - coefficient
      * @param degree - degree of monomial
-     * @result - if there is alraedy a monomial with the given degree add the coefficient to it, else add the new mnimial
+     * @result - if there is already a monomial with the given degree add the coefficient to it, else add the new monomial
      * to the polynomial
      */
-    void addMonomial(const int& coeff, const int& degree);
+    void addMonomialListLock(const int& coeff, const int& degree);
+
+    /**
+     * Function to add a monomial to a polynomial locking only one node
+     * @param coeff - coefficient of the monomial
+     * @param degree - degree of the monomial
+     * @result - if there is already a monomial with the given degree add the coefficient to it, else add the new monomial
+     * to the polynomial
+     */
+    void addMonomialNodeLock(const int& coeff, const int& degree);
 
     /**
     * Declaring ostream class as friend

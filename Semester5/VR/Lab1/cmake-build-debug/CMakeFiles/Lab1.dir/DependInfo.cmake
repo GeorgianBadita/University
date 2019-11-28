@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/georg/Desktop/An3_sem1/VR/Lab1/Sphere.cpp" "C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Sphere.cpp.obj"
-  "C:/Users/georg/Desktop/An3_sem1/VR/Lab1/lodepng.cpp" "C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/lodepng.cpp.obj"
-  "C:/Users/georg/Desktop/An3_sem1/VR/Lab1/main.cpp" "C:/Users/georg/Desktop/An3_sem1/VR/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/main.cpp.obj"
+  "C:/Users/georg/Desktop/University/Semester5/VR/Lab1/Sphere.cpp" "C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/Sphere.cpp.obj"
+  "C:/Users/georg/Desktop/University/Semester5/VR/Lab1/lodepng.cpp" "C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/lodepng.cpp.obj"
+  "C:/Users/georg/Desktop/University/Semester5/VR/Lab1/main.cpp" "C:/Users/georg/Desktop/University/Semester5/VR/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
