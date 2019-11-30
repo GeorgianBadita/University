@@ -88,14 +88,14 @@ Polynomial::~Polynomial() {
 
 
 void Polynomial::addMonomialNodeLock(const int &coeff, const int& degree) {
-    //this->listLock->lock(); //needed in case of head null
+    this->listLock->lock(); //needed in case of head null
     auto* newMonomial = new Monomial(coeff, degree);
     if(head == nullptr){
         head = newMonomial;
-      //  this->listLock->unlock();
+        this->listLock->unlock();
         return;
     }else{
-       // listLock->unlock();
+        listLock->unlock();
         auto* tmp = head;
         auto* prev = head;
         while(tmp != nullptr && degree < tmp->getDegree()){

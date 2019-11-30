@@ -197,7 +197,7 @@ int main() {
     //path to polynomials file
     std::string pathToPoly = R"(C:\Users\georg\Desktop\University\Semester5\PPD\AddPolyParallel\polynomials.txt)";
     //number of polynomials
-    int numPolys = 10000;
+    int numPolys = 5;
     int maxDegree = 100;
 
     //generate polynomials

@@ -1,0 +1,37 @@
+INTEGER -> 0 | [1-9]([0-9])+
+FLOAT -> INTEGER|INTEGER\.DIGIT+
+DIGIT -> [0-9]
+CHARACTER -> [a-zA-z]
+ID -> CHARACTER|CHARACTER(CHARACTER DIGIT){0,249}
+IDVector -> ID"["[1-9]([0-9])+"]"
+RELATION -> < | >
+
+prog -> epsilon | header lista_decl lista_instr final
+
+header: INCLUDE IOSTREA NAMESPACE SEMICOLON INTDECL MAIN LEFT_PAR RIGHT_PAR LEFT_BR
+lista_decl -> epsilon | decl SEMICOLO lista_decl
+decl -> tip variabila
+tip -> INTDECL | FLOATDECL
+INTDECL-> "int"
+FLOATDECL -> "float"
+variabila -> ID | IDVector
+lista_instr -> epsilon | instr SEMICOLON lista_instr
+instr -> attr | inout | while_exp | if_exp
+attr -> ID EQUALS exp
+const -> INTEGER | FLOAT
+exp -> variabila
+exp -> const
+exp -> epsilon 
+       | exp PLUS variabila
+       | exp MINUS variabila
+       | exp MUL variabila
+       | exp DIV variabila
+       | exp MOD variabila
+inout ->  INOP variabila
+        | OUTOP variabila
+        | OUTOP exp
+if_exp -> if(condition) {lista_instr}
+while_exp ->while(condition) {lista_instr}
+condition -> exp RELATION exp
+final -> RETURN INTEGER SEMICOLON RIGHT_BR
+

@@ -48,19 +48,20 @@ using namespace std;
 
 
 int main(){
-    int s;
-    int n;
-    int x;
-    s = 0;
-    cin >> n;
-    int i = 0;
-    while(i < n){
-        cin >> x;
-        s = s + x;
-        i = i + 1;
-    };
-    cout << s;
-    return 0;
+   int s;
+   int n;
+   int x;
+   int i;
+   s = 0;
+   cin >> n;
+   i = 0;
+   while(i < n){
+      cin >> x;
+      s = s + x;
+      i = 1 + i;
+   };
+   cout << s;
+   return 0;
 }
 =============================
 

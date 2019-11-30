@@ -10,21 +10,13 @@ C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallel/Polynomial/Monom
 mutex
 -
 
+C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallel/Polynomial/Polynomial.cpp
+Polynomial.h
+C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallel/Polynomial/Polynomial.h
+
 C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallel/Polynomial/Polynomial.h
 mutex
 -
 Monomial.h
 C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallel/Polynomial/Monomial.h
-
-C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallel/main.cpp
-iostream
--
-Polynomial/Polynomial.h
-C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallel/Polynomial/Polynomial.h
-fstream
--
-vector
--
-thread
--
 
