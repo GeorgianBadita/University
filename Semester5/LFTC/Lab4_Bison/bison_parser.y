@@ -24,7 +24,7 @@ int yyerror(char *s);
 %%
 
 prog:
-  header lista_decl lista_isntr final
+  | header lista_decl lista_isntr final
 ;
 
 header: INCLUDE IOSTREAM NAMESPACE SEMICOLON INTDECL MAIN LEFT_PAR RIGHT_PAR LEFT_BR

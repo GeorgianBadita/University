@@ -11,8 +11,9 @@ character [a-zA-Z]
 vecId ([1-9])[0-9]*
 
 %%
-" " 
-"\n"
+" "  /* Consume space */
+"\n" /* Consume new line */
+"\t" /* Consume tab */
 "#include" {return(INCLUDE);}
 "<iostream>" {return(IOSTREAM);}
 "using namespace std" {return(NAMESPACE);}
