@@ -4,4 +4,4 @@ project(AddPolyParallel)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(AddPolyParallel main.cpp Polynomial/Monomial.cpp Polynomial/Monomial.h
-        Polynomial/Polynomial.cpp Polynomial/Polynomial.h ThreadSafeQueue.h)
+        Polynomial/Polynomial.cpp Polynomial/Polynomial.h)

@@ -2,9 +2,7 @@
 #include "Polynomial/Polynomial.h"
 #include <fstream>
 #include <vector>
-#include <queue>
 #include <thread>
-#include <condition_variable>
 #include "ThreadSafeQueue.h"
 
 /**
@@ -108,24 +106,24 @@ void readerWork(ThreadSafeQueue* queue, int numPolys, int degree, const std::str
         auto* currPoly = readPoly(path, i + 1);
         auto head = currPoly->getHead();
         while(head != nullptr){
-            queue->push(head);
+            queue->push(*head);
             head = head->next;
         }
     }
 
     auto endMonomial = new Monomial(0, -1);
-    queue->push(endMonomial);
+    queue->push(*endMonomial);
 }
 
 
 void worker(ThreadSafeQueue* queue, Polynomial* result){
     //std::cout << "Started wokring" << '\n';
-    auto* monomial = new Monomial(0, 0);
+    auto monomial =  Monomial(0, 0);
     do{
         queue->wait_and_pop(monomial);
-        result->addMonomial(monomial->getCoefficient(), monomial->getDegree());
+        result->addMonomialListLock(monomial.getCoefficient(), monomial.getDegree());
         //std::cout << monomial->getDegree();
-    }while(monomial->getDegree() != -1);
+    }while(monomial.getDegree() != -1);
 
 }
 
@@ -160,9 +158,9 @@ int main() {
     //path to polynomials file
     std::string pathToPoly = R"(C:\Users\georg\Desktop\University\Semester5\PPD\AddPolyParallelQueue\polynomials.txt)";
     //number of polynomials
-    int numPolys = 10;
-    int maxDegree = 15;
-    int numThreads = 10;
+    int numPolys = 2;
+    int maxDegree = 2;
+    int numThreads = 2;
 
     generatePolynomials(pathToPoly, numPolys, maxDegree);
 

@@ -16,6 +16,7 @@ std::ostream &operator<<(std::ostream &os, const Polynomial &dt) {
     while(tmp != nullptr){
         int degree = tmp->getDegree();
         if(degree < 0){
+            tmp = tmp->next;
             continue;
         }
         int coeff = tmp->getCoefficient();

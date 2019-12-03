@@ -92,9 +92,6 @@
 		<Unit filename="C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/Polynomial/Polynomial.h">
 			<Option target="AddPolyParallel"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/ThreadSafeQueue.h">
-			<Option target="AddPolyParallel"/>
-		</Unit>
 		<Unit filename="C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/main.cpp">
 			<Option target="AddPolyParallel"/>
 		</Unit>

@@ -41,7 +41,7 @@ public:
      void setDegree(const int& deg) {this->degree = deg;}
 
      ~Monomial(){
-         delete nodeLock;
+         //delete nodeLock;
      }
 };
 

@@ -10,6 +10,10 @@ C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/Polynomial/
 mutex
 -
 
+C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/Polynomial/Polynomial.cpp
+Polynomial.h
+C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/Polynomial/Polynomial.h
+
 C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/Polynomial/Polynomial.h
 mutex
 -
@@ -23,10 +27,6 @@ mutex
 -
 condition_variable
 -
-iostream
--
-Polynomial/Monomial.h
-C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/Polynomial/Monomial.h
 
 C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/main.cpp
 iostream
@@ -37,11 +37,7 @@ fstream
 -
 vector
 -
-queue
--
 thread
--
-condition_variable
 -
 ThreadSafeQueue.h
 C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/ThreadSafeQueue.h
