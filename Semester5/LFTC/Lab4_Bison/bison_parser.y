@@ -4,7 +4,7 @@
 
 int yylex();
 int yyerror(char *s);
-
+extern FILE *yyin;
 %}
 
 %token RETURN INCLUDE IOSTREAM NAMESPACE MAIN LEFT_PAR RIGHT_PAR LEFT_BR RIGHT_BR PLUS MINUS DIV MUL MOD INOP OUTOP IFSTMT WHILESTMT INTDECL FLOATDECL EQUALS INTEGER FLOAT OTHER SEMICOLON ID IDVECTOR RELATION
@@ -74,8 +74,12 @@ int yyerror(char *s)
 	return 0;
 }
 
-int main()
+int main(int argc, char** argv)
 {
+    if (argc == 2) {
+        yyin = fopen(argv[1], "r");
+        yyparse();
+    }
     yyparse();
     return 0;
 }

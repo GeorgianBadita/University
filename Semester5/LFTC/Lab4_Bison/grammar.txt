@@ -5,15 +5,24 @@ CHARACTER -> [a-zA-z]
 ID -> CHARACTER|CHARACTER(CHARACTER DIGIT){0,249}
 IDVector -> ID"["[1-9]([0-9])+"]"
 RELATION -> < | >
+INCLUDE -> #include
+IOSTREAM -> <iostream>
+NAMESPACE -> namespace std;
+SEMICOLON -> ;
+INTDECL -> int
+FLOATDECL -> float
+MAIN -> main
+LEFT_BR -> {
+RIGHT_BR -> }
+LEFT_PAR -> (
+RIGHT_PAR -> )
 
 prog -> epsilon | header lista_decl lista_instr final
 
-header: INCLUDE IOSTREA NAMESPACE SEMICOLON INTDECL MAIN LEFT_PAR RIGHT_PAR LEFT_BR
-lista_decl -> epsilon | decl SEMICOLO lista_decl
+header: INCLUDE IOSTREAM NAMESPACE SEMICOLON INTDECL MAIN LEFT_PAR RIGHT_PAR LEFT_BR
+lista_decl -> epsilon | decl SEMICOLON lista_decl
 decl -> tip variabila
 tip -> INTDECL | FLOATDECL
-INTDECL-> "int"
-FLOATDECL -> "float"
 variabila -> ID | IDVector
 lista_instr -> epsilon | instr SEMICOLON lista_instr
 instr -> attr | inout | while_exp | if_exp

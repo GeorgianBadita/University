@@ -74,7 +74,7 @@
 
 int yylex();
 int yyerror(char *s);
-
+extern FILE *yyin;
 
 
 /* Line 189 of yacc.c  */
@@ -1640,8 +1640,12 @@ int yyerror(char *s)
 	return 0;
 }
 
-int main()
+int main(int argc, char** argv)
 {
+    if (argc == 2) {
+        yyin = fopen(argv[1], "r");
+        yyparse();
+    }
     yyparse();
     return 0;
 }
