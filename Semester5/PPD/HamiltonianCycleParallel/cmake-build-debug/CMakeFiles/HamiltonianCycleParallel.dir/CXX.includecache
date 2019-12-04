@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/georg/Desktop/University/Semester5/PPD/HamiltonianCycleParallel/main.cpp
+fstream
+-
+iostream
+-
+vector
+-
+algorithm
+-
+thread
+-
+

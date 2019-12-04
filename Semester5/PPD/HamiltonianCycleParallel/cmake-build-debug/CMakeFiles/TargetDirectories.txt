@@ -1,0 +1,3 @@
+C:/Users/georg/Desktop/University/Semester5/PPD/HamiltonianCycleParallel/cmake-build-debug/CMakeFiles/HamiltonianCycleParallel.dir
+C:/Users/georg/Desktop/University/Semester5/PPD/HamiltonianCycleParallel/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/georg/Desktop/University/Semester5/PPD/HamiltonianCycleParallel/cmake-build-debug/CMakeFiles/rebuild_cache.dir
