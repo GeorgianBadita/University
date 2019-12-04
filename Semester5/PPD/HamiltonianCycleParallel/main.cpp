@@ -70,13 +70,20 @@ void threadBkt(std::vector<int>* sol, int k, int n){
         if(!isSol(*sol, n)) {
             if(G[(*sol)[k]][i] == 1 && !exists(i, *sol)) {
                 (*sol).pb(i);
+                std::thread *th;
+                bool init = false;
                 if (k < LEVEL) {
                     threadBkt(sol, k + 1, n);
                 } else {
                     auto new_sol = sol;
-                    std::thread th(bkt, new_sol, k + 1, n);
-                    th.join();
+                    th = new std::thread(bkt, new_sol, k + 1, n);
+                    init = true;
                 }
+                if(init) {
+                    th->join();
+                    delete th;
+                }
+
                 *sol = remove_vec(i, *sol);
             }
         }
