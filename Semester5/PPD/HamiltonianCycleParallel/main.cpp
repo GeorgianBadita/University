@@ -11,7 +11,7 @@ std::ifstream in(R"(C:\Users\georg\Desktop\University\Semester5\PPD\HamiltonianC
 int G[NMAX][NMAX];
 std::vector<int>sol;
 int n, m;
-int LEVEL = 3;
+int LEVEL = 5;
 
 void read_graph(int& n, int& m){
     in >> n >> m;
