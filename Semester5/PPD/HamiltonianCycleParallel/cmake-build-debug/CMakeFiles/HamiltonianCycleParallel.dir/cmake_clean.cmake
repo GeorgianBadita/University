@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HamiltonianCycleParallel.dir/main.cpp.obj"
-  "HamiltonianCycleParallel.exe"
-  "HamiltonianCycleParallel.exe.manifest"
+  "CMakeFiles/HamiltonianCycleParallel.dir/main.cpp.o"
+  "HamiltonianCycleParallel"
   "HamiltonianCycleParallel.pdb"
-  "libHamiltonianCycleParallel.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

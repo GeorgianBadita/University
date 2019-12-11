@@ -6,7 +6,7 @@
 #define NMAX 1000
 #define pb push_back
 
-std::ifstream in(R"(C:\Users\georg\Desktop\University\Semester5\PPD\HamiltonianCycleParallel\file.in)");
+std::ifstream in("/home/geo/Programming/University/Semester5/PPD/HamiltonianCycleParallel/file.in");
 
 int G[NMAX][NMAX];
 std::vector<int>sol;

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/georg/Desktop/University/Semester5/PPD/HamiltonianCycleParallel/main.cpp" "C:/Users/georg/Desktop/University/Semester5/PPD/HamiltonianCycleParallel/cmake-build-debug/CMakeFiles/HamiltonianCycleParallel.dir/main.cpp.obj"
+  "/home/geo/Programming/University/Semester5/PPD/HamiltonianCycleParallel/main.cpp" "/home/geo/Programming/University/Semester5/PPD/HamiltonianCycleParallel/cmake-build-debug/CMakeFiles/HamiltonianCycleParallel.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
