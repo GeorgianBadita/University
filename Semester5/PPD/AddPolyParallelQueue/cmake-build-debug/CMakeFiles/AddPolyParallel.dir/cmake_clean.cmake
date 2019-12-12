@@ -1,11 +1,9 @@
 file(REMOVE_RECURSE
-  "AddPolyParallel.exe"
-  "AddPolyParallel.exe.manifest"
+  "AddPolyParallel"
   "AddPolyParallel.pdb"
-  "CMakeFiles/AddPolyParallel.dir/Polynomial/Monomial.cpp.obj"
-  "CMakeFiles/AddPolyParallel.dir/Polynomial/Polynomial.cpp.obj"
-  "CMakeFiles/AddPolyParallel.dir/main.cpp.obj"
-  "libAddPolyParallel.dll.a"
+  "CMakeFiles/AddPolyParallel.dir/Polynomial/Monomial.cpp.o"
+  "CMakeFiles/AddPolyParallel.dir/Polynomial/Polynomial.cpp.o"
+  "CMakeFiles/AddPolyParallel.dir/main.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

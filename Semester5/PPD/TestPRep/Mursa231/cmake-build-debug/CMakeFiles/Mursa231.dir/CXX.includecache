@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Mursa231/Friendships/Friendships.h
+mutex
+-
+Node.h
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Mursa231/Friendships/Node.h
+iostream
+-
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Mursa231/Friendships/Node.h
+map
+-
+mutex
+-
+string
+-
+utility
+-
+vector
+-
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Mursa231/main.cpp
+iostream
+-
+algorithm
+-
+Friendships/Friendships.h
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Mursa231/Friendships/Friendships.h
+thread
+-
+atomic
+-
+condition_variable
+-
+

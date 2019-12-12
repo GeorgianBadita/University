@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14 -pthread -g   CMakeFiles/Catalog.dir/main.cpp.o CMakeFiles/Catalog.dir/Node.cpp.o CMakeFiles/Catalog.dir/LinkedList.cpp.o CMakeFiles/Catalog.dir/Student.cpp.o  -o Catalog 

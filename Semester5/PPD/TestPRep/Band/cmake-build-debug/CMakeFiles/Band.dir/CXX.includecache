@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Band/main.cpp
+iostream
+-
+thread
+-
+queue
+-
+mutex
+-
+condition_variable
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14 -pthread -g   CMakeFiles/Mursa231.dir/main.cpp.o CMakeFiles/Mursa231.dir/Friendships/Node.cpp.o CMakeFiles/Mursa231.dir/Friendships/Friendships.cpp.o  -o Mursa231 

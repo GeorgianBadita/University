@@ -1,0 +1,3 @@
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Mursa231/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Mursa231/cmake-build-debug/CMakeFiles/Mursa231.dir
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Mursa231/cmake-build-debug/CMakeFiles/edit_cache.dir

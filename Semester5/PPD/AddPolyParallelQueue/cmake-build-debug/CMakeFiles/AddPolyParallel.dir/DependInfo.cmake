@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/Polynomial/Monomial.cpp" "C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/cmake-build-debug/CMakeFiles/AddPolyParallel.dir/Polynomial/Monomial.cpp.obj"
-  "C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/Polynomial/Polynomial.cpp" "C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/cmake-build-debug/CMakeFiles/AddPolyParallel.dir/Polynomial/Polynomial.cpp.obj"
-  "C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/main.cpp" "C:/Users/georg/Desktop/University/Semester5/PPD/AddPolyParallelQueue/cmake-build-debug/CMakeFiles/AddPolyParallel.dir/main.cpp.obj"
+  "/home/geo/Programming/University/Semester5/PPD/AddPolyParallelQueue/Polynomial/Monomial.cpp" "/home/geo/Programming/University/Semester5/PPD/AddPolyParallelQueue/cmake-build-debug/CMakeFiles/AddPolyParallel.dir/Polynomial/Monomial.cpp.o"
+  "/home/geo/Programming/University/Semester5/PPD/AddPolyParallelQueue/Polynomial/Polynomial.cpp" "/home/geo/Programming/University/Semester5/PPD/AddPolyParallelQueue/cmake-build-debug/CMakeFiles/AddPolyParallel.dir/Polynomial/Polynomial.cpp.o"
+  "/home/geo/Programming/University/Semester5/PPD/AddPolyParallelQueue/main.cpp" "/home/geo/Programming/University/Semester5/PPD/AddPolyParallelQueue/cmake-build-debug/CMakeFiles/AddPolyParallel.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

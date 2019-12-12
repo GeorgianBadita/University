@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Catalog/LinkedList.h
+iostream
+-
+Node.h
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Catalog/Node.h
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Catalog/Node.h
+mutex
+-
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Catalog/Student.cpp
+Student.h
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Catalog/Student.h
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Catalog/Student.h
+vector
+-
+string
+-
+ostream
+-
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Catalog/main.cpp
+iostream
+-
+thread
+-
+algorithm
+-
+Student.h
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Catalog/Student.h
+LinkedList.h
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Catalog/LinkedList.h
+time.h
+-
+
