@@ -25,6 +25,18 @@ public:
         return head;
     }
 
+    int size(){
+        listLock.lock();
+        auto currNode = head;
+        int num = 0;
+        while(currNode != nullptr){
+            currNode = currNode->getNext();
+            num += 1;
+        }
+        listLock.unlock();
+        return num;
+    }
+
     virtual ~LinkedList()
     {
         listLock.lock();

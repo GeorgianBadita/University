@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14 -pthread -g   CMakeFiles/Test.dir/main.cpp.o CMakeFiles/Test.dir/LinkedList.cpp.o CMakeFiles/Test.dir/Node.cpp.o  -o Test 

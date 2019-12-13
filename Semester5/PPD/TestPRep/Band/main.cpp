@@ -24,7 +24,7 @@ void producersFunction(){
         itLock.unlock();
         std::unique_lock<std::mutex> lk(mtx);
         cv.wait(lk, [] { return band.size() < maxNumObj - 4; });
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        std::this_thread::sleep_for(std::chrono::milliseconds(20));
         itLock.lock();
         band.push(cnt);
         band.push(cnt + 1);
@@ -47,7 +47,7 @@ void consumersFunction(){
     while(!done){
         std::unique_lock<std::mutex> lk(mtx);
         cv1.wait(lk, [] {return band.size() >= 3;});
-        std::this_thread::sleep_for(std::chrono::milliseconds(80));
+        std::this_thread::sleep_for(std::chrono::milliseconds(15));
         auto a = band.front();
         band.pop();
         auto b = band.front();
@@ -59,24 +59,24 @@ void consumersFunction(){
 }
 
 int main() {
-    std::vector<std::thread> threads;
-    producers = 10;
-    consumers = 10;
-    maxNumObj = 10000;
+        std::vector<std::thread> threads;
+        producers = 10;
+        consumers = 10;
+        maxNumObj = 10000;
 
-    for(int i = 0; i < producers; i++){
-        std::thread th(producersFunction);
-        threads.push_back(std::move(th));
-    }
+        for(int i = 0; i < producers; i++){
+            std::thread th(producersFunction);
+            threads.push_back(std::move(th));
+        }
 
-    for(int i = 0; i < consumers; i++){
-        std::thread th(consumersFunction);
-        threads.push_back(std::move(th));
-    }
+        for(int i = 0; i < consumers; i++){
+            std::thread th(consumersFunction);
+            threads.push_back(std::move(th));
+        }
 
-    for(auto& x : threads){
-        x.join();
-    }
+        for(auto& x : threads){
+            x.join();
+        }
 
-    return 0;
+        return 0;
 }

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Test/LinkedList.h
+iostream
+-
+Node.h
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Test/Node.h
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Test/Node.h
+mutex
+-
+
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Test/main.cpp
+iostream
+-
+thread
+-
+vector
+-
+condition_variable
+-
+queue
+-
+atomic
+-
+LinkedList.h
+/home/geo/Programming/University/Semester5/PPD/TestPRep/Test/LinkedList.h
+

@@ -4,11 +4,13 @@
 #include "Student.h"
 #include "LinkedList.h"
 #include <time.h>
+#include <map>
 
 int n = 10;
 int studentsNum = 400;
 bool done = false;
 LinkedList<std::string, Student> studentList;
+LinkedList<char, std::map<std::string, std::vector<std::string>>> friends;
 
 std::string random_string( size_t length )
 {
@@ -73,5 +75,24 @@ int main() {
     }
     done = true;
     th.join();
+
+    std::vector<std::string> names;
+    names.emplace_back("asda");
+    std::map<std::string, std::vector<std::string>> mapp;
+    mapp.insert(std::make_pair("andrei", names));
+
+    friends.pushBack('a', mapp);
+    auto head = friends.getHead();
+    while(head != nullptr){
+        std::cout << head->getKey() << '\n';
+        for(const auto& x : head->getValue()){
+            std::string name = x.first;
+            std::cout << name << '\n';
+            for(const auto& y : x.second){
+                std::cout << y << ' ';
+            }
+        }
+        head = head->getNext();
+    }
     return 0;
 }
