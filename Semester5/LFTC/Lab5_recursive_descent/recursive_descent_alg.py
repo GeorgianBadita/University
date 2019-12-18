@@ -70,6 +70,7 @@ def recursive_descent(grammar, sequence):
                                                                         len(last_production[1]):]
     prod_rules = []
     if config.state == State.ERROR:
+        raise ValueError()
         return False, []
     else:
         for prod in config.work_stack:

@@ -1,8 +1,10 @@
 from analizor import Analizor
 from utils import parse_table_from_file
-
-PATH_TO_PREDEF = r"C:\Users\georg\Desktop\An3_sem1\LFTC\Lab1\atom_table.txt"  # path to predef table
-PATH_TO_IN_FILE = r"C:\Users\georg\Desktop\An3_sem1\LFTC\Lab1\p1.txt"  # path to program
+import os
+curr_dir = os.getcwd()
+curr_dir = '/'.join(curr_dir.split('/')[:-1])
+PATH_TO_PREDEF = os.path.join(curr_dir, 'atom_table.txt')  # path to predef table
+PATH_TO_IN_FILE = os.path.join(curr_dir, 'p1.txt')  # path to program
 
 PREDEF_TABLE = parse_table_from_file(PATH_TO_PREDEF)  # parse predef table
 analizor = Analizor(PREDEF_TABLE, PATH_TO_IN_FILE)  # instantiate analizor

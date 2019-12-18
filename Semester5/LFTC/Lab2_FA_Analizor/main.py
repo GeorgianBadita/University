@@ -4,11 +4,12 @@ from analizor.analizor import Analizor
 from analizor.analizor_utils import parse_table_from_file
 import os
 
-from finite_automata.utils import read_fa_from_file
+from finite_automata.utils import read_fa_from_file, fip_to_file
 
 
 def gen_id_fa():
-    alphabet = "a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9"
+    alphabet = "a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y " \
+               "Z 0 1 2 3 4 5 6 7 8 9 "
     final_states = ["q" + str(i + 1) for i in range(250)]
     start_state = "q0"
     transitions = ""
@@ -40,10 +41,11 @@ def gen_id_fa():
 
 CURR_DIR = os.getcwd()
 
-PATH_TO_PREDEF = os.path.join(CURR_DIR, r'files\analizor_files\atom_table.json')  # path to predef table
-PATH_TO_IN_FILE = os.path.join(CURR_DIR, r'files\analizor_files\p1.txt')  # path to program
-PATH_TO_CT_FA = os.path.join(CURR_DIR, r'files\fa_files\CT_FA.in')  # path to constant finite automaton
-PATH_TO_ID_FA = os.path.join(CURR_DIR, r'files\fa_files\ID_FA.in')  # path to ID finite automaton
+PATH_TO_PREDEF = os.path.join(CURR_DIR, 'files/analizor_files/atom_table.json')  # path to predef table
+PATH_TO_IN_FILE = os.path.join(CURR_DIR, 'files/analizor_files/p3.txt')  # path to program
+PATH_TO_CT_FA = os.path.join(CURR_DIR, 'files/fa_files/CT_FA.in')  # path to constant finite automaton
+PATH_TO_ID_FA = os.path.join(CURR_DIR, 'files/fa_files/ID_FA.in')  # path to ID finite automaton
+PATH_TO_SAVE_FIP = os.path.join(CURR_DIR, 'files/fips/fip.txt')
 
 predef_table = parse_table_from_file(PATH_TO_PREDEF)  # parse predef table
 
@@ -66,4 +68,4 @@ print(analizor.get_id_table())  # id table
 print()
 print("CT_TABLE")
 print(analizor.get_ct_table())  # ct table
-
+fip_to_file(analizor.get_fip(), PATH_TO_SAVE_FIP)

@@ -61,3 +61,16 @@ def read_fa_from_user():
 
     return FiniteAutomata(alphabet, transitions, states, final_states, start_state)
 
+
+def fip_to_file(fip, path):
+    """
+    Function to convert the fip to file
+    :param fip: -fip to convert to file
+    :param path: - path where to write the fip
+    :return: None
+    """
+    with open(path, "w") as f:
+        string = ""
+        for elem in fip:
+            string += str(elem[0]) + " "
+        f.write(string)

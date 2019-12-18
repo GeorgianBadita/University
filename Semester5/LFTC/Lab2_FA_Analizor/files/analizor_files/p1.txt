@@ -1,15 +1,13 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
-
-int main(){
-
+int main (){
     float c[2];
     float r;
     float PI;
-    PI=3.1415;
+    PI = 3.1415;
     cin>>r;
     cout<<2*PI*r;
-    cout <PI*r*r;
+    cout<<PI*r*r;
+
     return 0;
 }

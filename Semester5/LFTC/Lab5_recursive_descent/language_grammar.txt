@@ -1,0 +1,23 @@
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 e
+prog header lista_decl lista_instr final decl tip variabila instr attr const exp inout if_exp while_exp condition term exp' term' factor
+prog
+prog -> header lista_decl lista_instr final | e
+header -> 2 3 4 5 6 17 7 8 23 24 19
+lista_decl -> decl 17 lista_decl | e
+decl -> tip variabila
+tip -> 7 | 9
+variabila -> 0 | 0 21 1 22
+lista_instr -> instr 17 lista_instr | e
+instr -> attr | inout | while_exp | if_exp
+attr -> 0 30 exp
+const -> 1
+exp -> term exp'
+exp' -> 16 term exp' | 25 term exp' | e
+term -> factor term'
+term' -> 33 factor term' | 27 factor term' | 26 factor term' | e
+factor -> const | variabila
+inout -> 11 28 variabila | 12 29 variabila | 12 29 exp
+if_exp -> 15 23 condition 24 19 lista_instr 20
+while_exp -> 14 23 condition 24 19 lista_instr 20
+condition -> exp 31 exp | exp 32 exp
+final -> 10 1 17 20
