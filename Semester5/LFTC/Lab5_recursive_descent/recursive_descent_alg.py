@@ -20,7 +20,7 @@ def recursive_descent(grammar, sequence):
             if len(config.input_stack) == 0 and config.index == len(sequence):
                 config.state = State.FINAL
             elif len(config.input_stack) == 0:
-                config.state = State.ERROR
+                config.state = State.BACK
             else:
                 if config.input_stack[0] in grammar.get_non_terminals():
                     non_term = config.input_stack[0]
