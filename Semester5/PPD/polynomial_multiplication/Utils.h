@@ -1,5 +1,5 @@
 //
-// Created by Diana  on 11/6/19.
+// Created by georg  on 11/6/19.
 //
 
 #ifndef POLYNOMIAL_MULTIPLICATION_UTILS_H

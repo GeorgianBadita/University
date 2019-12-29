@@ -1,3 +1,3 @@
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/CMakeFiles/edit_cache.dir

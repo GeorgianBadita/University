@@ -4,7 +4,6 @@
 
 #include <thread>
 #include <chrono>
-#include <iostream>
 #include "PolyMul.h"
 #include "NumberDiff.h"
 

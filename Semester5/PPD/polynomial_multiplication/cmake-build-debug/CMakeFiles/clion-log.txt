@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\georg\Desktop\DiaGit\Sem5\PDP\polynomial_multiplication
+/snap/clion/99/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/geo/Programming/University/Semester5/PPD/polynomial_multiplication
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug
+-- Build files have been written to: /home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug

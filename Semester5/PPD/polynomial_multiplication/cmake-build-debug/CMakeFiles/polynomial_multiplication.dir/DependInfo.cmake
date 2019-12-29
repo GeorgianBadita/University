@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/NumberDiff.cpp" "C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir/NumberDiff.cpp.obj"
-  "C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/PolyMul.cpp" "C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir/PolyMul.cpp.obj"
-  "C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Polynomial.cpp" "C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir/Polynomial.cpp.obj"
-  "C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Utils.cpp" "C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir/Utils.cpp.obj"
-  "C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/main.cpp" "C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir/main.cpp.obj"
+  "/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/NumberDiff.cpp" "/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir/NumberDiff.cpp.o"
+  "/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/PolyMul.cpp" "/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir/PolyMul.cpp.o"
+  "/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Polynomial.cpp" "/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir/Polynomial.cpp.o"
+  "/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Utils.cpp" "/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir/Utils.cpp.o"
+  "/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/main.cpp" "/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/CMakeFiles/polynomial_multiplication.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

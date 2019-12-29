@@ -8,108 +8,112 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug"/>
+				<Option working_dir="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="polynomial_multiplication">
-				<Option output="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/polynomial_multiplication.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/."/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 polynomial_multiplication"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="polynomial_multiplication/fast">
-				<Option output="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/polynomial_multiplication.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/."/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 polynomial_multiplication/fast"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug"/>
+				<Option working_dir="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="polynomial_multiplication">
+				<Option output="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/polynomial_multiplication" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 polynomial_multiplication"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="polynomial_multiplication/fast">
+				<Option output="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/polynomial_multiplication" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/."/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 polynomial_multiplication/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/NumberDiff.cpp">
+		<Unit filename="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/NumberDiff.cpp">
 			<Option target="polynomial_multiplication"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/NumberDiff.h">
+		<Unit filename="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/NumberDiff.h">
 			<Option target="polynomial_multiplication"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/PolyMul.cpp">
+		<Unit filename="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/PolyMul.cpp">
 			<Option target="polynomial_multiplication"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/PolyMul.h">
+		<Unit filename="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/PolyMul.h">
 			<Option target="polynomial_multiplication"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Polynomial.cpp">
+		<Unit filename="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Polynomial.cpp">
 			<Option target="polynomial_multiplication"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Polynomial.h">
+		<Unit filename="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Polynomial.h">
 			<Option target="polynomial_multiplication"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Utils.cpp">
+		<Unit filename="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Utils.cpp">
 			<Option target="polynomial_multiplication"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Utils.h">
+		<Unit filename="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Utils.h">
 			<Option target="polynomial_multiplication"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/main.cpp">
+		<Unit filename="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/main.cpp">
 			<Option target="polynomial_multiplication"/>
 		</Unit>
-		<Unit filename="C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/CMakeLists.txt">
+		<Unit filename="/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

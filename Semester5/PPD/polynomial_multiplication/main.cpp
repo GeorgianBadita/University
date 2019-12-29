@@ -8,10 +8,10 @@
 int main() {
 
     double extime;
-    Polynomial poly = Utils::getRandomPoly(65536, 1, 10);
-    Polynomial poly1 = Utils::getRandomPoly(65536, 1, 10);
-//    std::cout << poly << '\n';
-//    std::cout << poly1 << '\n';
+    Polynomial poly = Utils::getRandomPoly(4, 1, 10);
+    Polynomial poly1 = Utils::getRandomPoly(4, 1, 10);
+
+    //std::cout << poly1 << '\n';
     auto startTime = std::chrono::steady_clock::now();
     auto rez = poly * poly1;
     auto stopTime = std::chrono::steady_clock::now();

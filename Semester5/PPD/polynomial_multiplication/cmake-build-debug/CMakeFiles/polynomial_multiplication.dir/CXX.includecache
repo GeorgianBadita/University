@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/PolyMul.h
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/PolyMul.h
 vector
 -
 Polynomial.h
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Polynomial.h
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Polynomial.h
 
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Polynomial.h
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Polynomial.h
 vector
 -
 string
@@ -22,17 +22,17 @@ algorithm
 ostream
 -
 
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Utils.h
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Utils.h
 vector
 -
 algorithm
 -
 Polynomial.h
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Polynomial.h
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Polynomial.h
 time.h
 -
 
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/main.cpp
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/main.cpp
 iostream
 -
 vector
@@ -40,9 +40,9 @@ vector
 chrono
 -
 Polynomial.h
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Polynomial.h
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Polynomial.h
 PolyMul.h
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/PolyMul.h
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/PolyMul.h
 Utils.h
-C:/Users/georg/Desktop/DiaGit/Sem5/PDP/polynomial_multiplication/Utils.h
+/home/geo/Programming/University/Semester5/PPD/polynomial_multiplication/Utils.h
 

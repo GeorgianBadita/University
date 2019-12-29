@@ -1,0 +1,3 @@
+/home/geo/Programming/University/Semester5/PPD/MulPolyMPI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/geo/Programming/University/Semester5/PPD/MulPolyMPI/cmake-build-debug/CMakeFiles/MulPolyMPI.dir
+/home/geo/Programming/University/Semester5/PPD/MulPolyMPI/cmake-build-debug/CMakeFiles/edit_cache.dir
