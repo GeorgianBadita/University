@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main ( ) 
+{
+int a;
+int b;
+int c;
+int x8;
+int k;
+cin>>a;
+cin>>k;
+b=6;
+c=5;
+a = c+a;
+x8=a;
+cout<<x8+k;
+return 0; 
+}

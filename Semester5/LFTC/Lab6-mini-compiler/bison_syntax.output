@@ -1,0 +1,502 @@
+Terminals unused in grammar
+
+   MOD
+   OTHER
+   RELATION
+
+
+Grammar
+
+    0 $accept: prog $end
+
+    1 prog: header lista_decl lista_instr final
+
+    2 header: INCLUDE IOSTREAM NAMESPACE SEMICOLON INTDECL MAIN LEFT_PAR RIGHT_PAR LEFT_BR
+
+    3 lista_decl: %empty
+    4           | decl SEMICOLON lista_decl
+
+    5 decl: INTDECL variabila
+
+    6 variabila: ID
+    7          | INTEGER
+
+    8 lista_instr: %empty
+    9            | instr SEMICOLON lista_instr
+
+   10 instr: attr
+   11      | inout
+
+   12 attr: ID EQUALS exp
+
+   13 exp: variabila
+   14    | variabila PLUS variabila
+   15    | variabila MINUS variabila
+   16    | variabila DIV variabila
+   17    | variabila MUL variabila
+
+   18 inout: INOP variabila
+   19      | OUTOP exp
+
+   20 final: RETURN INTEGER SEMICOLON RIGHT_BR
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+error (256)
+RETURN (258) 20
+INCLUDE (259) 2
+IOSTREAM (260) 2
+NAMESPACE (261) 2
+MAIN (262) 2
+LEFT_PAR (263) 2
+RIGHT_PAR (264) 2
+LEFT_BR (265) 2
+RIGHT_BR (266) 20
+PLUS (267) 14
+MINUS (268) 15
+DIV (269) 16
+MUL (270) 17
+MOD (271)
+INOP (272) 18
+OUTOP (273) 19
+INTDECL (274) 2 5
+EQUALS (275) 12
+OTHER (276)
+SEMICOLON (277) 2 4 9 20
+RELATION (278)
+ID (279) 6 12
+INTEGER (280) 7 20
+
+
+Nonterminals, with rules where they appear
+
+$accept (26)
+    on left: 0
+prog (27)
+    on left: 1, on right: 0
+header (28)
+    on left: 2, on right: 1
+lista_decl (29)
+    on left: 3 4, on right: 1 4
+decl (30)
+    on left: 5, on right: 4
+variabila (31)
+    on left: 6 7, on right: 5 13 14 15 16 17 18
+lista_instr (32)
+    on left: 8 9, on right: 1 9
+instr (33)
+    on left: 10 11, on right: 9
+attr (34)
+    on left: 12, on right: 10
+exp (35)
+    on left: 13 14 15 16 17, on right: 12 19
+inout (36)
+    on left: 18 19, on right: 11
+final (37)
+    on left: 20, on right: 1
+
+
+State 0
+
+    0 $accept: . prog $end
+
+    INCLUDE  shift, and go to state 1
+
+    prog    go to state 2
+    header  go to state 3
+
+
+State 1
+
+    2 header: INCLUDE . IOSTREAM NAMESPACE SEMICOLON INTDECL MAIN LEFT_PAR RIGHT_PAR LEFT_BR
+
+    IOSTREAM  shift, and go to state 4
+
+
+State 2
+
+    0 $accept: prog . $end
+
+    $end  shift, and go to state 5
+
+
+State 3
+
+    1 prog: header . lista_decl lista_instr final
+
+    INTDECL  shift, and go to state 6
+
+    $default  reduce using rule 3 (lista_decl)
+
+    lista_decl  go to state 7
+    decl        go to state 8
+
+
+State 4
+
+    2 header: INCLUDE IOSTREAM . NAMESPACE SEMICOLON INTDECL MAIN LEFT_PAR RIGHT_PAR LEFT_BR
+
+    NAMESPACE  shift, and go to state 9
+
+
+State 5
+
+    0 $accept: prog $end .
+
+    $default  accept
+
+
+State 6
+
+    5 decl: INTDECL . variabila
+
+    ID       shift, and go to state 10
+    INTEGER  shift, and go to state 11
+
+    variabila  go to state 12
+
+
+State 7
+
+    1 prog: header lista_decl . lista_instr final
+
+    INOP   shift, and go to state 13
+    OUTOP  shift, and go to state 14
+    ID     shift, and go to state 15
+
+    $default  reduce using rule 8 (lista_instr)
+
+    lista_instr  go to state 16
+    instr        go to state 17
+    attr         go to state 18
+    inout        go to state 19
+
+
+State 8
+
+    4 lista_decl: decl . SEMICOLON lista_decl
+
+    SEMICOLON  shift, and go to state 20
+
+
+State 9
+
+    2 header: INCLUDE IOSTREAM NAMESPACE . SEMICOLON INTDECL MAIN LEFT_PAR RIGHT_PAR LEFT_BR
+
+    SEMICOLON  shift, and go to state 21
+
+
+State 10
+
+    6 variabila: ID .
+
+    $default  reduce using rule 6 (variabila)
+
+
+State 11
+
+    7 variabila: INTEGER .
+
+    $default  reduce using rule 7 (variabila)
+
+
+State 12
+
+    5 decl: INTDECL variabila .
+
+    $default  reduce using rule 5 (decl)
+
+
+State 13
+
+   18 inout: INOP . variabila
+
+    ID       shift, and go to state 10
+    INTEGER  shift, and go to state 11
+
+    variabila  go to state 22
+
+
+State 14
+
+   19 inout: OUTOP . exp
+
+    ID       shift, and go to state 10
+    INTEGER  shift, and go to state 11
+
+    variabila  go to state 23
+    exp        go to state 24
+
+
+State 15
+
+   12 attr: ID . EQUALS exp
+
+    EQUALS  shift, and go to state 25
+
+
+State 16
+
+    1 prog: header lista_decl lista_instr . final
+
+    RETURN  shift, and go to state 26
+
+    final  go to state 27
+
+
+State 17
+
+    9 lista_instr: instr . SEMICOLON lista_instr
+
+    SEMICOLON  shift, and go to state 28
+
+
+State 18
+
+   10 instr: attr .
+
+    $default  reduce using rule 10 (instr)
+
+
+State 19
+
+   11 instr: inout .
+
+    $default  reduce using rule 11 (instr)
+
+
+State 20
+
+    4 lista_decl: decl SEMICOLON . lista_decl
+
+    INTDECL  shift, and go to state 6
+
+    $default  reduce using rule 3 (lista_decl)
+
+    lista_decl  go to state 29
+    decl        go to state 8
+
+
+State 21
+
+    2 header: INCLUDE IOSTREAM NAMESPACE SEMICOLON . INTDECL MAIN LEFT_PAR RIGHT_PAR LEFT_BR
+
+    INTDECL  shift, and go to state 30
+
+
+State 22
+
+   18 inout: INOP variabila .
+
+    $default  reduce using rule 18 (inout)
+
+
+State 23
+
+   13 exp: variabila .
+   14    | variabila . PLUS variabila
+   15    | variabila . MINUS variabila
+   16    | variabila . DIV variabila
+   17    | variabila . MUL variabila
+
+    PLUS   shift, and go to state 31
+    MINUS  shift, and go to state 32
+    DIV    shift, and go to state 33
+    MUL    shift, and go to state 34
+
+    $default  reduce using rule 13 (exp)
+
+
+State 24
+
+   19 inout: OUTOP exp .
+
+    $default  reduce using rule 19 (inout)
+
+
+State 25
+
+   12 attr: ID EQUALS . exp
+
+    ID       shift, and go to state 10
+    INTEGER  shift, and go to state 11
+
+    variabila  go to state 23
+    exp        go to state 35
+
+
+State 26
+
+   20 final: RETURN . INTEGER SEMICOLON RIGHT_BR
+
+    INTEGER  shift, and go to state 36
+
+
+State 27
+
+    1 prog: header lista_decl lista_instr final .
+
+    $default  reduce using rule 1 (prog)
+
+
+State 28
+
+    9 lista_instr: instr SEMICOLON . lista_instr
+
+    INOP   shift, and go to state 13
+    OUTOP  shift, and go to state 14
+    ID     shift, and go to state 15
+
+    $default  reduce using rule 8 (lista_instr)
+
+    lista_instr  go to state 37
+    instr        go to state 17
+    attr         go to state 18
+    inout        go to state 19
+
+
+State 29
+
+    4 lista_decl: decl SEMICOLON lista_decl .
+
+    $default  reduce using rule 4 (lista_decl)
+
+
+State 30
+
+    2 header: INCLUDE IOSTREAM NAMESPACE SEMICOLON INTDECL . MAIN LEFT_PAR RIGHT_PAR LEFT_BR
+
+    MAIN  shift, and go to state 38
+
+
+State 31
+
+   14 exp: variabila PLUS . variabila
+
+    ID       shift, and go to state 10
+    INTEGER  shift, and go to state 11
+
+    variabila  go to state 39
+
+
+State 32
+
+   15 exp: variabila MINUS . variabila
+
+    ID       shift, and go to state 10
+    INTEGER  shift, and go to state 11
+
+    variabila  go to state 40
+
+
+State 33
+
+   16 exp: variabila DIV . variabila
+
+    ID       shift, and go to state 10
+    INTEGER  shift, and go to state 11
+
+    variabila  go to state 41
+
+
+State 34
+
+   17 exp: variabila MUL . variabila
+
+    ID       shift, and go to state 10
+    INTEGER  shift, and go to state 11
+
+    variabila  go to state 42
+
+
+State 35
+
+   12 attr: ID EQUALS exp .
+
+    $default  reduce using rule 12 (attr)
+
+
+State 36
+
+   20 final: RETURN INTEGER . SEMICOLON RIGHT_BR
+
+    SEMICOLON  shift, and go to state 43
+
+
+State 37
+
+    9 lista_instr: instr SEMICOLON lista_instr .
+
+    $default  reduce using rule 9 (lista_instr)
+
+
+State 38
+
+    2 header: INCLUDE IOSTREAM NAMESPACE SEMICOLON INTDECL MAIN . LEFT_PAR RIGHT_PAR LEFT_BR
+
+    LEFT_PAR  shift, and go to state 44
+
+
+State 39
+
+   14 exp: variabila PLUS variabila .
+
+    $default  reduce using rule 14 (exp)
+
+
+State 40
+
+   15 exp: variabila MINUS variabila .
+
+    $default  reduce using rule 15 (exp)
+
+
+State 41
+
+   16 exp: variabila DIV variabila .
+
+    $default  reduce using rule 16 (exp)
+
+
+State 42
+
+   17 exp: variabila MUL variabila .
+
+    $default  reduce using rule 17 (exp)
+
+
+State 43
+
+   20 final: RETURN INTEGER SEMICOLON . RIGHT_BR
+
+    RIGHT_BR  shift, and go to state 45
+
+
+State 44
+
+    2 header: INCLUDE IOSTREAM NAMESPACE SEMICOLON INTDECL MAIN LEFT_PAR . RIGHT_PAR LEFT_BR
+
+    RIGHT_PAR  shift, and go to state 46
+
+
+State 45
+
+   20 final: RETURN INTEGER SEMICOLON RIGHT_BR .
+
+    $default  reduce using rule 20 (final)
+
+
+State 46
+
+    2 header: INCLUDE IOSTREAM NAMESPACE SEMICOLON INTDECL MAIN LEFT_PAR RIGHT_PAR . LEFT_BR
+
+    LEFT_BR  shift, and go to state 47
+
+
+State 47
+
+    2 header: INCLUDE IOSTREAM NAMESPACE SEMICOLON INTDECL MAIN LEFT_PAR RIGHT_PAR LEFT_BR .
+
+    $default  reduce using rule 2 (header)
