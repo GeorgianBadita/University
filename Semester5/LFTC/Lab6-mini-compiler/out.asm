@@ -9,7 +9,7 @@ format_decimal db "%d",0
 a dd 0
 b dd 0
 c dd 0
-x8 dd 0
+x dd 0
 k dd 0
 temp1 dd 1
 temp2 dd 1
@@ -33,8 +33,8 @@ mov [temp1], eax
 mov eax, [temp1]
 mov [a], eax
 mov eax, [a]
-mov [x8], eax
-mov eax, [x8]
+mov [x], eax
+mov eax, [x]
 add eax, [k]
 mov [temp2], eax
 push dword [temp2]

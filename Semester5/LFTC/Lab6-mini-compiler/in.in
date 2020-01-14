@@ -7,14 +7,14 @@ int main ( )
 int a;
 int b;
 int c;
-int x8;
+int x;
 int k;
 cin>>a;
 cin>>k;
 b=6;
 c=5;
 a = c+a;
-x8=a;
-cout<<x8+k;
+x=a;
+cout<<x+k;
 return 0; 
 }

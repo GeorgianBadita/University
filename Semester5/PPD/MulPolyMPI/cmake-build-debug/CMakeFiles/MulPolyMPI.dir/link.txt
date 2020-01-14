@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/MulPolyMPI.dir/main.cpp.o  -o MulPolyMPI /usr/lib/x86_64-linux-gnu/libmpichcxx.so /usr/lib/x86_64-linux-gnu/libmpich.so -Wl,-Bsymbolic-functions 
+/usr/bin/g++-6  -g   CMakeFiles/MulPolyMPI.dir/main.cpp.o  -o MulPolyMPI /usr/lib/x86_64-linux-gnu/libmpichcxx.so /usr/lib/x86_64-linux-gnu/libmpich.so -Wl,-Bsymbolic-functions 
