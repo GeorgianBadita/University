@@ -5,7 +5,7 @@
 #include <chrono>
 
 #define MASTER_RANK 0
-#define N 1024
+#define N 3
 #define MAX 10
 #define MIN 0
 
@@ -199,17 +199,16 @@ void nSqAlgNums(int argc, char** argv){
         MPI_Recv(recvFirst, count_a, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE); //recv the digits from a
         MPI_Recv(recvSecond, count_b, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE); //recv the digits from b
         MPI_Recv(&start, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-        /*std::cout << "Process with rank " << rank << " received: \n";
+        std::cout << "Process with rank " << rank << " received: \n";
         std::cout << "First Recv: \n";
         for(int i = 0; i<count_a; i++){
             std::cout << recvFirst[i] << ' ';
         }
-
         std::cout << "\nSecond Recv:\n";
         for(int i = 0; i<count_b; i++){
             std::cout << recvSecond[i] << ' ';
         }
-        std::cout << '\n';*/
+        std::cout << '\n';
         for(int i = 0; i<count_b; i++){
             for(int j = 0; j<count_a; j++){
                 int prod = recvFirst[j] * recvSecond[i];
@@ -238,10 +237,10 @@ void nSqAlgPoly(int argc, char** argv){
         auto secondPoly = getRandomPoly(N, MIN, MAX);
         int* finalResult = (int*)malloc((2*N - 1)* sizeof(int));
         std::cout << "MASTER PROCESS GENERATED: \n";
-//        printPolynomial(firstPoly);
-//        std::cout << '\n';
-//        printPolynomial(secondPoly);
-//        std::cout << '\n';
+        printPolynomial(firstPoly);
+        std::cout << '\n';
+        printPolynomial(secondPoly);
+        std::cout << '\n';
         numProc--; //the master processes only reads and distributes the numbers there are num_proc - 1 proceses for calculation
         int perProcess = N / numProc; //per process
         int rem = N % numProc; //rem
@@ -263,7 +262,7 @@ void nSqAlgPoly(int argc, char** argv){
             for (int j = start; j < stop; j++) {
                 forProcessSecond[j - start] = secondPoly[j]; //copy digits of b
             }
-            /*
+
             std::cout << "SENT TO " << i << '\n';
             std::cout << "FIRST: \n";
             for(int k = 0; k < firstPoly.size(); k++){
@@ -274,7 +273,7 @@ void nSqAlgPoly(int argc, char** argv){
                 std::cout << forProcessSecond[k] << ' ';
             }
             std::cout << '\n';
-            */
+
             int count_b = stop - start; //number of digits between start and stop
             int count_a = firstPoly.size();
             int resultSize = 2 * N - 1;
@@ -321,7 +320,6 @@ void nSqAlgPoly(int argc, char** argv){
         for(int i = 0; i<count_a; i++){
             std::cout << recvFirst[i] << ' ';
         }
-
         std::cout << "\nSecond Recv:\n";
         for(int i = 0; i<count_b; i++){
             std::cout << recvSecond[i] << ' ';
@@ -518,8 +516,8 @@ void karatsubaNums(int argc, char** argv){
         printNumber(b);
         std::cout << '\n';
         auto result = karatsuba(a, b);
-//        std::cout << "RESULT CALCULATED: \n";
-//        printPolynomial(result);
+        std::cout << "RESULT CALCULATED: \n";
+        printPolynomial(result);
         std::cout << '\n';
         int* finRes = (int*)malloc(result.size() * sizeof(int));
         for(int i = 0; i<result.size(); i++){
@@ -586,8 +584,8 @@ void karatsubaPoly(int argc, char **argv){
         printPolynomial(b);
         std::cout << '\n';
         auto result = karatsuba(a, b);
-//        std::cout << "RESULT CALCULATED: \n";
-//        printPolynomial(result);
+        std::cout << "RESULT CALCULATED: \n";
+        printPolynomial(result);
         std::cout << '\n';
         int* finRes = (int*)malloc(result.size() * sizeof(int));
         for(int i = 0; i<result.size(); i++){
@@ -606,9 +604,9 @@ int main(int argc, char *argv[]){
     double execTime = 0.0;
     auto start = std::chrono::steady_clock::now();
     //    karatsubaNums(argc, argv);
-        nSqAlgPoly(argc, argv);
+    nSqAlgPoly(argc, argv);
     //    nSqAlgNums(argc, argv);
-    //    karatsubaPoly(argc, argv);
+//    karatsubaPoly(autorgc, argv);
     auto end = std::chrono::steady_clock::now();
     auto diff = end - start;
     auto time = std::chrono::duration <double, std::milli> (diff).count();

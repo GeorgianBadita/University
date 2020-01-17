@@ -16,6 +16,5 @@ int main(){
         i = 1 + i;
     };
     cout<<s;
-    A
     return 0;
 }
