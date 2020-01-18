@@ -1,3 +1,0 @@
-/home/geo/Programming/University/Semester5/PPD/LoG-Cuda/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/geo/Programming/University/Semester5/PPD/LoG-Cuda/cmake-build-debug/CMakeFiles/laplacefilter.dir
-/home/geo/Programming/University/Semester5/PPD/LoG-Cuda/cmake-build-debug/CMakeFiles/edit_cache.dir
