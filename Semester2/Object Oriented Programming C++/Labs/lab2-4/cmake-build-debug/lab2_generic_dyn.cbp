@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lab2_generic_dyn"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_generic_dyn">
+				<Option output="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/cmake-build-debug/lab2_generic_dyn" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab2_generic_dyn"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_generic_dyn/fast">
+				<Option output="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/cmake-build-debug/lab2_generic_dyn" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab2_generic_dyn/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/Semester2/Object\ Oriented\ Programming\ C++/Labs/lab2-4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/domain/Transaction.c">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/domain/Transaction.h">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/main.c">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/repository/Repository.c">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/repository/Repository.h">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/service/Service.c">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/service/Service.h">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/ui/UserInterface.c">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/ui/UserInterface.h">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/DynamicVector.c">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/DynamicVector.h">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/UserInterfaceVal.c">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/UserInterfaceVal.h">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/undo.c">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/undo.h">
+			<Option target="lab2_generic_dyn"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

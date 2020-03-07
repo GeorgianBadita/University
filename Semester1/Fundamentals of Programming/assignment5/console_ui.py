@@ -8,8 +8,6 @@ from domain.UndoRedo import UndoRedo
 
 class UI:
 
-
-
     def __init__(self, student_controller, discipline_controller, grade_controller):
         '''
         constructor of UI class
@@ -191,7 +189,8 @@ class UI:
                     discipline = Discipline(discipline_id, discipline_name)
                     self.__discipline_controller.store_discipline_ctr(discipline)
                     undo_redo = UndoRedo(self.__discipline_controller.store_discipline_ctr,
-                                         self.__discipline_controller.delete_discipline_ctr, discipline, [discipline, []])
+                                         self.__discipline_controller.delete_discipline_ctr, discipline,
+                                         [discipline, []])
                     undo_redo.set_sub_counter_function(self.__grade_controller.delete_gdiscipline_ctr)
                     self.__undo.store(undo_redo)
                 except ValidatorException as ex:
@@ -347,7 +346,9 @@ class UI:
                     grade_list = []
                     student_ids = self.__grade_controller.get_students_at_discipline(discipline_id)
                     for student_id in set(student_ids):
-                        grade_list.append(Grade(discipline_id, student_id, self.__grade_controller.get_student_average_at_discipline(student_id, discipline_id)))
+                        grade_list.append(Grade(discipline_id, student_id,
+                                                self.__grade_controller.get_student_average_at_discipline(student_id,
+                                                                                                          discipline_id)))
                     grade_list.sort(key=lambda x: x.grade_value(), reverse=True)
                     for student_average in grade_list:
                         print(student_average.__str__())
@@ -378,7 +379,8 @@ class UI:
             avg_list = []
             ok = 0
             for discipline in disciplines:
-                avg_list.append(self.__grade_controller.average_grade_ctr(student.student_id(), discipline.discipline_id()))
+                avg_list.append(
+                    self.__grade_controller.average_grade_ctr(student.student_id(), discipline.discipline_id()))
             for item in avg_list:
                 if float(item) < 5.0 and item != 0:
                     ok = 1
@@ -405,7 +407,8 @@ class UI:
                 cont = 0
                 avg_list = []
                 for discipline in disciplines:
-                    avg_list.append(self.__grade_controller.average_grade_ctr(student.student_id(), discipline.discipline_id()))
+                    avg_list.append(
+                        self.__grade_controller.average_grade_ctr(student.student_id(), discipline.discipline_id()))
                 for item in avg_list:
                     if item != 0:
                         s += float(item)
@@ -449,17 +452,17 @@ class UI:
         :return:
         '''
 
-        if not self.__undo.get_operations(): #if the undo list is empty
-            #we can't do more undo
+        if not self.__undo.get_operations():  # if the undo list is empty
+            # we can't do more undo
             print("Can't do more undo!")
             return
 
-        stack = self.__undo.get_operations() #stack represents the operations list
-        previous = stack.pop() #previous is the last operation made
+        stack = self.__undo.get_operations()  # stack represents the operations list
+        previous = stack.pop()  # previous is the last operation made
         self.__redo.store(previous)
-        function = previous.get_counter_function()  #we must apply the counter_function
-        #of the last operations
-        params = previous.get_params_function() #we get the parameters needed for the function
+        function = previous.get_counter_function()  # we must apply the counter_function
+        # of the last operations
+        params = previous.get_params_function()  # we get the parameters needed for the function
         if previous.get_function() == self.__student_controller.delete_student_ctr or previous.get_function() == self.__discipline_controller.delete_discipline_ctr:
             function(params[0])
             sub_function = previous.get_sub_counter_function()
@@ -476,8 +479,6 @@ class UI:
             function(params[0], params[1])
         else:
             function(params)
-
-
 
     def __redo_operation(self):
         '''
@@ -511,5 +512,3 @@ class UI:
             function(params[0], params[2])
         else:
             function(params)
-
-

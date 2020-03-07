@@ -1,0 +1,3 @@
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/cmake-build-debug/CMakeFiles/lab2_generic_dyn.dir
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,132 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/domain/Transaction.c
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+Transaction.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/domain/Transaction.h
+strings.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/domain/strings.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/domain/Transaction.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/main.c
+repository/Repository.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/repository/Repository.h
+service/Service.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/service/Service.h
+utils/UserInterfaceVal.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/UserInterfaceVal.h
+ui/UserInterface.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/ui/UserInterface.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/repository/Repository.c
+stdlib.h
+-
+assert.h
+-
+stdio.h
+-
+Repository.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/repository/Repository.h
+../utils/DynamicVector.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/DynamicVector.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/repository/Repository.h
+../utils/DynamicVector.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/DynamicVector.h
+../domain/Transaction.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/domain/Transaction.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/service/Service.c
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+Service.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/service/Service.h
+../utils/undo.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/undo.h
+../repository/Repository.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/repository/Repository.h
+../utils/DynamicVector.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/DynamicVector.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/service/Service.h
+../repository/Repository.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/repository/Repository.h
+../utils/undo.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/undo.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/ui/UserInterface.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+UserInterface.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/ui/UserInterface.h
+../utils/UserInterfaceVal.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/UserInterfaceVal.h
+../utils/DynamicVector.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/DynamicVector.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/ui/UserInterface.h
+../service/Service.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/service/Service.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/DynamicVector.c
+stdlib.h
+-
+stdio.h
+-
+assert.h
+-
+DynamicVector.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/DynamicVector.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/DynamicVector.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/UserInterfaceVal.c
+stdio.h
+-
+string.h
+-
+assert.h
+-
+UserInterfaceVal.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/UserInterfaceVal.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/UserInterfaceVal.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/undo.c
+assert.h
+-
+undo.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/undo.h
+DynamicVector.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/DynamicVector.h
+../service/Service.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/service/Service.h
+../repository/Repository.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/repository/Repository.h
+
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/undo.h
+stdlib.h
+-
+DynamicVector.h
+/home/geo/Programming/University/Semester2/Object Oriented Programming C++/Labs/lab2-4/utils/DynamicVector.h
+
