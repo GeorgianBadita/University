@@ -86,4 +86,9 @@
 <br>
 [Parallel and Distributed Programming](/Semester5/PPD)
 
+<h3> Sem6 </h3>
 
+[Numerical Calculus](/Semester6/CN)
+<br>
+<br>
+[Software Systems Verification and Validation ](/Semester6/VVSS)
