@@ -1,4 +1,4 @@
-function s=sin_taylor(x)
+function s=sin_taylor(x)  
   s = 0;
   t = x;
   n = 1;
@@ -7,3 +7,4 @@ function s=sin_taylor(x)
     t = -t * x^2 *1/((n + 1)*(n + 2));
     n += 2;
   end
+  
