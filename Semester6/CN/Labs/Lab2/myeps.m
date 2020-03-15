@@ -1,9 +1,7 @@
-function epsilon = myeps()
-  epsilon = 1;
-  while (1 + epsilon ~= 1)
-    epsilon /= 2;
+function e = myeps
+  e = 1;
+  while 1 + e ~= 1
+    e = e/2;
   end
-  epsilon = 2 * epsilon;
- 
-
+  e = 2 * e;
  
