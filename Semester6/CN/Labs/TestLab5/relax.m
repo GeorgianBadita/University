@@ -1,19 +1,18 @@
-function x=relax(A,b)
-  %x - solutie
-  %A - mat sistemului
-  %b - solutia
-  omega = 1.5;
-  err=1e-7; 
-  x = zeros(size(b));
-  M = M=1/omega*diag(diag(A))+tril(A,-1);
-  N = b - A*x;
-  for i=1:50
-      T = M\N; 
-      x = x + T; 
-      N = b - A * x; 
-      
-     if norm(N, inf) < err && norm(T, inf) < err
-       return; 
-     end
-  end
- end
+function x=relax(A,b,omega,x0,err,niter)
+  % A - matricea sistemului
+  % b - vectorul solutie
+  % x0 - valoarae initiala a lui x
+  % err - erroarea
+  % niter - numar de iteratii
+  %x - solutia finala
+  
+  M = 1/omega * diag(diag(A)) + tril(A, -1);
+  N = M-A;
+  x = x0;
+  for i=1:min(niter, 50)
+    x0 = x;
+    x = M\(N * x0 + b); 
+    if norm(x - x0,inf) < err * norm(x, inf)
+        return
+    end
+end

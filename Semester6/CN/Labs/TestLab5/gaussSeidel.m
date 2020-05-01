@@ -1,17 +1,22 @@
-function x=gaussSeidel(A,b)
-  %x - solutie
-  %A - mat sistemului
-  %b - solutia
-  err=1e-7; 
-  x = zeros(size(b));
+function xx=gaussSeidel(A,b,x0,err,niter)
+  % A - matricea sistemului
+  % b - vectorul solutie
+  % x0 - valoarae initiala a lui x
+  % err - erroarea
+  % niter - numar de iteratii
+  % xx - solutia finala
+  
+  [m,n] = size(A);
+  x = x0;
   M = tril(A);
-  N = b - A*x;
-  for i=1:50
-      T = M\N; 
-      x = x + T; 
-      N = b - A * x;  
-     if norm(N, inf) < err && norm(T, inf) < err
-       return; 
-     end
-  end
- end
+  N = M-A;
+  for i=1:min(niter, 50)
+   xn = M\(N*x+b);
+   if norm(xn -x ,inf) < err * norm(xn, inf) 
+      xx = xn;
+      return
+   end
+   x = xn;
+   end
+
+
