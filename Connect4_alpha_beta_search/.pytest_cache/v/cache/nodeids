@@ -1,6 +1,0 @@
-[
-  "tests/test_board.py::test_board",
-  "tests/test_game_over.py::test_game_over",
-  "tests/test_board_eval.py::test_board_eval",
-  "tests/test_game_manager.py::test_game_manager"
-]

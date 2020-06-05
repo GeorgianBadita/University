@@ -1,3 +1,0 @@
-buulder -> creational
-memenot, strategy -> nehavioural
-decorator, ... -> structural

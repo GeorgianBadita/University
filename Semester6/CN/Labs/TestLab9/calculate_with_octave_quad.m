@@ -1,4 +1,4 @@
-function y = calculate_with_octave_quad(x, f, err)
+function y = calculate_with_octave_quad(x, f, tol)
   %
   % Functie care calculeaza integrala f pe toate
   % intervalele de forma [a, x(i)], folosind proprietatea de 
@@ -13,7 +13,7 @@ function y = calculate_with_octave_quad(x, f, err)
     if i == n
       break;
     end
-    int = int + quad(f, x(i), x(i+1), err);
+    int = int + quad(f, x(i), x(i+1), tol);
   end
   
 end
