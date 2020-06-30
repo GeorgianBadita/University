@@ -1,0 +1,2 @@
+cat last.fake | sed 's/:/ /g' | awk '{if($7 >= 23) print $1}' | head -n -1 | sort | uniq
+

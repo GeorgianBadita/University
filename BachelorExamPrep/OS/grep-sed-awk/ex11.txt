@@ -1,0 +1,2 @@
+cat ps.fake  | tail +2 | awk '{ SUM += $2; CNT+=1;} END {print SUM/CNT}'
+

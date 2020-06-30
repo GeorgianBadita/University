@@ -1,0 +1,2 @@
+cat passwd.fake | grep "^m" | sed 's/:/ /g' | awk '{if($3 % 7 == 0) print $5 " " $6}' | sort | uniq
+

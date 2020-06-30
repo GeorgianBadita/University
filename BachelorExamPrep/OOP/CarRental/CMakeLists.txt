@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(CarRental)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(CarRental main.cpp domain/entities/Car.cpp domain/entities/Car.h tests/testsMain/TestRunner.cpp tests/testsMain/TestRunner.h tests/testsMain/Test.cpp tests/testsMain/Test.h tests/domain/entities/TestCar.cpp tests/domain/entities/TestCar.h tests/domain/validators/TestCarValidator.cpp tests/domain/validators/TestCarValidator.h domain/validators/CarValidator.cpp domain/validators/CarValidator.h domain/exceptions/MyException.cpp domain/exceptions/MyException.h domain/exceptions/invalidCarException/InvalidCarException.cpp domain/exceptions/invalidCarException/InvalidCarException.h domain/entities/BaseEntity.cpp domain/entities/BaseEntity.h repository/AbstractRepository.cpp repository/AbstractRepository.h tests/repository/TestRepository.cpp tests/repository/TestRepository.h repository/CarRepository.cpp repository/CarRepository.h service/Service.cpp service/Service.h tests/service/TestService.cpp tests/service/TestService.h ui/command/Command.cpp ui/command/Command.h ui/UI.cpp ui/UI.h utils/Utils.cpp utils/Utils.h)

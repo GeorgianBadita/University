@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CarRental"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CarRental">
+				<Option output="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/CarRental" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 CarRental"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CarRental/fast">
+				<Option output="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/CarRental" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 CarRental/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/domain/entities/BaseEntity.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/domain/entities/BaseEntity.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/domain/entities/Car.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/domain/entities/Car.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/domain/exceptions/MyException.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/domain/exceptions/MyException.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/domain/exceptions/invalidCarException/InvalidCarException.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/domain/exceptions/invalidCarException/InvalidCarException.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/domain/validators/CarValidator.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/domain/validators/CarValidator.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/main.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/repository/AbstractRepository.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/repository/AbstractRepository.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/repository/CarRepository.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/repository/CarRepository.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/service/Service.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/service/Service.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/domain/entities/TestCar.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/domain/entities/TestCar.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/domain/validators/TestCarValidator.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/domain/validators/TestCarValidator.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/repository/TestRepository.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/repository/TestRepository.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/service/TestService.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/service/TestService.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/testsMain/Test.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/testsMain/Test.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/testsMain/TestRunner.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/tests/testsMain/TestRunner.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/ui/UI.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/ui/UI.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/ui/command/Command.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/ui/command/Command.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/utils/Utils.cpp">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/utils/Utils.h">
+			<Option target="CarRental"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/CarRental/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

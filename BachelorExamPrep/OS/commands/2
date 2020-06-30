@@ -1,0 +1,8 @@
+ex.c: In function ‘main’:
+ex.c:21:2: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+  exit(0);
+  ^~~~
+ex.c:21:2: warning: incompatible implicit declaration of built-in function ‘exit’
+ex.c:21:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+/dev/null: file not recognized: File truncated
+collect2: error: ld returned 1 exit status

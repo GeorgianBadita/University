@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Execices"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Execices">
+				<Option output="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Execices" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 Execices"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Execices/fast">
+				<Option output="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Execices" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 Execices/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex1.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex1.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex2.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex2.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex3.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex3.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex4.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex4.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex5.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex5.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex6.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/ex6.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/insertionSort.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/insertionSort.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/main.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/mergesort.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/mergesort.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/quickSort.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/quickSort.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/selectionSort.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/selectionSort.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2013.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2013.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2014.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2014.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2016Sept.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2016Sept.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2017.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2017.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2017Sept.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2017Sept.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2018.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2018.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2018Iulie.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2018Iulie.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2018Sept.cpp">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/subiect2018Sept.h">
+			<Option target="Execices"/>
+		</Unit>
+		<Unit filename="/home/geo/Programming/University/BachelorExamPrep/OOP/Execices/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

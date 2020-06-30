@@ -1,0 +1,81 @@
+CREATE TABLE Activity
+(
+    activityID   int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    description  varchar(255),
+    activityType varchar(255)
+);
+
+INSERT INTO Activity
+VALUES (DEFAULT, 'A1', 'Testing'),
+       (DEFAULT, 'A2', 'Testing'),
+       (DEFAULT, 'A3', 'Planning');
+
+CREATE TABLE Team
+(
+    teamID int NOT NULL PRIMARY KEY AUTO_INCREMENT
+);
+
+
+INSERT INTO Team
+VALUES (DEFAULT),
+       (DEFAULT);
+
+CREATE TABLE Employee
+(
+    employeeID int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    emplName   varchar(255),
+    teamID     int NOT NULL,
+    FOREIGN KEY (teamID) REFERENCES Team (teamID)
+);
+
+INSERT INTO Employee VALUES (DEFAULT, 'Geo', 1),(DEFAULT, 'Gabi', 2),(DEFAULT, 'Dragos', 1),(DEFAULT, 'Mihai', 2);
+
+CREATE TABLE TeamLeader
+(
+    teamID   int UNIQUE,
+    leaderID int UNIQUE,
+    FOREIGN KEY (teamID) REFERENCES Team (teamID),
+    FOREIGN KEY (leaderID) REFERENCES Employee (employeeID),
+    PRIMARY KEY (teamID, leaderID)
+);
+
+INSERT INTO TeamLeader VALUES (1, 1),(2, 3);
+
+CREATE TABLE ActivityEmployee
+(
+    employeeID int NOT NULL,
+    activityID int NOT NULL,
+    FOREIGN KEY (activityID) REFERENCES Activity (activityID),
+    FOREIGN KEY (employeeID) REFERENCES Employee (employeeID),
+    PRIMARY KEY (activityID, employeeID)
+);
+
+
+INSERT INTO ActivityEmployee VALUES (1, 3),(2,2),(3,1),(3,2),(4,3)
+
+SELECT E.emplName
+FROM Employee E
+WHERE 'Planning' IN (
+    SELECT activityType
+    FROM Activity A
+             INNER JOIN ActivityEmployee AE on A.activityID = AE.activityID
+             INNER JOIN Employee E2 on AE.employeeID = E2.employeeID
+    WHERE E2.emplName = E.emplName
+)
+  AND 'Testing' NOT IN (
+    SELECT activityType
+    FROM Activity A
+             INNER JOIN ActivityEmployee AE on A.activityID = AE.activityID
+             INNER JOIN Employee E2 on AE.employeeID = E2.employeeID
+    WHERE E2.emplName = E.emplName
+);
+
+SELECT E.emplName
+FROM Employee E, TeamLeader TL
+WHERE (
+          SELECT COUNT(E.teamID)
+          FROM Employee E
+                   INNER JOIN Team T on E.teamID = T.teamID
+          WHERE E.teamID = TL.teamID
+      ) > 1 AND E.employeeID=TL.leaderID;
+

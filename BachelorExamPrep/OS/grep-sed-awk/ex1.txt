@@ -1,0 +1,2 @@
+cat last.fake | grep "^.*economica.*Sun" | awk '{print $1}' | sort | uniq
+

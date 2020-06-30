@@ -1,0 +1,85 @@
+CREATE TABLE Subject
+(
+    subjectID   int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    subjectName varchar(255),
+    credits     int
+);
+
+INSERT INTO Subject
+VALUES (DEFAULT, 'FP', 6),
+       (DEFAULT, 'AG', 6),
+       (DEFAULT, 'ASC', 6),
+       (DEFAULT, 'MPP', 4),
+       (DEFAULT, 'PPD', 4),
+       (DEFAULT, 'MC', '2'),
+       (DEFAULT, 'SDA', 8);
+
+CREATE TABLE StudGroup
+(
+    groupID int NOT NULL PRIMARY KEY,
+    year    int,
+    spec    varchar(255)
+);
+
+INSERT INTO StudGroup
+VALUES (231, 3, 'IR'),
+       (232, 3, 'IR'),
+       (233, 3, 'IR'),
+       (234, 3, 'IR'),
+       (235, 3, 'IR'),
+       (236, 3, 'IR'),
+       (237, 3, 'IR');
+
+CREATE TABLE Student
+(
+    studentID   int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    studentName varchar(255),
+    birthDate   datetime,
+    groupID     int NOT NULL,
+
+    FOREIGN KEY (groupID) REFERENCES StudGroup (groupID)
+);
+
+INSERT INTO Student
+VALUES (DEFAULT, 'Geo', '2020-06-18 21:58:49', 231),
+       (DEFAULT, 'Gabi', '2020-06-18 21:58:49', 231),
+       (DEFAULT, 'Mihai', '2020-06-18 21:58:49', 232),
+       (DEFAULT, 'Cosmin', '2020-06-18 21:58:49', 231),
+       (DEFAULT, 'Dragos', '2020-06-18 21:58:49', 235),
+       (DEFAULT, 'Roberta', '2020-06-18 21:58:49', 231);
+
+CREATE TABLE Exam
+(
+    studentID int NOT NULL,
+    subjectID int NOT NULL,
+    examDate  datetime,
+    grade     int,
+
+    FOREIGN KEY (studentID) REFERENCES Student (studentID),
+    FOREIGN KEY (subjectID) REFERENCES Subject (subjectID)
+);
+
+
+#PROMOVARE CU 3 EXAMENE NU 5 IN ANUL 2020 NU 2013
+INSERT INTO Exam
+VALUES (1, 1, '2020-06-18 21:58:49', 10),
+       (1, 1, '2020-06-18 21:58:49', 9),
+       (1, 2, '2020-06-18 21:58:49', 10),
+       (1, 3, '2020-06-18 21:58:49', 10),
+       (2, 1, '2020-06-18 21:58:49', 10),
+       (2, 3, '2020-06-18 21:58:49', 10),
+       (2, 2, '2020-06-18 21:58:49', 10),
+       (3, 1, '2020-06-18 21:58:49', 10),
+       (5, 1, '2020-06-18 21:58:49', 10);
+
+
+
+SELECT Q.Name, Q.groupID, COUNT(*) AS NumPassed
+FROM (SELECT DISTINCT S.studentID, S.groupID AS groupID, S.studentName as Name, SU.subjectName AS SubjectName
+      FROM Student S
+               INNER JOIN Exam E ON E.studentID = S.studentID
+               INNER JOIN Subject SU ON SU.subjectID = E.subjectID
+      WHERE YEAR(E.examDate) = 2020
+        AND E.grade > 5) Q INNER JOIN StudGroup SG ON SG.groupID = Q.groupID
+GROUP BY Q.Name HAVING COUNT(*) >= 3
+

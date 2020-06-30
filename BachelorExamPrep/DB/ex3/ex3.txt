@@ -1,0 +1,110 @@
+CREATE TABLE Department
+(
+    depCode varchar(255) NOT NULL PRIMARY KEY
+);
+
+INSERT INTO Department
+VALUES ('Informatica'),
+       ('Informatica-Engleza'),
+       ('Matematica-Informatica');
+
+CREATE TABLE Teacher
+(
+    teacherCode int          NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    depCode     varchar(255) NOT NULL,
+    name        varchar(255),
+
+    FOREIGN KEY (depCode) REFERENCES Department (depCode)
+);
+
+INSERT INTO Teacher
+VALUES (DEFAULT, 'Informatica', 'Czibula Gabriela'),
+       (DEFAULT, 'Informatica-Engleza', 'Suciu Dan-Mircea'),
+       (DEFAULT, 'Informatica-Engleza', 'Gabi Mircea'),
+       (DEFAULT, 'Informatica-Engleza', 'Vlad Ionescu'),
+       (DEFAULT, 'Informatica', 'Czibula Istvan'),
+       (DEFAULT, 'Matematica-Informatica', 'Suciu Mihai'),
+       (DEFAULT, 'Matematica-Informatica', 'Bufnea Darius');
+
+CREATE TABLE Student
+(
+    studentCode int NOT NULL PRIMARY KEY,
+    thesisTitle varchar(255),
+    teacherCode int NOT NULL,
+
+    FOREIGN KEY (teacherCode) REFERENCES Teacher (teacherCode)
+);
+
+INSERT INTO Student
+VALUES (2236, 'DDPG1', 1),
+       (2231, 'DDPG2', 2),
+       (2232, 'DDPG3', 3),
+       (2233, 'DDPG4', 4),
+       (2234, 'DDPG5', 1),
+       (2235, 'DDPG6', 2),
+       (2237, 'DDPG7', 5);
+
+CREATE TABLE SoftResources
+(
+    softCode varchar(255) NOT NULL PRIMARY KEY
+);
+
+INSERT INTO SoftResources
+VALUES ('Oracle'),
+       ('Java'),
+       ('C#'),
+       ('C++'),
+       ('Python');
+
+CREATE TABLE HardResources
+(
+    hardCode varchar(255) NOT NULL PRIMARY KEY
+);
+
+CREATE TABLE StudentSoftResource
+(
+    softCode    varchar(255) NOT NULL,
+    studentCode int          NOT NULL,
+
+    FOREIGN KEY (softCode) REFERENCES SoftResources (softCode),
+    FOREIGN KEY (studentCode) REFERENCES Student (studentCode),
+
+    PRIMARY KEY (studentCode, softCode)
+);
+
+INSERT INTO StudentSoftResource
+VALUES ('C#', 2236),
+       ('Oracle', 2236),
+       ('C#', 2235),
+       ('Oracle', 2235),
+       ('C++', 2231),
+       ('Python', 2232);
+
+
+#1)
+SELECT S.studentCode, S.thesisTitle, T.name
+FROM Student S
+         INNER JOIN Teacher T ON T.teacherCode = S.teacherCode AND T.depCode = 'Informatica';
+
+#2)
+SELECT COUNT(*) AS NumTeachersDep
+FROM Student S
+         INNER JOIN Teacher T on S.teacherCode = T.teacherCode AND T.depCode = 'Informatica';
+
+#3)
+SELECT T.name
+FROM Student S
+         RIGHT JOIN Teacher T ON T.teacherCode = S.teacherCode
+WHERE S.teacherCode is NULL;
+
+#4)
+SELECT *
+FROM Student S
+WHERE (S.studentCode IN (SELECT SSR.studentCode
+                         FROM SoftResources R
+                                  INNER JOIN StudentSoftResource SSR on R.softCode = SSR.softCode
+                         WHERE R.softCode = 'C#'))
+  AND (studentCode IN (SELECT SSR.studentCode
+                       FROM SoftResources R
+                                INNER JOIN StudentSoftResource SSR on R.softCode = SSR.softCode
+                       WHERE R.softCode = 'C#'));

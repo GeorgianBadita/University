@@ -1,0 +1,2 @@
+cat passwd.fake | sed 's/:/ /g' | awk '{if($3 % 100 == 88) {print $5 " " $6}}'
+

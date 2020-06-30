@@ -1,0 +1,372 @@
+UID PID PPID C STIME TTY TIME CMD
+root 1 0 0 07:12 ? 00:00:22 /sbin/init splash
+root 2 0 0 07:12 ? 00:00:00 [kthreadd]
+root 3 2 0 07:12 ? 00:00:00 [rcu_gp]
+root 4 2 0 07:12 ? 00:00:00 [rcu_par_gp]
+root 6 2 0 07:12 ? 00:00:00 [kworker/0:0H-kb]
+root 9 2 0 07:12 ? 00:00:00 [mm_percpu_wq]
+root 10 2 0 07:12 ? 00:00:00 [ksoftirqd/0]
+root 11 2 0 07:12 ? 00:00:14 [rcu_sched]
+root 12 2 0 07:12 ? 00:00:00 [migration/0]
+root 13 2 0 07:12 ? 00:00:00 [idle_inject/0]
+root 14 2 0 07:12 ? 00:00:00 [cpuhp/0]
+root 15 2 0 07:12 ? 00:00:00 [cpuhp/1]
+root 16 2 0 07:12 ? 00:00:00 [idle_inject/1]
+root 17 2 0 07:12 ? 00:00:00 [migration/1]
+root 18 2 0 07:12 ? 00:00:00 [ksoftirqd/1]
+root 20 2 0 07:12 ? 00:00:00 [kworker/1:0H-kb]
+root 21 2 0 07:12 ? 00:00:00 [cpuhp/2]
+root 22 2 0 07:12 ? 00:00:00 [idle_inject/2]
+root 23 2 0 07:12 ? 00:00:00 [migration/2]
+root 24 2 0 07:12 ? 00:00:00 [ksoftirqd/2]
+root 26 2 0 07:12 ? 00:00:00 [kworker/2:0H-kb]
+root 27 2 0 07:12 ? 00:00:00 [cpuhp/3]
+root 28 2 0 07:12 ? 00:00:00 [idle_inject/3]
+root 29 2 0 07:12 ? 00:00:00 [migration/3]
+root 30 2 0 07:12 ? 00:00:00 [ksoftirqd/3]
+root 32 2 0 07:12 ? 00:00:00 [kworker/3:0H-kb]
+root 33 2 0 07:12 ? 00:00:00 [cpuhp/4]
+root 34 2 0 07:12 ? 00:00:00 [idle_inject/4]
+root 35 2 0 07:12 ? 00:00:00 [migration/4]
+root 36 2 0 07:12 ? 00:00:00 [ksoftirqd/4]
+root 38 2 0 07:12 ? 00:00:00 [kworker/4:0H-kb]
+root 39 2 0 07:12 ? 00:00:00 [cpuhp/5]
+root 40 2 0 07:12 ? 00:00:00 [idle_inject/5]
+root 41 2 0 07:12 ? 00:00:00 [migration/5]
+root 42 2 0 07:12 ? 00:00:00 [ksoftirqd/5]
+root 44 2 0 07:12 ? 00:00:00 [kworker/5:0H-kb]
+root 45 2 0 07:12 ? 00:00:00 [cpuhp/6]
+root 46 2 0 07:12 ? 00:00:00 [idle_inject/6]
+root 47 2 0 07:12 ? 00:00:00 [migration/6]
+root 48 2 0 07:12 ? 00:00:00 [ksoftirqd/6]
+root 50 2 0 07:12 ? 00:00:00 [kworker/6:0H-kb]
+root 51 2 0 07:12 ? 00:00:00 [cpuhp/7]
+root 52 2 0 07:12 ? 00:00:00 [idle_inject/7]
+root 53 2 0 07:12 ? 00:00:00 [migration/7]
+root 54 2 0 07:12 ? 00:00:00 [ksoftirqd/7]
+root 56 2 0 07:12 ? 00:00:00 [kworker/7:0H-kb]
+root 57 2 0 07:12 ? 00:00:00 [kdevtmpfs]
+root 58 2 0 07:12 ? 00:00:00 [netns]
+root 59 2 0 07:12 ? 00:00:00 [rcu_tasks_kthre]
+root 60 2 0 07:12 ? 00:00:00 [kauditd]
+root 61 2 0 07:12 ? 00:00:00 [khungtaskd]
+root 62 2 0 07:12 ? 00:00:00 [oom_reaper]
+root 63 2 0 07:12 ? 00:00:00 [writeback]
+root 64 2 0 07:12 ? 00:00:00 [kcompactd0]
+root 65 2 0 07:12 ? 00:00:00 [ksmd]
+root 66 2 0 07:12 ? 00:00:00 [khugepaged]
+root 159 2 0 07:12 ? 00:00:00 [kintegrityd]
+root 160 2 0 07:12 ? 00:00:00 [kblockd]
+root 161 2 0 07:12 ? 00:00:00 [blkcg_punt_bio]
+root 164 2 0 07:12 ? 00:00:00 [tpm_dev_wq]
+root 165 2 0 07:12 ? 00:00:00 [ata_sff]
+root 166 2 0 07:12 ? 00:00:00 [md]
+root 167 2 0 07:12 ? 00:00:00 [edac-poller]
+root 168 2 0 07:12 ? 00:00:00 [devfreq_wq]
+root 169 2 0 07:12 ? 00:00:00 [watchdogd]
+root 176 2 0 07:12 ? 00:00:00 [kswapd0]
+root 177 2 0 07:12 ? 00:00:00 [kworker/u17:0-h]
+root 178 2 0 07:12 ? 00:00:00 [ecryptfs-kthrea]
+root 181 2 0 07:12 ? 00:00:00 [kthrotld]
+root 182 2 0 07:12 ? 00:00:00 [irq/123-aerdrv]
+root 183 2 0 07:12 ? 00:00:00 [irq/123-pcie-dp]
+root 184 2 0 07:12 ? 00:00:00 [irq/125-aerdrv]
+root 185 2 0 07:12 ? 00:00:00 [irq/125-pcie-dp]
+root 186 2 0 07:12 ? 00:00:00 [acpi_thermal_pm]
+root 192 2 0 07:12 ? 00:00:00 [ipv6_addrconf]
+root 204 2 0 07:12 ? 00:00:00 [kstrp]
+root 223 2 0 07:12 ? 00:00:00 [charger_manager]
+root 281 2 0 07:12 ? 00:00:00 [nvme-wq]
+root 282 2 0 07:12 ? 00:00:00 [nvme-reset-wq]
+root 283 2 0 07:12 ? 00:00:00 [nvme-delete-wq]
+root 288 2 0 07:12 ? 00:00:00 [scsi_eh_0]
+root 289 2 0 07:12 ? 00:00:00 [scsi_tmf_0]
+root 290 2 0 07:12 ? 00:00:00 [scsi_eh_1]
+root 291 2 0 07:12 ? 00:00:00 [scsi_tmf_1]
+root 292 2 0 07:12 ? 00:00:00 [scsi_eh_2]
+root 293 2 0 07:12 ? 00:00:00 [scsi_tmf_2]
+root 294 2 0 07:12 ? 00:00:00 [scsi_eh_3]
+root 295 2 0 07:12 ? 00:00:00 [scsi_tmf_3]
+root 297 2 0 07:12 ? 00:00:00 [scsi_eh_4]
+root 298 2 0 07:12 ? 00:00:00 [scsi_tmf_4]
+root 303 2 0 07:12 ? 00:00:00 [kworker/5:1H-ev]
+root 324 2 0 07:12 ? 00:00:00 [kworker/4:1H-ev]
+root 327 2 0 07:12 ? 00:00:00 [jbd2/nvme0n1p2-]
+root 328 2 0 07:12 ? 00:00:00 [ext4-rsv-conver]
+root 371 1 0 07:12 ? 00:00:00 /lib/systemd/systemd-journald
+root 390 2 0 07:12 ? 00:00:00 [kworker/6:1H-ev]
+root 401 2 0 07:12 ? 00:00:00 [loop0]
+root 402 2 0 07:12 ? 00:00:00 [kworker/3:1H-ev]
+root 403 2 0 07:12 ? 00:00:00 [kworker/1:1H-ev]
+root 405 2 0 07:12 ? 00:00:00 [loop1]
+root 407 2 0 07:12 ? 00:00:00 [loop2]
+root 408 2 0 07:12 ? 00:00:00 [kworker/7:1H-kb]
+root 409 2 0 07:12 ? 00:00:00 [kworker/0:1H-ev]
+root 411 2 0 07:12 ? 00:00:00 [loop3]
+root 413 2 0 07:12 ? 00:00:00 [loop4]
+root 415 2 0 07:12 ? 00:00:00 [loop5]
+root 417 2 0 07:12 ? 00:00:00 [loop6]
+root 419 2 0 07:12 ? 00:00:00 [loop7]
+root 421 2 0 07:12 ? 00:00:00 [loop8]
+root 424 2 0 07:12 ? 00:00:00 [loop9]
+root 425 2 0 07:12 ? 00:00:00 [loop10]
+root 429 2 0 07:12 ? 00:00:00 [loop11]
+root 432 2 0 07:12 ? 00:00:00 [loop12]
+root 435 2 0 07:12 ? 00:00:00 [loop13]
+root 437 2 0 07:12 ? 00:00:00 [loop14]
+root 441 2 0 07:12 ? 00:00:00 [loop15]
+root 446 2 0 07:12 ? 00:00:00 [loop16]
+root 448 2 0 07:12 ? 00:00:00 [kworker/2:1H-ev]
+root 449 2 0 07:12 ? 00:00:00 [loop17]
+root 450 2 0 07:12 ? 00:00:00 [loop18]
+root 452 2 0 07:12 ? 00:00:00 [loop19]
+root 453 2 0 07:12 ? 00:00:00 [loop20]
+root 454 2 0 07:12 ? 00:00:00 [loop21]
+root 456 2 0 07:12 ? 00:00:00 [loop22]
+root 459 2 0 07:12 ? 00:00:00 [loop23]
+root 460 2 0 07:12 ? 00:00:00 [loop24]
+root 463 2 0 07:12 ? 00:00:00 [loop25]
+root 466 2 0 07:12 ? 00:00:00 [loop26]
+root 469 2 0 07:12 ? 00:00:00 [loop27]
+root 470 2 0 07:12 ? 00:00:00 [loop28]
+root 475 2 0 07:12 ? 00:00:00 [loop29]
+root 479 2 0 07:12 ? 00:00:00 [loop30]
+root 480 1 0 07:12 ? 00:00:03 /lib/systemd/systemd-udevd
+root 481 2 0 07:12 ? 00:00:00 [loop31]
+root 485 2 0 07:12 ? 00:00:00 [loop32]
+root 486 2 0 07:12 ? 00:00:00 [loop33]
+root 487 2 0 07:12 ? 00:00:00 [loop34]
+root 488 2 0 07:12 ? 00:00:00 [loop35]
+root 490 2 0 07:12 ? 00:00:00 [loop36]
+root 491 2 0 07:12 ? 00:00:00 [loop37]
+root 492 2 0 07:12 ? 00:00:00 [loop38]
+root 493 2 0 07:12 ? 00:00:00 [loop39]
+root 494 2 0 07:12 ? 00:00:00 [loop40]
+root 496 2 0 07:12 ? 00:00:00 [loop41]
+root 497 2 0 07:12 ? 00:00:00 [loop42]
+root 498 2 0 07:12 ? 00:00:00 [loop43]
+root 527 2 0 07:12 ? 00:00:00 [irq/138-mei_me]
+root 550 2 0 07:12 ? 00:00:47 [irq/83-SYNA2B46]
+root 574 2 0 07:12 ? 00:00:00 [cfg80211]
+root 576 2 0 07:12 ? 00:00:00 [kworker/u17:1-u]
+root 578 2 0 07:12 ? 00:00:00 [cryptd]
+root 655 2 0 07:12 ? 00:00:00 [nv_queue]
+root 656 2 0 07:12 ? 00:00:00 [nv_queue]
+root 657 2 0 07:12 ? 00:00:10 [nvidia-modeset/]
+root 658 2 0 07:12 ? 00:00:00 [nvidia-modeset/]
+root 678 2 2 07:12 ? 00:03:46 [irq/142-nvidia]
+root 679 2 0 07:12 ? 00:00:00 [nvidia]
+root 680 2 0 07:12 ? 00:00:12 [nv_queue]
+root 803 2 0 07:12 ? 00:00:00 [UVM global queu]
+root 804 2 0 07:12 ? 00:00:00 [UVM deferred re]
+root 806 2 0 07:12 ? 00:00:00 [UVM Tools Event]
+systemd+ 1008 1 0 07:12 ? 00:00:00 /lib/systemd/systemd-timesyncd
+systemd+ 1009 1 0 07:12 ? 00:00:01 /lib/systemd/systemd-resolved
+syslog 1145 1 0 07:12 ? 00:00:00 /usr/sbin/rsyslogd -n
+root 1149 1 0 07:12 ? 00:00:00 /usr/lib/accountsservice/accounts-daemon
+avahi 1162 1 0 07:12 ? 00:00:00 avahi-daemon: running [geo-Lenovo-Legion-Y530-15ICH.local]
+root 1164 1 0 07:12 ? 00:00:01 /usr/sbin/acpid
+root 1166 1 0 07:12 ? 00:00:00 /usr/sbin/ModemManager --filter-policy=strict
+root 1167 1 0 07:12 ? 00:00:01 /usr/lib/udisks2/udisksd
+root 1169 1 0 07:12 ? 00:00:00 /usr/sbin/cupsd -l
+root 1174 1 0 07:12 ? 00:00:00 /usr/sbin/irqbalance --foreground
+root 1175 1 0 07:12 ? 00:00:03 /usr/lib/snapd/snapd
+root 1181 1 0 07:12 ? 00:00:01 /usr/sbin/thermald --no-daemon --dbus-enable
+nvidia-+ 1182 1 0 07:12 ? 00:00:00 /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+root 1183 1 0 07:12 ? 00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+message+ 1184 1 0 07:12 ? 00:00:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+avahi 1232 1162 0 07:12 ? 00:00:00 avahi-daemon: chroot helper
+root 1340 1 0 07:12 ? 00:00:03 /usr/sbin/NetworkManager --no-daemon
+root 1343 1 0 07:12 ? 00:00:00 /lib/systemd/systemd-logind
+root 1349 1 0 07:12 ? 00:00:10 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root 1377 1 0 07:12 ? 00:00:00 /usr/sbin/cron -f
+root 1386 1 0 07:12 ? 00:00:00 /usr/lib/bluetooth/bluetoothd
+root 1431 1 0 07:12 ? 00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root 1443 1 0 07:12 ? 00:00:00 /usr/sbin/cups-browsed
+postgres 1707 1 0 07:12 ? 00:00:00 /usr/lib/postgresql/10/bin/postgres -D /var/lib/postgresql/10/main -c config_file=/etc/postgresql/10/main/postgresql.conf
+postgres 1744 1707 0 07:12 ? 00:00:00 postgres: 10/main: checkpointer process 
+postgres 1745 1707 0 07:12 ? 00:00:00 postgres: 10/main: writer process 
+postgres 1746 1707 0 07:12 ? 00:00:00 postgres: 10/main: wal writer process 
+postgres 1747 1707 0 07:12 ? 00:00:00 postgres: 10/main: autovacuum launcher process 
+postgres 1749 1707 0 07:12 ? 00:00:00 postgres: 10/main: stats collector process 
+postgres 1750 1707 0 07:12 ? 00:00:00 postgres: 10/main: bgworker: logical replication launcher 
+root 1764 1 0 07:12 ? 00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root 1771 1 0 07:12 ? 00:00:30 dockerd --group docker --exec-root=/var/snap/docker/471/run/docker --data-root=/var/snap/docker/common/var-lib-docker --pidfile=/var/snap/docker/471/run/docker.pid --config-file=/var/snap/docker/471/config/daemon.json
+root 1794 1 0 07:12 ? 00:00:02 /usr/bin/containerd
+root 1807 1 0 07:12 ? 00:00:00 /usr/sbin/gdm3
+root 1961 1807 0 07:12 ? 00:00:00 gdm-session-worker [pam/gdm-launch-environment]
+mysql 2035 1 0 07:12 ? 00:00:11 /usr/sbin/mysqld --basedir=/usr
+redis 2057 1 0 07:12 ? 00:00:14 /usr/bin/redis-server 127.0.0.1:6379
+gdm 2137 1 0 07:12 ? 00:00:00 /lib/systemd/systemd --user
+gdm 2138 2137 0 07:12 ? 00:00:00 (sd-pam)
+gdm 2185 1961 0 07:12 tty1 00:00:00 /usr/lib/gdm3/gdm-wayland-session gnome-session --autostart /usr/share/gdm/greeter/autostart
+gdm 2187 2137 0 07:12 ? 00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+gdm 2189 2185 0 07:12 tty1 00:00:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart
+gdm 2217 2189 0 07:12 tty1 00:00:08 /usr/bin/gnome-shell
+root 2276 1 0 07:12 ? 00:00:00 /usr/lib/upower/upowerd
+root 2387 1340 0 07:12 ? 00:00:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /run/dhclient-enp8s0.pid -lf /var/lib/NetworkManager/dhclient-7c83d482-8232-3e23-9c13-e770808a64c8-enp8s0.lease -cf /var/lib/NetworkManager/dhclient-enp8s0.conf enp8s0
+gdm 2394 2217 0 07:12 tty1 00:00:00 /usr/bin/Xwayland :1024 -rootless -terminate -accessx -core -listen 4 -listen 5 -displayfd 6
+gdm 2438 2137 0 07:12 ? 00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+gdm 2449 2438 0 07:12 ? 00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+gdm 2451 2137 0 07:12 ? 00:00:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+gdm 2456 2137 0 07:12 ? 00:00:00 /usr/bin/pulseaudio --daemonize=no
+rtkit 2459 1 0 07:12 ? 00:00:00 /usr/lib/rtkit/rtkit-daemon
+root 2511 1771 0 07:12 ? 00:00:43 containerd --config /var/snap/docker/471/run/docker/containerd/containerd.toml --log-level error
+root 2631 2 0 07:13 ? 00:00:00 bpfilter_umh
+gdm 2788 2217 0 07:13 tty1 00:00:00 ibus-daemon --xim --panel disable
+gdm 2797 2788 0 07:13 tty1 00:00:00 /usr/lib/ibus/ibus-dconf
+gdm 2799 1 0 07:13 tty1 00:00:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm 2802 2137 0 07:13 ? 00:00:00 /usr/lib/ibus/ibus-portal
+gdm 2810 2137 0 07:13 ? 00:00:00 /usr/libexec/xdg-permission-store
+root 2959 1 0 07:13 ? 00:00:00 /usr/lib/x86_64-linux-gnu/boltd
+root 2975 1 0 07:13 ? 00:00:08 /usr/lib/packagekit/packagekitd
+gdm 2986 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm 2990 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm 2992 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm 2996 2189 0 07:13 tty1 00:00:01 /usr/lib/gnome-settings-daemon/gsd-color
+gdm 3004 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm 3013 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm 3015 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm 3019 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm 3024 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm 3025 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-power
+gdm 3027 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm 3034 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm 3037 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm 3044 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm 3048 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm 3049 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm 3050 2189 0 07:13 tty1 00:00:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm 3081 2137 0 07:13 ? 00:00:00 /usr/lib/dconf/dconf-service
+gdm 3105 2788 0 07:13 tty1 00:00:00 /usr/lib/ibus/ibus-engine-simple
+colord 3143 1 0 07:13 ? 00:00:00 /usr/lib/colord/colord
+root 3370 1807 0 07:13 ? 00:00:00 gdm-session-worker [pam/gdm-password]
+geo 3373 1 0 07:13 ? 00:00:00 /lib/systemd/systemd --user
+geo 3374 3373 0 07:13 ? 00:00:00 (sd-pam)
+geo 3387 1 0 07:13 ? 00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+geo 3391 3370 0 07:13 tty2 00:00:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+geo 3393 3391 5 07:13 tty2 00:09:37 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+geo 3400 3373 0 07:13 ? 00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+geo 3446 3391 0 07:13 tty2 00:00:00 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+geo 3542 3446 0 07:13 ? 00:00:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+geo 3554 3373 0 07:13 ? 00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+geo 3559 3554 0 07:13 ? 00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+geo 3561 3373 0 07:13 ? 00:00:04 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+geo 3578 3446 6 07:13 tty2 00:10:24 /usr/bin/gnome-shell
+geo 3586 3373 0 07:13 ? 00:00:00 /usr/lib/gvfs/gvfsd
+geo 3591 3373 0 07:13 ? 00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+root 3600 1 0 07:13 ? 00:00:04 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+whoopsie 3601 1 0 07:13 ? 00:00:00 /usr/bin/whoopsie -f
+kernoops 3632 1 0 07:13 ? 00:00:00 /usr/sbin/kerneloops --test
+kernoops 3638 1 0 07:13 ? 00:00:00 /usr/sbin/kerneloops
+root 3704 1 0 07:13 ? 00:00:13 /opt/teamviewer/tv_bin/teamviewerd -d
+geo 3773 1 9 07:13 ? 00:15:55 /usr/bin/pulseaudio --start --log-target=syslog
+root 3967 2 0 07:13 ? 00:00:00 [krfcommd]
+geo 3970 3578 0 07:13 tty2 00:00:12 ibus-daemon --xim --panel disable
+geo 3974 3970 0 07:13 tty2 00:00:00 /usr/lib/ibus/ibus-dconf
+geo 3976 1 0 07:13 tty2 00:00:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+geo 3978 3373 0 07:13 ? 00:00:00 /usr/lib/ibus/ibus-portal
+geo 3988 3373 0 07:13 ? 00:00:00 /usr/libexec/xdg-permission-store
+geo 3993 3373 0 07:13 ? 00:00:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+geo 3999 3373 0 07:13 ? 00:00:00 /usr/lib/evolution/evolution-source-registry
+geo 4016 3373 0 07:13 ? 00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+geo 4021 3373 0 07:13 ? 00:00:00 /usr/lib/gnome-online-accounts/goa-daemon
+geo 4023 3373 0 07:13 ? 00:00:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+geo 4034 3373 0 07:13 ? 00:00:00 /usr/lib/gnome-online-accounts/goa-identity-service
+geo 4039 3373 0 07:13 ? 00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+geo 4043 3373 0 07:13 ? 00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+geo 4048 3373 0 07:13 ? 00:00:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+geo 4055 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-power
+geo 4057 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+geo 4058 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+geo 4059 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+geo 4060 3446 0 07:13 tty2 00:00:01 /usr/lib/gnome-settings-daemon/gsd-sharing
+geo 4064 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+geo 4068 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-sound
+geo 4078 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+geo 4086 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+geo 4088 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+geo 4092 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+geo 4094 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+geo 4095 3446 0 07:13 tty2 00:00:01 /usr/lib/gnome-settings-daemon/gsd-color
+geo 4100 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+geo 4106 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+geo 4107 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+geo 4112 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+geo 4146 1 0 07:13 tty2 00:00:00 /usr/lib/gnome-settings-daemon/gsd-printer
+geo 4150 3446 0 07:13 tty2 00:00:00 /usr/lib/gnome-disk-utility/gsd-disk-utility-notify
+geo 4154 3446 0 07:13 tty2 00:01:01 /usr/bin/ruby2.5 /usr/local/bin/fusuma
+geo 4178 3446 0 07:13 tty2 00:00:00 /usr/bin/python3 /usr/bin/blueman-applet
+geo 4180 3446 0 07:13 tty2 00:00:01 nautilus-desktop
+geo 4190 4154 0 07:13 tty2 00:00:37 libinput-debug-events
+geo 4196 3373 0 07:13 ? 00:00:00 /usr/lib/dconf/dconf-service
+geo 4200 3373 0 07:13 ? 00:00:00 /usr/lib/evolution/evolution-calendar-factory
+geo 4207 3586 0 07:13 ? 00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0
+geo 4220 3373 0 07:13 ? 00:00:00 /usr/lib/bluetooth/obexd
+geo 4239 3970 0 07:13 tty2 00:00:03 /usr/lib/ibus/ibus-engine-simple
+geo 4248 4200 0 07:13 ? 00:00:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx4200x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/4200/2
+geo 4257 3373 0 07:13 ? 00:00:00 /usr/lib/evolution/evolution-addressbook-factory
+geo 4268 4257 0 07:13 ? 00:00:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx4257x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/4257/2
+geo 4301 3373 0 07:13 ? 00:00:00 /usr/lib/gvfs/gvfsd-metadata
+geo 4338 1 0 07:13 tty2 00:00:58 /snap/skype/134/usr/share/skypeforlinux/skypeforlinux --executed-from=/home/geo --pid=4304
+geo 4354 4338 0 07:13 tty2 00:00:00 /snap/skype/134/usr/share/skypeforlinux/skypeforlinux --type=zygote
+geo 4358 4354 0 07:13 tty2 00:00:00 /snap/skype/134/usr/share/skypeforlinux/skypeforlinux --type=zygote
+geo 4382 4338 8 07:13 tty2 00:13:39 /snap/skype/134/usr/share/skypeforlinux/skypeforlinux --type=gpu-process --field-trial-handle=17406833894507117461,5401913944384603539,131072 --disable-features=PictureInPicture,SpareRendererForSitePerProcess --gpu-preferences=KAAAAAAAAAAgAAAgAAAAAAAAYAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA --service-request-channel-token=8392995947624161430
+geo 4386 4338 0 07:13 tty2 00:00:15 /snap/skype/134/usr/share/skypeforlinux/skypeforlinux --type=utility --field-trial-handle=17406833894507117461,5401913944384603539,131072 --disable-features=PictureInPicture,SpareRendererForSitePerProcess --lang=en-US --service-sandbox-type=network --service-request-channel-token=17565396130125538541 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+geo 4395 4382 0 07:13 tty2 00:00:00 /snap/skype/134/usr/share/skypeforlinux/skypeforlinux --type=broker
+geo 4407 4338 34 07:13 tty2 00:58:41 /snap/skype/134/usr/share/skypeforlinux/skypeforlinux --type=renderer --autoplay-policy=no-user-gesture-required --disable-background-timer-throttling --ms-disable-indexeddb-transaction-timeout --field-trial-handle=17406833894507117461,5401913944384603539,131072 --disable-features=PictureInPicture,SpareRendererForSitePerProcess --lang=en-US --app-path=/snap/skype/134/usr/share/skypeforlinux/resources/app.asar --webview-tag --no-sandbox --no-zygote --native-window-open --preload=/snap/skype/134/usr/share/skypeforlinux/resources/app.asar/Preload.js --disable-remote-module --background-color=#fff --node-integration-in-subframes --enable-websql --enable-spellcheck --electron-shared-settings=eyJjci5jb21wYW55IjoiRWxlY3Ryb24iLCJjci5kdW1wcyI6IiIsImNyLmVuYWJsZWQiOmZhbHNlLCJjci5wcm9kdWN0IjoiRWxlY3Ryb24iLCJjci5zZXNzaW9uIjoiIiwiY3IudXJsIjoiIiwiY3IudmVyc2lvbiI6IiJ9 --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=9177612748939958123 --renderer-client-id=5 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 --skype-process-type=Main --skype-window-id=__MAIN_ROOT_VIEW_ID__
+geo 4503 3373 0 07:13 ? 00:00:04 /usr/bin/gnome-software --gapplication-service
+geo 4624 4338 0 07:13 tty2 00:00:40 /snap/skype/134/usr/share/skypeforlinux/skypeforlinux --type=renderer --autoplay-policy=no-user-gesture-required --disable-background-timer-throttling --ms-disable-indexeddb-transaction-timeout --field-trial-handle=17406833894507117461,5401913944384603539,131072 --disable-features=PictureInPicture,SpareRendererForSitePerProcess --lang=en-US --app-path=/snap/skype/134/usr/share/skypeforlinux/resources/app.asar --enable-plugins --no-sandbox --no-zygote --preload=/snap/skype/134/usr/share/skypeforlinux/resources/app.asar/call-monitor/Preload.js --background-color=#fff --enable-websql --electron-shared-settings=eyJjci5jb21wYW55IjoiRWxlY3Ryb24iLCJjci5kdW1wcyI6IiIsImNyLmVuYWJsZWQiOmZhbHNlLCJjci5wcm9kdWN0IjoiRWxlY3Ryb24iLCJjci5zZXNzaW9uIjoiIiwiY3IudXJsIjoiIiwiY3IudmVyc2lvbiI6IiJ9 --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=3084840904235158263 --renderer-client-id=9 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 --skype-process-type=CallMonitor
+geo 4824 3446 0 07:14 tty2 00:00:00 update-notifier
+geo 4906 3446 0 07:15 tty2 00:00:00 /usr/lib/deja-dup/deja-dup-monitor
+geo 6102 1 6 07:21 tty2 00:10:52 /usr/lib/firefox/firefox -new-window
+geo 6160 6102 0 07:21 tty2 00:00:15 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 223978 -parentBuildID 20200602222727 -appdir /usr/lib/firefox/browser 6102 true tab
+geo 6223 6102 0 07:21 tty2 00:00:59 /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 6323 -prefMapSize 223978 -parentBuildID 20200602222727 -appdir /usr/lib/firefox/browser 6102 true tab
+geo 6285 6102 1 07:21 tty2 00:02:12 /usr/lib/firefox/firefox -contentproc -childID 3 -isForBrowser -prefsLen 7159 -prefMapSize 223978 -parentBuildID 20200602222727 -appdir /usr/lib/firefox/browser 6102 true tab
+geo 6337 6102 2 07:21 tty2 00:03:59 /usr/lib/firefox/firefox -contentproc -childID 4 -isForBrowser -prefsLen 7159 -prefMapSize 223978 -parentBuildID 20200602222727 -appdir /usr/lib/firefox/browser 6102 true tab
+geo 6413 6102 0 07:22 tty2 00:00:15 /usr/lib/firefox/firefox -contentproc -childID 6 -isForBrowser -prefsLen 7620 -prefMapSize 223978 -parentBuildID 20200602222727 -appdir /usr/lib/firefox/browser 6102 true tab
+geo 6634 6102 0 07:25 tty2 00:00:26 /usr/lib/firefox/firefox -contentproc -childID 9 -isForBrowser -prefsLen 8090 -prefMapSize 223978 -parentBuildID 20200602222727 -appdir /usr/lib/firefox/browser 6102 true tab
+geo 7216 6102 0 07:42 tty2 00:00:20 /usr/lib/firefox/firefox -contentproc -childID 10 -isForBrowser -prefsLen 8135 -prefMapSize 223978 -parentBuildID 20200602222727 -appdir /usr/lib/firefox/browser 6102 true tab
+geo 7304 6102 0 07:45 tty2 00:00:58 /usr/lib/firefox/firefox -contentproc -childID 11 -isForBrowser -prefsLen 8135 -prefMapSize 223978 -parentBuildID 20200602222727 -appdir /usr/lib/firefox/browser 6102 true tab
+geo 7420 6102 3 07:51 tty2 00:04:19 /usr/lib/firefox/firefox -contentproc -childID 12 -isForBrowser -prefsLen 8289 -prefMapSize 223978 -parentBuildID 20200602222727 -appdir /usr/lib/firefox/browser 6102 true tab
+geo 7779 3373 0 08:04 ? 00:00:03 /usr/bin/nautilus --gapplication-service
+geo 8103 6102 0 08:13 tty2 00:00:03 /usr/lib/firefox/firefox -contentproc -parentBuildID 20200602222727 -prefsLen 8289 -prefMapSize 223978 -appdir /usr/lib/firefox/browser 6102 true rdd
+root 8569 2 0 08:23 ? 00:00:00 [kworker/0:1-eve]
+root 8922 2 0 08:45 ? 00:00:00 [kworker/2:1-eve]
+root 8927 2 0 08:45 ? 00:00:00 [kworker/4:6-pm]
+root 9190 2 0 08:45 ? 00:00:00 [kworker/6:8-eve]
+geo 9364 3373 0 08:58 ? 00:00:02 gedit /home/geo/Programming/University/BachelorExamPrep/DB/ex3/ex3.txt
+root 9413 2 0 09:01 ? 00:00:00 [kworker/0:0]
+usbmux 9480 1 0 09:08 ? 00:00:00 /usr/sbin/usbmuxd --user usbmux --systemd
+geo 9517 3586 0 09:08 ? 00:00:00 /usr/lib/gvfs/gvfsd-afc --spawner :1.22 /org/gtk/gvfs/exec_spaw/1
+geo 9542 3586 0 09:09 ? 00:00:00 /usr/lib/gvfs/gvfsd-gphoto2 --spawner :1.22 /org/gtk/gvfs/exec_spaw/2
+root 9884 2 0 09:11 ? 00:00:00 [kworker/7:8-eve]
+root 10169 2 0 09:13 ? 00:00:00 [kworker/3:8-eve]
+root 10228 2 0 09:19 ? 00:00:00 [kworker/3:0-eve]
+root 10269 2 0 09:20 ? 00:00:00 [kworker/7:1-eve]
+root 10337 2 0 09:20 ? 00:00:00 [kworker/5:2-eve]
+root 10445 2 0 09:26 ? 00:00:00 [kworker/1:1-rcu]
+geo 10607 3578 0 09:38 tty2 00:00:06 /usr/share/discord/Discord
+geo 10612 10607 0 09:38 tty2 00:00:00 /usr/share/discord/Discord --type=zygote
+root 10613 2 0 09:38 ? 00:00:01 [kworker/u16:3-e]
+geo 10615 10612 0 09:38 tty2 00:00:00 /usr/share/discord/Discord --type=zygote
+geo 10640 10607 0 09:38 tty2 00:00:01 /usr/share/discord/Discord --type=gpu-process --field-trial-handle=5886801238216781492,8391296169163873074,131072 --disable-features=SpareRendererForSitePerProcess --gpu-preferences=KAAAAAAAAAAgAAAgAAAAAAAAYAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA --service-request-channel-token=1558144971849747520
+geo 10646 10607 0 09:38 tty2 00:00:00 /usr/share/discord/Discord --type=utility --field-trial-handle=5886801238216781492,8391296169163873074,131072 --disable-features=SpareRendererForSitePerProcess --lang=en-US --service-sandbox-type=network --service-request-channel-token=6094309618271834512 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+geo 10650 10640 0 09:38 tty2 00:00:00 /usr/share/discord/Discord --type=broker
+geo 10685 10607 1 09:38 tty2 00:00:16 /usr/share/discord/Discord --type=renderer --autoplay-policy=no-user-gesture-required --field-trial-handle=5886801238216781492,8391296169163873074,131072 --disable-features=SpareRendererForSitePerProcess --lang=en-US --app-path=/usr/share/discord/resources/app.asar --no-sandbox --no-zygote --native-window-open --preload=/home/geo/.config/discord/0.0.10/modules/discord_desktop_core/core.asar/app/mainScreenPreload.js --background-color=#202225 --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=3572243785767370432 --renderer-client-id=7 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+root 11102 2 0 09:42 ? 00:00:00 [kworker/6:1-eve]
+root 11114 2 0 09:42 ? 00:00:00 [kworker/5:1]
+root 11129 2 0 09:43 ? 00:00:01 [kworker/u16:0-e]
+root 11138 2 0 09:44 ? 00:00:00 [kworker/1:0-eve]
+root 11297 2 0 09:46 ? 00:00:00 [kworker/4:1]
+geo 11309 3586 0 09:46 ? 00:00:00 /usr/lib/gvfs/gvfsd-network --spawner :1.22 /org/gtk/gvfs/exec_spaw/3
+geo 11376 3586 0 09:46 ? 00:00:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.22 /org/gtk/gvfs/exec_spaw/15
+root 11393 2 0 09:46 ? 00:00:00 [kworker/2:2-eve]
+root 11516 2 0 09:50 ? 00:00:00 [kworker/u16:2-e]
+geo 11547 4338 0 09:52 tty2 00:00:00 [skypeforlinux] <defunct>
+geo 11578 3373 0 09:54 ? 00:00:02 /usr/lib/gnome-terminal/gnome-terminal-server
+geo 11588 11578 0 09:54 pts/0 00:00:00 bash
+root 11642 2 0 09:57 ? 00:00:00 [kworker/1:2]
+root 11646 2 0 09:57 ? 00:00:00 [kworker/u16:1-e]
+geo 11723 6102 15 10:01 tty2 00:00:09 /usr/lib/firefox/firefox -contentproc -childID 21 -isForBrowser -prefsLen 8574 -prefMapSize 223978 -parentBuildID 20200602222727 -appdir /usr/lib/firefox/browser 6102 true tab
+geo 11786 11588 0 10:02 pts/0 00:00:00 ps -ef

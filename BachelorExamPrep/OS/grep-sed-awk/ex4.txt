@@ -1,0 +1,2 @@
+cat ps.fake | grep '^root' | awk '{print $6}' | sort |uniq
+
