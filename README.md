@@ -11,12 +11,6 @@
 <br>
 <br>
 [Computational Logic](/Semester1/Computational%20Logic)
-<br>
-<br>
-[Algebra]()
-<br>
-<br>
-[Mathematical Analysis]()
 
 <h3> Sem2  </h3>
 
